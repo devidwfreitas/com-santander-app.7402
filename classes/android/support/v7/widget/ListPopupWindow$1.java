@@ -1,0 +1,20 @@
+package android.support.v7.widget;
+
+import android.support.v7.view.menu.ShowableListMenu;
+import android.view.View;
+
+class ListPopupWindow$1 extends ForwardingListener {
+  ListPopupWindow$1(View paramView) {
+    super(paramView);
+  }
+  
+  public ListPopupWindow getPopup() {
+    return ListPopupWindow.this;
+  }
+}
+
+
+/* Location:              C:\Users\devid\Downloads\SAST\Santander\dex2jar-2.0\classes-dex2jar.jar!\android\support\v7\widget\ListPopupWindow$1.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

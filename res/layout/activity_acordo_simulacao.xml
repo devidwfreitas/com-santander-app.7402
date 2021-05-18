@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:id="@id/container" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <fragment android:id="@id/divida_fragment" android:layout_width="fill_parent" android:layout_height="wrap_content" class="com.santander.app.emprestimo.acordo.presentation.AcordoDividaFragment" />
+        <LinearLayout android:orientation="vertical" android:paddingTop="20.0dip" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+            <LinearLayout android:orientation="horizontal" android:id="@id/container_tipopagamento" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Forma de pagamento: " />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textStyle="bold" android:id="@id/text_tipo_pagamento" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <RadioGroup android:orientation="horizontal" android:id="@id/radio_group_acordo" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderRadioButton android:textSize="17.0sp" android:id="@id/radio_button_acordo_debito_conta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpaddingx3" android:checked="true" android:text="@string/acordo_simulacao_radio_button_debito_conta" />
+                <com.santander.app.components.view.SantanderRadioButton android:textSize="17.0sp" android:id="@id/radio_button_acordo_boleto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/acordo_simulacao_radio_button_boleto" />
+            </RadioGroup>
+            <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:id="@id/textview_subtitle_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="@string/acordo_simulacao_title_debito_conta_checked" />
+            <FrameLayout android:layout_gravity="left" android:id="@id/conta_corrente_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderEditText android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" " android:hint="@string/acordo_simulacao_conta_corrente" android:editable="false" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.v7.widget.AppCompatSpinner android:gravity="center" android:id="@id/conta_corrente_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderEditText android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" " android:hint="@string/acordo_simulacao_dia_pagamento" android:editable="false" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.v7.widget.AppCompatSpinner android:gravity="center" android:id="@id/dia_pagamento_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderEditText android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" " android:hint="@string/acordo_simulacao_parcelas" android:editable="false" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.v7.widget.AppCompatSpinner android:gravity="center" android:id="@id/parcelas_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <com.santander.app.components.view.CheckCardGroup android:orientation="horizontal" android:id="@id/cards_container" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.CheckCardView android:id="@id/card_view_parcelado" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="1.0" app:cardCornerRadius="4.0dip">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_card_view_parcelado" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@color/gray5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Parcelado com desconto de:" />
+                        <com.santander.app.components.view.SantanderTextView android:textSize="34.0sp" android:textColor="@android:color/black" android:id="@id/desconto_renegociacao_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="10%" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:textColor="@android:color/black" android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="R$" />
+                            <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="bottom" android:id="@id/valor_renegociacao_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.375,00" />
+                        </LinearLayout>
+                        <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/gray5" android:id="@id/parcela_renegociacao_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="30x de R$ 500,00" />
+                        <com.santander.app.components.view.SantanderTextView android:textSize="11.0sp" android:textColor="@color/gray5" android:id="@id/taxa_renegociacao_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="taxa 3,49% a.m." />
+                    </LinearLayout>
+                </com.santander.app.components.view.CheckCardView>
+                <com.santander.app.components.view.CheckCardView android:id="@id/card_view_avista" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_margin="5.0dip" android:layout_weight="1.0" app:cardCornerRadius="4.0dip">
+                    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_card_view_avista" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@color/gray5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="À vista:" />
+                        <com.santander.app.components.view.SantanderTextView android:textSize="34.0sp" android:textColor="@android:color/black" android:id="@id/desconto_avista_renegociacao_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Dinheiro liberado na hora" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                            <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:textColor="@android:color/black" android:layout_gravity="top" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="5.0dip" android:text="R$" />
+                            <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="bottom" android:id="@id/valor_avista_renegociacao_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1.375,00" />
+                        </LinearLayout>
+                        <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/gray5" android:id="@id/parcela_avista_renegociacao_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="30x de R$ 500,00" />
+                        <com.santander.app.components.view.SantanderTextView android:textSize="11.0sp" android:textColor="@color/gray5" android:id="@id/taxa_avista_renegociacao_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="taxa 3,49% a.m." />
+                    </LinearLayout>
+                </com.santander.app.components.view.CheckCardView>
+            </com.santander.app.components.view.CheckCardGroup>
+            <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_acordo_simular" android:layout_width="fill_parent" android:layout_margin="20.0dip" android:text="@string/acordo_simular_button" style="@style/Santander.PillRed" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

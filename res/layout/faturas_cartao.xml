@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <ScrollView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/scrollView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/llSpinner" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" android:layout_marginStart="@dimen/commonpadding" android:layout_marginEnd="@dimen/commonpadding">
+                <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/textLineSelecioneFatura" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Selecione a Fatura" />
+                <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="@dimen/commonpaddingmin" />
+                <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_faturas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.ClickToSelectEditText android:id="@id/textview_faturas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Aberta" android:maxLines="1" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/llMensagem" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/tvMensagem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mensagem" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/llIncludeFaturaAberta" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/includeFaturaAberta" layout="@layout/include_fatura_aberta_cartao" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/llIncludeFaturaOutras" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include android:id="@id/includeFaturaOutras" layout="@layout/include_outras_faturas_cartao" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

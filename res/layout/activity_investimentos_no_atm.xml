@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:textStyle="bold" android:textColor="@color/red" android:gravity="center" android:id="@id/textview_informacao_bloqueio" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="20.0dip" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="50.0dip" android:text="@string/titulo_bloqueio_investimento_no_atm" android:layout_alignParentTop="true" />
+        <RelativeLayout android:gravity="center" android:id="@id/relative_layout_slider" android:background="@color/lightgray" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="15.0dip" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textview_informacao_bloqueio">
+            <ImageView android:id="@id/imageview_investimento_atm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="36.0dip" android:src="@drawable/menu_icon_emprestimos_inverse" android:layout_alignLeft="@id/relativeLayout_slider" android:layout_alignTop="@id/textview_investimento_atm" android:layout_marginStart="36.0dip" android:layout_alignStart="@id/relativeLayout_slider" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:id="@id/textview_investimento_atm" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/titulo_investimento_atm" android:layout_toRightOf="@id/imageview_investimento_atm" />
+            <TextView android:textSize="12.0sp" android:textColor="@color/green" android:id="@id/textview_situacao_de_bloqueio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Não bloqueado" android:layout_toRightOf="@id/imageview_investimento_atm" android:layout_below="@id/textview_investimento_atm" />
+            <RelativeLayout android:id="@id/relativeLayout_slider" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/imageview_investimento_atm">
+                <include android:id="@id/include_slider" layout="@layout/slider" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <TextView android:id="@id/textview_informacoes_bloqueio_desbloqueio_atm" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/informacoes_investimentos_no_atm" android:layout_below="@id/relative_layout_slider" />
+    </RelativeLayout>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

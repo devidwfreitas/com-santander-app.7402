@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="horizontal" android:id="@id/detalheAgendamentos" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginLeft="3.0dip" android:layout_marginTop="5.0dip" android:weightSum="1.0" android:layout_weight="0.85">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left|center" android:id="@id/descricaoAgendamento" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="item" android:layout_weight="0.7" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right|center" android:id="@id/valorAgendamento" android:layout_width="0.0dip" android:layout_height="fill_parent" android:text="R$ 10000,00" android:layout_weight="0.3" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="3.0dip" android:layout_weight="0.15">
+        <ImageButton android:id="@id/statusAgendamento" android:background="@drawable/icon_alert" android:layout_width="20.0dip" android:layout_height="20.0dip" />
+    </LinearLayout>
+</LinearLayout>

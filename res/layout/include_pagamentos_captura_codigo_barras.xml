@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/commonpaddingtbl1" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/commonpaddingx2"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/texto_ativar_camera" app:opensans_regular="opensans_regular.ttf" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/button_captura_codigo_barra" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" style="@style/ButtonHoloDark">
+        <ImageView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:src="@drawable/button_barras" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/contaForegroundText" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/botao_codigo_barras" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:text="@string/texto_ou" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderEditText android:id="@id/edit_text_codigo_barras" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" android:hint="@string/hint_codigo_barras" android:lines="2" android:minLines="2" android:maxLength="54" android:numeric="integer" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark">
+        <requestFocus />
+    </com.santander.app.components.view.SantanderEditText>
+    <com.santander.app.components.view.SantanderButtonView android:enabled="true" android:id="@id/button_continuar" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/label_button_continuar" android:layout_alignParentBottom="true" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+</LinearLayout>

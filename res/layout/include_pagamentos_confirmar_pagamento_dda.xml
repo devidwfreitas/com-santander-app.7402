@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/dimen_20dp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.9">
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nome do beneficiário original:" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorBlack" android:id="@id/textview_nome_beneficiario" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:paddingTop="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Valor do título:" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorBlack" android:id="@id/textview_valor_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:paddingTop="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Data de vencimento:" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorBlack" android:id="@id/textview_data_vencimento" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:paddingTop="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Agendado para:" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorBlack" android:id="@id/textview_agendado_para" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:paddingTop="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Número de recorrências:" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorBlack" android:id="@id/textview_numero_recorrencias" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <TextView android:textSize="14.0sp" android:textColor="@color/colorBlack" android:paddingTop="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Valor máximo para pagamento recorrente:" />
+            <TextView android:textSize="20.0sp" android:textColor="@color/colorBlack" android:id="@id/textview_valor_maximo_pagamento_recorrente" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1">
+            <com.santander.app.components.view.SantanderButtonView android:enabled="true" android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_pagar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:text="PAGAR" android:layout_alignParentBottom="true" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+        </FrameLayout>
+    </LinearLayout>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:weightSum="1.0">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:gravity="left" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Apelido" android:layout_weight="0.3" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Beneficiário" android:layout_weight="0.45" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Cliente" android:layout_weight="0.25" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+</LinearLayout>

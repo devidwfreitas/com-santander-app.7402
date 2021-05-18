@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/commonpadding" android:paddingTop="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/tituloConfirmacaoParcelamento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CONFIRMAÇÃO" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:layout_width="320.0dip" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:id="@id/tituloInformacionParcelamento1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:text="Para efetivar o parcelamento de fatura é necessário realizar o pagamento da 1ª parcela." android:maxLines="2" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <ImageView android:layout_gravity="center_vertical" android:id="@id/imageview_help_parcelamento_fatura_nao_correntista" android:layout_width="fill_parent" android:layout_height="fill_parent" android:src="@drawable/icon_help_red" android:scaleType="centerInside" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpaddingmin">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cartão:" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_numero_cartao_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Final 3678" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vencimento:" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_data_vencimento_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="29/07/2013" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor a Parcelar:" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_a_parcelar_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="23/07/2013" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Número de parcelas:" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_numero_parcelas_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="18" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor da primera parcela:" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_primeira_parcela_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 35.33" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor das demais parcelas:" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_demais_parcelas_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 105.33" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor da tarifa :" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_tarifa_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 0,00" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor do IOF:" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_iof_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 216.33" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Taxa de juros:" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_taxa_juros_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4,3243% a.m" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Custo efetivo total (CET):" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_cet_value" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="111,87% a.m." app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <com.santander.app.components.view.SantanderButtonView android:gravity="center" android:layout_gravity="center" android:id="@id/btnConfirmarParcelamento" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:text="Confirmar" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+</RelativeLayout>

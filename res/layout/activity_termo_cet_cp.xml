@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_termos_cet_root" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx3">
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_footer_cet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/credito_pessoal_custo_efetivo_total_aviso" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

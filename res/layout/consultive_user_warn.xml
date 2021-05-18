@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="@dimen/abc_action_bar_title_text_size" android:gravity="center_horizontal" android:id="@id/label_advice_user" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:text="title" app:opensans_regular="opensans_regular.ttf" />
+        <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/circle_count" android:scaleType="fitXY" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+            </RelativeLayout>
+            <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="5.0dip" android:text="@string/login_user_consultive_advice1" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/circle_count" android:scaleType="fitXY" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+            </RelativeLayout>
+            <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="5.0dip" android:text="@string/login_user_consultive_advice2" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/circle_count" android:scaleType="fitXY" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="3" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+            </RelativeLayout>
+            <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="5.0dip" android:text="@string/login_user_consultive_advice3" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+            <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/circle_count" android:scaleType="fitXY" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+            </RelativeLayout>
+            <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="5.0dip" android:text="@string/login_user_consultive_advice4" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+        </LinearLayout>
+        <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/commonpadding" />
+        <ImageView android:background="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:src="@drawable/santanderlogo" />
+        <com.santander.app.components.view.SantanderButtonView android:layout_gravity="center" android:id="@id/button_accept" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin" android:text="Continuar" android:onClick="goBack" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+</ScrollView>

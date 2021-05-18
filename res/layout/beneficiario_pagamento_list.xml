@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListView android:id="@id/beneficiariosList" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" android:headerDividersEnabled="false" />
+    <LinearLayout android:gravity="center" android:id="@id/msgExcluirItem" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textColor="#ff333333" android:id="@id/txt_indique" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Para 'excluir/editar' um beneficiário, toque sobre a linha por alguns segundos, depois na lixeira." />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:id="@id/title_termos_condicoes" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/msg_title_termos_condicoes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/msg_informacoes_importantes_antecipacao_dt" santander:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SegmentLineView android:id="@id/linhaConfirmacao" android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/msg_title_termos_condicoes" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/include_emprestimo_antecipacaoir_termo_resumo_contratacao" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/rl_btn_termo_contratacao_antecipacaoir" android:layout_below="@id/title_termos_condicoes">
+        <include layout="@layout/include_emprestimo_antecipacaoir_termo_resumo_contratacao" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/include_emprestimos_antecipacaoir_condicoesgerais" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rl_btn_condicoesgerais" android:layout_below="@id/title_termos_condicoes">
+        <include layout="@layout/include_emprestimos_antecipacaoir_condicoesgerais" />
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/rl_btn_condicoesgerais" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.santander.app.components.view.SegmentLineView android:id="@id/linhaConfirmacao_termo_contratacao" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+        <com.santander.app.components.view.SegmentCheckBox android:id="@id/checkbox_acerto_declaracao_antecipacaoir" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/lbl_acerto_declaracao_antecipacaodt" android:layout_below="@id/linhaConfirmacao_termo_contratacao" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+        <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/checkbox_acerto_declaracao_antecipacaoir">
+            <com.santander.app.components.view.SantanderButtonView android:enabled="false" android:textSize="15.0dip" android:id="@id/btn_concordo_CET_antecipacaoir" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/textmarginx2" android:text="@string/botao_continuar" android:ems="9" santander:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout android:gravity="center" android:id="@id/rl_btn_termo_contratacao_antecipacaoir" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <com.santander.app.components.view.SantanderButtonView android:textSize="15.0dip" android:id="@id/btn_nao_concordo" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/textmarginx2" android:text="@string/nao_concordo" android:ems="9" santander:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+        <com.santander.app.components.view.SantanderButtonView android:textSize="15.0dip" android:id="@id/btn_concordo" android:layout_width="150.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/textmarginx2" android:text="@string/concordo" android:ems="9" android:layout_toRightOf="@id/btn_nao_concordo" santander:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </RelativeLayout>
+</RelativeLayout>

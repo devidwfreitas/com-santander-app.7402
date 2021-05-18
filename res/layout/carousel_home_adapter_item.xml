@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="110.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_gravity="center" android:id="@id/homeItemContent" android:layout_width="180.0dip" android:layout_height="wrap_content">
+        <FrameLayout android:background="@drawable/bg_circle_white" android:layout_width="110.0dip" android:layout_height="110.0dip" android:layout_centerInParent="true">
+            <ImageView android:layout_gravity="center" android:id="@id/ivProduct" android:layout_width="100.0dip" android:layout_height="100.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

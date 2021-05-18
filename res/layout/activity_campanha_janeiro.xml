@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.1">
+            <TextView android:textSize="15.0sp" android:gravity="center_vertical" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/loja_online_titulo" />
+        </FrameLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/list_campanhas" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="15.0dip" android:layout_weight="0.75" />
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="0.1">
+            <TextView android:textSize="16.0sp" android:gravity="center" android:id="@id/textview_clique_condicoes" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="@string/loja_online_titulo_condicoes" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

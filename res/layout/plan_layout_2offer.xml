@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin">
+                <ImageView android:layout_gravity="center" android:id="@id/imgCard" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_family_life" />
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_primary_size" android:textStyle="bold" android:id="@id/textTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:text="@string/life_protection" />
+                    <TextView android:textSize="@dimen/small_text_size" android:layout_gravity="bottom" android:id="@id/textDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/small_margin" android:layout_marginRight="@dimen/small_margin" android:text="@string/family_safe" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:layout_gravity="bottom" android:id="@id/txtDescricao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginRight="@dimen/small_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/select_product" android:textAlignment="center" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:background="@color/colorGrayVeryLight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <FrameLayout android:id="@id/flPlanOffer1" android:background="@color/colorGrayVeryLight" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:id="@id/planOffer1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Alternativa para você" android:textAlignment="center" />
+                            <FrameLayout android:background="@color/colorGrayVeryLight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:id="@id/imgPlanOffer1" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" />
+                                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip">
+                                    <TextView android:textSize="@dimen/text_primary_size_small" android:id="@id/offer1Title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cobertura" android:textAlignment="center" />
+                                    <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:id="@id/offer1ValueCoverage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 500.000,00" android:textAlignment="center" />
+                                    <TextView android:textSize="@dimen/text_primary_size_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Parcelas mensais" android:textAlignment="center" />
+                                    <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorPrimaryDark2" android:id="@id/offer1Installment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 49,90" android:textAlignment="center" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="right" android:id="@id/icChecked1" android:background="@drawable/ic_check_equipment" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="@dimen/small_margin" android:layout_marginRight="5.0dip" />
+                    </FrameLayout>
+                    <FrameLayout android:id="@id/flPlanOffer2" android:background="@color/colorGrayVeryLight" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <LinearLayout android:orientation="vertical" android:id="@id/planOffer2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Sugestão para você" android:textAlignment="center" />
+                            <FrameLayout android:background="@color/colorGrayVeryLight" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                                <ImageView android:id="@id/imgPlanOffer2" android:layout_width="wrap_content" android:layout_height="110.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" />
+                                <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-5.0dip">
+                                    <TextView android:textSize="@dimen/text_primary_size_small" android:id="@id/offer2Title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cobertura" android:textAlignment="center" />
+                                    <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:id="@id/offer2ValueCoverage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 300.000,00" android:textAlignment="center" />
+                                    <TextView android:textSize="@dimen/text_primary_size_small" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Parcelas mensais" android:textAlignment="center" />
+                                    <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorPrimaryDark2" android:id="@id/offer2Installment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 39,90" android:textAlignment="center" />
+                                </LinearLayout>
+                            </FrameLayout>
+                        </LinearLayout>
+                        <ImageView android:layout_gravity="right" android:id="@id/icChecked2" android:background="@drawable/ic_check_equipment" android:visibility="gone" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_marginTop="@dimen/small_margin" android:layout_marginRight="5.0dip" />
+                    </FrameLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v7.widget.CardView android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" app:cardElevation="2.0dip">
+                    <android.support.v7.widget.RecyclerView android:id="@id/rvPlanOfferDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </android.support.v7.widget.CardView>
+                <ImageView android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="-18.5dip" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/image_bottom_cardview" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

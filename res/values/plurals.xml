@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <plurals name="consignado_label_dias_uteis">
+        <item quantity="other">até %d dias úteis</item>
+        <item quantity="one">até %d dia útil</item>
+    </plurals>
+</resources>

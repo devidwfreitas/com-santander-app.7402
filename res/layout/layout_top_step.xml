@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.santander.app.seguros.ui.widgets.SimpleIndicatorStepV1 android:id="@id/siStep" android:layout_width="fill_parent" android:layout_height="wrap_content" app:sis_color="@color/colorBlueVeryLight" app:sis_step_width="25.0dip" app:sis_step_height="5.0dip" app:sis_step_margin="5.0dip" app:sis_step_next_stroke="1.0dip" />
+    <TextView android:gravity="center" android:id="@id/tvStep" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/default_margin" />
+</LinearLayout>

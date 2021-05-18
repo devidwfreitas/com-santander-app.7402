@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.santander.app.components.view.SantanderTextView android:id="@id/texteview" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" app:opensans_regular="opensans_regular.ttf" style="?android:attr/spinnerDropDownItemStyle"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app" />

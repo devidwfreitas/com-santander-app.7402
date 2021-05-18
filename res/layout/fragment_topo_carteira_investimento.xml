@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Conta corrente" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_ag_cc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0001/010100140" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:gravity="right" android:paddingRight="@dimen/commonpaddingx4" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data da posição" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_data_posicao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20/08/2017" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/lineview_separator1" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <LinearLayout android:id="@id/linear_bruto" android:padding="@dimen/commonpadding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo bruto:" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_saldo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 1.0000.000,00" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/linear_saldo_liquido" android:padding="@dimen/commonpadding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo líquido:" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_saldo_liquido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 1.0000.000,00" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:id="@id/linear_valor_mercado" android:padding="@dimen/commonpadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor de mercado:" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_saldo_valor_mercado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 1.0000.000,00" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+        <View android:id="@id/lineview_separator2" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</FrameLayout>

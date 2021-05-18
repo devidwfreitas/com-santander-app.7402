@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/confirmacaocontainer" android:padding="@dimen/commonpadding" android:paddingTop="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/recarga_titulo_cancelamiento" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="@dimen/commonpadding" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/texto_programacion_excluida_fecha" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Sua programaçao sera excluida, mas ha uma recarga agendada para 24/07/2015" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Selecione uma das opções abaixo:" app:opensans_regular="opensans_regular.ttf" />
+            <RadioGroup android:id="@id/radiogroupdeleterecarga" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:layout_gravity="left" android:id="@id/radio_excluida" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="@string/radio_excluir" />
+                <RadioButton android:layout_gravity="left" android:id="@id/radio_exluida_mantener" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/radio_excluir_mantener" />
+            </RadioGroup>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:background="#ffe3e3e3" android:paddingLeft="@dimen/commonpaddingx2" android:paddingTop="@dimen/commonpaddingx2" android:paddingRight="@dimen/commonpaddingx2" android:paddingBottom="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:baselineAligned="false" android:weightSum="2.0">
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderButtonView android:id="@id/cancelar_eliminar_recarga" android:layout_width="@dimen/button_width_130" android:layout_height="wrap_content" android:text="Voltar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderButtonView android:id="@id/confirmar_eliminar_recarga" android:layout_width="@dimen/button_width_130" android:layout_height="wrap_content" android:text="Continuar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

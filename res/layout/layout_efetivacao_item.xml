@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/efe_cor_familia" android:background="@color/inv_warm_grey" android:layout_width="4.0dip" android:layout_height="fill_parent" android:layout_margin="3.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="7.0" android:layout_marginStart="5.0dip">
+            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:id="@id/efe_nome_produto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PREV PRIMEIROS PASSOS VGBL FUNCIONÁRIOS" android:lineSpacingExtra="0.5sp" android:fontFamily="sans-serif-medium" />
+            <TextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:id="@id/efe_contrato" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Certificado: 2307725C" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="2.0dip" android:layout_weight="1.0">
+            <ProgressBar android:id="@id/efe_progress" android:layout_width="21.0dip" android:layout_height="21.0dip" android:layout_alignParentEnd="true" />
+            <ImageView android:id="@id/efe_icon" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_success_check" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <View android:id="@id/efe_divider" android:background="@color/inv_white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" />
+</LinearLayout>

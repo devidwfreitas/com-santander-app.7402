@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/bgSlider" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:id="@id/bgBackground" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <View android:id="@id/vCenter" android:background="@color/colorTransparent" android:layout_width="2.0dip" android:layout_height="2.0dip" android:layout_centerInParent="true" />
+    <TextView android:textColor="@color/colorGrayText3" android:id="@id/tvLeft" android:paddingLeft="20.0dip" android:paddingRight="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/vCenter" android:layout_centerVertical="true" android:textAllCaps="true" android:textAlignment="center" />
+    <TextView android:textColor="@color/colorGrayText3" android:id="@id/tvRight" android:paddingLeft="5.0dip" android:paddingBottom="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/vCenter" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:textAllCaps="true" android:textAlignment="center" />
+    <com.santander.app.seguros.ui.widgets.LockUnlockButton android:id="@id/slideLock" android:background="@android:color/transparent" android:clickable="false" android:layout_width="fill_parent" android:layout_height="55.0dip" android:max="100" android:progress="50" android:progressDrawable="@android:color/transparent" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+</RelativeLayout>

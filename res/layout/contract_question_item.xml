@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_padding">
+        <TextView android:textSize="@dimen/text_primary_size_small" android:textColor="@color/colorGray" android:id="@id/textQuestion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Já foi afastado do trabalho por alguma doença ou acidente?" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/default_margin" android:layout_weight="1.0">
+            <FrameLayout android:id="@id/flClickNo" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:foreground="?selectableItemBackground">
+                <TextView android:textSize="@dimen/text_primary_size_small" android:textColor="@color/colorGrayText3" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:text="NÃO" />
+                <android.support.v7.widget.AppCompatRadioButton android:layout_gravity="center_vertical" android:id="@id/rbNo" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:buttonTint="@color/colorGrayText3" />
+            </FrameLayout>
+            <FrameLayout android:id="@id/flClickYes" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:foreground="?selectableItemBackground">
+                <TextView android:textSize="@dimen/text_primary_size_small" android:textColor="@color/colorGrayText3" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:text="SIM" />
+                <android.support.v7.widget.AppCompatRadioButton android:layout_gravity="center_vertical" android:id="@id/rbYes" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:buttonTint="@color/colorGrayText3" />
+            </FrameLayout>
+        </LinearLayout>
+        <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorGrayLight" android:id="@id/editAnswerQuestionHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/answer_">
+            <android.support.design.widget.TextInputEditText android:textSize="@dimen/default_text_size" android:id="@id/editAnswerQuestion" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minLines="1" android:maxLength="254" android:imeOptions="actionDone" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <View android:id="@id/viewBottom" android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

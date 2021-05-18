@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/inv_white" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/inv2_det_subp_bottomcontainer">
+        <RelativeLayout android:orientation="vertical" android:id="@id/inv2_det_subp_maincontainer" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_header_pequeno" />
+            <RelativeLayout android:id="@id/inv2_det_subp_header" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" android:layout_alignParentStart="true">
+                <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:gravity="center_horizontal" android:id="@id/inv2_det_supp_produto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:text="@string/det_subp_lbl_produto" android:layout_centerHorizontal="true" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif-medium" />
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:id="@id/inv2_det_subp_lbl_investido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="16.0dip" android:text="@string/det_subp_lbl_valor_total" android:layout_below="@id/inv2_det_supp_produto" android:layout_centerHorizontal="true" android:lineSpacingExtra="2.0sp" android:fontFamily="sans-serif" />
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="1.0dip" android:layout_below="@id/inv2_det_subp_lbl_investido" android:layout_centerHorizontal="true">
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:id="@id/inv2_det_subp_rs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/app_monetary_simbol" android:lineSpacingExtra="2.0sp" android:fontFamily="sans-serif" android:layout_marginEnd="4.0dip" />
+                    <TextView android:textSize="32.0sp" android:textStyle="bold" android:textColor="@color/inv_black_two" android:id="@id/inv2_det_supp_valor_investido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="-16.0sp" android:fontFamily="sans-serif-light" android:layout_toEndOf="@id/inv2_det_subp_rs" />
+                    <ImageButton android:id="@id/icon_info" android:background="@color/inv_transparent" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:src="@drawable/ic_info_inv" android:layout_centerVertical="true" android:layout_marginStart="8.0dip" android:layout_toEndOf="@id/inv2_det_supp_valor_investido" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/inv2_det_subp_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_below="@id/inv2_det_subp_header" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <android.support.v7.widget.CardView android:background="@color/inv_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:cardCornerRadius="4.0dip">
+                    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="20.0dip">
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_container_valor_resgate" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+                            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:text="@string/det_subp_lbl_valor_disponivel" android:lines="2" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/inv_black" android:gravity="end" android:id="@id/inv2_det_subp_valor_disponivel" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                        <RelativeLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_container_text_corretora" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="16.0dip">
+                            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:id="@id/det_subp_text_corretora" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/det_subp_text_go_corretora" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/inv_white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="16.0dip">
+                            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/det_subp_lbl_ultima_atualizacao" android:lineSpacingExtra="1.5sp" android:fontFamily="sans-serif" />
+                            <TextView android:textSize="14.0sp" android:textColor="@color/inv_black" android:gravity="end" android:id="@id/inv2_det_subp_data_ultima_atualizacao" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </android.support.v7.widget.CardView>
+                <LinearLayout android:orientation="vertical" android:id="@id/inv2_det_subp_detalhe" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:id="@id/det_subp_total_contracts" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="35.0dip" android:layout_marginBottom="15.0dip" android:text="@string/det_subp_lbl_qntd_contratos" />
+                    <android.support.v7.widget.RecyclerView android:id="@id/det_subp_lista_detalhe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <LinearLayout android:id="@id/inv2_det_subp_bottomcontainer" android:background="@color/inv_white_three" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+        <Button android:textSize="18.0sp" android:textColor="@color/inv_white_two" android:id="@id/det_subp_botao_aplicar" android:background="@drawable/app_button_red_grey_pill" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" android:text="@string/inv_home_btn_aplicar" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="10.0dip" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+    <RelativeLayout android:id="@id/inv2_det_subp_layout_loadinig" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include android:visibility="visible" layout="@layout/layout_loading_state" />
+    </RelativeLayout>
+</RelativeLayout>

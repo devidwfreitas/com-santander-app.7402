@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/linear_button_circle" android:background="@drawable/btn_border_circle_gray" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center" android:id="@id/imageview_check" android:padding="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_check_button_circle" />
+    <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:gravity="center" android:id="@id/textview_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="agendar para" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray" android:gravity="center" android:id="@id/textview_date" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="20/12/2016" android:layout_below="@id/textview_info" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+    </LinearLayout>
+</LinearLayout>

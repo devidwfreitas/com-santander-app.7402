@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:paddingTop="60.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dda" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ff696969" android:gravity="center" android:paddingLeft="20.0sp" android:paddingTop="20.0sp" android:paddingRight="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cadastro realizado com sucesso!" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffbebebe" android:gravity="center" android:paddingLeft="20.0sp" android:paddingTop="20.0sp" android:paddingRight="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Agora, boletos de cobrança com registro, \nemitidos para o seu CPF, serão disponibilizados \nde forma eletrônica nesta opção." />
+        <Button android:layout_gravity="center" android:id="@id/button_continuar_dda" android:layout_width="280.0dip" android:layout_marginTop="30.0sp" android:text="@string/_continue" android:textAllCaps="true" style="@style/Santander.PillRed" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

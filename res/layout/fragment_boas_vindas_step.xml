@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.airbnb.lottie.LottieAnimationView android:id="@id/step_animation" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="110.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+        <TextView android:textSize="20.0sp" android:textColor="@android:color/black" android:gravity="center" android:id="@id/step_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="16.0sp" android:textColor="#ff787878" android:gravity="center" android:id="@id/step_sub_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:lineSpacingExtra="5.0dip" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</FrameLayout>

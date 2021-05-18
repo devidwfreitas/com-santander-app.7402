@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/cartaosRelativeContainer" android:background="@color/contaBackground" android:padding="@dimen/commonpaddingmin" android:layout_width="@dimen/widthContaBox" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearTituloCartao" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <com.santander.app.components.view.FontFitTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/contaBackgroundText" android:gravity="center_horizontal" android:id="@id/contaName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Santander Plantinum Visa" android:maxLines="1" app:opensans_regular="opensans_bold.ttf" />
+                </RelativeLayout>
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaBackgroundText" android:layout_gravity="center_horizontal" android:id="@id/contaNumber" android:paddingBottom="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Final 1234" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearValoresCartao" android:background="@color/contaForeground" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="13.0dip" android:layout_below="@id/linearTituloCartao">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/limite_cartao" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaForegroundText" android:layout_gravity="center_horizontal" android:id="@id/tv_tituloLimiteCartao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Limite disponível: " app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaForegroundText" android:gravity="center_horizontal" android:id="@id/contaCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 4,068.95" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaForegroundText" android:layout_gravity="center_horizontal" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo parcial da fatura" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.FontFitTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaForegroundText" android:gravity="center_horizontal" android:id="@id/saldoEfetivo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 99,376.00" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearCartaoAdicional" android:background="@color/contaForeground" android:padding="@dimen/commonpaddingmin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="13.0dip" android:layout_below="@id/linearTituloCartao">
+                <com.santander.app.components.view.FontFitTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaForegroundText" android:gravity="center_horizontal" android:id="@id/cartao_adicional" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cartão adicional" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linearCartaoBloqueado" android:background="@color/contaForeground" android:padding="@dimen/commonpaddingmin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_margin="13.0dip" android:layout_below="@id/linearTituloCartao">
+                <com.santander.app.components.view.FontFitTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaForegroundText" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Desbloqueie agora!" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

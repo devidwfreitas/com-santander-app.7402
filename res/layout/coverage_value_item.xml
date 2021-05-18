@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:id="@id/llCoverage" android:paddingLeft="@dimen/small_padding" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/default_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/default_text_size" android:gravity="right" android:id="@id/nameCoverage" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Cobertura 1" android:layout_weight="1.0" />
+        <TextView android:textSize="@dimen/default_text_size" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginRight="@dimen/small_margin" android:text=" - " />
+        <TextView android:textSize="@dimen/default_margin" android:id="@id/valueCoverage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" android:textAlignment="center" />
+    </LinearLayout>
+    <View android:id="@id/viewBottom" android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

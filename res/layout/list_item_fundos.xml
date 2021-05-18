@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding">
+        <TextView android:textSize="17.0dip" android:textColor="#ff000000" android:id="@id/textview_nome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nome do fundos" />
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_seta_right" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_saldo_bruto" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_saldo_bruto_fundos" />
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_saldo_bruto_fundos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 00.000,00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_saldo_liquido" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_saldo_liquido_fundos" />
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_saldo_liquido_fundos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 00.000,00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/label_aplicacao_minima_e_adicional" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="aplicacao_minima" />
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_aplicacao_minima_adicional" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 00.000,00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_risco" />
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_risco" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Médio" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_rentabilidade_12" />
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_rentabilidade_12" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="+12,30%" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_limite_cancelamento" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_horario_limite_movimentacao" />
+        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_limite_cancelamento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 00.000,00" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/colorGrayDividerf1" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" />
+    <LinearLayout android:orientation="horizontal" android:id="@id/linear_button_bottom" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:background="#fff1f1f1" android:layout_width="fill_parent" android:layout_height="3.0dip" />
+</LinearLayout>

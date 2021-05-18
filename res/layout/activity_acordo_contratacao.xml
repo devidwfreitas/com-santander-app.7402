@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/scroll_container_acordo" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:id="@id/forma_pagamento_title_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/acordo_contratacao_forma_pagamento_boleto_title" />
+            <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:id="@id/data_referente_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Valores referentes a data de 15/02/2017" />
+            <View android:background="@color/gray5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Quantidade de contratos renegociados" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/contratos_quantidade_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="3" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Valor renegociado" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/valor_renegociacao_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="R$ 30.000,00" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Quantidade de parcelas" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/quantidade_parcela_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="30x" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Valor do desconto" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/valor_desconto_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="R$ 10.000,00" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Dia de débito" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/dia_vencimento_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="15" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Valor das parcelas" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/valor_parcela_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="R$ 1.125,00" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Vencimento 1ª parcela" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/data_vencimento_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="15/02/2017" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Valor de IOF" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/valor_iof_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="R$ 80,00" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Forma de pagamento" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/forma_pagamento_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Boleto" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Taxa de juros mensal" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/taxa_juros_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="1,99%" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CET" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/cet_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="1,99%" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/conta_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:id="@id/label_conta_corrente" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Conta Corrente" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/conta_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+            <View android:background="@color/gray5" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" />
+            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TERMOS E CONDIÇÕES" android:textAllCaps="true" />
+            <android.support.v7.widget.RecyclerView android:id="@id/termos_condicoes_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+            <CheckBox android:id="@id/aceite_check_box" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/acordo_contratacao_aceite_termos" />
+            <com.santander.app.components.view.SantanderButtonView android:enabled="false" android:textAppearance="?android:textAppearanceMedium" android:id="@id/continuar_button" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx3" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/acordo_contratar_button" style="@style/Santander.PillRed" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include android:layout_alignParentTop="true" android:layout_alignParentStart="true" layout="@layout/include_cso_validacao" />
+</RelativeLayout>

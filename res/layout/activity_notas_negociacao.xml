@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/notas_loading" android:visibility="gone" layout="@layout/layout_loading_state" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/notas_scroll" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_header_pequeno" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/inv_black_two" android:layout_gravity="center_horizontal" android:id="@id/notas_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/inv_black_two" android:layout_gravity="center_horizontal" android:id="@id/notas_subtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <android.support.v7.widget.RecyclerView android:id="@id/notas_grupos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" />
+            <TextView android:textColor="@color/inv_black_two" android:id="@id/notas_texto" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="5.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="5.0dip" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@color/inv_black_two" android:layout_gravity="end" android:id="@id/notas_assinatura" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:textAlignment="textEnd" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+                <TextView android:textColor="@color/inv_black_two" android:layout_gravity="end" android:id="@id/notas_assinatura_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="textEnd" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+            </LinearLayout>
+            <TextView android:textColor="@color/inv_black_two" android:layout_gravity="start" android:id="@id/notas_sac" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

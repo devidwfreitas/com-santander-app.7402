@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center_horizontal" android:background="@color/colorWhite" android:paddingLeft="@dimen/default_padding" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/colorTransparent" android:layout_width="1000.0dip" android:layout_height="0.5dip" />
+        <TextView android:textSize="@dimen/text_size_title" android:textStyle="bold" android:textColor="@color/colorGray" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" />
+        <ImageView android:id="@id/ivImage" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="@dimen/default_margin" android:scaleType="centerCrop" />
+        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:id="@id/tvDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:textAlignment="center" />
+        <Button android:textSize="@dimen/default_text_size" android:textColor="@color/colorPrimary" android:gravity="center" android:id="@id/btClose" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:foreground="?selectableItemBackground" android:text="@string/close_dialog" />
+    </LinearLayout>
+</ScrollView>

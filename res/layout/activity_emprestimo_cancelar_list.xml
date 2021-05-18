@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.RecyclerView android:id="@id/recycle_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/simular_contratar_button" />
+    <br.com.santander.uisdk.error.SantanderErrorView android:id="@id/error_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/simular_contratar_button" app:screen_error_type="button" app:screen_error_icon="@drawable/ic_error_nao_possui_emprestimo" app:screen_error_title="@string/message_sem_emprestimo_cancelamento" app:screen_error_button_title="@string/cancelar_emprestimo_novo_emprestimo" />
+    <FrameLayout android:id="@id/cso_validacao_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</RelativeLayout>

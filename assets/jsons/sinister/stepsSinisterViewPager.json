@@ -1,0 +1,32 @@
+[
+  {
+    "id" : "0",
+    "name": "Avisado",
+    "statusCheck" : true,
+    "visibleCheck" : true
+  },
+  {
+    "id" : "1",
+    "name": "Vistoria",
+    "statusCheck" : true,
+    "visibleCheck" : true
+  },
+  {
+    "id" : "2",
+    "name": "Documentação",
+    "statusCheck" : true,
+    "visibleCheck" : false
+  },
+  {
+    "id" : "3",
+    "name": "Análise",
+    "statusCheck" : true,
+    "visibleCheck" : true
+  },
+  {
+    "id" : "4",
+    "name": "Concluído",
+    "statusCheck" : true,
+    "visibleCheck" : true
+  }
+]

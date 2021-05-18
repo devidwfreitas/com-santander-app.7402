@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:weightSum="2.0" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="left|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:layout_gravity="center" android:id="@id/textView_pais_viagem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView_data_inicial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12345678" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView_data_final" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="112312" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <com.santander.app.components.view.SantanderTextView android:id="@id/textView_cod_pais" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" app:opensans_regular="opensans_regular.ttf" />
+        <ImageView android:id="@id/img_excluir" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:src="@drawable/icon_excluir" />
+    </LinearLayout>
+</LinearLayout>

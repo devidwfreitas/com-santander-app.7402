@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:id="@id/rl_item_list_2_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:id="@id/tv_item_label" android:layout_width="248.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginTop="15.0dip" android:text="LOREM IPSUM" android:maxLines="2" android:layout_alignParentLeft="true" app:opensans_regular="opensans_regular.ttf" />
+        <RelativeLayout android:layout_gravity="center" android:id="@id/rl_item_list_line_1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx6" android:layout_below="@id/tv_item_label">
+            <com.santander.app.components.view.SantanderTextView android:id="@id/tv_item_label_line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="R$ 200,00" android:layout_alignParentLeft="true" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/tv_item_value_line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="R$ 200,00" android:layout_alignParentRight="true" app:opensans_regular="opensans_regular.ttf" />
+        </RelativeLayout>
+        <RelativeLayout android:layout_gravity="center" android:id="@id/rl_item_list_line_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx6" android:layout_below="@id/rl_item_list_line_1">
+            <com.santander.app.components.view.SantanderTextView android:id="@id/tv_item_label_line_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="R$ 200,00" android:layout_alignParentLeft="true" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/tv_item_value_line_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="R$ 200,00" android:layout_alignParentRight="true" app:opensans_regular="opensans_regular.ttf" />
+        </RelativeLayout>
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/rl_item_list_1_line" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_item_list_2_line">
+        <com.santander.app.components.view.SantanderTextView android:id="@id/tv_item_label_line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginTop="15.0dip" android:text="LOREM IPSUM" android:layout_alignParentLeft="true" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:id="@id/tv_item_value_line_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginRight="10.0dip" android:text="R$ 200,00" android:layout_alignParentRight="true" app:opensans_regular="opensans_regular.ttf" />
+    </RelativeLayout>
+</RelativeLayout>

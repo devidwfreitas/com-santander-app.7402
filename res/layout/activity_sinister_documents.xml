@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/small_margin" android:layout_above="@id/rlButtonsAudio">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="vertical" android:id="@id/top" android:paddingLeft="@dimen/default_padding" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true">
+                    <ImageView android:layout_gravity="center" android:id="@id/ivTop" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_list" />
+                    <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/need_a_documentV2" fontPath="fonts/openSans-semibold.ttf" />
+                    <TextView android:textSize="@dimen/small_text_size" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_padding" android:text="@string/send_document_later" fontPath="fonts/openSans-Light.ttf" />
+                    <FrameLayout android:id="@id/flClickPaymentData" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:layout_marginBottom="3.0dip">
+                        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textColor="@color/colorGray" android:id="@id/descPaymentData" android:paddingTop="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip" android:text="@string/payment_data" android:layout_toLeftOf="@id/ivPaymentData" />
+                            <ImageView android:id="@id/ivPaymentData" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="3.0dip" android:src="@drawable/ic_edit2" android:layout_alignParentRight="true" />
+                            <TextView android:textSize="@dimen/small_text_size" android:id="@id/tvPaymentData" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivPaymentData" android:layout_below="@id/descPaymentData" />
+                        </RelativeLayout>
+                    </FrameLayout>
+                    <View android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/small_margin" />
+                </LinearLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/rvDocumentList" android:paddingLeft="@dimen/small_margin" android:paddingRight="@dimen/default_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/top" />
+            </RelativeLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <RelativeLayout android:id="@id/rlButtonsAudio" android:background="#ffffffff" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <Button android:textSize="@dimen/default_text_size" android:layout_gravity="center" android:id="@id/btAddDocument" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:text="@string/add" style="@style/AppTheme.ButtonTransparentStrokeBlue" />
+            <Button android:textSize="@dimen/default_text_size" android:id="@id/btFinalize" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="@dimen/default_margin" android:text="@string/continue_document" android:layout_below="@id/btAddDocument" style="@style/AppTheme.ButtonRedDark2" />
+        </RelativeLayout>
+    </RelativeLayout>
+</br.com.zup.multistatelayout.MultiStateLayout>

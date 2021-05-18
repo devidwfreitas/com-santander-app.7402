@@ -1,0 +1,17 @@
+.class public interface abstract Lmsd;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public abstract a(Ljava/lang/Exception;)V
+.end method
+
+.method public abstract a(Lmrp;Z)V
+.end method
+
+.method public abstract b()V
+.end method

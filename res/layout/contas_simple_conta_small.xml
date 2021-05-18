@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/contaBackgroundText" android:id="@id/conta_name_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Conta Santander" android:maxLines="1" android:layout_centerHorizontal="true" app:opensans_regular="opensans_bold.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaBackgroundText" android:id="@id/conta_number_small" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9999 / 99.99999999.9" android:layout_below="@id/contaName" android:layout_centerHorizontal="true" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,260 @@
+{
+  "quotations": [
+    {
+      "product": {
+        "code": "1",
+        "subproductCode": "1"
+      },
+      "insuredAmountValue": "000000004000000",
+      "number": "",
+      "orderNumber": "",
+      "prizeValue": "000000000037162",
+      "assistances": [
+        {
+          "code": "",
+          "description": "Super Viagem"
+        },
+        {
+          "code": "",
+          "description": "Auxilio Funeral"
+        },
+        {
+          "code": "",
+          "description": "Help tech"
+        }
+      ],
+      "coverages": [
+        {
+          "code": "2",
+          "description": "Em caso de invalidez permanente total ou parcial",
+          "daysQuantity": "",
+          "graceDaysQuantity": "",
+          "maximumValue": "",
+          "percentageRate": "",
+          "prizeValue": "",
+          "sequentialAddressNumber": "",
+          "sequentialGroupNumber": "",
+          "deductible": {
+            "code": "",
+            "percentage": "",
+            "value": ""
+          },
+          "equipment": {
+            "code": "",
+            "installationDate": "",
+            "sequentialNumber": ""
+          },
+          "insured": {
+            "itemNumber": "",
+            "value": "000000002000000"
+          }
+        },
+        {
+          "code": "3",
+          "description": "Caso identifique alguma doença grave",
+          "daysQuantity": "",
+          "graceDaysQuantity": "",
+          "maximumValue": "",
+          "percentageRate": "",
+          "prizeValue": "",
+          "sequentialAddressNumber": "",
+          "sequentialGroupNumber": "",
+          "deductible": {
+            "code": "",
+            "percentage": "",
+            "value": ""
+          },
+          "equipment": {
+            "code": "",
+            "installationDate": "",
+            "sequentialNumber": ""
+          },
+          "insured": {
+            "itemNumber": "",
+            "value": "000000003000000"
+          }
+        },
+        {
+          "code": "33",
+          "description": "Caso identifique alguma doença grave",
+          "daysQuantity": "",
+          "graceDaysQuantity": "",
+          "maximumValue": "",
+          "percentageRate": "",
+          "prizeValue": "",
+          "sequentialAddressNumber": "",
+          "sequentialGroupNumber": "",
+          "deductible": {
+            "code": "",
+            "percentage": "",
+            "value": ""
+          },
+          "equipment": {
+            "code": "",
+            "installationDate": "",
+            "sequentialNumber": ""
+          },
+          "insured": {
+            "itemNumber": "",
+            "value": "000000003000000"
+          }
+        },
+        {
+          "code": "4",
+          "description": "Caso identifique alguma doença grave",
+          "daysQuantity": "",
+          "graceDaysQuantity": "",
+          "maximumValue": "",
+          "percentageRate": "",
+          "prizeValue": "",
+          "sequentialAddressNumber": "",
+          "sequentialGroupNumber": "",
+          "deductible": {
+            "code": "",
+            "percentage": "",
+            "value": ""
+          },
+          "equipment": {
+            "code": "",
+            "installationDate": "",
+            "sequentialNumber": ""
+          },
+          "insured": {
+            "itemNumber": "",
+            "value": "000000003000000"
+          }
+        }
+      ]
+    },
+    {
+      "product": {
+        "code": "2",
+        "subproductCode": "2"
+      },
+      "insuredAmountValue": "000000002000000",
+      "number": "",
+      "orderNumber": "",
+      "prizeValue": "000000000027162",
+      "assistances": [
+        {
+          "code": "",
+          "description": "Super Viagem"
+        },
+        {
+          "code": "",
+          "description": "Auxilio Funeral"
+        },
+        {
+          "code": "",
+          "description": "Help tech"
+        },
+        {
+          "code": "",
+          "description": "Seu ajudante"
+        }
+      ],
+      "coverages": [
+        {
+          "code": "1",
+          "description": "Em caso de morte sua familia recebe",
+          "daysQuantity": "",
+          "graceDaysQuantity": "",
+          "maximumValue": "",
+          "percentageRate": "",
+          "prizeValue": "",
+          "sequentialAddressNumber": "",
+          "sequentialGroupNumber": "",
+          "deductible": {
+            "code": "",
+            "percentage": "",
+            "value": ""
+          },
+          "equipment": {
+            "code": "",
+            "installationDate": "",
+            "sequentialNumber": ""
+          },
+          "insured": {
+            "itemNumber": "",
+            "value": "000000005000000"
+          }
+        },
+        {
+          "code": "2",
+          "description": "Em caso de invalidez permanente total ou parcial",
+          "daysQuantity": "",
+          "graceDaysQuantity": "",
+          "maximumValue": "",
+          "percentageRate": "",
+          "prizeValue": "",
+          "sequentialAddressNumber": "",
+          "sequentialGroupNumber": "",
+          "deductible": {
+            "code": "",
+            "percentage": "",
+            "value": ""
+          },
+          "equipment": {
+            "code": "",
+            "installationDate": "",
+            "sequentialNumber": ""
+          },
+          "insured": {
+            "itemNumber": "",
+            "value": "000000001000000"
+          }
+        },
+        {
+          "code": "3",
+          "description": "Caso identifique alguma doença grave",
+          "daysQuantity": "",
+          "graceDaysQuantity": "",
+          "maximumValue": "",
+          "percentageRate": "",
+          "prizeValue": "",
+          "sequentialAddressNumber": "",
+          "sequentialGroupNumber": "",
+          "deductible": {
+            "code": "",
+            "percentage": "",
+            "value": ""
+          },
+          "equipment": {
+            "code": "",
+            "installationDate": "",
+            "sequentialNumber": ""
+          },
+          "insured": {
+            "itemNumber": "",
+            "value": "000000003000000"
+          }
+        },
+        {
+          "code": "4",
+          "description": "Caso identifique alguma doença grave",
+          "daysQuantity": "",
+          "graceDaysQuantity": "",
+          "maximumValue": "",
+          "percentageRate": "",
+          "prizeValue": "",
+          "sequentialAddressNumber": "",
+          "sequentialGroupNumber": "",
+          "deductible": {
+            "code": "",
+            "percentage": "",
+            "value": ""
+          },
+          "equipment": {
+            "code": "",
+            "installationDate": "",
+            "sequentialNumber": ""
+          },
+          "insured": {
+            "itemNumber": "",
+            "value": "000000003000000"
+          }
+        }
+      ]
+    }
+  ]
+}

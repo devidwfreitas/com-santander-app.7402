@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/cambio_label_motivo_envio_alt" app:opensans_regular="opensans_regular.ttf" />
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:id="@id/lineview_separator" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="@dimen/commonpaddingx2" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/textview_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disponibilidade" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_descricao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="valor até R$20.000 acumulado no mês vigente,  neste CPF (incluindo esta remessa)" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:id="@id/textview_pergunta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="Qual o valor total enviado em reais por CPF neste mês, incluindo esta remessa?" app:opensans_regular="opensans_regular.ttf" />
+            <android.support.design.widget.TextInputLayout android:id="@id/inputlayout_valor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_valor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="R$ 0,00" android:maxLines="1" android:singleLine="true" android:inputType="number" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <View android:id="@id/lineview_separator" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/commonpaddingx2" />
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_ok" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/button_view_ok" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+    </LinearLayout>
+</LinearLayout>

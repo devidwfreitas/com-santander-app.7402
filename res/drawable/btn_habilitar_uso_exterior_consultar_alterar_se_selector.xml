@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <item android:state_enabled="false" android:drawable="@drawable/button_habilitacao_exterior_alterar_select_desabilitado" />
+    <item android:drawable="@drawable/button_habilitacao_exterior_alterar_select_desabilitado" santander:state_desabilitado="true" />
+    <item android:state_pressed="true" android:drawable="@drawable/button_habilitacao_exterior_alterar_select_pressed" />
+    <item android:drawable="@drawable/button_habilitacao_exterior_alterar_select" />
+</selector>

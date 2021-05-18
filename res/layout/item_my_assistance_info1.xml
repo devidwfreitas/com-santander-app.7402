@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="11.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Deseja cancelar ou remarcar sua assistência?" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/default_margin">
+        <Button android:textSize="10.0sp" android:id="@id/btCancel" android:layout_width="wrap_content" android:layout_height="26.0dip" android:text="@string/cancel" style="@style/AppTheme.ButtonTransparentStrokeBlue" />
+        <Button android:textSize="10.0sp" android:id="@id/btReschedule" android:layout_width="wrap_content" android:layout_height="26.0dip" android:layout_marginLeft="@dimen/small_margin" android:text="@string/reschedule" style="@style/AppTheme.ButtonRedFilled" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:id="@id/main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SegmentTextView android:textStyle="bold" android:textColor="@color/red" android:id="@id/labelConfirmacao" android:paddingTop="@dimen/textmarginx2" android:paddingBottom="@dimen/textmarginx2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Detalhes do Agendamento" />
+        <com.santander.app.components.view.SegmentLineView android:id="@id/linhaConfirmacao" android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="10.0dip" android:layout_below="@id/labelConfirmacao" />
+        <LinearLayout android:orientation="vertical" android:id="@id/lista" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <com.santander.app.components.view.SantanderButtonView android:textSize="12.0dip" android:layout_gravity="center" android:id="@id/buttonCancelarAgendamento" android:layout_height="50.0dip" android:layout_marginTop="20.0dip" android:layout_marginBottom="@dimen/commonpaddingmin2" android:text="Cancelar Agendamento" android:layout_alignParentBottom="true" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+</ScrollView>

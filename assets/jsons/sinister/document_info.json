@@ -1,0 +1,181 @@
+{
+  "001": {
+    "hide": true,
+    "title": "Aviso de sinistro residencial",
+    "description": "Aviso de sinistro residencial (Formulário anexo)"
+  },
+  "002": {
+    "title": "Boletim de ocorrência",
+    "description": "Boletim de ocorrência policial. Você pode conseguir na delegacia de polícia"
+  },
+  "003": {
+    "title": "Certidão do corpo de bombeiros",
+    "description": "Você pode conseguir nos Bombeiros."
+  },
+  "004": {
+    "title": "Certidão de registro do imóvel",
+    "description": "Esse documento é necessário quando houver danos ao imóvel. "
+  },
+  "005": {
+    "hide": true,
+    "title": "Laudo pericial",
+    "description": "Não aplicável ao residencial."
+  },
+  "007": {
+    "title": "Orçamento material e mão-de-obra",
+    "description": "O Segurado deverá realizar orçamento em qualquer assistência técnica com discriminativo de material e mão de obra em papel timbrado da empresa fornecedora."
+  },
+  "017": {
+    "title": "Contrato de locação",
+    "description": "O documento deve ser enviado para comprovação do pagamento de aluguel."
+  },
+  "018": {
+    "title": "Certidão do corpo de bombeiros",
+    "description": "Você pode conseguir nos Bombeiros."
+  },
+  "019": {
+    "hide": true,
+    "title": "Montante dos prejuízos",
+    "description": "Não aplicável ao residencial."
+  },
+  "021": {
+    "hide": true,
+    "title": "Laudos técnicos da empresas especializadas",
+    "description": "Não aplicável ao residencial."
+  },
+  "022": {
+    "title": "Carta do terceiro",
+    "description": "Explicando o que ocorreu e com os dados bancários para efetuarmos o pagamento."
+  },
+  "023": {
+    "title": "Documento pessoal do segurado",
+    "description": "Qualquer documento com foto que tenha a informação de CPF e RG."
+  },
+  "024": {
+    "hide": true,
+    "title": "Boletim meteorológico ou recorte de jornal informando qual a velocidade dos ventos na data",
+    "description": "Dispensamos esse documento para o Residencial. "
+  },
+  "025": {
+    "title": "Comprovantes de pré-existência ",
+    "description": "Cópia das notas fiscais, em nome do segurado ou seus dependentes que comprovem a preexistência dos bens."
+  },
+  "026": {
+    "hide": true,
+    "title": "Relação dos bens sinistrados",
+    "description": "Excluir esse documento do APP"
+  },
+  "033": {
+    "title": "Documento pessoal do segurado",
+    "description": "Qualquer documento com foto que tenha a informação de CPF e RG."
+  },
+  "034": {
+    "hide": true,
+    "title": "Certidão de óbito ( xerox autenticada )",
+    "description": "Não aplicável ao residencial."
+  },
+  "035": {
+    "hide": true,
+    "title": "Ficha de registro do empregado",
+    "description": "Não aplicável ao residencial."
+  },
+  "036": {
+    "hide": true,
+    "title": "Nota fiscal",
+    "description": "Excluir esse documento do APP"
+  },
+  "037": {
+    "title": "Documento pessoal do segurado",
+    "description": "Qualquer documento com foto que tenha a informação de CPF e RG. "
+  },
+  "038": {
+    "hide": true,
+    "title": "Certidão de casamento atualizada ( xerox autenticada )",
+    "description": "Não aplicável ao residencial."
+  },
+  "039": {
+    "hide": true,
+    "title": "Certidão de nascimento dos filhos ( menores ) ou cpf e rg dos filhos ( maiores ) - ( xerox autenticada )",
+    "description": "Não aplicável ao residencial."
+  },
+  "040": {
+    "hide": true,
+    "title": "Demonstrativo dos prejuízos com seus comprovantes",
+    "description": "Dispensamos esse documento para o Residencial. "
+  },
+  "042": {
+    "hide": true,
+    "title": "Alta médica ( original )",
+    "description": "Não aplicável ao residencial."
+  },
+  "045": {
+    "hide": true,
+    "title": "Despesas médicas ( original )",
+    "description": "Não aplicável ao residencial."
+  },
+  "046": {
+    "hide": true,
+    "title": "Declaração da inexistência de outros seguros",
+    "description": "Como será automático, retirar esse documento da lista do APP"
+  },
+  "048": {
+    "hide": true,
+    "title": "Relatório médico detalhando relatando  doença do segurado",
+    "description": "Não aplicável ao residencial."
+  },
+  "050": {
+    "hide": true,
+    "title": "Carta de concessão de aposentaria pelo inss",
+    "description": "Não aplicável ao residencial."
+  },
+  "051": {
+    "hide": true,
+    "title": "Exames médicos da época da constatação da doença informando o comprometimento da autonomia funcional do segurado",
+    "description": "Não aplicável ao residencial."
+  },
+  "052": {
+    "hide": true,
+    "title": "Aviso de sinistro por morte - 02 vias originais pelo médico e reconhecida firma",
+    "description": "Não aplicável ao residencial."
+  },
+  "053": {
+    "hide": true,
+    "title": "Raio x das lesões afetadas.",
+    "description": "Não aplicável ao residencial."
+  },
+  "054": {
+    "title": "Comprovante de endereço",
+    "description": "O comprovante deve estar em nome do segurado."
+  },
+  "055": {
+    "title": "Documento pessoal do segurado",
+    "description": "Qualquer documento com foto que tenha a informação de CPF e RG. "
+  },
+  "056": {
+    "hide": true,
+    "title": "Excluir esse documento (não mostrar no APP)",
+    "description": "Não aplicável ao residencial."
+  },
+  "096": {
+    "hide": true,
+    "title": "Nota fiscal relativa a troca do vidro sinistrado",
+    "description": "Excluir esse documento do APP"
+  },
+  "097": {
+    "title": "Danos em computadores",
+    "description": "O laudo técnico deverá informar a configuração completa do micro sinistrado."
+  },
+  "101": {
+    "title": "Orçamento material e mão-de-obra",
+    "description": "O Segurado deverá realizar orçamento em qualquer assistência técnica com discriminativo de material e mão de obra em papel timbrado da empresa fornecedora."
+  },
+  "102": {
+    "hide": true,
+    "title": "Aviso de sinistro empresarial",
+    "description": "Dispensamos esse documento para o Residencial. "
+  },
+  "103": {
+    "title": "Orçamento material e mão-de-obra",
+    "description": "O Segurado deverá realizar orçamento em qualquer assistência técnica com discriminativo de material e mão de obra em papel timbrado da empresa fornecedora."
+  }
+}

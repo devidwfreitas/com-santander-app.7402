@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:textColor="@color/black" android:id="@id/textview_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Disponibilidade" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_descricao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="valor até R$20.000 acumulado no mês vigente,  neste CPF (incluindo esta remessa)" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:layout_gravity="bottom" android:id="@id/lineview_separator" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" />
+</android.support.v7.widget.CardView>

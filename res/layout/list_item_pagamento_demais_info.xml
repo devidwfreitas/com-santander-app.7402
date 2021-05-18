@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textSize="14.0dip" android:id="@id/textview_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Label Label" />
+        <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textSize="14.0dip" android:textColor="@color/black" android:id="@id/textview_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor valor" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

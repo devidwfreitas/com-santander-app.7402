@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="300.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+            <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="#dd000000" android:id="@id/dialg_title" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_composicao" android:fontFamily="sans-serif-medium" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:id="@id/label_regra_antiga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:text="@string/label_regra_anterior" android:layout_alignParentTop="true" android:lineSpacingExtra="10.0sp" android:fontFamily="sans-serif" android:layout_alignParentStart="true" />
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:gravity="end" android:id="@id/vlr_nova_antiga" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 30.000,00" android:layout_centerVertical="true" android:lineSpacingExtra="10.0sp" android:fontFamily="sans-serif" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View android:background="#fff0f0f0" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:id="@id/label_nova_regra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="120.0dip" android:text="@string/label_regra_nova" android:layout_alignParentTop="true" android:lineSpacingExtra="10.0sp" android:fontFamily="sans-serif" android:layout_alignParentStart="true" />
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:gravity="end" android:id="@id/vlr_nova_regra" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 4.531,85" android:layout_centerVertical="true" android:lineSpacingExtra="10.0sp" android:fontFamily="sans-serif" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+            <View android:background="@color/inv_pinkish_grey" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginTop="15.0dip" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/det_subp_lbl_valor_total" android:lineSpacingExtra="10.0sp" android:fontFamily="sans-serif-medium" />
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:gravity="end" android:id="@id/total_investido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 34.531,85" android:lineSpacingExtra="10.0sp" android:fontFamily="sans-serif-medium" android:layout_alignParentEnd="true" />
+            </RelativeLayout>
+        </LinearLayout>
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip">
+            <Button android:textSize="16.0sp" android:textColor="@color/inv_tealish" android:id="@id/btn_fechar" android:background="@color/inv_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_fechar" android:fontFamily="sans-serif-medium" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

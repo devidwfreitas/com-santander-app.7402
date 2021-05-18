@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="center_horizontal" android:paddingTop="60.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_dda" />
+        <TextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="#ff696969" android:gravity="center" android:id="@id/text_view_title_error" android:paddingLeft="20.0sp" android:paddingTop="20.0sp" android:paddingRight="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <TextView android:textSize="20.0sp" android:textColor="#ffbebebe" android:gravity="center" android:id="@id/text_view_subtitle_error" android:paddingLeft="20.0sp" android:paddingTop="20.0sp" android:paddingRight="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_cadastro_dda" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="20.0sp" android:paddingTop="20.0sp" android:paddingRight="20.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textColor="@android:color/darker_gray" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="CPF" />
+                <TextView android:textSize="34.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center" android:id="@id/textview_cpf_cadastro_dda" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </LinearLayout>
+            <View android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="20.0sp" android:layout_marginTop="10.0sp" android:layout_marginRight="20.0sp" />
+            <CheckBox android:id="@id/checkbox_termo_adesao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0sp" android:layout_marginTop="20.0sp" android:layout_marginRight="20.0sp" />
+            <Button android:layout_gravity="center" android:id="@id/button_cadastrar_dda" android:layout_width="280.0dip" android:layout_marginTop="30.0sp" android:text="@string/_cadastrar" android:textAllCaps="true" style="@style/Santander.PillRed" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

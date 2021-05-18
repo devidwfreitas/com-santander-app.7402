@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:layout_gravity="center" android:layout_width="260.0dip" android:layout_height="0.100000024dip" />
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textColor="#ff4d4d4d" android:id="@id/tvHelloName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/hello_name2" android:textAlignment="center" app:textStyle="semiBold" />
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textColor="@color/colorGray" android:id="@id/tvHelloName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/to_start_select_the_service_you_want" android:textAlignment="center" app:textStyle="regular" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="30.0dip">
+            <ImageButton android:layout_gravity="center" android:id="@id/ib24h" android:background="@drawable/bg_circle_blue_stroke" android:padding="22.0dip" android:layout_width="65.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_24h" android:scaleType="centerCrop" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="12.0sp" android:textColor="#ff8b8b8b" android:id="@id/segurosTextView5" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/twenty_four_h_assistance" android:textAlignment="center" app:textStyle="regular" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="30.0dip">
+            <ImageButton android:layout_gravity="center" android:id="@id/ibActivateCoverage" android:background="@drawable/bg_circle_blue_stroke" android:padding="20.0dip" android:layout_width="65.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_activate_coverage" android:scaleType="centerCrop" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="12.0sp" android:textColor="#ff8b8b8b" android:id="@id/segurosTextView3" android:layout_width="75.0dip" android:layout_height="wrap_content" android:text="@string/coverage_activation" android:textAlignment="center" app:textStyle="regular" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutCoverageActivation" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+        <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textColor="@color/colorDarkGrayText" android:id="@id/tvTriggeringTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/activate_coverage" android:textAlignment="center" app:textStyle="semiBold" />
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textColor="@color/colorGray" android:id="@id/tvTriggeringText" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/you_can_request_services" android:textAlignment="center" app:textStyle="regular" />
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="280.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin">
+            <Button android:textSize="12.0sp" android:id="@id/btTrigger" android:layout_width="110.0dip" android:layout_height="@dimen/default_button_height2" android:layout_marginRight="10.0dip" android:text="@string/trigger" android:textAllCaps="false" style="@style/AppTheme.ButtonBlueVeryLight" />
+            <Button android:textSize="12.0sp" android:id="@id/btCancel" android:layout_width="110.0dip" android:layout_height="@dimen/default_button_height2" android:layout_marginLeft="10.0dip" android:text="@string/cancel" android:textAllCaps="false" style="@style/AppTheme.ButtonGrayStroke" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

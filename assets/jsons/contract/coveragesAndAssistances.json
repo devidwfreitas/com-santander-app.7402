@@ -1,0 +1,434 @@
+[
+  {
+    "insurance":"VIDA_SELECT",
+    "priority": [
+      {
+        "code":"040"
+      },
+      {
+        "code":"042"
+      },
+      {
+        "code":"472"
+      }
+
+    ],
+    "coveragesInfo":[
+      {
+        "code":"040",
+        "title":"Morte",
+        "resume":"Em caso de morte sua família recebe",
+        "description":"Garante uma indenização em caso de falecimento que tenha ocorrido por causa natural ou acidental."
+      },
+      {
+        "code":"042",
+        "title":"Invalidez permanente total ou parcial por acidente",
+        "resume":"Em caso de invalidez permanente total ou parcial",
+        "description":"Indenização de até 100% do Capital Segurado, proporcional ao grau de invalidez (conforme Tabela de Cálculo de Indenização – SUSEP)."
+      },
+      {
+        "code":"043",
+        "title":"Doença terminal",
+        "resume":"Doença terminal",
+        "description":"Garante a ANTECIPAÇÃO de 10% do Capital Segurado, limitado a R$50 mil, no caso do segurado ser diagnosticado com doença terminal."
+      },
+      {
+        "code":"349",
+        "title":"Indenização adicional por morte acidental",
+        "resume":"Indenização adicional por morte acidental",
+        "description":"Garante uma indenização ADICIONAL de 100% do Capital Segurado em de falecimento que tenha ocorrido EXCLUSIVAMENTE por acidente."
+      },
+      {
+        "code":"356",
+        "title":"Auxílio funeral familiar",
+        "resume":"Auxílio funeral familiar",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$5.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"358",
+        "title":"Auxílio funeral familiar total",
+        "resume":"Auxílio funeral familiar total",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental)."
+      },
+      {
+        "code":"472",
+        "title":"Doenças graves",
+        "resume":"Caso Identifique alguma doença grave",
+        "description":"Garante uma indenização ADICIONAL de 10% do Capital Segurado (limitado a R$ 50 mil) caso o segurado (a) seja diagnosticado com as seguintes doenças: Câncer ou tumor maligno; Doenças cardiológicos; Doenças neurológicas (AVC, Alzheimer, Parkinson, Esclerose Lateral Amiotrófica); Transplante de órgãos vitais (coração, fígado, medula óssea, pâncreas, pulmão e rim); Insuficiência Renal Crônica."
+      }
+    ],
+    "assistancesInfo":[
+      {
+        "code":"1032",
+        "title":"Super Viagem",
+        "resume":"Super Viagem",
+        "description":"Lavanderia (reembolso das despesas com lavanderia durante a viagem, limitado a R$100,00 e 1 intervenção no ano); Guarda de Animais Domésticos (reembolso das despesas com guarda de animais de estimação durante a viagem, limitado a R$50 por dia, com máximo de 5 dias e 1 intervenção por ano)."
+      },
+      {
+        "code":"214",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$ 3.000,00 no plano familiar + Pai, Mãe, Sogro e Sogra."
+      },
+      {
+        "code":"212",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$3.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"1067",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$ 5.000,00 no plano familiar + Pai, Mãe, Sogro e Sogra."
+      },
+      {
+        "code":"1066",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$5.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"1030",
+        "title":"Help Desk",
+        "resume":"Help Desk",
+        "description":"Em casos de problemas que impeçam o funcionamento de hardware, software, sistemas ou internet."
+      },
+      {
+        "code":"1031",
+        "title":"Seu Ajudante",
+        "resume":"Seu Ajudante",
+        "description":"O segurado terá direito a serviços preventivos e de manutenção para pequenos reparos, revisões ou instalações, uma vez por ano e até 3 serviços, sem a necessidade que aconteça um problema emergencial ou evento previsto para utilizar."
+      },
+      {
+        "code":"1008",
+        "title":"Segunda Opinião Médica Internacional",
+        "resume":"Segunda Opinião Médica Internacional",
+        "description":"Parecer a respeito do diagnóstico, conduta ou prognóstico relativo a um caso clínico, emitido por um Centro Hospitalar de referência nos Estados Unidos."
+      }
+    ]
+  },
+  {
+    "insurance":"VAN_GOGH",
+    "priority": [
+      {
+        "code":"040"
+      },
+      {
+        "code":"042"
+      },
+      {
+        "code":"472"
+      }
+
+    ],
+    "coveragesInfo":[
+      {
+        "code":"040",
+        "title":"Morte",
+        "resume":"Em caso de morte sua família recebe",
+        "description":"Garante uma indenização em caso de falecimento que tenha ocorrido por causa natural ou acidental."
+      },
+      {
+        "code":"042",
+        "title":"Invalidez permanente total ou parcial por acidente",
+        "resume":"Em caso de invalidez permanente total ou parcial",
+        "description":"Indenização de até 100% do Capital Segurado, proporcional ao grau de invalidez (conforme Tabela de Cálculo de Indenização – SUSEP)."
+      },
+      {
+        "code":"043",
+        "title":"Doença terminal",
+        "resume":"Doença terminal",
+        "description":"Garante a ANTECIPAÇÃO de 10% do Capital Segurado, limitado a R$50 mil, no caso do segurado ser diagnosticado com doença terminal."
+      },
+      {
+        "code":"349",
+        "title":"Indenização adicional por morte acidental",
+        "resume":"Indenização adicional por morte acidental",
+        "description":"Garante uma indenização ADICIONAL de 100% do Capital Segurado em de falecimento que tenha ocorrido EXCLUSIVAMENTE por acidente."
+      },
+      {
+        "code":"356",
+        "title":"Auxílio funeral familiar",
+        "resume":"Auxílio funeral familiar",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$5.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"472",
+        "title":"Doenças graves",
+        "resume":"Caso Identifique alguma doença grave",
+        "description":"Garante uma indenização ADICIONAL de 10% do Capital Segurado (limitado a R$ 50 mil) caso o segurado (a) seja diagnosticado com as seguintes doenças: Câncer ou tumor maligno; Doenças cardiológicos; Doenças neurológicas (AVC, Alzheimer, Parkinson, Esclerose Lateral Amiotrófica); Transplante de órgãos vitais (coração, fígado, medula óssea, pâncreas, pulmão e rim); Insuficiência Renal Crônica."
+      }
+
+    ],
+    "assistancesInfo":[
+      {
+        "code":"1032",
+        "title":"Super Viagem",
+        "resume":"Super Viagem",
+        "description":"Lavanderia (reembolso das despesas com lavanderia durante a viagem, limitado a R$100,00 e 1 intervenção no ano); Guarda de Animais Domésticos (reembolso das despesas com guarda de animais de estimação durante a viagem, limitado a R$50,00l por dia, com máximo de 5 dias e 1 intervenção por ano)."
+      },
+      {
+        "code":"212",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$3.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"1030",
+        "title":"Help Desk",
+        "resume":"Help Desk",
+        "description":"Em casos de problemas que impeçam o funcionamento de hardware, software, sistemas ou internet."
+      },
+      {
+        "code":"1031",
+        "title":"Seu Ajudante",
+        "resume":"Seu Ajudante",
+        "description":"O segurado terá direito a serviços preventivos e de manutenção para pequenos reparos, revisões ou instalações, uma vez por ano e até 3 serviços, sem a necessidade que aconteça um problema emergencial ou evento previsto para utilizar."
+      }
+    ]
+  },
+  {
+    "insurance":"VIDA_HOMEM",
+    "priority": [
+      {
+        "code":"040"
+      },
+      {
+        "code":"042"
+      },
+      {
+        "code":"527"
+      }
+
+    ],
+    "coveragesInfo":[
+      {
+        "code":"040",
+        "title":"Morte",
+        "resume":"Em caso de morte sua família recebe",
+        "description":"Garante uma indenização em caso de falecimento que tenha ocorrido por causa natural ou acidental."
+      },
+      {
+        "code":"042",
+        "title":"Invalidez permanente total ou parcial por acidente",
+        "resume":"Em caso de invalidez permanente total ou parcial",
+        "description":"Indenização de até 100% do Capital Segurado, proporcional ao grau de invalidez (conforme Tabela de Cálculo de Indenização – SUSEP)."
+      },
+      {
+        "code":"043",
+        "title":"Doença terminal",
+        "resume":"Doença terminal",
+        "description":"Garante a ANTECIPAÇÃO de 10% do Capital Segurado, limitado a R$50 mil, no caso do segurado ser diagnosticado com doença terminal."
+      },
+      {
+        "code":"190",
+        "title":"Auxílio funeral",
+        "resume":"Auxílio funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$3.000,00."
+      },
+      {
+        "code":"527",
+        "title":"Diagnostico de câncer de próstata",
+        "resume":"Caso seja diagnosticado com câncer de próstata",
+        "description":"Garante uma indenização ADICIONAL de 10% do Capital Segurado, limitado a R$50 mil, caso o segurado (a) seja diagnosticado com câncer após a contratação do seguro; Cobertura EXCLUSIVA para diagnósticos de: Câncer de Próstata;"
+      }
+    ],
+    "assistancesInfo":[
+      {
+        "code":"210",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$3.000,00."
+      },
+      {
+        "code":"1030",
+        "title":"Help Desk",
+        "resume":"Help Desk",
+        "description":"Em casos de problemas que impeçam o funcionamento de hardware, software, sistemas ou internet."
+      }
+    ]
+  },
+  {
+    "insurance":"VIDA_MULHER",
+    "priority": [
+      {
+        "code":"040"
+      },
+      {
+        "code":"042"
+      },
+      {
+        "code":"528"
+      }
+
+    ],
+    "coveragesInfo":[
+      {
+        "code":"040",
+        "title":"Morte",
+        "resume":"Em caso de morte sua família recebe",
+        "description":"Garante uma indenização em caso de falecimento que tenha ocorrido por causa natural ou acidental."
+      },
+      {
+        "code":"042",
+        "title":"Invalidez permanente total ou parcial por acidente",
+        "resume":"Em caso de invalidez permanente total ou parcial",
+        "description":"Indenização de até 100% do Capital Segurado, proporcional ao grau de invalidez (conforme Tabela de Cálculo de Indenização – SUSEP)."
+      },
+      {
+        "code":"043",
+        "title":"Doença terminal",
+        "resume":"Doença terminal",
+        "description":"Garante a ANTECIPAÇÃO de 10% do Capital Segurado, limitado a R$50 mil, no caso do segurado ser diagnosticado com doença terminal."
+      },
+      {
+        "code":"190",
+        "title":"Auxílio funeral",
+        "resume":"Auxílio funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$ 3.000,00."
+      },
+      {
+        "code":"528",
+        "title":"Diagnostico de câncer de mama, útero e ovário",
+        "resume":"Caso seja diagnosticado com Câncer de Mama, Útero ou Ovário.",
+        "description":"Garante uma indenização ADICIONAL de 10% do Capital Segurado, limitado a R$50 mil, caso o segurado (a) seja diagnosticado com câncer após a contratação do seguro; Cobertura EXCLUSIVA para diagnósticos de: Câncer de Mama, Útero ou Ovário;"
+      }
+    ],
+    "assistancesInfo":[
+      {
+        "code":"210",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental). Limite de R$ 3.000,00."
+      },
+      {
+        "code":"1031",
+        "title":"Seu ajudante",
+        "resume":"Seu ajudante",
+        "description":"O segurado terá direito a serviços preventivos e de manutenção para pequenos reparos, revisões ou instalações, uma vez por ano e até 3 serviços, sem a necessidade que aconteça um problema emergencial ou evento previsto para utilizar."
+      }
+    ]
+  },
+  {
+    "insurance":"ACIDENTES_PESSOAIS",
+    "priority": [
+      {
+        "code":"041"
+      },
+      {
+        "code":"042"
+      },
+      {
+        "code":"380"
+      }
+
+    ],
+    "coveragesInfo":[
+      {
+        "code":"041",
+        "title":"Morte acidental",
+        "resume":"Em caso de morte acidental sua família recebe",
+        "description":"Garante uma indenização em caso de falecimento que tenha ocorrido exclusivamente por Acidentes Pessoais."
+      },
+      {
+        "code":"042",
+        "title":"Invalidez permanente total ou parcial por acidente",
+        "resume":"Em caso de invalidez permanente total ou parcial",
+        "description":"Indenização de até 100% do Capital Segurado, proporcional ao grau de invalidez (conforme Tabela de Cálculo de Indenização – SUSEP)."
+      },
+      {
+        "code":"190",
+        "title":"Auxílio funeral",
+        "resume":"Auxílio funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental) Limite de R$ 2.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"356",
+        "title":"Auxílio funeral familiar",
+        "resume":"Auxílio funeral familiar",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental) Limite de R$ 2.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"380",
+        "title":"Internação hospitalar por acidente",
+        "resume":"Em caso de internação você conta com uma cobertura de até",
+        "description":"Garante ao segurado uma diária de R$50,00 até R$150,00, em caso de internação hospitalar que impedirá o exercício de suas funções."
+      }
+    ],
+    "assistancesInfo":[
+      {
+        "code":"1036",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental) Limite de R$ 2.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"1035",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental) Limite de R$ 2.000,00."
+      },
+      {
+        "code":"210",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental) Limite de R$3.000,00."
+      },
+      {
+        "code":"212",
+        "title":"Auxílio Funeral",
+        "resume":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental) Limite de R$3.000,00 no plano familiar (segurado, cônjuge e filhos)."
+      },
+      {
+        "code":"1029",
+        "title":"Assistência Cesta Básica",
+        "resume":"Assistência Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 12 meses, no valor de R$180,00, em caso de falecimento do segurado."
+      },
+      {
+        "code":"1028",
+        "title":"Assistência Cesta Básica",
+        "resume":"Assistência Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 6 meses, no valor de R$180,00, em caso de falecimento do segurado."
+      },
+      {
+        "code":"1050",
+        "title":"Assistência Cesta Básica",
+        "resume":"Assistência Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 6 meses, no valor de R$240,00, em caso de falecimento do segurado."
+      },
+      {
+        "code":"1051",
+        "title":"Assistência Cesta Básica",
+        "resume":"Assistência Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 12 meses, no valor de R$240,00, em caso de falecimento do segurado."
+      },
+      {
+        "code":"1052",
+        "title":"Assistência Cesta Básica",
+        "resume":"Assistência Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 6 meses, no valor de R$300,00, em caso de falecimento do segurado."
+      },
+      {
+        "code":"1053",
+        "title":"Assistência Cesta Básica",
+        "resume":"Assistência Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 12 meses, no valor de R$300,00, em caso de falecimento do segurado."
+      },
+      {
+        "code":"1054",
+        "title":"Assistência Cesta Básica",
+        "resume":"Assistência Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 6 meses, no valor de R$360,00, em caso de falecimento do segurado."
+      },
+      {
+        "code":"1055",
+        "title":"Assistência Cesta Básica",
+        "resume":"Assistência Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 12 meses, no valor de R$360,00, em caso de falecimento do segurado."
+      }
+    ]
+  }
+]

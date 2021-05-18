@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/inv_white_two" android:paddingTop="19.0dip" android:layout_width="fill_parent" android:layout_height="70.0dip" android:paddingStart="20.0dip" android:paddingEnd="0.0dip">
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:id="@id/toast_msg_link" android:paddingBottom="15.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_retomar_apli" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" android:layout_marginEnd="44.0dip" android:layout_toStartOf="@id/toast_dismiss_btn" android:layout_alignParentStart="true" />
+        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:id="@id/toast_msg_parametrizada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Voce possue um carrinho" android:maxLines="1" android:layout_alignParentTop="true" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" android:layout_marginEnd="44.0dip" android:layout_toStartOf="@id/toast_dismiss_btn" android:layout_alignParentStart="true" />
+        <ImageButton android:id="@id/toast_dismiss_btn" android:background="@color/inv_transparent" android:padding="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_inv" android:tint="@color/inv_black_two_40" android:layout_centerVertical="true" android:contentDescription="@string/app_back" android:layout_marginEnd="0.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <View android:id="@id/apli_previdecia_cor_aplicacao" android:background="@color/inv_black_two_20" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

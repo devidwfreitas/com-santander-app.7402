@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textAppearance="@style/TextAppearance.AppCompat.Light.SearchResult.Title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip" android:text="@string/select_one_option" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="16.0dip">
+        <TextView android:gravity="center" android:id="@id/text_action_camera" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/action_camera" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/text_action_gallery" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/action_gallery" android:layout_weight="1.0" />
+        <TextView android:gravity="center" android:id="@id/text_action_document" android:padding="8.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/action_document" android:layout_weight="1.0" />
+    </LinearLayout>
+</LinearLayout>

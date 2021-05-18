@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="horizontal" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" android:src="@drawable/ico_limites_padrao" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/transferencias_lista_favorecidos_label_limite_padrao" />
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" android:src="@drawable/ico_limites_extra" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/transferencias_lista_favorecidos_label_limite_extra" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:id="@id/linearlayout_box_buscar_favorecidos" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding">
+            <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_busca_favorecido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Busque por um favorecido cadastrado" android:maxLines="1" android:ems="10" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+        </android.support.design.widget.TextInputLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_listagem_favorecidos" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="1.0" />
+        <com.santander.app.components.view.SantanderButtonView android:layout_gravity="end|bottom|center" android:id="@id/floatingbutton_cad_favorecido" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx4" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx4" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="@string/favorecidos_outra_conta" android:layout_weight="0.0" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+    </LinearLayout>
+</LinearLayout>

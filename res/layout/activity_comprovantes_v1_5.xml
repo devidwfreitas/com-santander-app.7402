@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/inv_white_three" android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/id_main_screen_comprovantes" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_header_printable" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <RelativeLayout android:orientation="vertical" android:background="#ffdddddd" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="15.0dip">
+                    <ImageView android:id="@id/msg_ico" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ic_success_check" android:layout_centerVertical="true" android:contentDescription="@string/app_back" android:layout_marginStart="10.0dip" />
+                    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:id="@id/msg_msg" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comprovante_txt_sucesso" android:layout_centerVertical="true" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="17.0dip" android:layout_marginEnd="28.0dip" android:layout_toEndOf="@id/msg_ico" />
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/lista_comprovantes" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="15.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:id="@id/container_nota_notificacao" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="20.0dip">
+                        <View android:background="@color/inv_white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginStart="20.0dip">
+                            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_negociacao" android:layout_centerVertical="true" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="11.0dip" android:layout_toStartOf="@id/btn_nota_notificacao" android:layout_alignParentStart="true" />
+                            <ImageButton android:id="@id/btn_nota_notificacao" android:background="@color/inv_transparent" android:layout_width="50.0dip" android:layout_height="fill_parent" android:src="@drawable/ic_drop_down" android:layout_centerVertical="true" android:rotation="270.0" android:layout_alignParentEnd="true" />
+                        </RelativeLayout>
+                        <View android:background="@color/inv_white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" />
+                    </LinearLayout>
+                    <Button android:textColor="@color/inv_white" android:id="@id/btn_compartilhar_comprovante" android:background="#ff616161" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip" android:layout_marginRight="70.0dip" android:text="@string/app_compartilhar" android:textAllCaps="true" style="?android:attr/borderlessButtonStyle" />
+                    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/label_central_atendimento" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" />
+                        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/telefone_central_atendimento" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" android:textAlignment="center" />
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="5.0dip" android:text="@string/label_sac" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" />
+                            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/telefone_sac" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="5.0dip" />
+                        </LinearLayout>
+                        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_ouvidoria" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" />
+                            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/telefone_ouvidoria" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="5.0dip" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Button android:textColor="@color/inv_white" android:id="@id/btn_continuar_comprovante" android:background="#ff616161" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="70.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="70.0dip" android:layout_marginBottom="20.0dip" android:text="@string/app_fechar" android:textAllCaps="true" style="?android:attr/borderlessButtonStyle" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/layout_header_pequeno" />
+    <RelativeLayout android:id="@id/comp_loading" android:background="@color/inv_white_three" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include layout="@layout/layout_loading_state" />
+    </RelativeLayout>
+</RelativeLayout>

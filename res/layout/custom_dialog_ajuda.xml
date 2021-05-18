@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_shape_new" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingx4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/linear_container_main" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_fechar_custom_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/button_view_fechar_alt" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+    </LinearLayout>
+</LinearLayout>

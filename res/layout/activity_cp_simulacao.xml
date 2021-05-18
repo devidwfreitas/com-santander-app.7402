@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/container" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_cp_simulacao_limite_indisponivel" />
+    <include layout="@layout/include_cp_simulacao_servico_indisponivel" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/scroll_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/limite_container" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingx2">
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_cp" android:contentDescription="@null" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="@string/credito_pessoal_simulacao_limite_aprovado" android:textAllCaps="true" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="24.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:id="@id/limite_aprovado_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <FrameLayout android:id="@id/conta_spinner_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderEditText android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" " android:hint="@string/credito_pessoal_simulacao_conta" android:editable="false" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.v7.widget.AppCompatSpinner android:id="@id/conta_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <android.support.design.widget.TextInputLayout android:id="@id/valor_precisa_edit_text_input" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderEditText android:id="@id/valor_precisa_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/credito_pessoal_simulacao_valor_precisa" android:maxLines="1" android:maxLength="30" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+            </android.support.design.widget.TextInputLayout>
+            <FrameLayout android:id="@id/parcelas_spinner_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderEditText android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" " android:hint="@string/credito_pessoal_simulacao_quantidade_parcelas" android:editable="false" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.v7.widget.AppCompatSpinner android:gravity="center" android:id="@id/parcelas_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+            </FrameLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/step_2_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textSize="18.0sp" android:textColor="@color/gray5" android:id="@id/label_seleciona_melhor_opcao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/credito_pessoal_title_cards" />
+                <com.santander.app.components.view.CheckCardGroup android:orientation="horizontal" android:id="@id/check_card_group" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.emprestimo.creditopessoal.presentation.CPCardView android:id="@id/card_view_cp" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:cardCornerRadius="4.0dip" />
+                    <com.santander.app.emprestimo.creditopessoal.presentation.ConsignadoCardView android:id="@id/card_view_consignado" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="1.0" android:layout_marginStart="5.0dip" android:layout_marginEnd="5.0dip" app:cardCornerRadius="4.0dip" />
+                </com.santander.app.components.view.CheckCardGroup>
+                <FrameLayout android:id="@id/dia_pagamento_spinner_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderEditText android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" " android:hint="@string/credito_pessoal_simulacao_dia_pagamento" android:editable="false" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.v7.widget.AppCompatSpinner android:id="@id/dia_pagamento_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <FrameLayout android:id="@id/mes_pagamento_spinner_view" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderEditText android:focusable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text=" " android:hint="@string/credito_pessoal_simulacao_mes_pagamento" android:editable="false" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.v7.widget.AppCompatSpinner android:id="@id/mes_pagamento_spinner" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+                </FrameLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/protegido_card" android:background="@drawable/selector_cardview" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_gravity="center" android:id="@id/image_emprestimo_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_seguro" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="#ff5e9a1b" android:layout_gravity="center" android:id="@id/emprestimo_protection_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin" android:text="@string/emprestimo_protecao_cobertura" />
+                </LinearLayout>
+            </LinearLayout>
+            <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/simular_button" android:layout_width="fill_parent" android:layout_marginLeft="20.0dip" android:layout_marginTop="30.0dip" android:layout_marginRight="20.0dip" android:text="@string/credito_pessoal_simulacao_simular" style="@style/Santander.PillRed" />
+            <include layout="@layout/view_cp_vantagens_seguro" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</FrameLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="5.0dip" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_margin="10.0dip" android:src="@drawable/ico_pin" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/black" android:id="@id/busca_localizador_agencia_end_1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="LABEL:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/busca_localizador_agencia_end_2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:text="LABEL:" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

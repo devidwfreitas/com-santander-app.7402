@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:text="SELECIONE A CONTA DE APLICAÇÃO" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/item_sample_line1" android:background="@drawable/carruel_divider_line" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" />
+            <include android:id="@id/item_sample" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:layout_below="@id/item_sample_line1" layout="@layout/investimentos_aplicacao_poupanca_row" />
+            <com.santander.app.widget.Carrossel android:orientation="vertical" android:id="@id/carrusel_conta_aplicacao" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignTop="@id/item_sample" android:layout_alignBottom="@id/item_sample">
+                <include android:layout_width="fill_parent" android:layout_height="fill_parent" layout="@layout/carrusel_investimentos_poupanca" />
+            </com.santander.app.widget.Carrossel>
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/loadingview" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_margin="@dimen/commonpadding" android:indeterminate="true" />
+            <ImageView android:id="@id/item_sample_line2" android:background="@drawable/carruel_divider_line" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:layout_below="@id/carrusel_conta_aplicacao" />
+        </RelativeLayout>
+        <ImageView android:background="@drawable/carruel_divider_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" />
+        <com.santander.app.widget.Indicator android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/indicadorPagerPrincipal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" app:selected="@drawable/bullet_select_red" app:unSelected="@drawable/bullet_standby_grey" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_carrusel_contas" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/label4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="@dimen/commonpaddingx4" android:text="SELECIONE CONTA DE ORIGEM:" />
+            <com.santander.app.widget.Carrossel android:orientation="vertical" android:id="@id/carrusel_conta" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/carrusel_transferencias" />
+            </com.santander.app.widget.Carrossel>
+        </LinearLayout>
+        <ImageView android:background="@drawable/carruel_divider_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" />
+        <LinearLayout android:orientation="horizontal" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="VALOR:" />
+            <com.santander.app.components.view.SegmentEditText android:gravity="right" android:id="@id/value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpaddingx2" android:hint="0,00" android:maxLength="14" android:inputType="number" style="@style/EditTextHoloDark" />
+        </LinearLayout>
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/label3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="7.0dip" android:layout_marginTop="@dimen/commonpaddingx4" android:text="DATA DE APLICAÇÃO" />
+        <com.santander.app.widget.Carrossel android:orientation="vertical" android:id="@id/carrusel_data_aplicacao" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/carrusel_transferencias_small" />
+        </com.santander.app.widget.Carrossel>
+        <com.santander.app.components.view.SantanderButtonView android:id="@id/buttonconfirmar" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingx2" android:text="@string/button_confirmar" android:onClick="goConfirmar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+</ScrollView>

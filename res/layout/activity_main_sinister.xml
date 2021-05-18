@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.seguros.ui.widgets.ExpandableLayoutV2 android:id="@id/llTopExpandable" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="400" app:el_expanded="true" app:el_translate_children="false">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" layout="@layout/layout_top_step" />
+        </com.santander.app.seguros.ui.widgets.ExpandableLayoutV2>
+        <FrameLayout android:id="@id/fragment_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</br.com.zup.multistatelayout.MultiStateLayout>

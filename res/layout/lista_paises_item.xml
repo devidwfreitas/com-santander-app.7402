@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="left|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="50.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textView_nome_pais" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Brasil" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView_cod_pais" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01" app:opensans_regular="opensans_regular.ttf" />
+</LinearLayout>

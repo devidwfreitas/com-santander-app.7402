@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/scroll_view_cdb_progressivo" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:id="@id/cdb_progressivo_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Termos e Condições" android:fontFamily="sans-serif-medium" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black_four" android:id="@id/cdb_progressivo_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:fontFamily="sans-serif" />
+            <android.support.v7.widget.RecyclerView android:id="@id/cdb_progressivo_lista" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <Button android:textSize="16.0sp" android:textColor="@color/inv_tealish" android:layout_gravity="end" android:id="@id/dialog_pzr_btn_fechar" android:background="@color/inv_transparent" android:padding="20.0dip" android:focusableInTouchMode="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_fechar" />
+</LinearLayout>

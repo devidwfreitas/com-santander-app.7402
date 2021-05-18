@@ -1,0 +1,20 @@
+public enum bjb {
+  APP_EVENTS, CACHE, DEVELOPER_ERRORS, GRAPH_API_DEBUG_INFO, GRAPH_API_DEBUG_WARNING, INCLUDE_ACCESS_TOKENS, INCLUDE_RAW_RESPONSES, REQUESTS;
+  
+  static {
+    INCLUDE_ACCESS_TOKENS = new bjb("INCLUDE_ACCESS_TOKENS", 1);
+    INCLUDE_RAW_RESPONSES = new bjb("INCLUDE_RAW_RESPONSES", 2);
+    CACHE = new bjb("CACHE", 3);
+    APP_EVENTS = new bjb("APP_EVENTS", 4);
+    DEVELOPER_ERRORS = new bjb("DEVELOPER_ERRORS", 5);
+    GRAPH_API_DEBUG_WARNING = new bjb("GRAPH_API_DEBUG_WARNING", 6);
+    GRAPH_API_DEBUG_INFO = new bjb("GRAPH_API_DEBUG_INFO", 7);
+    $VALUES = new bjb[] { REQUESTS, INCLUDE_ACCESS_TOKENS, INCLUDE_RAW_RESPONSES, CACHE, APP_EVENTS, DEVELOPER_ERRORS, GRAPH_API_DEBUG_WARNING, GRAPH_API_DEBUG_INFO };
+  }
+}
+
+
+/* Location:              C:\Users\devid\Downloads\SAST\Santander\dex2jar-2.0\classes-dex2jar.jar!\bjb.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

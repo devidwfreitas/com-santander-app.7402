@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardElevation="1.0dip" card_view:contentPaddingLeft="@dimen/commonpaddingx2" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding">
+            <LinearLayout android:orientation="vertical" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_weight="0.7">
+                <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:textColor="@color/black" android:ellipsize="end" android:id="@id/textview_value_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:text="DASJDIOASJDOAS" android:maxLines="1" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderTextView android:textColor="@color/gray5" android:ellipsize="end" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Vencimento: " android:maxLines="1" />
+                    <com.santander.app.components.view.SantanderTextView android:textColor="@color/gray5" android:ellipsize="end" android:id="@id/textview_value_dtvencimento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="JDOASIJDOAISJDOIASJDASsdsadsad" android:maxLines="1" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textColor="@color/gray5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Identificação de proposta: " />
+                    <com.santander.app.components.view.SantanderTextView android:textColor="@color/gray5" android:id="@id/textview_value_identificacao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dOAISDJOIASDJA" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpaddingmin" android:layout_weight="0.3">
+                <ImageView android:id="@id/imageview_ico_seta" android:layout_width="12.0dip" android:layout_height="12.0dip" android:src="@drawable/ico_seta" android:scaleType="centerInside" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageView android:background="@color/gray" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:id="@id/car_card" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="5.0dip" app:cardCornerRadius="4.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <RelativeLayout android:id="@id/car_card_header_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <View android:id="@id/car_card_family_color" android:background="@color/inv_red" android:layout_width="4.0dip" android:layout_height="wrap_content" android:layout_alignBottom="@id/car_card_textos_titulo_ll" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+                    <LinearLayout android:orientation="vertical" android:id="@id/car_card_textos_titulo_ll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_marginStart="10.0dip">
+                        <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="#ff191919" android:id="@id/car_card_product_name" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/ph_text_pq" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff787878" android:gravity="center_vertical" android:id="@id/car_card_contract_info" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="5.0dip" android:text="@string/ph_text_pq" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff787878" android:gravity="center_vertical" android:id="@id/car_card_titular_name" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minHeight="20.0dip" android:text="@string/ph_text_pq" />
+                    </LinearLayout>
+                </RelativeLayout>
+                <android.support.v7.widget.RecyclerView android:id="@id/rcl_item_carrinho_propriedades" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" />
+                <RelativeLayout android:id="@id/carrinho_card_terms_container" android:layout_width="fill_parent" android:layout_height="48.0dip">
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/car_termos_e_condicoes" android:layout_centerVertical="true" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif" android:layout_toStartOf="@id/car_card_visualizar" android:layout_alignParentStart="true" />
+                    <ImageButton android:id="@id/car_card_ic_visualizar" android:background="@color/inv_transparent" android:paddingTop="@dimen/action_button_padding" android:paddingBottom="@dimen/action_button_padding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drop_down" android:layout_centerVertical="true" android:rotation="270.0" android:layout_marginStart="10.0dip" android:layout_alignParentEnd="true" />
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:gravity="center_vertical" android:id="@id/car_card_visualizar" android:layout_width="wrap_content" android:layout_height="fill_parent" android:text="@string/car_card_lbl_visualizar" android:layout_centerVertical="true" android:fontFamily="sans-serif" android:layout_toStartOf="@id/car_card_ic_visualizar" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/car_card_api_container" android:background="@color/inv_very_light_pink" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:background="@color/inv_white" android:layout_width="wrap_content" android:layout_height="1.0dip" />
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="20.0dip">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_error" android:contentDescription="@string/alert_img_description" android:layout_marginEnd="10.0dip" />
+                    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="#ffde7300" android:id="@id/car_card_api_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/cart_txt_api_title" android:lineSpacingExtra="2.0sp" android:fontFamily="sans-serif-medium" />
+                        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_pumpkin_orange" android:ellipsize="end" android:id="@id/car_card_api_message" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif-medium" />
+                        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_pumpkin_orange_70" android:layout_gravity="bottom" android:id="@id/car_card_leia_mais" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="3.0dip" android:text="@string/cart_txt_leia_mais" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:background="@color/inv_white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="52.0dip" style="?android:attr/buttonBarStyle">
+                <Button android:textColor="@color/inv_black_two" android:id="@id/car_card_btn_edit" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:text="@string/app_editar" android:layout_weight="1.0" android:layout_marginEnd="0.5dip" style="?android:attr/buttonBarButtonStyle" />
+                <Button android:textColor="@color/inv_black_two" android:id="@id/car_card_btn_remove" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="1.0dip" android:text="@string/app_remover" android:layout_weight="1.0" android:layout_marginStart="0.5dip" style="?android:attr/buttonBarButtonStyle" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

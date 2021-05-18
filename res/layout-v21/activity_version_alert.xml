@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.4">
+        <com.airbnb.lottie.LottieAnimationView android:layout_gravity="center" android:id="@id/version_alert_animation_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="10.0dip" app:lottie_fileName="lottie_atualizacao_componente.json" app:lottie_autoPlay="true" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.6">
+        <RelativeLayout android:gravity="center" android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="20.0sp" android:textColor="#ff000000" android:gravity="center" android:id="@id/version_alert_title_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip" android:text="@string/version_alert_unavailable" android:fontFamily="sans-serif" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+            <TextView android:textSize="16.0sp" android:textColor="#ff999999" android:gravity="center" android:id="@id/version_alert_description_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/version_alert_unavailable_description" android:layout_below="@id/version_alert_title_view" android:fontFamily="sans-serif" android:layout_marginStart="30.0dip" android:layout_marginEnd="30.0dip" />
+            <Button android:textColor="@android:color/black" android:id="@id/version_alert_bt_event_view" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/version_alert_bt_close" android:layout_alignParentBottom="true" android:layout_centerInParent="true" android:textAllCaps="false" />
+            <Button android:textColor="@android:color/white" android:id="@id/version_alert_bt_update_view" android:layout_width="200.0dip" android:layout_marginTop="20.0dip" android:text="@string/version_alert_update" android:layout_above="@id/version_alert_bt_event_view" android:layout_centerInParent="true" android:fontFamily="sans-serif" android:internalMaxWidth="@null" style="@style/Santander.PillRed" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

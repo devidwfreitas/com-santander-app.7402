@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/ab_title_size" android:textColor="@color/colorGray" android:padding="@dimen/default_screen_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/choose_the_protection_you_need" android:textAlignment="center" />
+</android.support.v7.widget.CardView>

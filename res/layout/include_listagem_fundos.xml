@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view_main" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:id="@id/container_info_top" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+                <com.santander.app.components.view.buttontabhost.ButtonTabHost android:id="@id/button_tab_host" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearlayout_meus_fundos" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_saldo_total_bruto" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpadding">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_saldoTotalBruto_infoFechada" />
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_saldo_bruto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 0,00" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linearlayout_saldo_total_liquido" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpadding">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_saldoTotalLiquido_infoFechada" />
+                    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_saldo_liquido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 0,00" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linearlayout_sem_fundos" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx10">
+                    <ImageView android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ico_fundos" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="@dimen/text_size_title_16" android:textColor="@color/black_3" android:layout_width="@dimen/textview_nao_fundos_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/label_nao_possui_fundos" android:textAlignment="center" />
+                    <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_ver_todos_fundos" android:layout_width="@dimen/button_todos_fundos_width" android:layout_height="@dimen/button_todos_fundos_height" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/button_ver_todos_fundos" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/linearlayout_todos_fundos" android:paddingTop="@dimen/commonpaddingx2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_perfil_investidor" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding">
+                    <ImageView android:layout_width="41.0dip" android:layout_height="41.0dip" android:src="@drawable/ico_api" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="@dimen/text_size_16" android:textColor="@color/gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:text="@string/meu_perfil_investidor" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="@dimen/text_size_16" android:textColor="@color/black" android:id="@id/textview_perfil" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:id="@id/ico_seta_fundo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_seta_right" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_questionario_nao_cadastrado" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="70.0dip" android:layout_height="70.0dip" android:src="@drawable/ico_api_nao_preenchido" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="@dimen/text_size_title_15" android:textColor="@color/black_3" android:layout_width="@dimen/textview_nao_fundos_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="@string/label_questionario_nao_preenchido" android:textAlignment="center" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="@dimen/text_size_14" android:textColor="@color/gray" android:layout_width="@dimen/textview_nao_fundos_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="@string/label_info_questionario" android:textAlignment="center" />
+                </LinearLayout>
+            </LinearLayout>
+            <ExpandableListView android:id="@id/expandable_fundos" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:groupIndicator="@null" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

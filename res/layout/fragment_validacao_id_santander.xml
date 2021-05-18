@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.PlayGifView.PlayGifView android:layout_gravity="center" android:id="@id/view_gif" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx4" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_horizontal" android:id="@id/textview_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:layout_below="@id/view_gif" app:opensans_regular="opensans_regular.ttf" />
+    </RelativeLayout>
+</ScrollView>

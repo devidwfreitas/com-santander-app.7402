@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="14.0sp" android:textStyle="bold" android:layout_gravity="top|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/validity" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="12.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvStartDay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " />
+            <TextView android:textSize="12.0sp" android:gravity="center" android:id="@id/tvEndDay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_gravity="center_horizontal" android:id="@id/body_chart" android:layout_width="140.0dip" android:layout_height="140.0dip">
+        <com.santander.app.seguros.ui.widgets.ArcChartView android:id="@id/chart" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" app:acv_progress_color="@color/colorGreenLight" app:acv_bg_color="@color/colorGrayDivider" app:acv_stroke_width="5.0dip" app:acv_progress="45" />
+        <TextView android:textSize="30.0sp" android:id="@id/tvDays" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" />
+        <TextView android:textSize="10.0sp" android:id="@id/tvDaysFirstParam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/renova_o_autom_tica" android:layout_above="@id/tvDays" android:layout_centerHorizontal="true" />
+        <TextView android:textSize="10.0sp" android:id="@id/tvDaysSecondParam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/dias_de_prote_o" android:layout_below="@id/tvDays" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</FrameLayout>

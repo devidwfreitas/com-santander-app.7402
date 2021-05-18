@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0dip" android:textColor="@color/gray5" android:id="@id/textview_consideracoes_tipo_contratacao" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/linear_box_valores" layout="@layout/include_emp_contratacao_valores" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:id="@id/textview_value_vantagens_contratar" android:background="@drawable/border_inside_white" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx4" android:paddingStart="15.0dip" android:paddingEnd="10.0dip" />
+                <include android:id="@id/termos_condições" layout="@layout/include_emp_contratacao_termos_condicoes" />
+                <com.santander.app.components.view.SantanderButtonView android:enabled="true" android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_contratar" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx3" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/credito_pessoal_contratacao_contratar_com_seguro" style="@style/Santander.PillRed" />
+                <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_simular_com_seguro" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx3" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/credito_pessoal_contratacao_simular_sem_seguro" style="@style/Santander.PillRedReverse" />
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+    <FrameLayout android:id="@id/cso_validacao_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

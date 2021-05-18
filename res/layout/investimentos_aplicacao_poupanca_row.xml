@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:gravity="center_horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/conta_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2050 000000243342432" app:opensans_regular="opensans_regular.ttf" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_aplicacao_disponivel" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right" android:id="@id/aplicacao_disponivel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 0,00" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_aplicacao_bloqueo_judicial" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right" android:id="@id/aplicacao_bloqueo_judicial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 0,00" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_aplicacao_bloqueado" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right" android:id="@id/aplicacao_bloqueado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 0,00" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_aplicacao_total" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:gravity="right" android:id="@id/aplicacao_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 0,00" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_aplicacao_data_abertura" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right" android:id="@id/aplicacao_data_abertura" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20/10/2013" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_aplicacao_data_abertura" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20/10/2013" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</LinearLayout>

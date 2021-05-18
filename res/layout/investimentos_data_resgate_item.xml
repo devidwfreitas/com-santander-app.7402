@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_gravity="left" android:id="@id/data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx4" android:text="29/10/2013" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/valorLiquido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx4" android:text="Valor liquido: R$ 234.34,00" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/taxa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx4" android:text="Taxa - CDI: 9,82000%" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/dataVencimento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx4" android:text="Data de vencimento: 22/10/2014" app:opensans_regular="opensans_regular.ttf" />
+</LinearLayout>

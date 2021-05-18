@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/header_main" android:background="@color/inv_header_defaut" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/header_logo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logo" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="50.0dip" android:minWidth="50.0dip" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/header_cancel" android:background="@color/inv_transparent" android:padding="25.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_inv" android:contentDescription="@string/app_back" />
+            <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/inv_white_two" android:id="@id/header_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_white_three" android:id="@id/header_contador" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" android:lineSpacingExtra="2.0sp" android:fontFamily="sans-serif" android:layout_marginEnd="14.0dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</LinearLayout>

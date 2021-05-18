@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_gravity="center" android:paddingLeft="@dimen/commonpaddingx2" android:paddingRight="@dimen/commonpaddingx2" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="420.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.components.view.SantanderTextView android:id="@id/label_contas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" />
+    <com.santander.app.components.view.SantanderTextView android:id="@id/label_titulos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:layout_below="@id/label_contas" />
+    <com.santander.app.components.view.SantanderTextView android:id="@id/label_telefone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:layout_below="@id/label_titulos" />
+    <com.santander.app.components.view.SantanderTextView android:id="@id/label_cartao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:layout_below="@id/label_telefone" />
+    <com.santander.app.components.view.SantanderTextView android:id="@id/label_transferencia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:layout_below="@id/label_cartao" />
+    <com.santander.app.components.view.SantanderTextView android:id="@id/label_doc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:layout_below="@id/label_transferencia" />
+    <com.santander.app.components.view.SantanderTextView android:id="@id/label_ted" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:layout_below="@id/label_doc" />
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/button_fechar" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/button_fechar" android:layout_below="@id/label_ted" android:layout_centerHorizontal="true" style="@style/ButtonHoloDark" />
+</RelativeLayout>

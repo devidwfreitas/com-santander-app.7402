@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/scroll" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <LinearLayout android:orientation="vertical" android:id="@id/container_termos_acordo" android:background="@android:color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/logoSantander" android:background="@color/red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="55.0dip" android:layout_marginBottom="@dimen/textmarginx2" android:src="@drawable/santanderlogoblank" />
+                <TextView android:id="@id/text_view_termo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </ScrollView>
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_compartilhar" android:layout_width="fill_parent" android:text="@string/btn_compartilhar" style="@style/Santander.PillRed" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

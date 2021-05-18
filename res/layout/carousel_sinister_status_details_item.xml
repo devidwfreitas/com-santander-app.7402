@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llContent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutBasic" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin">
+            <View android:id="@id/lineTop" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_above="@id/ivCheck" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/ivCheck" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_centerVertical="true" />
+            <View android:id="@id/lineBottom" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_below="@id/ivCheck" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/txtDate" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Semibold.ttf" />
+                <TextView android:textSize="@dimen/default_text_size" android:id="@id/txtStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Light.ttf" />
+            </LinearLayout>
+            <View android:id="@id/lineDivider" android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/default_margin" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutBankEdit" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin">
+            <View android:id="@id/lineTopBankEdit" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_above="@id/imgCheckBankEdit" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imgCheckBankEdit" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_centerVertical="true" />
+            <View android:id="@id/lineBottomBankEdit" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_below="@id/imgCheckBankEdit" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <FrameLayout android:id="@id/flClickBankEdit" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="12.0dip" android:foreground="?selectableItemBackground">
+                <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip">
+                    <TextView android:textStyle="bold" android:id="@id/txtTitleBankEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivBankEdit" />
+                    <TextView android:textSize="@dimen/default_text_size" android:id="@id/txtDescBankEdit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivBankEdit" android:layout_below="@id/txtTitleBankEdit" />
+                    <ImageView android:id="@id/ivBankEdit" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="5.0dip" android:src="@drawable/ic_edit2" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </FrameLayout>
+            <View android:id="@id/lineDividerBankEdit" android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/default_margin" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/layoutBasicWithButton" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin">
+            <View android:id="@id/lineTopBasicWithButton" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_above="@id/imgCheckBasicWithButton" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/imgCheckBasicWithButton" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_centerVertical="true" />
+            <View android:id="@id/lineBottomBasicWithButton" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_below="@id/imgCheckBasicWithButton" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textStyle="bold" android:id="@id/txtDateBasicWithButton" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Semibold.ttf" />
+                <TextView android:textSize="@dimen/default_text_size" android:id="@id/txtStatusBasicWithButton" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Light.ttf" />
+                <Button android:textSize="@dimen/small_text_size" android:id="@id/btRedialSurvey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginTop="@dimen/small_margin" android:text="@string/redial_survey" android:textAllCaps="false" style="@style/AppTheme.ButtonRedFilled" fontPath="fonts/OpenSans-Light.ttf" />
+            </LinearLayout>
+            <View android:id="@id/lineDividerBasicWithButton" android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/default_margin" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutExpandable" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/llClickExpandable" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin">
+                    <View android:id="@id/lineTop" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_above="@id/ivCheck" android:layout_centerHorizontal="true" />
+                    <ImageView android:id="@id/ivCheck" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_centerVertical="true" />
+                    <View android:id="@id/lineBottom" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_below="@id/ivCheck" android:layout_centerHorizontal="true" />
+                </RelativeLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textStyle="bold" android:id="@id/txtDateExpandableItem" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+                          xmlns:android="http://schemas.android.com/apk/res/android">
+                            <TextView android:textSize="@dimen/default_text_size" android:id="@id/txtStatusExpandableItem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/imgSubItem" android:layout_centerVertical="true" fontPath="fonts/OpenSans-Light.ttf" />
+                            <ImageView android:id="@id/imgSubItem" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_subitem_blue" android:layout_alignParentRight="true" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:id="@id/lineDividerExpandableItem" android:background="@color/colorGrayBackgroundDetails" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/default_margin" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <com.santander.app.seguros.ui.widgets.ExpandableLayoutV2 android:id="@id/expandableLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="400" app:el_expanded="true" app:el_translate_children="false">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:layout_gravity="center_horizontal" android:id="@id/btAddNewDocument" android:visibility="gone" android:layout_width="180.0dip" android:layout_height="35.0dip" android:text="@string/add_new" style="@style/AppTheme.ButtonRedFilled" />
+                <LinearLayout android:orientation="vertical" android:id="@id/addViewDocument" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" />
+            </LinearLayout>
+        </com.santander.app.seguros.ui.widgets.ExpandableLayoutV2>
+    </LinearLayout>
+</LinearLayout>

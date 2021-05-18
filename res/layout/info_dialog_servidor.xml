@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minWidth="250.0dip" style="android:radioButtonStyle">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="left" android:id="@id/dialogtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="@string/dialog_text_servidor" app:opensans_regular="opensans_regular.ttf" />
+        <ImageView android:background="@color/red" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginBottom="@dimen/commonpaddingmin" />
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <RadioGroup android:orientation="vertical" android:id="@id/radio_group" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="0.0dip">
+                <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textColorLink="@color/red" android:id="@id/radio_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="Des" style="@style/RadioButton" />
+                <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textColorLink="@color/red" android:id="@id/radio_button2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="true" android:text="PI" style="@style/RadioButton" />
+                <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textColorLink="@color/red" android:id="@id/radio_button3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="HK" style="@style/RadioButton" />
+                <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textColorLink="@color/red" android:id="@id/radio_button4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="HI" style="@style/RadioButton" />
+                <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textColorLink="@color/red" android:id="@id/radio_button5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="MBBOcu" style="@style/RadioButton" />
+                <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textColorLink="@color/red" android:id="@id/radio_button6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="Prod" style="@style/RadioButton" />
+                <RadioButton android:textAppearance="?android:textAppearanceMedium" android:textColorLink="@color/red" android:id="@id/radio_button7" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="MBBDeploy" style="@style/RadioButton" />
+            </RadioGroup>
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <br.com.santander.uisdk.SantanderSwitch android:id="@id/trigger_on_off" android:layout_width="wrap_content" android:layout_height="wrap_content" android:thumb="@drawable/switch_thumb_material" android:text="Analytics  " />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

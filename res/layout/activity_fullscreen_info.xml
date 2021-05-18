@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/default_padding" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:layout_gravity="right" android:id="@id/ivClose" android:background="@drawable/bg_simple_ripple_red" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginTop="@dimen/default_margin" android:src="@drawable/ic_x_gray" />
+        <ImageView android:id="@id/ivIcon" android:layout_width="65.0dip" android:layout_height="65.0dip" android:layout_marginTop="@dimen/default_margin" android:src="@drawable/ic_check_white_rounded_green" />
+        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" />
+        <View android:background="@color/colorGrayVeryLight2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/big_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/big_margin" />
+        <com.santander.app.seguros.ui.widgets.JustifiedTextView android:id="@id/jfTV" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_margin" />
+    </LinearLayout>
+    <ImageView android:layout_width="fill_parent" android:layout_height="50.0dip" android:src="@drawable/bg_white_gradient" android:layout_alignParentBottom="true" />
+</RelativeLayout>

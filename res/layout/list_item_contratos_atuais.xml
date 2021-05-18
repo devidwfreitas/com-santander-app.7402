@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingx2">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_box_datas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpaddingmin" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/textview_data_contrato" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin" android:text="Ativo desde: 09/03/2016 " />
+            <com.santander.app.components.view.SantanderTextView android:textSize="11.0sp" android:textColor="@color/black" android:id="@id/textview_parcelas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="20 de 60 parcelas" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_box_datas" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/textview_valor_total" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin" android:text="Valor total: R$20.000,00" />
+            <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:textColor="@color/black" android:id="@id/textview_valor_parcela" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Valor da parcela: R$1700,00" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

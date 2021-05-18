@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/faq_titulo_telefones2" santander:opensans_regular="opensans_regular.ttf" />
+        <ListView android:id="@id/listview_medias_sociais" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <ExpandableListView android:id="@id/expandable_list_view_faq_telefones" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:childDivider="@color/white" android:divider="@color/gray" android:dividerHeight="1.0dip" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:id="@id/scroll_container" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0dip" android:textColor="@color/gray5" android:id="@id/textview_consideracoes_tipo_contratacao_cp" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <include android:id="@id/linear_box_valores" layout="@layout/include_emp_contratacao_valores" />
+                <LinearLayout android:orientation="vertical" android:id="@id/desprotegido_card" android:background="@drawable/selector_cardview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                    <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:scaleType="fitXY" android:adjustViewBounds="true" card_view:srcCompat="@drawable/ic_security" />
+                        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="10.0dip" android:layout_marginRight="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin">
+                            <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/orange_notifications" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emprestimo_desprotegido" />
+                            <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/emprestimo_desprotegido_description" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <Button android:textSize="16.0sp" android:layout_gravity="center_horizontal" android:id="@id/button_proteger" android:padding="@dimen/small_margin" android:layout_width="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin" android:text="Quero me Proteger" style="@style/Santander.PillRedReverse" />
+                </LinearLayout>
+                <com.santander.app.components.view.SantanderCheckBox android:id="@id/checkbox_quero_contratar_emprestimo_cp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx3" android:checked="true" android:text="Quero contratar o empréstimo com as vantagens do Seguro" />
+                <include android:id="@id/termos_condições" layout="@layout/include_emp_contratacao_termos_condicoes" />
+                <com.santander.app.components.view.SantanderButtonView android:enabled="true" android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_contratar_cp" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx3" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/contratar" style="@style/Santander.PillRed" />
+            </LinearLayout>
+        </FrameLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <include layout="@layout/include_cso_validacao" />
+</FrameLayout>

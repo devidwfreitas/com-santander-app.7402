@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="4.0dip" app:cardElevation="3.0dip" app:contentPadding="10.0dip">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textColor="@android:color/black" android:id="@id/textview_nome_previdencia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="APORTE TITULO" />
+            <com.santander.app.components.view.SantanderTextView android:textColor="@android:color/black" android:id="@id/textview_numero_proposta_previdencia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Certificado: aporte certificado" />
+            <com.santander.app.components.view.SantanderTextView android:textColor="@android:color/black" android:id="@id/textview_saldo_bruto_previdencia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Saldo Bruto: aporte saldo" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

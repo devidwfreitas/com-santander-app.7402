@@ -1,0 +1,38 @@
+!!brut.androlib.meta.MetaInfo
+apkFileName: com-santander-app.7402.apk
+compressionType: false
+doNotCompress:
+- resources.arsc
+- png
+- jpg
+- res/drawable-hdpi-v4/fingerprint_disabling_success.gif
+- gif
+- res/drawable-mdpi-v4/fingerprint_disabling_success.gif
+- res/drawable-xhdpi-v4/fingerprint_disabling_success.gif
+- res/drawable-xxhdpi-v4/fingerprint_disabling_success.gif
+- res/drawable-xxxhdpi-v4/fingerprint_disabling_success.gif
+- res/raw/esbapiprod_hub
+- res/raw/esbapiprodgeo_hub
+- res/raw/paasconfig_hk.properties
+- res/raw/paasconfig_mbbocu.properties
+- ogg
+isFrameworkApk: false
+packageInfo:
+  forcedPackageId: '127'
+  renameManifestPackage: null
+sdkInfo:
+  minSdkVersion: '19'
+  targetSdkVersion: '23'
+sharedLibrary: false
+sparseResources: false
+unknownFiles:
+  build-data.properties: '8'
+  jsr305_annotations/Jsr305_annotations.gwt.xml: '8'
+usesFramework:
+  ids:
+  - 1
+  tag: null
+version: 2.5.0
+versionInfo:
+  versionCode: '7402'
+  versionName: 7.4.0.2

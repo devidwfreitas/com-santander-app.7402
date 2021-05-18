@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llClick" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:gravity="center_vertical" android:layout_gravity="center" android:background="@drawable/bg_button_blue_stoke" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/colorBlueVeryLight" android:gravity="center" android:id="@id/textName" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="asdfjlajsdçlfkjasçdlkfj" android:layout_toLeftOf="@id/imgArrow" android:layout_alignParentLeft="true" app:textStyle="semiBold" />
+        <ImageView android:id="@id/imgArrow" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/ic_subitem_blue" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+</LinearLayout>

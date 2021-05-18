@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabHost android:id="@android:id/tabhost" android:background="@drawable/tab_bg_selector" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <RelativeLayout android:orientation="vertical" android:id="@id/tab1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <include layout="@layout/include_transferencias" />
+                        <com.santander.app.components.view.SegmentLineView android:layout_gravity="bottom" android:id="@id/lineview_separator_aba_transf" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/include_selector_conta" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/tab2" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <include layout="@layout/include_lista_transferencias_programadas" />
+                        <com.santander.app.components.view.SegmentLineView android:layout_gravity="bottom" android:id="@id/lineview_separator_aba_transf" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/recyclerview_transferencias_programadas" android:layout_alignParentTop="true" />
+                    </RelativeLayout>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

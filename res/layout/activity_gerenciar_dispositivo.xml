@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relative_layout_item_dispositivo_em_uso" android:background="@color/white" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageview_dispositivo_em_uso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/ico_check" />
+        <ImageView android:id="@id/imageview_dispositivo_habilitado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="5.0dip" android:layout_marginBottom="10.0dip" android:src="@drawable/device_check" android:layout_toRightOf="@id/imageview_dispositivo_em_uso" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textview_nome_do_dispositivo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageview_dispositivo_habilitado" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textview_informacao_inclusao_dispositivo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/imageview_dispositivo_habilitado" android:layout_below="@id/textview_nome_do_dispositivo" />
+        <TextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/green" android:id="@id/textview_informacao_dipositivo_em_uso" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="dispositivo em uso" android:layout_toRightOf="@id/imageview_dispositivo_habilitado" android:layout_below="@id/textview_informacao_inclusao_dispositivo" />
+    </RelativeLayout>
+    <ListView android:id="@id/dispositivo_para_desbloquear" android:layout_width="wrap_content" android:layout_height="wrap_content" android:dividerHeight="0.0dip" android:layout_below="@id/relative_layout_item_dispositivo_em_uso" />
+</RelativeLayout>

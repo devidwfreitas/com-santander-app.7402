@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v4.view.ViewPager android:id="@id/pagerContasPrincipal" android:layout_width="fill_parent" android:layout_height="@dimen/carousel_contas" android:layout_centerHorizontal="true" />
+            <ImageView android:id="@id/rowleft" android:paddingLeft="@dimen/commonpaddingx2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_grey" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+            <com.santander.app.components.view.SegmentImageView android:id="@id/rowright" android:paddingRight="@dimen/commonpaddingx2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" santander:src_classic="@drawable/arrow_right" santander:src_select="@drawable/arrow_right_select" santander:src_universitario="@drawable/arrow_right_universitario" />
+        </RelativeLayout>
+        <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+        <com.santander.app.widget.Indicator android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/indicadorPagerContasPrincipal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" santander:selected="@drawable/bullet_select_red" santander:unSelected="@drawable/bullet_standby_grey" />
+        <com.santander.app.components.view.cardLayout.CardLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cardlayout_crm" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" />
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding">
+                <com.santander.app.components.view.SegmentImageView android:id="@id/image_saldo" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goSaldo" santander:src_classic="@drawable/btn_saldo_selector" santander:src_select="@drawable/btn_saldo_se_selector" santander:src_universitario="@drawable/btn_saldo_un_selector" />
+                <com.santander.app.components.view.SegmentImageView android:id="@id/image_extracto" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goMovement" santander:src_classic="@drawable/btn_extrato_selector" santander:src_select="@drawable/btn_extrato_se_selector" santander:src_universitario="@drawable/btn_extrato_un_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SegmentImageView android:id="@id/image_transferencias" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goTransferencias" santander:src_classic="@drawable/btn_transferencias_selector" santander:src_select="@drawable/btn_transferencias_se_selector" santander:src_universitario="@drawable/btn_transferencias_un_selector" />
+                <com.santander.app.components.view.SegmentImageView android:id="@id/image_pagamento" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goPagamento" santander:src_classic="@drawable/btn_pagamentos_selector" santander:src_select="@drawable/btn_pagamentos_se_selector" santander:src_universitario="@drawable/btn_pagamentos_un_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                <com.santander.app.components.view.SegmentImageView android:id="@id/image_recarga" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goRecarga" santander:src_classic="@drawable/btn_recarga_selector" santander:src_select="@drawable/btn_recarga_se_selector" santander:src_universitario="@drawable/btn_recarga_un_selector" />
+                <com.santander.app.components.view.SegmentImageView android:id="@id/image_futuros" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goFuturos" santander:src_classic="@drawable/btn_lancamentos_futuros_selector" santander:src_select="@drawable/btn_lancamentos_futuros_se_selector" santander:src_universitario="@drawable/btn_lancamentos_futuros_un_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                <com.santander.app.components.view.SegmentImageView android:id="@id/image_agendamentos" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goAgendamentos" santander:src_classic="@drawable/btn_agendamentos_selector" santander:src_select="@drawable/btn_agendamentos_se_selector" santander:src_universitario="@drawable/btn_agendamentos_un_selector" />
+                <LinearLayout android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside">
+                    <com.santander.app.components.view.SegmentImageView android:id="@id/image_emprestimos" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goEmprestimos" santander:src_classic="@drawable/btn_emprestimos_selector" santander:src_select="@drawable/btn_emprestimos_se_selector" santander:src_universitario="@drawable/btn_emprestimos_un_selector" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

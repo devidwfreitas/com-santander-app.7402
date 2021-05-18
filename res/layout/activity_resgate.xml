@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutPrincipal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <include layout="@layout/layout_header_pequeno" />
+            <LinearLayout android:orientation="vertical" android:id="@id/configurar_inv_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <include layout="@layout/content_resgate" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <RelativeLayout android:id="@id/inv2_portifolio_layout_loadinig" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include android:visibility="visible" layout="@layout/layout_loading_state" />
+    </RelativeLayout>
+</RelativeLayout>

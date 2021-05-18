@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin" android:layout_marginBottom="@dimen/commonpaddingmin"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginTop="@dimen/commonpaddingmin" android:layout_marginBottom="@dimen/commonpadding">
+        <ImageView android:id="@id/iconfundo" android:background="@color/black" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_centerVertical="true" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="16.0dip" android:textColor="@color/black" android:id="@id/labelfundo" android:paddingLeft="26.0dip" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="25.0dip" android:text="Fundo Santander" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SegmentImageView android:id="@id/rowright" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="10.0dip" android:scaleType="fitXY" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:src_classic="@drawable/arrow_right" app:src_select="@drawable/arrow_right_select" app:src_universitario="@drawable/arrow_right_universitario" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo bruto:" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/saldo_bruto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 16,453.00 " app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo líquido disponível:" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/saldo_liquido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 16,453.00 " app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/commonpadding" />
+    <ImageView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="@dimen/commonpadding" />
+</LinearLayout>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:paddingBottom="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/labelConfirmacao" android:paddingTop="@dimen/textmarginx2" android:paddingBottom="@dimen/textmarginx2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_confirmacao_upper" app:opensans_regular="opensans_regular.ttf" />
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_fundos_detalhes" android:layout_width="fill_parent" android:layout_height="fill_parent" android:maxItems="false" />
+        <LinearLayout android:orientation="vertical" android:id="@id/linearNovaAplicacao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/latelTitleTerms" android:background="@drawable/border_bottom_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/termos_condicoes_upper" app:opensans_regular="opensans_regular.ttf" />
+            <RelativeLayout android:id="@id/relative_term" android:background="@drawable/border_bottom_gray" android:paddingTop="@dimen/commonpadding15" android:paddingBottom="@dimen/commonpadding15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/latelTitleTerms">
+                <LinearLayout android:id="@id/linear_image_seta" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageButton android:id="@id/imagebuttonSeta" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_seta_right" />
+                </LinearLayout>
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/colorBlueLight" android:id="@id/textview_motivo_envio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/termo_a_fundo" android:layout_toLeftOf="@id/linear_image_seta_motivo_moeda" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relative_term_lamina" android:background="@drawable/border_bottom_gray" android:paddingTop="@dimen/commonpadding15" android:paddingBottom="@dimen/commonpadding15" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/relative_term">
+                <LinearLayout android:id="@id/linear_image_seta" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                    <ImageButton android:id="@id/imagebuttonSeta" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_seta_right" />
+                </LinearLayout>
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/colorBlueLight" android:id="@id/textview_motivo_envio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/termo_b_fundo" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <LinearLayout android:id="@id/linearCheckText" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_below="@id/relative_term_lamina">
+                <ImageView android:id="@id/imageview_check_termo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/custom_check" android:scaleType="fitCenter" />
+                <TextView android:id="@id/termo_adesao_aplicacao" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:layout_gravity="center" android:id="@id/button_confirm_terms" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="50.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="50.0dip" android:text="@string/label_button_concluir" android:layout_centerInParent="true" android:layout_centerHorizontal="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+    </LinearLayout>
+</ScrollView>

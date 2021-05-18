@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/adapterDetalheFatura" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imageview_anexo" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_margin="@dimen/textmarginx2" android:scaleType="centerInside" />
+        <com.santander.app.components.view.SantanderTextView android:id="@id/textview_nome_imagem_anexo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IMG_000001.JPG" android:layout_toRightOf="@id/imageview_anexo" />
+        <com.santander.app.components.view.SantanderTextView android:id="@id/textview_anexado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Anexado" android:layout_toRightOf="@id/imageview_anexo" android:layout_below="@id/textview_nome_imagem_anexo" />
+        <ImageView android:id="@id/imagemview_fechar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_zerar_valor" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+    </RelativeLayout>
+</LinearLayout>

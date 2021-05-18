@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="false" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <RelativeLayout android:id="@id/relativelayout_content_detalhe_plano_previdencia" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/red" android:id="@id/textview_label_detalhe_plano_previdencia" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="VGBL" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" app:opensans_regular="opensans_regular.ttf" />
+            </RelativeLayout>
+            <RelativeLayout android:id="@id/relativelayout_content_detalhe_santander_prev" android:paddingBottom="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:id="@id/textview_label_titulo_detalhe_previdencia_santander" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/textmarginx2" android:text="SANTANDER PREV EDUCAR" android:singleLine="true" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/textview_detalhe_certificado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_certificado" android:layout_toLeftOf="@id/textview_valor_detalhe_certificado" android:layout_below="@id/textview_label_titulo_detalhe_previdencia_santander" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:id="@id/textview_valor_detalhe_certificado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/textmarginx2" android:text="00000333" android:layout_below="@id/textview_label_titulo_detalhe_previdencia_santander" android:layout_alignParentRight="true" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/textview_detalhe_saldo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_saldo_bruto" android:layout_toLeftOf="@id/textview_valor_detalhe_saldo" android:layout_below="@id/textview_valor_detalhe_certificado" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_detalhe_saldo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$3.300,00" android:layout_below="@id/textview_valor_detalhe_certificado" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_btn_aporte_container" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderButtonView android:id="@id/button_aporte_detalhe" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginRight="10.0dip" android:text="@string/label_aporte" android:layout_weight="1.0" style="@style/Santander.PillRed" />
+                <com.santander.app.components.view.SantanderButtonView android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/label_aporte" android:layout_weight="1.0" style="@style/Santander.PillRed" />
+            </LinearLayout>
+            <LinearLayout android:id="@id/linearlayout_separador_detalhe_previdencia" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/commonpadding" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_detalhes_content" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

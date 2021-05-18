@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@color/gray_12" android:gravity="start" android:id="@id/description" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="Limite em conta" android:layout_weight="6.0" />
+    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@color/gray_12" android:gravity="end" android:id="@id/value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="1.586,05" android:layout_weight="4.0" />
+</LinearLayout>

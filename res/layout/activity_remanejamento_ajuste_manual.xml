@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/santander_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header_main" layout="@layout/layout_action_bar" />
+    <include android:id="@id/topo_diminuir" android:visibility="gone" layout="@layout/layout_remanejamento_topo_ajuste_manual_diminuir" />
+    <include android:id="@id/topo_aumentar" android:visibility="gone" layout="@layout/layout_remanejamento_topo_ajuste_manual_aumentar" />
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.RecyclerView android:id="@id/list_manual" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <Button android:textColor="@color/santander_white" android:layout_gravity="center_horizontal" android:id="@id/continuar_button" android:background="@drawable/red_button" android:padding="8.0dip" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/continuar" android:textAllCaps="false" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

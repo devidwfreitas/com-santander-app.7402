@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayoutBeneficiaries" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <View android:layout_gravity="center" android:background="@color/colorTransparent" android:layout_width="1000.0dip" android:layout_height="1.0dip" />
+                <ImageView android:layout_gravity="center" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_marginTop="@dimen/small_padding" android:src="@drawable/ic_family_red_not_rounded" />
+                <TextView android:textSize="@dimen/text_primary_size_small" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/update_beneficiaries_" />
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorGrayLight" android:id="@id/editNameHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_padding" android:hint="@string/name">
+                    <android.support.design.widget.TextInputEditText android:textSize="@dimen/default_text_size" android:textColor="@color/colorGrayLight" android:id="@id/editName" android:focusable="false" android:focusableInTouchMode="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorGrayLight" android:id="@id/editKinshipHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/kinship_beneficiary">
+                    <android.support.design.widget.TextInputEditText android:textSize="@dimen/default_text_size" android:textColor="@color/colorGrayLight" android:id="@id/editKinship" android:focusable="false" android:focusableInTouchMode="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorGrayLight" android:id="@id/editEmailHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/e_mail_">
+                    <android.support.design.widget.TextInputEditText android:textSize="@dimen/default_text_size" android:id="@id/editEmail" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textEmailAddress" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorGrayLight" android:id="@id/editTelephoneHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/telephone_">
+                    <android.support.design.widget.TextInputEditText android:textSize="@dimen/default_text_size" android:id="@id/editTelephone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="phone" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorGrayLight" android:id="@id/editPercentageHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_padding" android:hint="@string/percentage">
+                    <android.support.design.widget.TextInputEditText android:textSize="@dimen/default_text_size" android:textColor="@color/colorGrayLight" android:id="@id/editPercentage" android:focusable="false" android:focusableInTouchMode="false" android:longClickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layoutBottom" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin">
+                <Button android:layout_gravity="center" android:id="@id/btCancel" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginLeft="15.0dip" android:layout_marginRight="20.0dip" android:text="@string/cancel" android:layout_weight="0.5" android:textAllCaps="true" style="@style/AppTheme.ButtonTransparentStrokeBlue" fontPath="fonts/OpenSans-Light.ttf" />
+                <Button android:layout_gravity="center" android:id="@id/btSave" android:layout_width="0.0dip" android:layout_height="35.0dip" android:layout_marginRight="15.0dip" android:text="@string/save" android:layout_weight="0.5" android:textAllCaps="true" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+    </br.com.zup.multistatelayout.MultiStateLayout>
+</ScrollView>

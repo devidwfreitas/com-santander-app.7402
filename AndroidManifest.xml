@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?><manifest xmlns:android="http://schemas.android.com/apk/res/android" package="com.santander.app" platformBuildVersionCode="25" platformBuildVersionName="7.1.1">
+    <uses-feature android:name="android.hardware.telephony" android:required="true"/>
+    <uses-feature android:name="android.hardware.location.gps" android:required="false"/>
+    <permission android:name="com.santander.app.permission.MAPS_RECEIVE" android:protectionLevel="signature"/>
+    <permission android:name="com.santander.app.permission.LAUNCHER" android:protectionLevel="signature"/>
+    <uses-permission android:name="android.permission.GET_TASKS"/>
+    <uses-permission android:name="android.permission.READ_LOGS"/>
+    <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.ACTION_CALL"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"/>
+    <uses-permission android:name="android.permission.USE_FINGERPRINT"/>
+    <uses-permission android:name="com.santander.app.permission.MAPS_RECEIVE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="com.google.android.providers.gsf.permission.READ_GSERVICES"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
+    <uses-permission android:name="android.permission.RECORD_AUDIO"/>
+    <uses-permission android:name="android.permission.READ_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW"/>
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED"/>
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE"/>
+    <uses-feature android:glEsVersion="0x00020000" android:required="true"/>
+    <meta-data android:name="android.support.VERSION" android:value="25.3.1"/>
+    <uses-feature android:name="android.hardware.camera" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.front" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.autofocus" android:required="false"/>
+    <uses-feature android:name="android.hardware.camera.flash" android:required="false"/>
+    <uses-feature android:name="android.hardware.screen.landscape" android:required="false"/>
+    <uses-feature android:name="android.hardware.wifi" android:required="false"/>
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"/>
+    <uses-permission android:name="android.permission.BLUETOOTH"/>
+    <uses-permission android:name=".permission.C2D_MESSAGE"/>
+    <permission android:name=".permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <permission android:name="com.santander.app.permission.C2D_MESSAGE" android:protectionLevel="signature"/>
+    <uses-permission android:name="com.santander.app.permission.C2D_MESSAGE"/>
+    <application android:allowBackup="false" android:icon="@drawable/ic_launcher" android:label="@string/app_name" android:name="com.santander.app.MinhaConta" android:supportsRtl="true" android:theme="@style/AppTheme">
+        <service android:enabled="true" android:exported="true" android:name="com.santander.app.analytics.util.TriggerService"/>
+        <service android:name="com.datami.smi.SmiIntentService"/>
+        <meta-data android:name="com.google.android.maps.v2.API_KEY" android:value="AIzaSyBSaQ0cLiQaRbmfMP0kYvUGp8HEWfNssU4"/>
+        <meta-data android:name="com.facebook.sdk.ApplicationId" android:value="@string/app_id"/>
+        <receiver android:exported="true" android:name="com.google.ads.conversiontracking.InstallReceiver">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:enabled="true" android:name="com.santander.app.idsantander.SmsReceiver">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:name="com.datami.smi.NetworkChangeReceiver">
+            <intent-filter>
+                <action android:name="android.net.conn.CONNECTIVITY_CHANGE"/>
+            </intent-filter>
+        </receiver>
+        <service android:exported="false" android:label="GCM service" android:name="com.santander.app.notification.NotificationService">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <category android:name="com.csc.notifications"/>
+            </intent-filter>
+        </service>
+        <receiver android:exported="true" android:name="com.google.android.gms.gcm.GcmReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="br.com.santander.msgsdk.gcm.InstanceIDListenerService">
+            <intent-filter>
+                <action android:name="com.google.android.gms.iid.InstanceID"/>
+            </intent-filter>
+        </service>
+        <service android:enabled="true" android:exported="false" android:name="br.com.santander.msgsdk.gcm.RegistrationIntentServiceMSG"/>
+        <provider android:authorities="com.santander.app.idsantander.idsantanderprovedor" android:exported="true" android:name="com.santander.app.idsantander.IdSantanderProvedor"/>
+        <activity android:name="com.santander.app.homenaologada.presentation.HomeActivity" android:screenOrientation="portrait" android:theme="@style/HomeTheme" android:windowSoftInputMode="adjustResize">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="open" android:scheme="santanderpf"/>
+            </intent-filter>
+        </activity>
+        <activity android:launchMode="singleTask" android:name="com.santander.app.deeplink.DeepLinkActivity" android:screenOrientation="portrait">
+            <intent-filter android:autoVerify="true">
+                <action android:name="android.intent.action.VIEW"/>
+                <category android:name="android.intent.category.DEFAULT"/>
+                <category android:name="android.intent.category.BROWSABLE"/>
+                <data android:host="deeplink" android:scheme="santanderpf"/>
+            </intent-filter>
+        </activity>
+        <activity android:excludeFromRecents="true" android:name="com.santander.app.ExitActivity" android:theme="@android:style/Theme.NoDisplay"/>
+        <activity android:name="com.santander.app.ConsultiveUserActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.ContaMovementActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.CalendarioActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.FazerPagamentoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateAlwaysHidden|adjustPan"/>
+        <activity android:name="com.santander.app.FazerPagamentoConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.CadastramentoFacturaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.CadastramentoTransOkActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.CadastramentoValidacionActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.ParcelamentoFacturaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.cartoes.parcelamentofatura.presentation.ParcelamentoFaturaCorrentistaConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.cartoes.parcelamentofatura.presentation.ParcelamentoFaturaCorrentistaValidacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.ParcelamentoTransaccionOkActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.ParcelamentoTransaccionErrorActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PagamentoFacturaCartoesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PagamentoCartoesConfirmacaoAction" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PagamentoCartoesValidacionAction" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PagamentoCartoesTransOkAction" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PagamentoCartoesTransErrorActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.Rendafixa_posicaoconsolidadaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.RendaFixaAplicacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.RendaFixaAplicacaoConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.RendaFixaResgateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.RendaFixaResgateConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.Poupanca_posicaoconsolidadaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PoupancaAplicacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PoupancaAplicacaoConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PoupancaResgateActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.PoupancaResgateConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.Rendafixa_posicaoconsolidada_Detahle" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.SaldoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.FuturosActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.FuturosExtratoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.InvestimentosConsolidadaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.InvestimentosFundoDetalleActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.WebViewActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.FazerPagamentoBoletoVR" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.components.view.zxing.CustomScannerActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.santander.app.components.view.zxing.CustomQrScannerActivity" android:screenOrientation="sensorPortrait" android:stateNotNeeded="true" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:name="com.santander.app.agendamentos.activity.AgendamentosActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.MeuPerfilActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.MeuPerfilTrocarSenhaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.MeuPerfilSolicitarCartaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.MeuPerfilSolicitarCartaoNovamenteActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.MeuPerfilAtivarCartaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.MeuPerfilSolicitarCartaoComprovante" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.PrimeiroAcessoBoasVindasActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.PrimeiroAcessoTermos" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.CadastroFinalizadoSucessoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.CadastroAtencaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.SenhaAcessoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.meuperfil.activity.ContaPreferencialActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.santander.app.cadastrocanal.activity.QuizStartActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.santander.app.BeneficiarioPagamentoListActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.santander.app.BeneficiarioPagamentoDetalheActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.santander.app.transferencia.presentation.DetalheTransferenciaProgramadaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.agendamentos.activity.DetalheAgendamentoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.agendamentos.activity.GerarComprovanteAgendamentoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.HomeLogadaNaoCorrentistaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.faturas.activity.FaturasActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.faturas.activity.DetalheFaturaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.desbloqueio.cartao.activity.DesbloqueioCartoesActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.desbloqueio.cartao.activity.DesbloqueioCartaoConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.desbloqueio.cartao.activity.DesbloqueioCartaoComprovanteActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.agendamentos.activity.AgendamentosDetalheActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.agendamentos.activity.CancelarAgendamentoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.habilitacaointernacional.activity.HabilitacaoInternacionalActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.habilitacaointernacional.activity.ConsultarAlterarHabilitacaoInternacionalActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.habilitacaointernacional.activity.ExcluirHabilitacaoInternacionalActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.habilitacaointernacional.activity.CadastrarHabilitacaoInternacionalActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.habilitacaointernacional.activity.ConfirmarHabilitacaoInternacionalActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.habilitacaointernacional.activity.ValidarCartaoHabilitacaoInternacionalActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.habilitacaointernacional.activity.ComprovanteHabilitacaoInternacionalActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.habilitacaointernacional.activity.ListarPaisesHabilitacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.dpp.DPPPreenchimentoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="com.santander.app.dpp.DPPConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.dpp.DPPValidacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.dpp.DPPComprovanteActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.dpp.DPPListaProgramadaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.dpp.DPPCondicoesContratoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.cadastrodebitoautomatico.activity.CadastrarDebitoAutomaticoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme" android:windowSoftInputMode="stateHidden"/>
+        <activity android:name="com.santander.app.cadastrodebitoautomatico.activity.ConfirmarDebitoAutomaticoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.cadastrodebitoautomatico.activity.ComprovanteDebitoAutomaticoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.cadastrodebitoautomatico.activity.CSODebitoAutomaticoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoDT.activity.SimulacaoAntecipacaoDTPasso1Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoDT.activity.SimulacaoAntecipacaoDTPasso2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoDT.activity.TermoContratacaoEmprestimoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoDT.activity.CustoEfetivoTotalAntecipacaoDTActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoDT.activity.AntecipacaoDTConfirmacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.comprovantes.activity.ComprovanteBaseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.comprovantes.activity.ComprovanteBaseDDAActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/title_activity_gerenciar_dispositivo" android:name="com.santander.app.perfil.activity.GerenciarDispositivoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:label="@string/title_activity_investimentos_no_atm" android:name="com.santander.app.perfil.activity.InvestimentosNoAtmActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:label="@string/title_activity_investimentos_no_atm" android:name="com.santander.app.perfil.activity.InvestimentoNoAtmConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:label="@string/title_activity_gerenciar_dispositivo" android:name="com.santander.app.perfil.activity.GerenciarDispositivosConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoIR.activity.SimulacaoAntecipacaoIRPasso1Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoIR.activity.SimulacaoAntecipacaoIRPasso2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoIR.activity.TermoContratacaoEmprestimoAntecipacaoIRActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoIR.activity.CustoEfetivoTotalAntecipacaoIRActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.antecipacaoIR.activity.AntecipacaoIRConfirmacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.integrationway.presentation.IntegrationWayActivity" android:noHistory="true" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar.FullScreen"/>
+        <activity android:name="com.santander.app.novidades.view.NovidadesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.boasvindas.BoasVindasActivity" android:screenOrientation="portrait" android:theme="@style/BoasVindasTheme"/>
+        <activity android:name="com.santander.app.cartoes.bloqueio.presentation.BloqueioCartaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.chat.presentation.EmpChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderOfertaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderHabilitacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderComprovanteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderConversaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderSincroniaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.validation.presentation.ValidacaoIdSantanderComprovanteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.validation.presentation.IdSantanderUsuarioConsultivoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderOtimizacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderHabilitacaoSMSOfertaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderEscolhaCelularActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderValidacaoSMSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderHabilitacaoSMSActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderAtivarCartaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderDesafioCsoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderGerarQrActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderHabilitacaoQrOfertaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.validation.presentation.IdSantanderEscolhaCanalTransacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.validation.presentation.LeituraQrCodeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.validation.presentation.IdSantanderTokenCentralAtendimentoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderHabilitacaoQrOuAtmOfertaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderHabilitacaoAtmInstrucoesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.recargatelefone.presentation.RecargaTelefoneActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.recargatelefone.recargaconfirmacao.presnetation.RecargaConfirmacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.recargatelefone.recargavalidacao.presentation.RecargaValidacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.recargatelefone.listarecargaprogramada.presentation.RecargaProgramadaExclusaoConfirmacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.idsantander.presentation.IdSantanderTutorialCapturaQrCodeActivity" android:screenOrientation="portrait" android:theme="@style/TransparentActivity"/>
+        <activity android:name="com.santander.app.faq.presentation.FaqActivity" android:screenOrientation="portrait" android:theme="@style/FaqTheme"/>
+        <activity android:name="com.santander.app.faq.presentation.FaqPerguntasActivity" android:screenOrientation="portrait" android:theme="@style/FaqTheme"/>
+        <activity android:name="com.santander.app.faq.presentation.FaqRespostasActivity" android:screenOrientation="portrait" android:theme="@style/FaqTheme"/>
+        <activity android:name="com.santander.app.faq.presentation.FaqTelefonesActivity" android:screenOrientation="portrait" android:theme="@style/FaqTheme"/>
+        <activity android:name="com.santander.app.cartoes.parcelamentofatura.presentation.ParcelamentoFaturaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.pagamentos.titulos.presentation.PagamentosCodigoBarrasActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.pagamentos.titulos.presentation.FormaPagamentosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.pagamentos.titulos.presentation.FormaPagamentosDDAActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.pagamentos.titulos.presentation.ConfirmarPagamentoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.pagamentos.titulos.presentation.ConfirmarPagamentoDDAActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.homelogada.presentation.HomeLogadaActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.cartoes.parcelamentofatura.presentation.ParcelamentoFaturaNaoCorrentistaConfirmacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.cartoes.parcelamentofatura.presentation.ParcelamentoFaturaNaoCorrentistaComprovanteActivity" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.previdencia.presentation.PosicaoConsolidadaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.previdencia.presentation.DetalhePosicaoConsolidadaPrevidenciaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.previdencia.presentation.ListaDeAportesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.previdencia.presentation.AporteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.previdencia.presentation.SemPrevidenciaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.previdencia.presentation.AporteConfirmacaoActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme"/>
+        <activity android:name="com.santander.app.previdencia.presentation.CondicoesAporteActivity" android:screenOrientation="portrait" android:theme="@style/AppThemePrevidencia"/>
+        <activity android:name="com.santander.app.transferencia.presentation.TransferenciasActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.transferencia.presentation.ListagemFavorecidosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.cambio.transferenciaexterior.presentation.DadosOperacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.cambio.transferenciaexterior.presentation.MotivoEnvioListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.cambio.transferenciaexterior.presentation.MotivoEnvioEditActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.cambio.transferenciaexterior.presentation.FavorecidoCambioActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.cambio.transferenciaexterior.presentation.CambioActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.cambio.transferenciaexterior.presentation.CambioClausulasContratuaisActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.cambio.transferenciaexterior.presentation.CambioConfirmacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="" android:name="com.santander.app.cambio.transferenciaexterior.presentation.DemaisPaisesListActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeSearch"/>
+        <activity android:name="com.santander.app.transferencia.presentation.CadastroFavorecidoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.transferencia.presentation.ListagemTodosBancosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.transferencia.presentation.FormaTransferenciaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.transferencia.presentation.ConfirmacaoTransferenciaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.faleconosco.presentation.FormularioFaleConoscoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.faleconosco.presentation.ComprovanteFaleConoscoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.segundaviacomprovantes.presentation.ComprovanteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.segundaviacomprovantes.presentation.SegundaViaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.segundaviacomprovantes.presentation.ListarComprovantesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.sugestaocdb.presentation.SugestaoCDB" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.cancellation.activities.SuccessCancellationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.contract.activities.TermsOfUseActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.consultative.activities.HireInsuranceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.consultative.activities.MyInsurancesV2Activity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.consultative.activities.CoverageActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.consultative.activities.BeneficiariesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.consultative.activities.BillingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.MySinisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.SinisterDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.DocumentSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.OpenSuccessSinisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.SinisterDocumentsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.SinisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.SurveyActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.ConfirmationPaymentActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboardHidden|orientation|screenSize" android:name="com.santander.app.seguros.ui.sinister.activities.ScanDocumentActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.AssistanceSinisterActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.contract.activities.ContractActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.contract.activities.CoverageAssistanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.cancellation.activities.CancellationLifeActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.contract.activities.FullScreenInfoActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.santander.app.seguros.ui.cancellation.activities.CancellationResidenceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.cancellation.activities.HistoricResidenceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.contract.activities.ContractSuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.sinister.activities.ContestationActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.assistance.activities.AssistanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.assistance.activities.MyAssistancesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.assistance.activities.RescheduleAssistanceActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.ui.contract.activities.CsoInsuranceActivity" android:screenOrientation="portrait"/>
+        <provider android:authorities="com.santander.app.provider" android:exported="false" android:grantUriPermissions="true" android:name="android.support.v4.content.FileProvider">
+            <meta-data android:name="android.support.v4.FILE_PROVIDER_PATHS" android:resource="@xml/provider_paths"/>
+            <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/file_paths"/>
+        </provider>
+        <activity android:name="com.santander.app.localizadoragencias.presentation.MapaLocalizadorAgenciaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.localizadoragencias.presentation.BuscaLocalizadorAgenciaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.fingerprint.presentation.FingerprintEnablingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.fingerprint.presentation.FingerprintUpdateStatusActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.fingerprint.presentation.FingerprintReceiptActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.webview.presentation.WebViewActivity" android:screenOrientation="portrait" android:theme="@style/FullscreenTheme"/>
+        <activity android:name="com.santander.app.investimentos.presentation.MeusInvestimentosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.presentation.SemProdutoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.fundos.presentation.ListagemFundosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.fundos.presentation.FundosDetalhesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.fundos.presentation.FiltroFundosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.fundos.presentation.PerfilInvestidorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.fundos.presentation.ListagemContasFundosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.fundos.presentation.ConfirmacaoAplicacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.fundos.presentation.FundosAplicacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.investimentos.fundos.presentation.TermosActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.meuperfil.activity.PoliticaPrivacidadeGoogleActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.formalizacaodigital.presentation.ListagemPropostasActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/formalizacao_digital_detalhe_formalizacao_digital_title" android:name="com.santander.app.formalizacaodigital.presentation.DetalheFormalizacaoDigitalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.acordo.presentation.TermoCondicaoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/credito_pessoal_simulacao_title" android:name="com.santander.app.emprestimo.creditopessoal.presentation.CPSimulacaoActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateHidden"/>
+        <activity android:configChanges="keyboard|keyboardHidden" android:label="@string/credito_pessoal_contratacao_title" android:name="com.santander.app.emprestimo.creditopessoal.presentation.CPContratacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditopessoal.presentation.CPTermosCondicoesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditopessoal.presentation.CPTermoCETActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditopessoal.presentation.CPRetentionActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/acordo_simulacao_title" android:name="com.santander.app.emprestimo.acordo.presentation.AcordoSimulacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/acordo_contratacao_title" android:name="com.santander.app.emprestimo.acordo.presentation.AcordoContratacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/acordo_contratacao_title" android:name="com.santander.app.emprestimo.acordo.presentation.AcordoComprovanteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.seguros.utils.DummyActivity"/>
+        <activity android:name="com.santander.app.emprestimo.creditopessoal.presentation.ConsignadoChatActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditopessoal.presentation.ConsignadoDadosObrigatoriosActivity" android:screenOrientation="portrait" android:windowSoftInputMode="stateAlwaysHidden|adjustResize"/>
+        <activity android:name="com.santander.app.pagamentos.titulos.presentation.MaisInformacoesPagamentoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditopessoal.presentation.ConsignadoRefinActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditopessoal.presentation.ConsignadoEmpAtuaisActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditopessoal.presentation.ConsignadoContratosAtuaisActivity" android:screenOrientation="portrait"/>
+        <activity android:excludeFromRecents="true" android:name="com.santander.app.transfergolden.presentation.ExtensionActivity" android:screenOrientation="portrait" android:taskAffinity="" android:theme="@style/TransferGolder.ThemeTransparent"/>
+        <service android:name="com.santander.app.transfergolden.service.TransferGoldenService"/>
+        <activity android:excludeFromRecents="true" android:name="com.santander.app.transfergolden.presentation.ComprovanteTransferGoldenActivity" android:screenOrientation="portrait" android:taskAffinity=""/>
+        <activity android:name="com.santander.app.formalizacaodigital.presentation.ComprovanteDesistenciaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.carteiradiaria.presentation.ListagemCarteiraDiariaActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.carteiradiaria.presentation.ValidacaoTouchCarteiraDigitalActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.carteiradiaria.presentation.ListagemCarteiraInvestimentoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.carteiradiaria.presentation.ListagemCarteiraInvestimentoDetalhesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.carteiradiaria.presentation.ListagemContasPagarReceberActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditounificado.presentation.CPUSimulacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditounificado.presentation.CPUDividaDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditounificado.presentation.CPUContratacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditounificado.presentation.CPUTermosCETActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.creditounificado.presentation.CPUComprovanteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.cancelamento.presentation.EmprestimoListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.cancelamento.presentation.EmprestimoDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.cancelamento.presentation.ComprovanteCancelarEmprestimo" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.cancelamento.presentation.TermoCondCancelarEmpActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.ServicoIndisponivelActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.emprestimo.chat.ChatV2Activity" android:screenOrientation="portrait"/>
+        <service android:name="com.santander.app.geolocalizacao.service.GeolocalizacaoService" android:stopWithTask="true"/>
+        <service android:name="com.santander.app.phishingsms.service.PhishingSMSService"/>
+        <receiver android:enabled="true" android:exported="true" android:name="com.santander.app.phishingsms.receiver.PhishingSMSReceiver" android:permission="android.permission.BROADCAST_SMS">
+            <intent-filter>
+                <action android:name="android.provider.Telephony.SMS_RECEIVED"/>
+            </intent-filter>
+        </receiver>
+        <activity android:name="com.santander.app.meuperfil.presentation.EscolhaContaPreferencialActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.meuperfil.presentation.EscolhaContaPreferencialComprovanteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.components.view.avisofinalano.AvisoFinalAnoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.homenaologada.login.presentation.VersionAlertActivity" android:screenOrientation="portrait" android:theme="@style/Theme.AppCompat.Light.NoActionBar"/>
+        <activity android:name="com.santander.app.lojaonline.presentation.LojaOnlineActivity" android:screenOrientation="portrait"/>
+        <activity android:name="com.santander.app.lojaonline.presentation.LojaOnlineTermsActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize" android:name="com.facebook.FacebookActivity" android:theme="@style/com_facebook_activity_theme"/>
+        <activity android:name="com.facebook.CustomTabMainActivity"/>
+        <provider android:authorities="com.santander.app.FacebookInitProvider" android:exported="false" android:name="com.facebook.internal.FacebookInitProvider"/>
+        <activity android:clearTaskOnLaunch="true" android:name="com.journeyapps.barcodescanner.CaptureActivity" android:screenOrientation="sensorLandscape" android:stateNotNeeded="true" android:theme="@style/zxing_CaptureTheme" android:windowSoftInputMode="stateAlwaysHidden"/>
+        <activity android:exported="false" android:name="com.google.android.gms.common.api.GoogleApiActivity" android:theme="@android:style/Theme.Translucent.NoTitleBar"/>
+        <activity android:launchMode="singleInstance" android:name="br.com.santander.msgsdk.util.NotificationActionRouter" android:screenOrientation="portrait" android:theme="@style/Transparent"/>
+        <activity android:name="br.com.santander.msgsdk.configPanel.view.ConfigPanelActivity" android:screenOrientation="portrait" android:theme="@style/SantanderTheme"/>
+        <activity android:name="br.com.santander.msgsdk.notifications.view.NotificationsActivity" android:screenOrientation="portrait" android:theme="@style/SantanderTheme"/>
+        <activity android:name="br.com.santander.msgsdk.notifications.view.NotificationDetailActivity" android:screenOrientation="portrait" android:theme="@style/SantanderTheme"/>
+        <activity android:launchMode="singleInstance" android:name="br.com.santander.msgsdk.notifications.view.NotificationRouter" android:screenOrientation="portrait" android:theme="@style/Transparent"/>
+        <activity android:name="br.com.santander.modulo.ddav1.view.TitlesActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.ddav1.view.TitleDetailActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.ddav1.view.DDAErrorActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.ddav1.view.DDASuccessActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.gestao.main.view.CreditoMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.gestao.duvidas.view.DuvidasActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.gestao.contratoslist.view.ContratosListActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.gestao.detalhescontrato.view.DetalhesContratoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.gestao.financiamento.FinanciamentoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.remanejamento.main.view.RemanejamentoMainActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.remanejamento.ajustarlimite.view.AjustarLimiteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.remanejamento.ajustarmanualmente.view.AjustarManualmenteActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.modulo.emprestimoslib.features.remanejamento.revisao.view.RevisaoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.home.view.HomeActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.detalhes.view.DetalheSubProdutoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.configuracao.view.ConfigurarAplicacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.carrinho.view.CarrinhoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.termos.view.TermosRecusaActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.termos.view.TermosCondicoesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.termos.view.TermosAceiteItemActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.efetivacao.view.EfetivacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.resgate.view.ResgateConfigurarActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.resgate.view.ResgateActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.resgate.view.ResgateContratosActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.comprovantes.view.NotasNegociacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.comprovantes.view.ComprovantesActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.cdbProgressivo.view.CdbProgressivoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.listagemSubproduto.view.ListagemTodosSubprodutosActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.listagemSubproduto.view.ListagemSubprodutoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.configurarInvestimentos.view.ConfigurarInvestimentosActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.investirPorValor.view.InvestirPorValorActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:name="br.com.santander.investimentoV2.features.recomendacao.view.RecomendacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:configChanges="orientation" android:label="@string/title_activity_validacao" android:name="br.com.santander.investimentoV2.features.validacao.view.ValidacaoActivity" android:screenOrientation="portrait"/>
+        <activity android:hardwareAccelerated="false" android:launchMode="singleTask" android:name="chat.santander.com.modulochatsantander.view.activities.ChatActivity" android:screenOrientation="portrait" android:theme="@style/AppThemeSquadChat"/>
+        <service android:exported="false" android:name="chat.santander.com.modulochatsantander.polling.ChatPolling"/>
+        <service android:exported="false" android:name="chat.santander.com.modulochatsantander.tasks.ChatTask"/>
+        <service android:exported="false" android:name="chat.santander.com.modulochatsantander.tasks.StartSession"/>
+        <service android:exported="false" android:name="chat.santander.com.modulochatsantander.tasks.EndSession"/>
+        <service android:exported="false" android:name="chat.santander.com.modulochatsantander.tasks.TextWatcherTask"/>
+        <activity android:name="br.com.santander.dynamicauth.features.idsantander.view.IdSantanderActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.dynamicauth.features.cso.view.CsoActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.dynamicauth.features.sms.view.SmsActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.dynamicauth.features.main.view.LoadingActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.dynamicauth.features.cardpassword.view.CardPwdActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.dynamicauth.features.token.view.TokenActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.dynamicauth.features.blink.view.BlinkActivity" android:screenOrientation="portrait"/>
+        <activity android:name="br.com.santander.dynamicauth.features.error.view.ErrorActivity" android:screenOrientation="portrait"/>
+        <receiver android:enabled="true" android:name="br.com.santander.dynamicauth.features.sms.viewmodel.SmsViewModel"/>
+        <activity android:name="br.com.santander.uisdk.search.presentation.SantanderViewSearchActivity" android:screenOrientation="portrait"/>
+        <activity android:label="@string/activity_comprovante_title" android:name="br.com.santander.uisdk.comprovante.SantanderComprovanteActivity" android:screenOrientation="portrait" android:theme="@style/AppTheme.NoActionBar"/>
+        <receiver android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementReceiver"/>
+        <receiver android:enabled="true" android:name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" android:permission="android.permission.INSTALL_PACKAGES">
+            <intent-filter>
+                <action android:name="com.android.vending.INSTALL_REFERRER"/>
+            </intent-filter>
+        </receiver>
+        <service android:enabled="true" android:exported="false" android:name="com.google.android.gms.measurement.AppMeasurementService"/>
+        <receiver android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdReceiver" android:permission="com.google.android.c2dm.permission.SEND">
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE"/>
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION"/>
+                <category android:name="com.santander.app"/>
+            </intent-filter>
+        </receiver>
+        <receiver android:exported="false" android:name="com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"/>
+        <service android:exported="true" android:name="com.google.firebase.iid.FirebaseInstanceIdService">
+            <intent-filter android:priority="-500">
+                <action android:name="com.google.firebase.INSTANCE_ID_EVENT"/>
+            </intent-filter>
+        </service>
+        <provider android:authorities="com.santander.app.firebaseinitprovider" android:exported="false" android:initOrder="100" android:name="com.google.firebase.provider.FirebaseInitProvider"/>
+        <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
+    </application>
+</manifest>

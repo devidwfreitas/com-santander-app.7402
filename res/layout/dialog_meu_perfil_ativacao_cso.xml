@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:paddingBottom="@dimen/commonpaddingx4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin2" android:layout_marginBottom="@dimen/commonpaddingmin2">
+        <ImageButton android:id="@id/btnFecharCSO" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_close" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin2" android:layout_marginTop="@dimen/commonpaddingmin2" android:layout_marginRight="@dimen/commonpaddingmin2" android:layout_marginBottom="@dimen/commonpaddingmin2">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:id="@id/textoDialogAtivarCSO" android:layout_width="220.0dip" android:layout_height="wrap_content" android:text="@string/textoDialogAtivarCSO" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center" android:id="@id/textoAtivarCSOAtiveAgora" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/textoAtivarCSOAtiveAgora" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin2" android:layout_marginTop="@dimen/commonpaddingmin2" android:layout_marginRight="@dimen/commonpaddingmin2" android:layout_marginBottom="@dimen/commonpaddingmin2" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderButtonView android:id="@id/button_ok" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:text="@string/textoDialogBtContinuarApenasConsultar" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+</LinearLayout>

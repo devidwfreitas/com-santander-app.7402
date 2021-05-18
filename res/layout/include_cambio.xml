@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/include_selector_conta">
+        <LinearLayout android:orientation="vertical" android:id="@id/cambio_conteudo_linear_layout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textColor="@color/red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="15.0dip" android:text="@string/cambio_text_quanto_deseja_transferir" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/cambio_box_moeda" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip">
+                <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <android.support.design.widget.TextInputLayout android:id="@id/cambio_primeira_moeda_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_moeda">
+                            <com.santander.app.components.view.ClickToSelectEditText android:ellipsize="end" android:id="@id/cambio_moeda_para_utilizar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="0.5">
+                        <android.support.design.widget.TextInputLayout android:id="@id/cambio_valor_primaiera_moeda_text_input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/valor">
+                            <com.santander.app.components.view.SantanderEditText android:id="@id/cambio_valor_primaiera_moeda" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:inputType="number" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/cambio_taxa_linear_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                    <ImageView android:layout_gravity="center" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ico_taxa_cambial" />
+                    <com.santander.app.components.view.SantanderTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/cambio_taxa_cambial" />
+                    <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="center_vertical" android:id="@id/cambio_taxa_cambial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="99,99" />
+                </LinearLayout>
+                <com.santander.app.components.view.SantanderTextView android:id="@id/cambio_taxa_informativo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="15.0dip" android:layout_marginBottom="10.0dip" android:text="@string/cambio_valor_informad_cobre_tarifas" />
+                <LinearLayout android:id="@id/cambio_moeda_para_converter_linear_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="0.5">
+                        <android.support.design.widget.TextInputLayout android:id="@id/cambio_segunda_moeda_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_moeda_estrangeira">
+                            <com.santander.app.components.view.ClickToSelectEditText android:ellipsize="end" android:id="@id/cambio_moeda_para_converter_select" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:singleLine="true" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/cambio_valor_correspondente_layout" android:visibility="invisible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_weight="0.5">
+                        <android.support.design.widget.TextInputLayout android:id="@id/cambio_valor_correspondente_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_valor_correspondente">
+                            <com.santander.app.components.view.SantanderEditText android:enabled="false" android:id="@id/cambio_valor_correspondente" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/cambio_iof_linear_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cambio_iof" android:layout_weight="0.5" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="right" android:id="@id/cambio_iof_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$99,99" android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/cambio_ir_linear_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cambio_imposto_de_renda" android:layout_weight="0.5" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="right" android:id="@id/cambio_ir_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$99,99" android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/cambio_tc_linear_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cambio_tarifa_de_contrato" android:layout_weight="0.5" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="right" android:id="@id/cambio_tc_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$99,99" android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/cambio_vet_linear_layout" android:background="@drawable/cambio_borda_inferior" android:paddingBottom="15.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cambio_valor_efetivo_total" />
+                <ImageView android:layout_gravity="left" android:id="@id/cambio_ajuda_vet" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ico_mais_info" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="right" android:id="@id/cambio_vet_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$99,99" android:layout_weight="0.5" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/cambio_total_linear_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cambio_valor_total_a_debitar" />
+                <ImageView android:layout_gravity="left" android:id="@id/cambio_ajuda_valor_total" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="10.0dip" android:src="@drawable/ico_mais_info" />
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="right" android:id="@id/cambio_total_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$99,99" android:layout_weight="0.5" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderButtonView android:id="@id/cambio_confirmar_button" android:visibility="gone" android:layout_width="@dimen/button_width2" android:layout_margin="10.0dip" android:text="@string/button_confirmar" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+                <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.floatingTimer.FloatingTimer android:id="@id/cambio_timer" android:layout_width="55.0dip" android:layout_height="55.0dip" android:layout_margin="10.0dip" android:alpha="0.0" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

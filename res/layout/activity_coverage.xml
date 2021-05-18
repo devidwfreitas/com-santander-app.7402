@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayoutCoverage" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout_home" app:msl_errorLayout="@layout/error_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_vertical" android:background="@color/colorGrayBackgroundDetails" android:paddingLeft="@dimen/default_padding" android:paddingTop="@dimen/default_screen_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/default_screen_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/default_text_size" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/name" android:layout_weight="1.0" />
+            <TextView android:textSize="@dimen/default_text_size" android:gravity="right" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/insured_capital" android:layout_weight="1.0" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rvCoverage" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</br.com.zup.multistatelayout.MultiStateLayout>

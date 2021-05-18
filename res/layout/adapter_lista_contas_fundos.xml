@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" card_view:cardCornerRadius="@dimen/commonpaddingmin" card_view:cardElevation="@dimen/commonpaddingmin" card_view:cardUseCompatPadding="true" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_conta" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/conta_fundo_adapter" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray_9" android:id="@id/textview_conta_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="\ 010101010" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_saldo" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black_3" android:id="@id/textview_saldo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo bruto:" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray_9" android:id="@id/textview_saldo_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_horario_limite" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/horario_limite_adapter" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray_9" android:id="@id/textview_horario_limite_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="19:00" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_gravity="center_vertical" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/imageview_check" android:background="@drawable/ico_check_gray" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

@@ -1,0 +1,44 @@
+import org.simpleframework.xml.Element;
+import org.simpleframework.xml.Root;
+
+@Root(name = "return")
+public class gid extends gnb {
+  @Element(required = false)
+  private String codigoBarra;
+  
+  @Element(required = false)
+  private String codigoRetorno;
+  
+  @Element(required = false)
+  private String mensagemRetorno;
+  
+  public String a() {
+    return this.codigoRetorno;
+  }
+  
+  public void a(String paramString) {
+    this.codigoRetorno = paramString;
+  }
+  
+  public String b() {
+    return this.mensagemRetorno;
+  }
+  
+  public void b(String paramString) {
+    this.mensagemRetorno = paramString;
+  }
+  
+  public String c() {
+    return this.codigoBarra;
+  }
+  
+  public void c(String paramString) {
+    this.codigoBarra = paramString;
+  }
+}
+
+
+/* Location:              C:\Users\devid\Downloads\SAST\Santander\dex2jar-2.0\classes-dex2jar.jar!\gid.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

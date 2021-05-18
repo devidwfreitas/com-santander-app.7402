@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/default_screen_padding" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/text_title_size" android:textColor="@color/colorOrange" android:gravity="center_horizontal" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin" fontPath="fonts/OpenSans-Semibold.ttf" />
+    <TextView android:textSize="@dimen/ab_title_size" android:gravity="center_horizontal" android:id="@id/tvTitle" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/choose_option" fontPath="fonts/OpenSans-Semibold.ttf" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/big_padding" android:paddingTop="@dimen/small_padding" android:paddingRight="@dimen/big_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/default_text_size" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/equipment" />
+        <EditText android:id="@id/editEquipment" android:nextFocusDown="@id/editValueEquipment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="23" android:imeOptions="actionNext" android:textAlignment="center" />
+        <TextView android:textSize="@dimen/default_text_size" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/approximate_value" android:inputType="numberDecimal" />
+        <EditText android:id="@id/editValueEquipment" android:nextFocusDown="@id/editValueEquipment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="8" android:inputType="numberDecimal" android:imeOptions="actionDone" android:textAlignment="center" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.seguros.ui.widgets.EquipmentItem android:id="@id/btnTv" android:layout_width="130.0dip" android:layout_height="wrap_content" app:eq_Text="Televisão" app:eq_image="@drawable/ic_check_equipment" />
+        <com.santander.app.seguros.ui.widgets.EquipmentItem android:id="@id/btnRefrigerator" android:layout_width="130.0dip" android:layout_height="wrap_content" app:eq_Text="Geladeira " app:eq_image="@drawable/ic_check_equipment" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.seguros.ui.widgets.EquipmentItem android:id="@id/btnMicrowave" android:layout_width="130.0dip" android:layout_height="wrap_content" app:eq_Text="Microondas " app:eq_image="@drawable/ic_check_equipment" />
+        <com.santander.app.seguros.ui.widgets.EquipmentItem android:id="@id/btnDVD" android:layout_width="130.0dip" android:layout_height="wrap_content" app:eq_Text="DVD - Blu Ray " app:eq_image="@drawable/ic_check_equipment" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.seguros.ui.widgets.EquipmentItem android:id="@id/btnWashing" android:layout_width="wrap_content" android:layout_height="wrap_content" app:eq_Text="Lavadora de roupas" app:eq_image="@drawable/ic_check_equipment" />
+    </LinearLayout>
+    <RelativeLayout android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin">
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btCancel" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/cancel" style="@style/AppTheme.ButtonTransparentStrokeBlue" fontPath="fonts/OpenSans-Light.ttf" />
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btSaveOrEdit" android:layout_width="wrap_content" android:layout_height="40.0dip" android:text="@string/save" android:layout_weight="0.5" android:layout_alignParentRight="true" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </RelativeLayout>
+</LinearLayout>

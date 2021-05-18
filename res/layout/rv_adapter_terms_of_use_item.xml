@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.santander.app.seguros.ui.widgets.JustifyTextView android:id="@id/jfTV" android:background="@color/colorWhite" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

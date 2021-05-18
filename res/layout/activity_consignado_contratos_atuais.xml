@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@id/activity_consignado_contratos_atuais" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/commonpadding15">
+        <com.santander.app.components.view.SantanderTextView android:textSize="16.0dip" android:id="@id/textview_title_contratos_atuais" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Consolidando todos os contratos dos empréstimos que possui com o Santander em (BaseDateService), o valor é:" />
+        <LinearLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+            <android.support.v7.widget.RecyclerView android:id="@id/recycle_contratos_atuais" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

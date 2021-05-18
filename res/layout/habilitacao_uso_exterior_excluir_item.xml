@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView_pais_viagem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="São Paulo" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView_data_inicial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20/11/2010" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView_data_final" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11/12/2015" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_alignParentRight="true">
+            <com.santander.app.components.view.SantanderCheckBox android:id="@id/checkBox_excluir" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentRight="true" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

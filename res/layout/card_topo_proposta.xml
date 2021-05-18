@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="18.0dip" android:textStyle="bold" android:id="@id/title_proposta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Propos:  " />
+            <TextView android:textSize="16.0sp" android:textColor="@color/gray4" android:id="@id/data_inicio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="inicio: dd/MM/yyyy" android:layout_weight="1.0" android:layout_marginStart="5.0dip" />
+            <ImageView android:layout_gravity="center" android:id="@id/condicao_proposta" android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_emprestimo_cancel_cancelar" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/box_data_solicitacao" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/gray4" android:id="@id/data_solicitacao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data de solicitação: dd/MM/yyyy" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/box_prazo_aprovacao" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0dip" android:textColor="@color/gray4" android:id="@id/prazo_aprovacao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Prazo para aprovação: Em até dois dias " />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/commonpadding15" />
+</LinearLayout>

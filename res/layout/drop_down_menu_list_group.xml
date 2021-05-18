@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:background="@color/menuBackground" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/item6" android:paddingTop="@dimen/commonpaddingmin2" android:paddingBottom="@dimen/commonpaddingmin2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="@dimen/commonpadding">
+        <ImageView android:layout_gravity="start|center" android:id="@id/img_group_menu" android:layout_width="38.0dip" android:layout_height="38.0dip" app:srcCompat="@drawable/ic_menu_investimento" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/menuTextAppearanceLarge" android:textColor="@color/menuForeground" android:layout_gravity="start|center" android:id="@id/lblItemHeader" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item6" app:opensans_regular="opensans_regular.ttf" />
+        <RelativeLayout android:layout_gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin">
+            <RelativeLayout android:gravity="center" android:id="@id/rl_menu_notification" android:background="@drawable/btn_default_holo_orange" android:visibility="gone" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="3.0dip" android:layout_alignParentRight="true">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/white" android:gravity="center" android:id="@id/textview_notificacoes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1" />
+            </RelativeLayout>
+            <ImageView android:id="@id/expandableIcon" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" app:srcCompat="@drawable/ic_menu_seta" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

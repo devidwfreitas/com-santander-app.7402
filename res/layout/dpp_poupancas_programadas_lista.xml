@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmallInverse" android:textSize="13.0sp" android:textColor="@color/gray_dark" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:text="@string/dpp_inf_exclusao" app:opensans_regular="opensans_regular.ttf" />
+    <ListView android:id="@id/lv_lista_aplicacao_programada" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minHeight="100.0dip" android:layout_weight="1.0" />
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/btn_programar" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/btn_programar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+</LinearLayout>

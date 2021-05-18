@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:orientation="vertical" android:id="@id/drop_down_view" android:background="@android:color/white" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:id="@id/containerextrato" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                <RelativeLayout android:id="@id/cabeceratab2" android:paddingLeft="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Referente aos próximos 7 dias" app:opensans_regular="opensans_regular.ttf" />
+                </RelativeLayout>
+                <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin">
+        <View android:id="@id/lineTop" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_above="@id/ivCheck" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/ivCheck" android:layout_width="28.0dip" android:layout_height="28.0dip" android:layout_centerVertical="true" />
+        <View android:id="@id/lineBottom" android:background="@color/colorGrayBackgroundDetails" android:layout_width="1.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_below="@id/ivCheck" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textStyle="bold" android:id="@id/tvDate" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+              xmlns:android="http://schemas.android.com/apk/res/android">
+                <TextView android:textSize="@dimen/default_text_size" android:id="@id/tvDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivArrow" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/ivArrow" android:layout_width="30.0dip" android:layout_height="30.0dip" android:src="@drawable/ic_subitem_blue" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

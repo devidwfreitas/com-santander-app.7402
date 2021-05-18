@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/relative_layout_poupanca" android:background="@color/contaBackground" android:padding="@dimen/commonpaddingmin" android:layout_width="@dimen/widthContaBox" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/poupancaSantander" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/contaBackgroundText" android:gravity="center_horizontal" android:id="@id/poupancaName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Poupança" android:layout_centerHorizontal="true" app:opensans_regular="opensans_bold.ttf" />
+                </RelativeLayout>
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaBackgroundText" android:id="@id/poupancaNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Posição consolidada" android:layout_below="@id/poupancaName" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/caixaPoupanca" android:background="@color/contaForeground" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="13.0dip" android:layout_below="@id/poupancaSantander" android:layout_alignParentBottom="true">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaForegroundText" android:id="@id/poupancaCount" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 120,376.00" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

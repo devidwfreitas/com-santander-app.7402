@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/colorGrayLight" android:paddingLeft="@dimen/big_padding" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/big_padding" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:text="Confira suas coberturas e valores" android:textAlignment="center" />
+        </LinearLayout>
+        <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v7.widget.RecyclerView android:id="@id/rvCoverageDetails" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/colorGrayLight" android:paddingLeft="@dimen/big_padding" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/big_padding" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/check_your_assists" android:textAlignment="center" />
+            <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/rvAssistanceDetails" android:background="@color/colorWhite" android:paddingBottom="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" />
+        <LinearLayout android:orientation="vertical" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/text_size_title" android:textColor="@color/colorGrayLight" android:paddingLeft="@dimen/big_padding" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/big_padding" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/lack" android:textAlignment="center" />
+            <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/text_primary_size_small" android:id="@id/textLack1" android:paddingLeft="@dimen/small_padding" android:paddingTop="@dimen/default_padding" android:paddingRight="@dimen/small_padding" android:paddingBottom="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/text_lack_1" android:textAlignment="center" />
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/text_primary_size_small" android:id="@id/textLack2" android:paddingTop="@dimen/small_margin" android:paddingBottom="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginRight="20.0dip" android:text="@string/text_lack_2" android:textAlignment="center" />
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btBack" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/big_margin" android:layout_marginRight="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/voltar" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

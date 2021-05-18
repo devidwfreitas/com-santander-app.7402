@@ -1,0 +1,106 @@
+[
+  {
+    "name": "Prestamista",
+    "products": [
+      {
+        "name": "PRESTAMISTA CARTOES",
+        "certificateNumber": "31077737",
+        "startDate": "01/12/2016",
+        "endDate": "03/08/2017",
+        "paymentMethod": "NA PARCELA DO EMPRESTIMO",
+        "policyNumber": "0008423",
+        "certificateKey": "0100770008423031077737",
+        "enableCancel": "false",
+        "cancelation": "false"
+      }
+    ]
+  },
+  {
+    "name": "Prestamista",
+    "proposal": [
+      {
+        "proposalNumber": "740000",
+        "coverageValue": "123123",
+        "startDate": "05/05/2010",
+        "endDate": "15/04/2018",
+        "enableCancel": "true"
+      }
+    ]
+  },
+  {
+    "name": "Prestamista",
+    "products": [
+      {
+        "name": "PROTECAO FINANCEIRA CONSIGNADO",
+        "certificateNumber": "30368859",
+        "startDate": "06/09/2016",
+        "endDate": "08/09/2020",
+        "paymentMethod": "NA PARCELA DO EMPRESTIMO",
+        "policyNumber": "0008425",
+        "certificateKey": "0100770008425030368859",
+        "enableCancel": "true",
+        "cancelation": "false"
+      }
+    ]
+  },
+  {
+    "name": "Vida",
+    "products": [
+      {
+        "name": "PROTECAO VIDA HOMEM",
+        "certificateNumber": "392179268",
+        "startDate": "03/05/2017",
+        "endDate": "03/05/2018",
+        "paymentMethod": "DÉBITO EM CONTA",
+        "policyNumber": "0114157",
+        "certificateKey": "0100930114157392179268",
+        "enableCancel": "false",
+        "cancelation": "true"
+      }
+    ]
+  },
+  {
+    "name": "Residencial",
+    "products": [
+      {
+        "name": "PROTEÇÃO RESIDENCIAL",
+        "certificateNumber": "994826",
+        "startDate": "24/02/2017",
+        "endDate": "24/02/2018",
+        "paymentMethod": "DÉBITO EM CONTA",
+        "policyNumber": "1813162",
+        "certificateKey": "0500141813162000994826",
+        "enableCancel": "true",
+        "cancelation": "false"
+      }
+    ]
+  },
+  {
+    "name": "Acidentes Pessoais",
+    "products": [
+      {
+        "name": "PROTEÇÃO SOB MEDIDA - AP",
+        "certificateNumber": "4538981",
+        "startDate": "26/03/2017",
+        "endDate": "26/03/2018",
+        "paymentMethod": "DÉBITO EM CONTA",
+        "policyNumber": "0002034",
+        "certificateKey": "0100820002034004538981",
+        "enableCancel": "false",
+        "cancelation": "true"
+      }
+    ]
+  },
+  {
+    "name": "Acidentes Pessoais",
+    "proposal": [
+      {
+        "proposalNumber": "456000",
+        "coverageValue": "321312",
+        "startDate": "05/05/2010",
+        "endDate": "15/04/2018",
+        "enableCancel": "true"
+      }
+    ]
+  }
+]

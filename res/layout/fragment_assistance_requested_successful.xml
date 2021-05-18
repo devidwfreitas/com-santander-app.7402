@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:background="@color/colorWhite2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/rlToShare" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin">
+            <View android:id="@id/viewTop" android:layout_width="fill_parent" android:layout_height="120.0dip" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutMiddle" android:background="@color/colorGrayBackground5" android:paddingTop="40.0dip" android:layout_width="fill_parent" android:layout_height="220.0dip" android:layout_below="@id/viewTop">
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="24.0sp" android:textColor="@color/colorDarkGray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/ready" android:textAlignment="center" app:textStyle="light" />
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="22.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="@string/your_assistance_of" android:textAlignment="center" app:textStyle="light" />
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="22.0sp" android:id="@id/tvAssistanceName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Mão de Obra Elétrica" android:textAlignment="center" app:textStyle="semiBold" />
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="22.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/was_requested_with_success" android:textAlignment="center" app:textStyle="light" />
+            </LinearLayout>
+            <ImageView android:background="@drawable/bg_circle_gray_light" android:padding="13.0dip" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="-50.0dip" android:src="@drawable/ico_check" android:layout_below="@id/viewTop" android:layout_centerHorizontal="true" />
+            <android.support.v7.widget.CardView android:id="@id/cardTransactionDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="-15.0dip" android:layout_marginRight="20.0dip" android:layout_below="@id/layoutMiddle" app:cardCornerRadius="4.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/small_margin">
+                    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/protocol" android:textAlignment="center" app:textStyle="semiBold" />
+                    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="16.0sp" android:id="@id/tvProtocolNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" app:textStyle="light" />
+                    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="16.0sp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/date_time_transaction" android:textAlignment="center" app:textStyle="semiBold" />
+                    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="16.0sp" android:id="@id/tvDateTimeTransaction" android:layout_width="fill_parent" android:layout_height="wrap_content" android:textAlignment="center" app:textStyle="light" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingTop="20.0dip" android:paddingRight="16.0dip" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/cardTransactionDetails">
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvBottomText" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/this_will_be_a_emergencial_service" android:textAlignment="center" app:textStyle="semiBold" />
+            </LinearLayout>
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:paddingLeft="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/big_margin" android:layout_below="@id/rlToShare">
+            <Button android:textSize="@dimen/default_text_size" android:id="@id/btToShare" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/to_share" style="@style/AppTheme.ButtonTransparentStrokeBlue" />
+            <Button android:id="@id/btFinish" android:layout_width="fill_parent" android:layout_height="@dimen/button_default_height" android:layout_marginTop="@dimen/default_margin" android:text="@string/keep_up_with_your_request" style="@style/AppTheme.ButtonRedFilled" />
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:gravity="center" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <RelativeLayout android:orientation="vertical" android:id="@id/contaRelativeContainer" android:background="@color/contaBackground" android:layout_width="@dimen/widthContaBox" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/contaSantander" android:clipChildren="false" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/contaBackgroundText" android:gravity="center_horizontal" android:id="@id/contaName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Conta Santander" android:maxLines="1" android:layout_centerHorizontal="true" app:opensans_regular="opensans_bold.ttf" />
+                </RelativeLayout>
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/contaBackgroundText" android:id="@id/contaNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9999 / 99.99999999.9" android:layout_below="@id/contaName" android:layout_centerHorizontal="true" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/caixaSaldo" android:background="@color/contaForeground" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="13.0dip" android:layout_below="@id/contaSantander">
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/saldo_conta" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textColor="@color/contaForegroundText" android:gravity="center" android:layout_gravity="center" android:id="@id/tvSaldoDisponivel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/saldoDisponivel" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/contaForegroundText" android:gravity="center" android:layout_gravity="center" android:id="@id/contaCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 99,376.00" android:layout_below="@id/tvSaldoDisponivel" app:opensans_regular="opensans_regular.ttf" />
+                </RelativeLayout>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:id="@id/saldo_disponivel_conta" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textColor="@color/contaForegroundText" android:gravity="center" android:layout_gravity="center" android:id="@id/tvSaldoDisponivelTotal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/saldoDisponivelTotal" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/contaForegroundText" android:gravity="center" android:layout_gravity="center" android:id="@id/saldoEfetivo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 99,376.00" android:layout_below="@id/tvSaldoDisponivelTotal" app:opensans_regular="opensans_regular.ttf" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

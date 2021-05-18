@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingLeft="@dimen/big_padding" android:paddingRight="@dimen/big_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/default_text_size" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Light.ttf" />
+    <com.santander.app.seguros.ui.widgets.DocumentView android:id="@id/documentView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_margin" />
+</LinearLayout>

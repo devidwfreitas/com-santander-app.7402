@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="horizontal" android:background="@color/inv_red" android:layout_width="fill_parent" android:layout_height="54.0dip">
+        <ImageView android:id="@id/print_logo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_logo" android:layout_centerInParent="true" />
+        <LinearLayout android:gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+            <ImageButton android:id="@id/print_cancel" android:background="@color/inv_transparent" android:padding="20.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_cancel_inv" android:scaleType="fitCenter" android:contentDescription="@string/app_back" />
+            <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/inv_white_two" android:id="@id/print_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif-medium" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

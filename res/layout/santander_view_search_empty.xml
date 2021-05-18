@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <br.com.santander.uisdk.error.SantanderErrorView android:layout_width="fill_parent" android:layout_height="fill_parent" app:screen_error_type="title" app:screen_error_icon="@drawable/ic_busca_sem_resultados" app:screen_error_title="Não há resultados para a busca realizada" />
+</LinearLayout>

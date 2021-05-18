@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Application</key>
+	<array>
+		<dict>
+			<key>profileURL</key>
+			<string>https://m.axa.santander.com.br/api/1/urn:ca:tenantId:BC29C563-BF1A-0C3F-DEAF-DA298DF53346/urn:ca:appId:Santander%20Brasil/profile</string>
+			<key>baseURL</key>
+			<string>https://m.axa.santander.com.br</string>
+			<key>collectorUploadURL</key>
+			<string>https://m.axa.santander.com.br/api/1/urn:ca:tenantId:BC29C563-BF1A-0C3F-DEAF-DA298DF53346/urn:ca:appId:Santander%20Brasil/mobileMetrics</string>
+			<key>keySize</key>
+			<string>2048</string>
+			<key>appId</key>
+			<string>Santander Brasil</string>
+			<key>tenantID</key>
+			<string>BC29C563-BF1A-0C3F-DEAF-DA298DF53346</string>
+			<key>appKey</key>
+			<string>a1c5eb10-40aa-11e7-899c-7beb86480ad0</string>
+			<key>cryptoURL</key>
+			<string>https://m.axa.santander.com.br/api/1/urn:ca:tenantId:BC29C563-BF1A-0C3F-DEAF-DA298DF53346/urn:ca:appId:Santander%20Brasil/key</string>
+			<key>encryptionKey</key>
+			<string>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAzvAILjIoSfPRo+YZCfX2ZMc+4Dd1qb+YkNNZv7SiJgC2Wnkl7BBMwlEF1BE9qIYggMN2MOydPBP1ozK1vg5lyjn6V4oegT6gAYXjamO8K7HlDz7QOvu0nj00qjbqhpkgKTgGzgM1/XASbT5WrFRAE+mxAXgD32+w+zTuQHZRwhT9ilOXM5NNiyGGQrsXThVEzuHjVPgu3TA18Dh3l8cmgBGloaYKQmjZzzQiKbl6MxutFd9gHqn/dxvVPgjaWEfmvVMXsLzB9sdYizAau+IjTSLcZcod3UcJYRPT3T0hsQFhlvsX07B/ndkxtFMS0+FbK2QQsq6yfukdYq+dAsqcpQIDAQAB</string>
+			<key>encryptionKeyVersion</key>
+			<string>1495648726636</string>
+			<key>algorithm</key>
+			<string>RSA</string>
+		</dict>
+	</array>
+</dict>
+</plist>

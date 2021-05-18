@@ -1,0 +1,32 @@
+[
+  {
+    "number":"1234",
+    "cardBanner": "VISA"
+  },
+
+  {
+    "number":"5678",
+    "cardBanner": "MASTERCARD"
+  },
+
+  {
+    "number":"1234",
+    "cardBanner": "MASTERCARD"
+  },
+
+  {
+    "number":"5678",
+    "cardBanner": "VISA"
+  },
+
+
+  {
+    "number":"1234",
+    "cardBanner": "MASTERCARD"
+  },
+
+  {
+    "number":"5678",
+    "cardBanner": "VISA"
+  }
+]

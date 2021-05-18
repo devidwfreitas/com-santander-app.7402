@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_header_pequeno" />
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+            <TextView android:textSize="18.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:gravity="center_horizontal" android:id="@id/efetivacao_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/efe_aguarde" android:lineSpacingExtra="2.0sp" android:fontFamily="sans-serif-medium" />
+        </RelativeLayout>
+        <android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" app:cardCornerRadius="5.0dip">
+            <android.support.v7.widget.RecyclerView android:id="@id/efe_lista_efetivacao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" />
+        </android.support.v7.widget.CardView>
+    </LinearLayout>
+    <RelativeLayout android:id="@id/efe_loading" android:background="@color/inv_white_three" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include layout="@layout/layout_loading_state" />
+    </RelativeLayout>
+</RelativeLayout>

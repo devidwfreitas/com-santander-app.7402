@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:id="@id/container_limite_transacao" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin">
+        <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:src="@drawable/ico_atencao" />
+        <com.santander.app.components.view.SantanderTextView android:id="@id/textview_limite_transacao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" android:text="@string/cambio_limite_transacao" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_celular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+            <com.santander.app.components.view.ClickToSelectEditText android:id="@id/textview_celular" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_label_celular" android:maxLines="1" android:singleLine="true" />
+        </android.support.design.widget.TextInputLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+            <com.santander.app.components.view.SantanderTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cambio_label_motivo_envio" app:opensans_regular="opensans_regular.ttf" />
+            <RelativeLayout android:id="@id/relative_motivo_envio" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <LinearLayout android:id="@id/linear_image_seta_motivo_moeda" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_alignParentRight="true">
+                    <ImageButton android:id="@id/imagebutton_calendario_dt_vencimento" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_seta_right" />
+                </LinearLayout>
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/textview_motivo_envio" android:background="@drawable/border_bottom_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cambio_label_selecione_opcao" android:layout_toLeftOf="@id/linear_image_seta_motivo_moeda" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true" />
+            </RelativeLayout>
+            <TextView android:textAppearance="?android:textAppearanceSmall" android:textSize="11.0dip" android:textColor="@color/red" android:id="@id/textview_error_motivo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+            <com.santander.app.components.view.SantanderTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cambio_label_data_debito" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="right" android:id="@id/textview_data_debito" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+            <com.santander.app.components.view.SantanderTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cambio_label_data_envio" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="right" android:id="@id/textview_data_envio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_continuar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/button_view_continuar" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+</LinearLayout>

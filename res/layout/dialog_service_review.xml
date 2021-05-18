@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" app:msl_loadingLayout="@layout/loading_layout_background_transparent" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <View android:background="@color/colorTransparent" android:layout_width="1000.0dip" android:layout_height="0.5dip" />
+        <android.support.v4.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/big_margin" android:layout_marginRight="@dimen/big_margin" android:text="@string/text_service_review" fontPath="fonts/OpenSans-Light.ttf" />
+                <RatingBar android:layout_gravity="center" android:id="@id/ratingBar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:numStars="5" android:stepSize="1.0" style="@style/AppTheme.RatingBar" />
+                <LinearLayout android:orientation="vertical" android:id="@id/llAnswers" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-10.0dip">
+                    <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:id="@id/txtQuestion" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Light.ttf" />
+                    <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/small_margin" />
+                    <LinearLayout android:padding="@dimen/small_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@id/btAnswer1" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:layout_weight="0.5" style="@style/AppTheme.ButtonGrayLight">
+                            <TextView android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@id/textAnswer1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Answer 1" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/btAnswer2" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" style="@style/AppTheme.ButtonGrayLight">
+                            <TextView android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@id/textAnswer2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Answer 2" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <LinearLayout android:padding="@dimen/small_padding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <FrameLayout android:id="@id/btAnswer3" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:layout_weight="0.5" style="@style/AppTheme.ButtonGrayLight">
+                            <TextView android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@id/textAnswer3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Answer 3" />
+                        </FrameLayout>
+                        <FrameLayout android:id="@id/btAnswer4" android:clickable="true" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.5" style="@style/AppTheme.ButtonGrayLight">
+                            <TextView android:textColor="@color/colorWhite" android:layout_gravity="center" android:id="@id/textAnswer4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Answer 4" />
+                        </FrameLayout>
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@id/rvButtonsAnswer" android:clipToPadding="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" />
+                    <EditText android:textSize="@dimen/small_text_size" android:textColor="@color/colorGrayLight" android:textColorHint="@color/colorGrayLight" android:gravity="top" android:id="@id/editMessage" android:background="@drawable/bg_retangle_all_border" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_margin="@dimen/default_margin" android:layout_marginTop="@dimen/big_margin" android:hint="Digite sua mensagem" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layoutBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/nestedScrollView">
+                    <Button android:textSize="11.0sp" android:layout_gravity="center" android:id="@id/btNoThankYou" android:layout_width="0.0dip" android:layout_height="30.0dip" android:layout_marginRight="10.0sp" android:text="@string/no_thank_you_" android:layout_weight="0.5" android:textAllCaps="true" style="@style/AppTheme.ButtonTransparentStrokePrimary" fontPath="fonts/OpenSans-Light.ttf" />
+                    <Button android:textSize="@dimen/small_text_size" android:layout_gravity="center" android:id="@id/btSendReview" android:layout_width="0.0dip" android:layout_height="30.0dip" android:text="@string/to_evaluate" android:layout_weight="0.5" android:textAllCaps="true" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+    </RelativeLayout>
+</br.com.zup.multistatelayout.MultiStateLayout>

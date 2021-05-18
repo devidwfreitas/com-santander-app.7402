@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:id="@id/rl_valores" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/textview_titulo_valores" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_box_valores_antecipacao_dt" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SegmentLineView android:id="@id/linhaConfirmacao" android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_below="@id/textview_titulo_valores" />
+        <RelativeLayout android:id="@id/rl_valor_disponivel" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_below="@id/linhaConfirmacao">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/lbl_valor_disponivel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valor_disponivel" />
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/lbl_valor_preenchimento_disponivel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="19.0dip" android:text="R$0,00" android:layout_toRightOf="@id/lbl_valor_disponivel" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_valor_minimo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_below="@id/rl_valor_disponivel">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/lbl_valor_minimo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valor_minimo" android:layout_below="@id/lbl_valor_disponivel" />
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/lbl_valor_preenchiento_minimo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="37.0dip" android:text="R$0,00" android:layout_toRightOf="@id/lbl_valor_minimo" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/rl_valor_contratar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/rl_valor_minimo">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/lbl_valor_contratar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valor_contratar" android:layout_centerVertical="true" />
+            <com.santander.app.components.view.SantanderEditText android:textAppearance="?android:textAppearanceSmall" android:id="@id/et_valor_contratar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:hint="R$0,00" android:ems="10" android:maxLength="12" android:layout_toRightOf="@id/lbl_valor_contratar" android:inputType="numberDecimal" santander:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

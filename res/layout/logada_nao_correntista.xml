@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <ScrollView android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="@dimen/commonpadding" android:paddingTop="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/bannercontainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin" android:layout_alignParentBottom="true">
+                <ImageView android:id="@id/banner" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:scaleType="fitEnd" android:adjustViewBounds="true" />
+                <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/loadingviewBanner" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="45.0dip" android:layout_margin="@dimen/commonpadding" android:indeterminate="true" android:layout_centerInParent="true" />
+            </LinearLayout>
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="left" android:id="@id/title_cartao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin" android:text="@string/contasactivity_title_cartoes" />
+                <com.santander.app.components.view.SegmentLineView android:id="@id/line_cartao" android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_alignParentBottom="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/button_cartao" android:background="@color/red" android:layout_width="50.0dip" android:layout_height="20.0dip" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" android:onClick="openCartoes">
+                    <ImageView android:id="@id/ico_expand_cartao" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/ico_expand_tablet" />
+                    <ImageView android:id="@id/ico_collapse_cartao" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="3.0dip" android:layout_marginBottom="3.0dip" android:src="@drawable/ico_collapse_tablet" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/boxCartaoVazio" android:background="@color/contaBackground" android:visibility="gone" android:layout_width="@dimen/widthContaBox" android:layout_height="@dimen/heightContaBoxBig" android:layout_marginLeft="@dimen/commonpaddingx4" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx4" android:layout_marginBottom="@dimen/commonpaddingx2">
+                <ImageView android:padding="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/logo_home_logada_2" android:layout_centerInParent="true" />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/boxCartao" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.widget.Carrossel android:orientation="vertical" android:id="@id/carruselCartao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+                    <include layout="@layout/carrusel_contas_big" />
+                </com.santander.app.widget.Carrossel>
+            </LinearLayout>
+            <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/loadingviewCartao" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_margin="@dimen/commonpadding" android:indeterminate="true" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:orientation="vertical" android:id="@id/shareFriends" android:background="@drawable/border" android:layout_width="fill_parent" android:layout_height="25.0dip" android:layout_alignParentBottom="true">
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:id="@id/img_indique" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_indique_amigo" />
+            <com.santander.app.components.view.SantanderTextView android:textColor="#ff333333" android:id="@id/txt_indique" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:text="Indique para um amigo" android:layout_centerVertical="true" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

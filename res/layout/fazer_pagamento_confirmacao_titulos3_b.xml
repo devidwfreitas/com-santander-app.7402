@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/scrollcontainer" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="center_vertical" android:background="@color/gray_fail" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="21.0sp" android:textColor="@color/white" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Pagamento não realizado" android:layout_toRightOf="@id/imageView1" android:layout_centerVertical="true" app:opensans_regular="opensans_regular.ttf" />
+            <ImageView android:id="@id/imageView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_autorizad_nao" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/errorMsg" android:paddingTop="10.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Empresa" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/custom_border_comprovante" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/labelCodBarras" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/texto5pagamentos" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/codbarras1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="43523454234 - 43523454234" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/labelBeneficiario" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Beneficiário:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ricardo da Sousa" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/labelvalor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cliente/Pagador: " app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/valuevalor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Luis da Sousa" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/labelformapagamento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data do vencimento: " app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/valueformapagamento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4/03/2013" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/labeldata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data do pagamento: " app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/valuedata" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="4/03/2013" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor: " app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 999.99" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:background="@drawable/custom_border_comprovante" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/textView5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/comprovante_data_hora_transacao" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView6" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="04/03/2013 - 14:32:32" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:gravity="center_horizontal" android:paddingTop="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Central de Atendimento Santander" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:gravity="center_horizontal" android:paddingTop="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="4004-3535 (Capitais e Regiões Metropolitanas)" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:gravity="center_horizontal" android:paddingTop="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0800-702-3535 (Demais Localidades)" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:paddingTop="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="SAC" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:paddingTop="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 0800-762-7777" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:paddingTop="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ouvidoria" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:paddingTop="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" 0800-726-0322" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin" android:baselineAligned="false" android:weightSum="2.0">
+            <LinearLayout android:orientation="horizontal" android:id="@id/buttonfechar" android:visibility="visible" android:layout_marginTop="@dimen/commonpaddingmin" android:layout_weight="1.0" style="@style/ButtonHoloDark">
+                <com.santander.app.components.view.SantanderTextView android:textColor="@color/white" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fechar" app:opensans_regular="opensans_regular.ttf" />
+                <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/commonpaddingmin" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

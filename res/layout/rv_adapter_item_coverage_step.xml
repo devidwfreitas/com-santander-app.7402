@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:id="@id/flClick" android:paddingLeft="@dimen/default_screen_padding" android:paddingTop="@dimen/default_screen_padding" android:paddingBottom="@dimen/default_screen_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.santander.app.seguros.ui.widgets.CircleImageView android:id="@id/ivImage" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_centerVertical="true" />
+            <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:layout_gravity="center_vertical" android:id="@id/tvCoverage" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_toLeftOf="@id/btInfo" android:layout_toRightOf="@id/ivImage" android:layout_centerVertical="true" />
+            <ImageButton android:id="@id/btInfo" android:background="@drawable/bg_simple_ripple" android:layout_width="23.0dip" android:layout_height="30.0dip" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/ic_info" android:scaleType="centerInside" android:layout_alignParentRight="true" android:layout_centerInParent="true" />
+        </RelativeLayout>
+    </FrameLayout>
+    <View android:id="@id/line" android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="82.0dip" />
+</LinearLayout>

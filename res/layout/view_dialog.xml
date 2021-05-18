@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/transparentBlack" android:padding="@dimen/commonpadding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:paddingBottom="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="left" android:id="@id/dialogtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="Aviso" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SegmentLineView android:background="@color/red" android:layout_width="fill_parent" android:layout_height="4.0dip" android:layout_marginBottom="@dimen/commonpaddingmin" />
+        <LinearLayout android:orientation="vertical" android:id="@id/dialogcontainer" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</LinearLayout>

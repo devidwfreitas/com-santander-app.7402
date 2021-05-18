@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@id/container" android:background="@android:color/white" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/textview_title_emp_desprotegido" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="fitXY" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_security" />
+            <com.santander.app.components.view.SantanderTextView android:textSize="@dimen/text_primary_size" android:textColor="#fff88200" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="1.0dip" android:text="Empréstimo desprotegido" />
+        </LinearLayout>
+        <LinearLayout android:layout_gravity="center_vertical" android:orientation="horizontal" android:id="@id/textview_title_emp_desprotegido" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:paddingStart="20.0dip" android:paddingEnd="20.0dip">
+            <FrameLayout android:layout_gravity="center" android:layout_width="90.0dip" android:layout_height="90.0dip">
+                <com.santander.app.seguros.ui.widgets.CircleChartView android:id="@id/chart" android:layout_width="fill_parent" android:layout_height="fill_parent" android:rotation="-80.0" app:ccv_progress_color="#ff269800" app:ccv_bg_color="#55269800" app:ccv_stroke_width="4.1999817dip" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="18.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:id="@id/porcentagem_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </FrameLayout>
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@android:color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="de nossos clientes escolhem empréstimo protegido" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/santander_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Saiba porquê:" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            <FrameLayout android:background="@drawable/shape_retention_cell" android:padding="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="5.0">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor da parcela" />
+            </FrameLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="3.0" />
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_retention_cell_gray" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.5">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Com proteção" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="#ff5e9a1b" android:gravity="center" android:layout_gravity="center" android:id="@id/com_seguro_value_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/shape_retention_cell" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="2.5">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@android:color/black" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sem proteção" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="#fff88200" android:gravity="center" android:layout_gravity="center" android:id="@id/sem_seguro_value_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="-0.5dip" />
+        <com.santander.app.components.view.SantanderButtonView android:id="@id/protegido_button" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" android:text="@string/seguro_com_protecao_button" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" style="@style/Santander.PillRed" />
+        <com.santander.app.components.view.SantanderButtonView android:id="@id/sem_protecao_button" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" android:text="@string/seguro_sem_protecao_button" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" style="@style/Santander.PillRedReverse" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

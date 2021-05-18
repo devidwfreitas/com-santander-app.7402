@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/term_aceite_main_view" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="50.0dip">
+        <ScrollView android:id="@id/ta_tipo_texto" android:background="@color/inv_white_three" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="50.0dip">
+                <include layout="@layout/layout_header_printable" />
+                <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:id="@id/ta_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/termo_aceite" android:lineSpacingExtra="5.0sp" android:fontFamily="sans-serif-medium" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+                <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:id="@id/ta_termo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="9.0dip" android:text="@string/termo_aceite" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <include android:id="@id/term_aceite_header" layout="@layout/layout_header_pequeno" />
+        <WebView android:id="@id/ta_web" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/term_aceite_header" />
+    </RelativeLayout>
+    <RelativeLayout android:id="@id/ta_share" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="52.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/inv_white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_above="@id/term_aceite_btn_compartilhar" />
+        <Button android:textColor="@color/inv_black_two" android:layout_gravity="bottom" android:id="@id/term_aceite_btn_compartilhar" android:background="@color/inv_transparent" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginTop="1.0dip" android:text="@string/app_compartilhar" android:layout_alignParentBottom="true" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="0.5dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

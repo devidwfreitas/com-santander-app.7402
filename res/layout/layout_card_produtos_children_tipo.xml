@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/portifolio_produtos_filho_layout" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="14.0sp" android:textColor="#ff787878" android:id="@id/portifolio_produtos_filho_nome" android:paddingTop="16.0dip" android:paddingBottom="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="nome" android:layout_alignParentLeft="true" />
+    <TextView android:textSize="14.0sp" android:textColor="#ff191919" android:id="@id/portifolio_produtos_filho_valor" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginRight="19.0dip" android:text="30" />
+    <View android:id="@id/portifolio_produtos_filho_divider" android:background="#fff0f0f0" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="13.0dip" />
+    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Beneficiários e rateios" android:fontFamily="sans-serif" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/commonpaddingx2" android:paddingRight="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_conta_poupanca_dpp" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv_agencia_destino_dpp_carrossel_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2148" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="/" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/black" android:id="@id/tv_conta_destino_dpp_carrossel_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="60.000001.8" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/ll_nova_conta_poupanca_dpp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/black" android:id="@id/txt_texto_nova_conta_dpp_carrossel_item" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Nova conta Poupança" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</LinearLayout>

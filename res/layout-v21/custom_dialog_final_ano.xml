@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:background="@drawable/bg_dialog" android:layout_width="@dimen/dimen_320dp" android:layout_height="@dimen/dimen_382dp"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/dialog_final_ano_image_container" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <ImageView android:id="@id/dialog_final_ano_image" android:layout_width="@dimen/dimen_320dp" android:layout_height="@dimen/dimen_382dp" android:scaleType="fitXY" android:adjustViewBounds="true" app:srcCompat="@drawable/ic_fim_de_ano_android_320x382" />
+        <FrameLayout android:id="@id/dialog_final_ano_botao_fechar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_5dp" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <ImageView android:layout_gravity="center" android:id="@id/animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:majorWeightMax="6.0dip" app:srcCompat="@drawable/ic_fechar" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/dialog_final_ano_botao_nao_ver_mais" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/dimen_5dp" android:layout_alignParentTop="true">
+            <ImageView android:layout_gravity="center" android:id="@id/animation_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:scaleType="center" android:majorWeightMax="6.0dip" app:srcCompat="@drawable/ic_fechar" />
+        </FrameLayout>
+    </RelativeLayout>
+    <com.santander.app.components.view.SantanderButtonView android:gravity="center" android:layout_gravity="bottom" android:id="@id/button_informacoes_custom_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/dimen_10dp" android:layout_marginTop="@dimen/dimen_20dp" android:layout_marginRight="@dimen/dimen_10dp" android:layout_marginBottom="@dimen/dimen_20dp" android:minHeight="@dimen/dimen_40dp" android:text="@string/campanha_botao_mais_informaceos" android:layout_below="@id/dialog_final_ano_image_container" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+</FrameLayout>

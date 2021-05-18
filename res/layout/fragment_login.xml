@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/white" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_login_button" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/relative_drag_button_container">
+        <ScrollView android:id="@id/scrollView3" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_centerInParent="true">
+            <LinearLayout android:orientation="vertical" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="10.0dip">
+                    <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_cpf" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/place_holder_cpf" android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/textinput_password" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_password" android:layout_width="fill_parent" android:layout_height="wrap_content" android:inputType="textPassword" />
+                </android.support.design.widget.TextInputLayout>
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+                    <com.santander.app.components.view.SantanderTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/login_label_guardar_cpf" android:layout_centerVertical="true" />
+                    <br.com.santander.uisdk.SantanderSwitch android:id="@id/switch_save_cpf" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:textOn="" android:textOff="" android:thumb="@drawable/switch_thumb_material" android:layout_alignParentRight="true" android:track="@drawable/switch_track_material" android:switchMinWidth="36.0dip" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <Button android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/button_login" android:background="@drawable/btn_continuar_login_home_nao_logada" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/login_continuar_button" />
+            </LinearLayout>
+        </ScrollView>
+        <TextView android:id="@id/verificar_novidades_button" android:padding="10.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Verificar Novidades" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</RelativeLayout>

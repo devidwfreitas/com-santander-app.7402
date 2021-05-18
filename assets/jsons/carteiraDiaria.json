@@ -1,0 +1,1041 @@
+//{
+//  "fundsList": [
+//    {
+//      "family": "RF",
+//      "name": "YIELD VIP DI",
+//      "fundClass": "RF   ",
+//      "institution": "SANT    ",
+//      "quotaAmount": "1,6773840",
+//      "blockedAmount": "0,0000000",
+//      "sharePrice": "182,2558170",
+//      "investmentRedemption": "0,00",
+//      "presentValue": "305,71",
+//      "tax": "1,47",
+//      "netValue": "304,24",
+//      "percentOfFund": "0,02%",
+//      "percentOfTotal": "0,01%"
+//    },
+//    {
+//      "family": "RF",
+//      "name": "FIC PREV PB NTN-B",
+//      "fundClass": "PREVI",
+//      "institution": "SANT    ",
+//      "quotaAmount": "110.722,2084410",
+//      "blockedAmount": "0,0000000",
+//      "sharePrice": "13,7282730",
+//      "investmentRedemption": "0,00",
+//      "presentValue": "1.520.024,82",
+//      "tax": "0,00",
+//      "netValue": "1.520.024,82",
+//      "percentOfFund": "99,98%",
+//      "percentOfTotal": "28,74%"
+//    },
+//    {
+//      "family": "RF",
+//      "name": "FIC III RENDA FIXA",
+//      "fundClass": "RF   ",
+//      "institution": "SANT    ",
+//      "quotaAmount": "8,5524570",
+//      "blockedAmount": "0,0000000",
+//      "sharePrice": "6,1545520",
+//      "investmentRedemption": "0,00",
+//      "presentValue": "52,64",
+//      "tax": "0,00",
+//      "netValue": "52,64",
+//      "percentOfFund": "0,00%",
+//      "percentOfTotal": "0,00%"
+//    }
+//  ],
+//  "sumFundsList": [
+//    {
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfTotal": "28,75%",
+//      "type": "RF",
+//      "tax": "1,47",
+//      "netValue": "1.520.381,70",
+//      "quotaAmount": "110.732,4382820",
+//      "investmentRedemption": "0,00",
+//      "presentValue": "1.520.383,17",
+//      "percentageOfFunds": "100,00%"
+//    }
+//  ],
+//  "futuresList": [
+//    {
+//      "asset": "FUT DI1",
+//      "maturity": "F18   ",
+//      "broker": "SANTCOR ",
+//      "amount": "-5",
+//      "equalization": "0,00",
+//      "accrualAdjust": "25,75",
+//      "marketPrice": "96.924,53",
+//      "marketValue": "(484.622,65)",
+//      "percentOfFuture": "100,00%",
+//      "percentOfTotals": "-6,97%"
+//    }
+//  ],
+//  "sumFuturesList": [
+//    {
+//      "percentOfTotal": "-6,97%",
+//      "percentageOfFuture": "100,00%",
+//      "equalization": "0,00",
+//      "accrualAdjust": "25,75",
+//      "marketValue": "(484.622,65)"
+//    }
+//  ],
+//  "profitList": [
+//    {
+//      "benchmark": "CDI             ",
+//      "percentOfBenchmark": "-72,589706%",
+//      "realPercent": "-0,059890%",
+//      "dailyPercentVariation": "0,0347129%",
+//      "monthlyPercentVariation": "0,173685%",
+//      "yearlyPercentVariation": "6,689940%",
+//      "lastSixMonthPercent": "4,635810%",
+//      "lastTwelveMonthPercent": "11,368982%"
+//    }
+//  ],
+//  "profitTirList": [
+//    {
+//      "tirValueOne": "0,520000%",
+//      "tirValueTwo": "0,440000%",
+//      "tirValueThree": "0,470000%",
+//      "tirValueFour": "1,110000%",
+//      "tirValueFive": "1,440000%",
+//      "tirValueSix": "1,160000%",
+//      "tirValueTwelveMonth": "12,061581%"
+//    }
+//  ],
+//  "sumProfitList": [
+//    {
+//      "asset": "5.289.656,57",
+//      "percentOfTotal": "100,00%"
+//    }
+//  ],
+//  "fixedIncomeList": [
+//    {
+//      "type": "CDB-Cert Dep  Pos",
+//      "investment": "16/03/16",
+//      "incomeIssuer": "SANT      ",
+//      "yearPercentFee": "0",
+//      "indexCode": "CDI",
+//      "issueDate": "16/03/16",
+//      "maturityDate": "27/02/20",
+//      "amount": "60.000,0000",
+//      "currentUnitPrice": "1,18417000",
+//      "investmentValue": "60.000,00",
+//      "redemptionValue": "0,00",
+//      "grossValue": "71.050,20",
+//      "tax": "1.933,78",
+//      "netValue": "69.116,42",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "1,83%",
+//      "percentOfTotal": "1,31%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "CDB-Cert Dep  Pos",
+//      "investment": "04/04/16",
+//      "incomeIssuer": "SANT      ",
+//      "yearPercentFee": "0",
+//      "indexCode": "CDI",
+//      "issueDate": "04/04/16",
+//      "maturityDate": "20/03/19",
+//      "amount": "65.000,0000",
+//      "currentUnitPrice": "1,17674100",
+//      "investmentValue": "65.000,00",
+//      "redemptionValue": "0,00",
+//      "grossValue": "76.488,16",
+//      "tax": "2.010,42",
+//      "netValue": "74.477,74",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "1,98%",
+//      "percentOfTotal": "1,41%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "CDB-Cert Dep  Pos",
+//      "investment": "29/06/16",
+//      "incomeIssuer": "SANT      ",
+//      "yearPercentFee": "0",
+//      "indexCode": "CDI",
+//      "issueDate": "29/06/16",
+//      "maturityDate": "20/06/18",
+//      "amount": "32.000,0000",
+//      "currentUnitPrice": "1,14028700",
+//      "investmentValue": "32.000,00",
+//      "redemptionValue": "0,00",
+//      "grossValue": "36.489,18",
+//      "tax": "785,60",
+//      "netValue": "35.703,58",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "0,95%",
+//      "percentOfTotal": "0,67%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "Letra Cred. Agronego",
+//      "investment": "27/01/17",
+//      "incomeIssuer": "SANT      ",
+//      "yearPercentFee": "0",
+//      "indexCode": "CDI D 89.5",
+//      "issueDate": "27/01/17",
+//      "maturityDate": "15/12/17",
+//      "amount": "600.000,0000",
+//      "currentUnitPrice": "1,05036800",
+//      "investmentValue": "600.000,00",
+//      "redemptionValue": "0,00",
+//      "grossValue": "630.220,80",
+//      "tax": "0,00",
+//      "netValue": "630.220,80",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "16,72%",
+//      "percentOfTotal": "11,91%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "Letra Cred. Agronego",
+//      "investment": "09/03/17",
+//      "incomeIssuer": "SANT      ",
+//      "yearPercentFee": "0",
+//      "indexCode": "CDI D 89.5",
+//      "issueDate": "09/03/17",
+//      "maturityDate": "29/09/17",
+//      "amount": "730.000,0000",
+//      "currentUnitPrice": "1,03843200",
+//      "investmentValue": "730.000,00",
+//      "redemptionValue": "0,00",
+//      "grossValue": "758.055,36",
+//      "tax": "0,00",
+//      "netValue": "758.055,36",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "20,11%",
+//      "percentOfTotal": "14,33%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "Letra Cred. Imobilia",
+//      "investment": "09/01/17",
+//      "incomeIssuer": "SANT      ",
+//      "yearPercentFee": "0",
+//      "indexCode": "CDI D 89.5",
+//      "issueDate": "09/01/17",
+//      "maturityDate": "04/01/18",
+//      "amount": "905.000,0000",
+//      "currentUnitPrice": "1,05679000",
+//      "investmentValue": "905.000,00",
+//      "redemptionValue": "0,00",
+//      "grossValue": "956.394,95",
+//      "tax": "0,00",
+//      "netValue": "956.394,95",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "25,37%",
+//      "percentOfTotal": "18,08%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "Letra Cred. Imobilia",
+//      "investment": "02/02/17",
+//      "incomeIssuer": "SANT      ",
+//      "yearPercentFee": "0",
+//      "indexCode": "CDI D 89.5",
+//      "issueDate": "02/02/17",
+//      "maturityDate": "04/01/18",
+//      "amount": "342.000,0000",
+//      "currentUnitPrice": "1,04856200",
+//      "investmentValue": "342.000,00",
+//      "redemptionValue": "0,00",
+//      "grossValue": "358.608,20",
+//      "tax": "0,00",
+//      "netValue": "358.608,20",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "9,51%",
+//      "percentOfTotal": "6,78%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "Letra Cred. Imobilia",
+//      "investment": "16/02/17",
+//      "incomeIssuer": "SANT      ",
+//      "yearPercentFee": "0",
+//      "indexCode": "CDI D 89.5",
+//      "issueDate": "16/02/17",
+//      "maturityDate": "14/02/18",
+//      "amount": "360.000,0000",
+//      "currentUnitPrice": "1,04406000",
+//      "investmentValue": "360.000,00",
+//      "redemptionValue": "0,00",
+//      "grossValue": "375.861,60",
+//      "tax": "0,00",
+//      "netValue": "375.861,60",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "9,97%",
+//      "percentOfTotal": "7,11%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "NTNB-Nota Tesouro",
+//      "investment": "08/08/16",
+//      "incomeIssuer": "STNC      ",
+//      "yearPercentFee": "5.617217",
+//      "indexCode": "IPCA",
+//      "issueDate": "10/02/10",
+//      "maturityDate": "15/08/50",
+//      "amount": "80,0000",
+//      "currentUnitPrice": "3.256,58974200",
+//      "investmentValue": "253.691,87",
+//      "redemptionValue": "0,00",
+//      "grossValue": "260.527,17",
+//      "tax": "1.196,17",
+//      "netValue": "259.331,00",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "6,88%",
+//      "percentOfTotal": "4,90%",
+//      "legacyCode": null
+//    },
+//    {
+//      "type": "NTNB-Nota Tesouro",
+//      "investment": "08/08/16",
+//      "incomeIssuer": "STNC      ",
+//      "yearPercentFee": "5.646384",
+//      "indexCode": "IPCA",
+//      "issueDate": "07/03/06",
+//      "maturityDate": "15/05/35",
+//      "amount": "80,0000",
+//      "currentUnitPrice": "3.157,94519300",
+//      "investmentValue": "246.176,23",
+//      "redemptionValue": "0,00",
+//      "grossValue": "252.635,61",
+//      "tax": "1.130,39",
+//      "netValue": "251.505,22",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "6,67%",
+//      "percentOfTotal": "4,75%",
+//      "legacyCode": null
+//    }
+//  ],
+//  "sumFixedIncomeList": [
+//    {
+//      "type": "CDB-Cert Dep  Pos",
+//      "amount": "157.000,0000",
+//      "investmentValue": "157.000,00",
+//      "grossValue": "184.027,54",
+//      "tax": "4.729,80",
+//      "netValue": "179.297,74",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "4,76%",
+//      "percentOfTotal": "3,39%"
+//    },
+//    {
+//      "type": "Letra Cred. Agronego",
+//      "amount": "1.330.000,0000",
+//      "investmentValue": "1.330.000,00",
+//      "grossValue": "1.388.276,16",
+//      "tax": "0,00",
+//      "netValue": "1.388.276,16",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "36,83%",
+//      "percentOfTotal": "26,24%"
+//    },
+//    {
+//      "type": "Letra Cred. Imobilia",
+//      "amount": "1.607.000,0000",
+//      "investmentValue": "1.607.000,00",
+//      "grossValue": "1.690.864,75",
+//      "tax": "0,00",
+//      "netValue": "1.690.864,75",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "44,85%",
+//      "percentOfTotal": "31,97%"
+//    },
+//    {
+//      "type": "NTNB-Nota Tesouro",
+//      "amount": "160,0000",
+//      "investmentValue": "499.868,10",
+//      "grossValue": "513.162,78",
+//      "tax": "2.326,56",
+//      "netValue": "510.836,22",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "13,55%",
+//      "percentOfTotal": "9,65%"
+//    },
+//    {
+//      "type": "TOTAL",
+//      "amount": "3.094.160,0000",
+//      "investmentValue": "3.593.868,10",
+//      "grossValue": "3.776.331,23",
+//      "tax": "7.056,36",
+//      "netValue": "3.769.274,87",
+//      "grossShare": null,
+//      "netShare": null,
+//      "percentOfFixedIncome": "100,00%",
+//      "percentOfTotal": "71,25%"
+//    }
+//  ],
+//  "equitiesList": [
+//    {
+//      "code": "ABEV3       ",
+//      "security": "AMBEV S/A ON",
+//      "availableAmount": "30.117",
+//      "blockedAmount": "0",
+//      "totalAmount": "30.117",
+//      "brokerAverageCost": "13,29",
+//      "sharePrice": "19,35",
+//      "totalCost": "400.312,38",
+//      "result": "182.451,57",
+//      "grossMarketValue": "582.763,95",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "582.763,95",
+//      "percentOfEquities": "43,69%",
+//      "percentOfTotals": "6,31%"
+//    },
+//    {
+//      "code": "GGBR3       ",
+//      "security": "GERDAU ON      N1",
+//      "availableAmount": "7.800",
+//      "blockedAmount": "0",
+//      "totalAmount": "7.800",
+//      "brokerAverageCost": "15,52",
+//      "sharePrice": "11,55",
+//      "totalCost": "121.056,00",
+//      "result": "(30.966,00)",
+//      "grossMarketValue": "90.090,00",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "90.090,00",
+//      "percentOfEquities": "6,75%",
+//      "percentOfTotals": "0,98%"
+//    },
+//    {
+//      "code": "CGAS5       ",
+//      "security": "COMGAS PNA",
+//      "availableAmount": "2.300",
+//      "blockedAmount": "0",
+//      "totalAmount": "2.300",
+//      "brokerAverageCost": "48,10",
+//      "sharePrice": "47,40",
+//      "totalCost": "110.630,00",
+//      "result": "(1.610,00)",
+//      "grossMarketValue": "109.020,00",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "109.020,00",
+//      "percentOfEquities": "8,17%",
+//      "percentOfTotals": "1,18%"
+//    },
+//    {
+//      "code": "CMIG4       ",
+//      "security": "CEMIG PN      N1",
+//      "availableAmount": "3.817",
+//      "blockedAmount": "0",
+//      "totalAmount": "3.817",
+//      "brokerAverageCost": "18,11",
+//      "sharePrice": "9,06",
+//      "totalCost": "69.143,45",
+//      "result": "(34.561,43)",
+//      "grossMarketValue": "34.582,02",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "34.582,02",
+//      "percentOfEquities": "2,59%",
+//      "percentOfTotals": "0,37%"
+//    },
+//    {
+//      "code": "PETR3       ",
+//      "security": "PETROBRAS ON",
+//      "availableAmount": "3.700",
+//      "blockedAmount": "0",
+//      "totalAmount": "3.700",
+//      "brokerAverageCost": "23,53",
+//      "sharePrice": "14,02",
+//      "totalCost": "87.061,00",
+//      "result": "(35.187,00)",
+//      "grossMarketValue": "51.874,00",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "51.874,00",
+//      "percentOfEquities": "3,89%",
+//      "percentOfTotals": "0,56%"
+//    },
+//    {
+//      "code": "ITSA3       ",
+//      "security": "ITAUSA ON      N1",
+//      "availableAmount": "16.650",
+//      "blockedAmount": "0",
+//      "totalAmount": "16.650",
+//      "brokerAverageCost": "10,25",
+//      "sharePrice": "9,42",
+//      "totalCost": "170.580,25",
+//      "result": "(13.737,25)",
+//      "grossMarketValue": "156.843,00",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "156.843,00",
+//      "percentOfEquities": "11,76%",
+//      "percentOfTotals": "1,70%"
+//    },
+//    {
+//      "code": "LEVE3       ",
+//      "security": "METAL LEVE ON",
+//      "availableAmount": "17.100",
+//      "blockedAmount": "0",
+//      "totalAmount": "17.100",
+//      "brokerAverageCost": "25,66",
+//      "sharePrice": "18,05",
+//      "totalCost": "438.786,00",
+//      "result": "(130.131,00)",
+//      "grossMarketValue": "308.655,00",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "308.655,00",
+//      "percentOfEquities": "23,14%",
+//      "percentOfTotals": "3,34%"
+//    }
+//  ],
+//  "sumEquitiesList": [
+//    {
+//      "type": "ACOES",
+//      "availableAmount": "81.484",
+//      "blockedAmount": "0",
+//      "totalAmount": "81.484",
+//      "totalCost": "1.397.569,08",
+//      "result": "(63.741,11)",
+//      "grossMarketValue": "1.333.827,97",
+//      "tax": "0,00",
+//      "netMarketValue": "1.333.827,97",
+//      "percentOfEquities": "100,00%",
+//      "percentOfTotal": "14,44%"
+//    }
+//  ],
+//  "stockLoanBorrowerList": [
+//    {
+//      "dealDate": "01/08/17",
+//      "maturityDate": "06/09/17",
+//      "code": "UGPA3       ",
+//      "security": "ULTRAPAR ON      N1",
+//      "amount": "2.900",
+//      "price": "73,84",
+//      "financial": "214.136,00",
+//      "marketyValue": "208.597,00",
+//      "payment": "0,30%",
+//      "grossRemuneration": "(10,18)",
+//      "incomeTaxAccrued": "(14,84)",
+//      "netPay": "(25,02)",
+//      "percentOfStockLoan": "100,00%",
+//      "percentOfTotals": "6,36%"
+//    }
+//  ],
+//  "sumStockLoanList": [
+//    {
+//      "stockLoanType": "TOMADOR",
+//      "financial": "214.136,00",
+//      "payment": "(10,18)",
+//      "tax": "(14,84)",
+//      "loanNetPay": "(25,02)",
+//      "percentOfStockLoan": "100,00%",
+//      "percentOfTotal": "6,36%"
+//    }
+//  ],
+//  "optionsList": [
+//    {
+//      "code": "GGBRH3      ",
+//      "security": "GGBR PN      N1",
+//      "type": "CALL",
+//      "broker": "SANTCOR ",
+//      "exercise": "10.75",
+//      "maturityDate": "2017-08-21 00:00:00.0",
+//      "totalAmount": "-12.000",
+//      "brokerAverageCost": "(0,52)",
+//      "sharePrice": "0,96",
+//      "totalCost": "6.294,48",
+//      "result": "(17.814,48)",
+//      "grossMarketValue": "(11.520,00)",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "(11.520,00)",
+//      "percentOfOptions": "100,00%",
+//      "percentOfTotals": "-0,15%"
+//    }
+//  ],
+//  "sumOptionsList": [
+//    {
+//      "totalAmount": "-12.000",
+//      "totalCost": "6.294,48",
+//      "result": "(17.814,48)",
+//      "grossMarketValue": "(11.520,00)",
+//      "positionIncomeTax": "0,00",
+//      "netMarketValue": "(11.520,00)",
+//      "percentOfEquities": "100,00%",
+//      "percentOfTotal": "-0,15%"
+//    }
+//  ],
+//  "flexOptionsList": [
+//    {
+//      "code": "MERIM162873 ",
+//      "security": "PTAXV       ",
+//      "type": "CALL",
+//      "broker": "SANTCOR ",
+//      "exercise": "3.85",
+//      "maturityDate": "08/09/17",
+//      "totalAmount": "-150.000",
+//      "brokerAverageCost": "(0,13)",
+//      "sharePrice": "0,01",
+//      "totalCost": "19.611,61",
+//      "result": "(21.111,61)",
+//      "grossMarketValue": null,
+//      "positionIncomeTax": null,
+//      "netMarketValue": "(1.500,00)",
+//      "percentOfOptions": "-150.000,00%",
+//      "percentOfTotals": "-0,03%"
+//    },
+//    {
+//      "code": "MERIM162874 ",
+//      "security": "PTAXV       ",
+//      "type": "PUT",
+//      "broker": "SANTCOR ",
+//      "exercise": "3.27",
+//      "maturityDate": "08/09/17",
+//      "totalAmount": "150.000",
+//      "brokerAverageCost": "0,13",
+//      "sharePrice": "0,01",
+//      "totalCost": "19.838,37",
+//      "result": "(18.338,37)",
+//      "grossMarketValue": null,
+//      "positionIncomeTax": null,
+//      "netMarketValue": "1.500,00",
+//      "percentOfOptions": "150.000,00%",
+//      "percentOfTotals": "0,03%"
+//    }
+//  ],
+//  "sumFlexOptionsList": [
+//    {
+//      "totalAmount": "0",
+//      "totalCost": "39.449,98",
+//      "result": "(39.449,98)",
+//      "grossMarketValue": "0,00",
+//      "positionIncomeTax": null,
+//      "netMarketValue": null,
+//      "percentOfEquities": "0,00%",
+//      "percentOfTotal": "0,00%"
+//    }
+//  ],
+//  "accountPaymentReceivementList": [
+//    {
+//      "description": "Dividendo de 0.12 a rec. s/ 20,000 de CMIG4 em 30/12/2017",
+//      "value": "2.435,59",
+//      "percentOfApr": "64,38%",
+//      "percentOfTotals": "0,03%"
+//    },
+//    {
+//      "description": "Juros s/ capital de 0.15 a rec. s/ 10,500 de CMIG4 em 29/12/17",
+//      "value": "1.347,67",
+//      "percentOfApr": "35,62%",
+//      "percentOfTotals": "0,02%"
+//    }
+//  ],
+//  "sumAccountPaymentReceivementList": [
+//    {
+//      "total": "3.783,26",
+//      "percentPayableReceivable": "100,00%",
+//      "percentOfTotal": "0,05%"
+//    }
+//  ],
+//  "swapList": [
+//    {
+//      "broker": "SANTCOR ",
+//      "startDate": "2015-11-24 00:00:00.0",
+//      "accrualStart": "2015-11-24 00:00:00.0",
+//      "maturity": "2017-11-23 00:00:00.0",
+//      "mainValue": "8.000.000,00",
+//      "counterparty": "SANT    ",
+//      "assetIndex": "PRE",
+//      "assetYearlyFee": "14,32%",
+//      "assetValue": "10.036.328,14",
+//      "liabilityIndex": "CDI D95.5",
+//      "liabilityYearlyFee": "0,00%",
+//      "liabilityValue": "9.771.400,97",
+//      "grossCumulativeApprop": "264.927,17",
+//      "individualIncomeTax": "46.362,25",
+//      "netCumulativeApprop": "218.564,92",
+//      "percentOfSwap": "94,25%",
+//      "percentOfTotal": null
+//    },
+//    {
+//      "broker": "SANTCOR ",
+//      "startDate": "2017-04-25 00:00:00.0",
+//      "accrualStart": "2017-04-25 00:00:00.0",
+//      "maturity": "2022-03-30 00:00:00.0",
+//      "mainValue": "10.000.000,00",
+//      "counterparty": "SANT    ",
+//      "assetIndex": "PRE",
+//      "assetYearlyFee": "10,13%",
+//      "assetValue": "10.279.524,82",
+//      "liabilityIndex": "CDI",
+//      "liabilityYearlyFee": "0,00%",
+//      "liabilityValue": "10.286.680,15",
+//      "grossCumulativeApprop": "(7.155,33)",
+//      "individualIncomeTax": "0,00",
+//      "netCumulativeApprop": "(7.155,33)",
+//      "percentOfSwap": "-3,09%",
+//      "percentOfTotal": null
+//    },
+//    {
+//      "broker": "SANTCOR ",
+//      "startDate": "2017-05-18 00:00:00.0",
+//      "accrualStart": "2017-05-18 00:00:00.0",
+//      "maturity": "2022-04-22 00:00:00.0",
+//      "mainValue": "10.000.000,00",
+//      "counterparty": "SANT    ",
+//      "assetIndex": "PRE",
+//      "assetYearlyFee": "11,48%",
+//      "assetValue": "10.244.439,76",
+//      "liabilityIndex": "CDI",
+//      "liabilityYearlyFee": "0,00%",
+//      "liabilityValue": "10.217.986,20",
+//      "grossCumulativeApprop": "26.453,56",
+//      "individualIncomeTax": "5.952,05",
+//      "netCumulativeApprop": "20.501,51",
+//      "percentOfSwap": "8,84%",
+//      "percentOfTotal": null
+//    }
+//  ],
+//  "sumSwapList": [
+//    {
+//      "mainValue": "28.000.000,00",
+//      "netCumulativeApprop": "231.911,10",
+//      "percentOfSwap": "100,00%",
+//      "percentOfTotal": "0,98%"
+//    }
+//  ],
+//  "treasuryList": [
+//    {
+//      "description": "Saldo em Tesouraria RESERVA",
+//      "value": "0,00",
+//      "percentOfTreasury": "0,00%",
+//      "percentOfTotals": "0,00%"
+//    }
+//  ],
+//  "sumTreasuryList": [
+//    {
+//      "value": "0,00",
+//      "percentOfTreasure": "100,00%",
+//      "percentOfTotal": "0,00%"
+//    }
+//  ],
+//  "result": {
+//    "code": 200,
+//    "message": "OK",
+//    "positionDate": "07-aug-2017"
+//  }
+//}
+
+{
+  "fundsList": [
+    {
+      "family": "FUNDOS DE INVESTIMENTO",
+      "name": "SANTANDER SENIOR DI",
+      "fundClass": "FUNDOS DE INVESTIMENTO",
+      "quotaAmount": "17,4676000",
+      "blockedAmount": "0,0000000",
+      "sharePrice": "125,3359423",
+      "investmentRedemption": "0,00",
+      "presentValue": "2.189,24",
+      "tax": "6,24",
+      "netValue": "2.183,00",
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfFund": "0,00%",
+      "percentOfTotal": "0,00%"
+    },
+    {
+      "family": "FUNDOS DE INVESTIMENTO",
+      "name": "PB OURO CAPITAL PROTEGIDO",
+      "fundClass": "FUNDOS DE INVESTIMENTO",
+      "quotaAmount": "1,1924400",
+      "blockedAmount": "0,0000000",
+      "sharePrice": "149,0240000",
+      "investmentRedemption": "0,00",
+      "presentValue": "177,46",
+      "tax": "0,24",
+      "netValue": "177,22",
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfFund": "0,00%",
+      "percentOfTotal": "0,00%"
+    },
+    {
+      "family": "FUNDOS DE INVESTIMENTO",
+      "name": "SANTANDER ATUARIAL RF",
+      "fundClass": "FUNDOS DE INVESTIMENTO",
+      "quotaAmount": "3.285,7377680",
+      "blockedAmount": "0,0000000",
+      "sharePrice": "179,3732256",
+      "investmentRedemption": "0,00",
+      "presentValue": "589.373,38",
+      "tax": "1.154,63",
+      "netValue": "588.218,75",
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfFund": "0,00%",
+      "percentOfTotal": "0,00%"
+    },
+    {
+      "family": "FUNDOS DE INVESTIMENTO",
+      "name": "SANTANDER ACOES",
+      "fundClass": "FUNDOS DE INVESTIMENTO",
+      "quotaAmount": "12,8756830",
+      "blockedAmount": "0,0000000",
+      "sharePrice": "137,4858400",
+      "investmentRedemption": "0,00",
+      "presentValue": "1.770,20",
+      "tax": "79,36",
+      "netValue": "1.690,84",
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfFund": "0,00%",
+      "percentOfTotal": "0,00%"
+    },
+    {
+      "family": "FUNDO IMOBILIARIO",
+      "name": "FUNDO IMOBILIARIO",
+      "fundClass": "FUNDOS IMOBILIARIOS",
+      "quotaAmount": "8.401,0000000",
+      "blockedAmount": "0,0000000",
+      "sharePrice": "0,0100000",
+      "investmentRedemption": "0,00",
+      "presentValue": "84,01",
+      "tax": "0,00",
+      "netValue": "84,01",
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfFund": "0,00%",
+      "percentOfTotal": "0,00%"
+    }
+  ],
+  "sumFundsList": [
+    {
+      "grossShare": "1,0009920",
+      "netShare": "1,0002887",
+      "percentOfTotal": "0,00%",
+      "type": "FUNDOS DE INVESTIMENTO",
+      "quotaAmount": "3.285,7400000",
+      "netValue": "588.218,75",
+      "percentageOfFunds": "0,00%",
+      "presentValue": "589.373,38",
+      "tax": "1.154,63",
+      "investmentRedemption": "0,00"
+    },
+    {
+      "grossShare": "1,0009342",
+      "netShare": "1,0003523",
+      "percentOfTotal": "0,00%",
+      "type": "FUNDOS DE INVESTIMENTO",
+      "quotaAmount": "1,1900000",
+      "netValue": "177,22",
+      "percentageOfFunds": "0,00%",
+      "presentValue": "177,46",
+      "tax": "0,24",
+      "investmentRedemption": "0,00"
+    },
+    {
+      "grossShare": "1,0012897",
+      "netShare": "1,0011546",
+      "percentOfTotal": "0,00%",
+      "type": "FUNDOS DE INVESTIMENTO",
+      "quotaAmount": "12,8800000",
+      "netValue": "1.690,84",
+      "percentageOfFunds": "0,00%",
+      "presentValue": "1.770,20",
+      "tax": "79,36",
+      "investmentRedemption": "0,00"
+    },
+    {
+      "grossShare": "1,0014075",
+      "netShare": "1,0008252",
+      "percentOfTotal": "0,00%",
+      "type": "FUNDOS DE INVESTIMENTO",
+      "quotaAmount": "17,4700000",
+      "netValue": "2.183,00",
+      "percentageOfFunds": "0,00%",
+      "presentValue": "2.189,24",
+      "tax": "6,24",
+      "investmentRedemption": "0,00"
+    },
+    {
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfTotal": "0,00%",
+      "type": "FUNDOS IMOBILIARIOS",
+      "quotaAmount": "8.401,0000000",
+      "netValue": "84,01",
+      "percentageOfFunds": "0,00%",
+      "presentValue": "84,01",
+      "tax": "0,00",
+      "investmentRedemption": "0,00"
+    }
+  ],
+  "profitTirList": [
+    {
+      "tirValueOne": "1,000287%",
+      "tirValueTwo": null,
+      "tirValueThree": null,
+      "tirValueFour": null,
+      "tirValueFive": null,
+      "tirValueSix": null,
+      "tirValueTwelveMonth": null
+    }
+  ],
+  "sumProfitList": [
+    {
+      "asset": "1.029.593,72",
+      "percentOfTotal": null
+    }
+  ],
+  "fixedIncomeList": [
+    {
+      "type": "CDB",
+      "name": "CDB DI",
+      "investment": "04\/03\/11",
+      "incomeIssuer": null,
+      "yearPercentFee": "0",
+      "indexCode": null,
+      "issueDate": "01\/01\/00",
+      "maturityDate": "05\/02\/16",
+      "amount": null,
+      "currentUnitPrice": "0,00000000",
+      "investmentValue": "43.000,00",
+      "redemptionValue": "0,00",
+      "grossValue": "70.236,40",
+      "tax": "0,00",
+      "netValue": "70.236,40",
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfFixedIncome": "0,00%",
+      "percentOfTotal": "0,00%",
+      "legacyCode": null
+    },
+    {
+      "type": "CDB",
+      "name": "CDB PR",
+      "investment": "31\/10\/17",
+      "incomeIssuer": null,
+      "yearPercentFee": "7.57",
+      "indexCode": "PRE",
+      "issueDate": "01\/01\/00",
+      "maturityDate": "29\/01\/18",
+      "amount": null,
+      "currentUnitPrice": "0,00000000",
+      "investmentValue": "1.000,02",
+      "redemptionValue": "0,00",
+      "grossValue": "1.006,70",
+      "tax": "1,50",
+      "netValue": "1.005,20",
+      "grossShare": "1,0051799",
+      "netShare": "1,0066799",
+      "percentOfFixedIncome": "0,00%",
+      "percentOfTotal": "0,00%",
+      "legacyCode": null
+    },
+    {
+      "type": "CDB",
+      "name": "CDB PROMOCAO DI",
+      "investment": "30\/10\/17",
+      "incomeIssuer": null,
+      "yearPercentFee": "0",
+      "indexCode": "CDI",
+      "issueDate": "01\/01\/00",
+      "maturityDate": "11\/10\/21",
+      "amount": null,
+      "currentUnitPrice": "0,00000000",
+      "investmentValue": "1.000,00",
+      "redemptionValue": "0,00",
+      "grossValue": "1.006,33",
+      "tax": "1,42",
+      "netValue": "1.004,91",
+      "grossShare": "1,0049100",
+      "netShare": "1,0063300",
+      "percentOfFixedIncome": "0,00%",
+      "percentOfTotal": "0,00%",
+      "legacyCode": null
+    },
+    {
+      "type": "DEBENTURES",
+      "name": "DEBENTURES",
+      "investment": "01\/01\/00",
+      "incomeIssuer": null,
+      "yearPercentFee": "0",
+      "indexCode": null,
+      "issueDate": "15\/05\/17",
+      "maturityDate": "01\/01\/00",
+      "amount": null,
+      "currentUnitPrice": "0,00000000",
+      "investmentValue": "363.750,00",
+      "redemptionValue": "0,00",
+      "grossValue": "363.750,00",
+      "tax": "0,00",
+      "netValue": "363.750,00",
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfFixedIncome": "0,00%",
+      "percentOfTotal": "0,00%",
+      "legacyCode": null
+    }
+  ],
+  "sumFixedIncomeList": [
+    {
+      "type": "CDB",
+      "amount": "0,0000",
+      "investmentValue": "44.000,00",
+      "grossValue": "71.242,73",
+      "tax": "1,42",
+      "netValue": "71.241,31",
+      "grossShare": "1,0113255",
+      "netShare": "1,0008631",
+      "percentOfFixedIncome": "0,00%",
+      "percentOfTotal": "0,00%"
+    },
+    {
+      "type": "CDB",
+      "amount": "0,0000",
+      "investmentValue": "1.000,02",
+      "grossValue": "1.006,70",
+      "tax": "1,50",
+      "netValue": "1.005,20",
+      "grossShare": "1,0051799",
+      "netShare": "1,0066799",
+      "percentOfFixedIncome": "0,00%",
+      "percentOfTotal": "0,00%"
+    },
+    {
+      "type": "DEBENTURES",
+      "amount": "0,0000",
+      "investmentValue": "363.750,00",
+      "grossValue": "363.750,00",
+      "tax": "0,00",
+      "netValue": "363.750,00",
+      "grossShare": "1,0000000",
+      "netShare": "1,0000000",
+      "percentOfFixedIncome": "0,00%",
+      "percentOfTotal": "0,00%"
+    }
+  ],
+  "sumAccountPaymentReceivementList": [
+    {
+      "total": "0,00",
+      "percentPayableReceivable": "0,00%",
+      "percentOfTotal": "0,00%"
+    }
+  ],
+  "result": {
+    "code": 200,
+    "message": "OK",
+    "positionDate": "05-Dec-2017"
+  }
+}

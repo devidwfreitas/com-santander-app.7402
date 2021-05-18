@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip">
+        <ImageView android:id="@id/view_error_item_image" android:layout_width="44.0dip" android:layout_height="44.0dip" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="14.0dip" android:layout_toEndOf="@id/view_error_item_image">
+            <TextView android:textSize="16.0sp" android:textColor="#ff787878" android:id="@id/views_error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+            <TextView android:textSize="12.0sp" android:textColor="#ff999999" android:id="@id/views_error_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_arrow" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:layout_gravity="center_horizontal" android:id="@id/textView11" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/validity" />
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <TextView android:textSize="10.0sp" android:gravity="center" android:layout_gravity="center_vertical" android:id="@id/tvStartDay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="10.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " />
+            <TextView android:textSize="10.0sp" android:gravity="center" android:id="@id/tvEndDay" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/body_chart" android:layout_width="100.0dip" android:layout_height="100.0dip">
+            <com.santander.app.seguros.ui.widgets.CircleChartView android:id="@id/chart" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_centerInParent="true" android:rotation="-80.0" app:ccv_progress_color="@color/colorGrayDivider" app:ccv_bg_color="@color/colorGrayDivider" app:ccv_stroke_width="4.1999817dip" app:ccv_progress="0" />
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="5.0dip" android:paddingRight="5.0dip" android:paddingBottom="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true">
+                <TextView android:textSize="20.0sp" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/tvDays" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="2" />
+                <TextView android:textSize="8.399994sp" android:id="@id/tvDaysSecondParam" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAlignment="center" />
+            </LinearLayout>
+        </RelativeLayout>
+        <TextView android:textSize="8.399994sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.5dip" android:text="@string/renova_o_autom_tica" />
+    </LinearLayout>
+</FrameLayout>

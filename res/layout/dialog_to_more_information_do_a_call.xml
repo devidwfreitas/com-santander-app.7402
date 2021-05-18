@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_white_rounded" android:padding="@dimen/default_screen_padding" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center" android:layout_width="46.0dip" android:layout_height="46.0dip" android:src="@drawable/ic_call" android:scaleType="centerCrop" />
+    <TextView android:textSize="18.0sp" android:textColor="#ff030303" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:text="@string/to_more_information_call_to_our_callcenter" android:textAlignment="center" />
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="@dimen/button_default_height" android:layout_marginTop="@dimen/default_margin" android:weightSum="2.0">
+        <Button android:id="@id/btNo" android:layout_width="wrap_content" android:layout_height="@dimen/default_button_height2" android:layout_marginRight="5.0dip" android:text="@string/cancel" style="@style/AppTheme.ButtonTransparentStrokeBlue" />
+        <Button android:id="@id/btYes" android:layout_width="wrap_content" android:layout_height="@dimen/default_button_height2" android:layout_marginLeft="5.0dip" android:text="@string/call" android:layout_weight="1.0" style="@style/AppTheme.ButtonRedFilled" />
+    </LinearLayout>
+</LinearLayout>

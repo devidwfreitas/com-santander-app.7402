@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="64.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/config_apl_conta_selecionada" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/config_carteira" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:src="@drawable/ico_carteira" android:layout_alignParentStart="true" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true" android:layout_toEndOf="@id/config_carteira">
+            <TextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@color/inv_black_four" android:id="@id/config_conta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" />
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_brownish_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_txt_saldo" android:fontFamily="sans-serif-light" />
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_black_four" android:id="@id/config_conta_saldo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_brownish_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_txt_conta_saldo_total" android:fontFamily="sans-serif-light" />
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_black_four" android:id="@id/config_conta_saldo_total" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif" android:layout_marginStart="5.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <ImageButton android:id="@id/config_apl_conta_selector" android:background="@color/inv_transparent" android:padding="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_drop_down" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+        <View android:background="@color/inv_white_four" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rv_lista_contas" android:background="@color/inv_white_two" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/config_apl_conta_selecionada" />
+</RelativeLayout>

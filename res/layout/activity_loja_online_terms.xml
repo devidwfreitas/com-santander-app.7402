@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/loja_online_terms_background" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TextView android:id="@id/loja_online_termos_condicoes" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

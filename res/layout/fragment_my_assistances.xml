@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.TabLayout android:id="@id/tabLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:tabIndicatorColor="@color/colorPrimary" app:tabMode="fixed" app:tabTextAppearance="@android:style/TextAppearance.Widget.TabWidget" />
+        <View android:background="#ffcccccc" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <android.support.v4.view.ViewPager android:id="@id/viewPager" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</br.com.zup.multistatelayout.MultiStateLayout>

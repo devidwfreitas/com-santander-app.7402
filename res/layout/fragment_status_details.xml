@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:orientation="vertical" android:id="@id/llMain" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llStatusEmpty" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin">
+        <TextView android:textSize="@dimen/text_size_title" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin" android:text="Ops..." />
+        <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:layout_gravity="center_vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Você ainda não está nesta etapa.\nAguarde!" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rvStatusDetail" android:paddingBottom="50.0dip" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:isScrollContainer="false"
+      xmlns:android="http://schemas.android.com/apk/res/android" />
+    <Button android:textSize="@dimen/small_text_size" android:id="@id/btRedialSurvey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginBottom="@dimen/default_margin" android:text="@string/reschedule_survey" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="true" style="@style/AppTheme.ButtonRedFilled" />
+</RelativeLayout>

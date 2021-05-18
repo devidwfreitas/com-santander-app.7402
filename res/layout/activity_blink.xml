@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:id="@id/activity_token" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:paddingLeft="@dimen/activity_horizontal_margin" android:paddingTop="@dimen/activity_vertical_margin" android:paddingRight="@dimen/activity_horizontal_margin" android:paddingBottom="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <br.com.santander.uisdk.textview.SantanderTextView android:textSize="16.0sp" android:textColor="#ffe00303" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_validacao_upper_case" />
+        <View android:background="#ffe00303" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginTop="20.0dip" />
+        <LinearLayout android:orientation="vertical" android:id="@id/validation_token_fields" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <br.com.santander.uisdk.textview.SantanderTextView android:textSize="16.0sp" android:textColor="#ff191919" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/blink_use_device" />
+        </LinearLayout>
+        <Button android:textColor="#ffffffff" android:id="@id/blink_proceed_button" android:background="@drawable/style_rounded_button_red" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/card_password_active_card" android:layout_below="@id/token_campos_layout" android:layout_centerHorizontal="true" />
+        <VideoView android:id="@id/blink_video_view" android:clickable="false" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_margin="15.0dip" android:layout_below="@id/validation_token_fields" android:layout_centerHorizontal="true" />
+        <Button android:textColor="#ffffffff" android:id="@id/blink_video_play_button" android:background="@drawable/style_rounded_button_red" android:paddingLeft="30.0dip" android:paddingRight="30.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/blink_start" android:layout_below="@id/blink_video_view" android:layout_centerHorizontal="true" />
+        <br.com.santander.uisdk.textview.SantanderTextView android:textSize="16.0sp" android:id="@id/token_otp_token_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="25.0dip" android:text="@string/blink_device_code" android:layout_below="@id/blink_video_play_button" android:layout_centerHorizontal="true" />
+        <LinearLayout android:orientation="vertical" android:id="@id/token_campos_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/token_otp_token_text_view">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip">
+                <br.com.santander.uisdk.textview.SantanderTextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blink_token_serial_label" android:layout_weight="1.0" />
+                <br.com.santander.uisdk.textview.SantanderTextView android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/blink_serial_text_view" android:layout_width="100.0dip" android:layout_height="wrap_content" android:hint="123456" android:layout_weight="2.0" android:textAlignment="center" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/token_campo_otp_layout" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="25.0dip">
+                <br.com.santander.uisdk.textview.SantanderTextView android:textSize="18.0sp" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/blink_token_code_label" android:layout_weight="1.0" />
+                <br.com.santander.uisdk.edittext.SantanderEditText android:textSize="18.0sp" android:layout_gravity="center" android:id="@id/blink_challenge_edit_text" android:background="@drawable/style_gray_botton_border" android:layout_width="100.0dip" android:layout_height="wrap_content" android:hint="00000000" android:layout_weight="2.0" android:inputType="number" android:textAlignment="center" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

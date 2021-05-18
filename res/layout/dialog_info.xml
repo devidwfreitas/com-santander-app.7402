@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_shape_new" android:paddingTop="@dimen/commonpaddingx2" android:paddingBottom="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingx4"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:id="@id/textview_message" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/red" android:id="@id/button_ok" android:background="@color/transparent" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="button" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</LinearLayout>

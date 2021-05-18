@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ExpandableListView android:id="@id/listview_previdencias_posicao_consolidada" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@null" android:layout_below="@id/relativelayout_content_total_previdencia" />
+    <RelativeLayout android:id="@id/relativelayout_content_total_previdencia" android:paddingTop="@dimen/commonpaddingx2" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_box_novas_acoes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingx2" android:layout_below="@id/linearlayout_separador_total_previdencia">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_box_acoes" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/button_cancelar_aporte" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Cancelar Aporte" android:layout_weight="1.0" style="@style/Santander.PillRed" />
+                <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/button_nova_contratacao" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/commonpadding" android:text="Nova Contratação" android:layout_weight="1.0" style="@style/Santander.PillRed" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

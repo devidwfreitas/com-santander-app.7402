@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/llTop" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/imgDone" android:layout_width="60.0dip" android:layout_height="60.0dip" android:layout_marginTop="@dimen/default_margin" android:src="@drawable/ic_value_coverage" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:gravity="center" android:id="@id/txtTitle" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin" android:text="@string/select_protection" android:layout_below="@id/llTop" />
+    <View android:id="@id/viewTop" android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rvCoverageList" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="250.0dip" android:layout_marginBottom="@dimen/small_margin" android:layout_above="@id/llButton" android:layout_below="@id/txtTitle" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llButton" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/default_text_size" android:layout_gravity="center" android:id="@id/btnCancel" android:layout_width="140.0dip" android:layout_height="30.0dip" android:layout_marginBottom="@dimen/default_margin" android:text="@string/cancel" style="@style/AppTheme.ButtonTransparentStrokeBlue" fontPath="fonts/OpenSans-Light.ttf" />
+    </LinearLayout>
+</LinearLayout>

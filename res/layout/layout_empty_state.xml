@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include layout="@layout/layout_header_pequeno" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="116.0dip" android:layout_marginStart="58.0dip" android:layout_marginEnd="58.0dip">
+        <ImageView android:id="@id/image_icon_state" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_margin="16.0dip" android:src="@drawable/ic_flower" />
+        <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:gravity="center_horizontal" android:id="@id/titulo_empty_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="@string/inv_empty_sem_investimento" android:lineSpacingExtra="5.0sp" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey_two" android:gravity="center_horizontal" android:id="@id/subTitulo_empty_state" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="35.0dip" android:text="@string/inv_empty_perfil" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif" />
+        <Button android:textColor="@color/inv_white_two" android:id="@id/btn_begin" android:background="@drawable/shape_button_enabled" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginTop="35.0dip" android:text="@string/inv_empty_button_comecar" android:textAllCaps="true" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

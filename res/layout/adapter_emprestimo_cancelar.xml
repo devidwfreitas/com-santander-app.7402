@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" app:cardBackgroundColor="@color/colorGrayVeryLight" app:cardElevation="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:padding="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_alignParentStart="true">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="17.0sp" android:textStyle="bold" android:textColor="@color/green_2" android:id="@id/status_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ativo" />
+                    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:id="@id/data_inicio_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="inicio: 10/03/2016" android:layout_marginStart="5.0dip" />
+                </LinearLayout>
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:id="@id/data_1_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:id="@id/data_2_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+            </LinearLayout>
+            <ImageView android:id="@id/status_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_emprestimo_cancel_ok" />
+        </RelativeLayout>
+        <com.santander.app.components.view.SantanderTextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/valor_total_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Valor do empréstimo: R$ 100.000,00" />
+        <com.santander.app.components.view.SantanderTextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/parcelas_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Total de parcelas: 40x" />
+        <com.santander.app.components.view.SantanderTextView android:textSize="18.0sp" android:textColor="@color/black" android:id="@id/aberto_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Em aberto: 32 parcelas" />
+        <com.santander.app.components.view.SantanderTextView android:textSize="18.0sp" android:textColor="@color/red" android:id="@id/atraso_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="Atrasadas: 2 parcelas" />
+        <LinearLayout android:orientation="vertical" android:id="@id/cancelar_button" android:layout_width="fill_parent" android:layout_height="55.0dip">
+            <View android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="17.0dip">
+                <ImageView android:id="@id/status_image_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentEnd="true" app:srcCompat="@drawable/ic_emprestimo_cancel_cancelar" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/red" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancelar Empréstimo" android:layout_marginStart="10.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/indisponivel_frame" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <View android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+            <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@color/gray_prev" android:gravity="center" android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:text="Cancelamento fora do horário disponível" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

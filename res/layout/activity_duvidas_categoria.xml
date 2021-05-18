@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header_main" layout="@layout/layout_action_bar" />
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/field_disclaimer_cheque" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin">
+                <ImageView android:id="@id/disclaimer_cheque_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_limite_da_conta_selecionado" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/disclaimer_cheque_label_field" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_toRightOf="@id/disclaimer_cheque_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="12.0sp" android:id="@id/disclaimer_cheque_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_cheque_title" />
+                    <TextView android:textSize="10.0sp" android:id="@id/disclaimer_cheque_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_cheque_total" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/field_disclaimer_cartoes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin">
+                <ImageView android:id="@id/disclaimer_cartoes_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_cartoes_selecionado" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/disclaimer_cartoes_label_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_toRightOf="@id/disclaimer_cartoes_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="12.0sp" android:id="@id/disclaimer_cartoes_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_cartoes_title" />
+                    <TextView android:textSize="10.0sp" android:id="@id/disclaimer_cartoes_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_cartoes_total" />
+                    <TextView android:textSize="10.0sp" android:id="@id/disclaimer_cartoes_mes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_cartoes_mes" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout android:layout_gravity="center_vertical" android:id="@id/field_disclaimer_emprestimo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin">
+                <ImageView android:id="@id/disclaimer_emprestimo_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_empres_finan_renegoc" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <LinearLayout android:orientation="vertical" android:id="@id/disclaimer_emprestimo_label_field" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_toRightOf="@id/disclaimer_emprestimo_icon" android:layout_centerVertical="true">
+                    <TextView android:textSize="12.0sp" android:id="@id/disclaimer_empr_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_empr_title" />
+                    <TextView android:textSize="10.0sp" android:id="@id/disclaimer_empr_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_empr_total" />
+                    <TextView android:textSize="10.0sp" android:id="@id/disclaimer_empr_mes" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/disclaimer_empr_mes" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:background="@android:color/darker_gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginTop="48.0dip" android:layout_marginRight="@dimen/activity_horizontal_margin" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin">
+                <TextView android:textSize="10.0sp" android:id="@id/obs1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0sp" android:id="@id/obs2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+                <TextView android:textSize="10.0sp" android:id="@id/obs3" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0sp" android:id="@id/obs4" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0sp" android:id="@id/obs5" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textSize="10.0sp" android:id="@id/obs7" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

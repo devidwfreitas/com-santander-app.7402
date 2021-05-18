@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/button_confirmar_cad_favorecido" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="@string/transferencias_cad_favorecidos_label_botao_continuar" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/button_confirmar_cad_favorecido" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/relative_box_image_cad_favorecido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx4" android:layout_alignParentTop="true">
+                <com.santander.app.components.view.SantanderTextView android:textSize="18.0sp" android:textStyle="bold" android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Preencha os dados do favorecido." />
+            </RelativeLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingx2" android:layout_below="@id/relative_box_image_cad_favorecido">
+                <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_banco_cad_fav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.ClickToSelectEditText android:id="@id/textview_banco_cad_fav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/transferencias_cad_favorecidos_label_banco" android:maxLines="1" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <RelativeLayout android:gravity="center" android:layout_gravity="center" android:id="@id/linear_box_agenciaconta_cadastro_favorecido_transferencia" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_agencia_cad_fav" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" app:errorTextAppearance="@style/error_appearance">
+                        <com.santander.app.components.view.SantanderEditText android:id="@id/textview_agencia_cad_fav" android:nextFocusRight="@id/textview_conta_cad_fav" android:layout_width="80.0dip" android:layout_height="wrap_content" android:hint="@string/transferencias_cad_favorecidos_label_agencia" android:maxLines="1" android:singleLine="true" android:maxLength="4" android:inputType="number" android:imeOptions="actionNext" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_conta_digito_cad_fav" android:layout_width="70.0dip" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+                        <com.santander.app.components.view.SantanderEditText android:id="@id/textview_digito_cad_fav" android:layout_width="50.0dip" android:layout_height="wrap_content" android:hint="@string/transferencias_cad_favorecidos_label_digito" android:maxLines="1" android:singleLine="true" android:maxLength="1" android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_conta_cad_fav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpaddingmin" android:layout_toLeftOf="@id/textinputlayout_conta_digito_cad_fav" android:layout_toRightOf="@id/textinputlayout_agencia_cad_fav" android:layout_alignParentTop="true">
+                        <com.santander.app.components.view.SantanderEditText android:id="@id/textview_conta_cad_fav" android:nextFocusRight="@id/textview_digito_cad_fav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/transferencias_cad_favorecidos_label_conta" android:maxLines="1" android:singleLine="true" android:inputType="number" android:imeOptions="actionNext" />
+                    </android.support.design.widget.TextInputLayout>
+                </RelativeLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_error_dados_conta" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin" android:layout_alignParentTop="true">
+                    <com.santander.app.components.view.SantanderEditText android:id="@id/textview_error_dados_conta" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="" android:maxLines="1" android:singleLine="true" android:inputType="number" />
+                </android.support.design.widget.TextInputLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_box_favorecido_transferencia" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_nome_cad_fav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginBottom="@dimen/commonpaddingmin">
+                        <com.santander.app.components.view.SantanderEditText android:id="@id/textview_titularidade_cad_fav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/transferencias_cad_favorecidos_label_nome" android:maxLines="1" android:singleLine="true" android:digits="@string/digitos_permitidos" android:inputType="text" />
+                    </android.support.design.widget.TextInputLayout>
+                    <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_cpfcnpj_cad_fav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginBottom="@dimen/commonpaddingmin">
+                        <com.santander.app.components.view.SantanderEditText android:id="@id/textview_cnpjcpf_cad_fav" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/transferencias_cad_favorecidos_label_cpfcnpj" android:maxLines="1" android:singleLine="true" android:inputType="number" />
+                    </android.support.design.widget.TextInputLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:id="@id/linear_box_switch_favorecido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginTop="@dimen/commonpadding">>
+<br.com.santander.uisdk.SantanderSwitch android:id="@id/switch_cad_favorecido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transferencias_cad_favorecidos_label_cadastrar_favorecido" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

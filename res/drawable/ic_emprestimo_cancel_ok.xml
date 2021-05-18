@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="24.0dip" android:width="25.0dip" android:stackViewStyle="25.0" android:numberPickerStyle="24.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:timePickerStyle="#ff009b24" android:activityChooserViewStyle="M6.659,13.157l1.427,-1.388l2.378,2.313l7.134,-6.939l1.427,1.388l-8.56,8.327z" />
+    <path android:activityChooserViewStyle="M12.4,12m-11.04,0a11.04,11.04 0,1 1,22.08 0a11.04,11.04 0,1 1,-22.08 0" android:actionModeShareDrawable="#ff009b24" android:actionModeFindDrawable="1.0" />
+</vector>

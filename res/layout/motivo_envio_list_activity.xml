@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:text="@string/cambio_label_motivo_envio_alt" santander:opensans_regular="opensans_regular.ttf" />
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_motivo_envio" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</LinearLayout>

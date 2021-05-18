@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:paddingLeft="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin" android:layout_marginBottom="@dimen/default_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textSize="@dimen/default_text_size" android:id="@id/btNext" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/avancar" android:layout_alignParentBottom="true" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+</RelativeLayout>

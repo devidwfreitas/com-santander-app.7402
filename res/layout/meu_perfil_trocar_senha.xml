@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="left" android:orientation="vertical" android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/black" android:gravity="bottom|left|center" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="@dimen/commonpadding" android:text="Troca de senha de acesso" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SegmentImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Senha Atual:" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderEditText android:id="@id/txCurrentPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true" android:maxLength="6" android:inputType="number" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Nova Senha:" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderEditText android:id="@id/txNewPassword" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true" android:maxLength="6" android:inputType="number" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Confirme a nova senha:" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderEditText android:id="@id/txNewPasswordConfirm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:password="true" android:maxLength="6" android:inputType="number" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="fill_parent" android:layout_height="110.0dip" android:src="@drawable/imagens_canais" android:scaleType="center" android:contentDescription="" />
+    </LinearLayout>
+    <LinearLayout android:gravity="bottom|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SantanderButtonView android:id="@id/btnChangePassword" android:layout_width="@dimen/button_width2" android:layout_height="@dimen/button_height" android:text="Confirmar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+</LinearLayout>

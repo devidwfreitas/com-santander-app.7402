@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/white" android:paddingLeft="@dimen/commonpadding" android:paddingTop="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/relativelayout_head_formulario" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <include layout="@layout/include_head_formulario_fale_conosco" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/relativelayout_formulario" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_below="@id/relativelayout_head_formulario">
+            <include layout="@layout/include_formulario_fale_conosco" />
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

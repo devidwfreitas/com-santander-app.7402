@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/container_info" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding">
+                <ImageView android:layout_gravity="center" android:id="@id/imageView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:src="@drawable/ico_atencao" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/textview_info" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:text="@string/cambio_info_dados_incorreto" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_beneficiario" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingtbl2">
+                    <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_beneficiario" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_label_nome_beneficiario" android:maxLines="1" android:singleLine="true" android:maxLength="50" android:digits="@string/digitos_permitidos" android:inputType="textVisiblePassword" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_banco" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingtbl2">
+                    <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_banco_exterior" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_label_banco_exterior" android:maxLines="1" android:singleLine="true" android:maxLength="30" android:digits="@string/digitos_permitidos" android:inputType="textVisiblePassword" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_pais" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingtbl2">
+                    <com.santander.app.components.view.ClickToSelectEditText android:id="@id/textview_pais" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_label_pais" android:maxLines="1" android:singleLine="true" />
+                </android.support.design.widget.TextInputLayout>
+                <android.support.design.widget.TextInputLayout android:id="@id/textinputlayout_cidade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingmin">
+                    <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_cidade" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_label_cidade" android:maxLines="1" android:singleLine="true" android:maxLength="30" android:digits="@string/digitos_permitidos" android:inputType="textVisiblePassword" />
+                </android.support.design.widget.TextInputLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:id="@id/input_layout_ag_cc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingtbl2" android:layout_marginBottom="@dimen/commonpaddingmin">
+                        <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_ag_cc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_label_ag_cc" android:maxLines="1" android:singleLine="true" android:maxLength="34" android:digits="@string/digitos_permitidos" android:inputType="textVisiblePassword" />
+                    </android.support.design.widget.TextInputLayout>
+                    <ImageView android:id="@id/image_ajuda_ag_cc" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ico_mais_info" android:layout_alignRight="@id/input_layout_ag_cc" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:id="@id/input_layout_cod_swift" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingtbl2" android:layout_marginBottom="@dimen/commonpaddingmin">
+                        <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_cod_swift" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_label_cod_swift" android:maxLines="1" android:singleLine="true" android:maxLength="11" android:digits="@string/digitos_permitidos" android:inputType="textVisiblePassword" />
+                    </android.support.design.widget.TextInputLayout>
+                    <ImageView android:id="@id/image_ajuda_cod_swift" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ico_mais_info" android:layout_alignRight="@id/input_layout_cod_swift" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <android.support.design.widget.TextInputLayout android:id="@id/input_layout_info_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingtbl2" android:layout_marginBottom="@dimen/commonpaddingmin">
+                        <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_info_add" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/cambio_label_info_add" android:maxLength="199" android:digits="@string/digitos_permitidos" android:inputType="textVisiblePassword" />
+                    </android.support.design.widget.TextInputLayout>
+                    <ImageView android:id="@id/image_ajuda_info_add" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ico_mais_info" android:layout_alignParentTop="true" android:layout_alignParentRight="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+            </LinearLayout>
+            <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_continuar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/button_view_continuar" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <WebView android:id="@id/wv_pdf_clausulas_emprestimos_antecipacaoir" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@android:color/transparent" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:id="@id/agent_file_frame_layout" android:background="@drawable/corner_agent" android:layout_width="259.0dip" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@drawable/box_agent" android:paddingLeft="0.0dip" android:paddingRight="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:minWidth="90.0dip" android:paddingStart="0.0dip" android:paddingEnd="2.0dip" android:layout_marginStart="8.0dip">
+            <TextView android:textAppearance="@android:style/TextAppearance.Small" android:textColor="@color/colorAgentChatOpacity" android:gravity="center" android:id="@id/agent_name_file_tv" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="16.0dip" android:layout_marginRight="12.0dip" android:layout_marginStart="16.0dip" android:layout_marginEnd="12.0dip" />
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/box_file_agent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:layout_marginRight="4.0dip" android:layout_marginStart="4.0dip" android:layout_marginEnd="4.0dip">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/agent_file_imv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/ico_img_gray_squadchat" android:contentDescription="@string/client_file_img_text" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/colorAgentChatText" android:ellipsize="end" android:gravity="start|center" android:id="@id/agent_file_name_tv" android:paddingTop="12.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:maxHeight="35.0dip" android:lines="1" android:paddingEnd="4.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textColor="@color/colorAgentChatOpacity" android:gravity="start" android:id="@id/agent_file_size_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:maxHeight="30.0dip" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/agent_file_ll" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <FrameLayout android:id="@id/agent_file_download_fl" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="8.0dip" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip">
+                        <ImageView android:layout_gravity="center" android:id="@id/agent_start_download_imv" android:layout_width="28.0dip" android:layout_height="28.0dip" android:src="@drawable/ico_download_squadchat" />
+                    </FrameLayout>
+                    <LinearLayout android:gravity="bottom|center" android:id="@id/agent_stop_download_ll" android:paddingLeft="0.0dip" android:paddingRight="9.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0" android:paddingStart="0.0dip" android:paddingEnd="8.0dip">
+                        <ImageView android:id="@id/agent_stop_download_imv" android:background="@drawable/ico_cancel_squadchat" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="16.0dip" android:contentDescription="@string/stop_send" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="top|center" android:orientation="vertical" android:id="@id/agent_file_progress_ll" android:paddingTop="8.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+                        <ProgressBar android:theme="@style/LinearProgress" android:layout_gravity="center" android:id="@id/agent_file_download_pb" android:padding="4.0dip" android:layout_width="36.0dip" android:layout_height="2.0dip" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textColor="@color/colorAgentChatOpacity" android:id="@id/agent_file_time_tv" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="8.0dip" android:layout_marginRight="12.0dip" android:layout_marginStart="9.0dip" android:layout_marginEnd="12.0dip" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

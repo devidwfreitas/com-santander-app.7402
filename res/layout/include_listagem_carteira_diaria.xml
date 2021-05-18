@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:orientation="vertical" android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view_main" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:gravity="center" android:id="@id/linear_data_posicao" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data da posição:" app:opensans_regular="opensans_regular.ttf" />
+                <LinearLayout android:gravity="center_vertical" android:id="@id/linear_calendario" android:background="@drawable/border_bottom_gray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding">
+                    <ImageView android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_calendario" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_data" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="" />
+                    <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/menu_icon_arrow_gray_down" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/linear_patrimonio" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Patrimônio total:" app:opensans_regular="opensans_regular.ttf" />
+                <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_patrimonio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:layout_gravity="bottom" android:id="@id/lineview_separator" android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_carteira_diaria" android:paddingLeft="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+    </ScrollView>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

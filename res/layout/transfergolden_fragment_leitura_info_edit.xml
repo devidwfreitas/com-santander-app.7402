@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.santander.app.transfergolden.presentation.LeituraInfoEditText android:id="@id/banco_spinner" android:layout_width="fill_parent" android:layout_height="wrap_content" app:hint="Banco" app:ovalHint="BC" app:type="spinner" />
+    <com.santander.app.transfergolden.presentation.LeituraInfoEditText android:id="@id/agencia_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:hint="Agência" app:ovalHint="AG" app:type="number" />
+    <com.santander.app.transfergolden.presentation.LeituraInfoEditText android:id="@id/conta_corrente_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:hint="Conta corrente (com dígito)" app:ovalHint="CC" app:type="number" />
+    <com.santander.app.transfergolden.presentation.LeituraInfoEditText android:id="@id/nome_benef_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:hint="Nome beneficiário" app:ovalHint="NB" app:type="text" />
+    <com.santander.app.transfergolden.presentation.LeituraInfoEditText android:id="@id/documento_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:hint="CPF/CNPJ" app:ovalHint="DC" app:type="number" />
+    <com.santander.app.transfergolden.presentation.LeituraInfoEditText android:id="@id/valor_edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" app:hint="Valor (R$)" app:ovalHint="VL" app:type="number" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <Button android:id="@id/transferir_button" android:text="@string/transfgolden_button_transferir" android:layout_alignParentEnd="true" style="@style/TransferGolder.Button" />
+    </RelativeLayout>
+</LinearLayout>

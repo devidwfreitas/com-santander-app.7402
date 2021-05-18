@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.components.view.SantanderTextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@color/red" android:padding="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Selecione a operadora" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+    <View android:background="@color/red" android:layout_width="fill_parent" android:layout_height="4.0dip" />
+    <com.santander.app.components.view.SegmentEditText android:textAppearance="?android:textAppearanceSmall" android:id="@id/edt_busca_operadora" android:paddingLeft="16.0dip" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Busque aqui uma operadora" style="@style/EditTextHoloDark" />
+    <ListView android:layout_gravity="center_horizontal" android:id="@id/lsv_operadoras" android:layout_width="fill_parent" android:layout_height="wrap_content" android:divider="@color/gray" android:dividerHeight="1.0dip" />
+</LinearLayout>

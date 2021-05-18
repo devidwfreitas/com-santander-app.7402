@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llClick" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.components.view.SantanderTextView android:id="@id/tvDesc" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <View android:id="@id/vLine" android:background="@color/colorGrayBackground3" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+</LinearLayout>

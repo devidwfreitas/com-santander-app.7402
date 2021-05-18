@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorWhite" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/coverageBottomContainer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="center" android:background="@drawable/bg_rectangle_border" android:layout_width="60.0dip" android:layout_height="12.0dip" android:layout_above="@id/llBottonContainer1" android:layout_centerHorizontal="true">
+            <com.santander.app.seguros.ui.widgets.ImageTextButton android:layout_gravity="center" android:id="@id/btBottomArrow" android:background="@color/colorTransparent" android:layout_width="11.0dip" android:layout_height="11.0dip" app:itb_image_src="@drawable/ic_subitem2" app:itb_image_width="9.0dip" app:itb_image_height="8.0dip" app:itb_image_color="@color/colorGray" />
+        </FrameLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llBottonContainer1" android:background="@color/colorGrayVeryLight" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/do_you_need_your_24_hour_assistance" />
+            <com.santander.app.seguros.ui.widgets.ExpandableLayoutV2 android:id="@id/llBottonExpandable" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="400" app:el_expanded="false" app:el_translate_children="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+                    <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/contact_us" fontPath="fonts/OpenSans-Light.ttf" />
+                    <com.santander.app.seguros.ui.widgets.ImageTextButton android:layout_gravity="center_horizontal" android:id="@id/btTelephone" android:layout_width="200.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/default_margin" app:itb_image_src="@drawable/ic_telephone_blue" app:itb_text_left_padding="15.0dip" app:itb_fontPath="fonts/OpenSans-Regular.ttf" app:itb_image_left_padding="40.0dip" app:itb_image_width="20.0dip" app:itb_image_height="20.0dip" app:itb_image_color="@color/colorWhite" style="@style/AppTheme.ButtonRedDark2" />
+                </LinearLayout>
+            </com.santander.app.seguros.ui.widgets.ExpandableLayoutV2>
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/coverageBottomContainer">
+        <android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/default_screen_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/colorGray" android:gravity="center_horizontal" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Semibold.ttf" />
+                <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center_horizontal" android:id="@id/tvDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/to_begin_select_the_coverage_you_want_to_trigger" fontPath="fonts/OpenSans-Light.ttf" />
+                <android.support.v7.widget.RecyclerView android:textSize="@dimen/default_text_size" android:id="@id/rvSingleSelect" android:paddingBottom="@dimen/default_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_margin" />
+            </LinearLayout>
+        </android.support.v4.widget.NestedScrollView>
+        <View android:id="@id/vOpenBottom" android:background="@color/colorBlack" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" android:alpha="0.0" android:layout_alignParentStart="true" />
+    </RelativeLayout>
+</RelativeLayout>

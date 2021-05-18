@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="left" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="EXTRATO DE LANÇAMENTOS FUTUROS" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="@dimen/commonpaddingmin" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txtLiteralContas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Referente aos próximos 7 dias" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2">
+            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/divisionPaginacion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="27/08/2013" android:layout_alignParentRight="true" app:opensans_regular="opensans_regular.ttf" />
+            </RelativeLayout>
+            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Histórico:" android:layout_centerVertical="true" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="right" android:id="@id/textView2" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="DEBITO AUTOM CONTA DE TELEFONE" android:layout_alignParentRight="true" android:layout_centerVertical="false" app:opensans_regular="opensans_regular.ttf" />
+            </RelativeLayout>
+            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ -141,14" android:layout_alignParentRight="true" app:opensans_regular="opensans_regular.ttf" />
+            </RelativeLayout>
+            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Lançamentos atualizados diariamente referentes a debitos automáticos e creditos de salário para o periodo de 7 dias  " app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</ScrollView>

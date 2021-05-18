@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_title_size" android:textColor="@color/colorOrange" android:id="@id/txtCoverageName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/ops" android:textAlignment="center" />
+    <TextView android:id="@id/textMessage" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_padding" android:layout_marginRight="@dimen/default_padding" android:layout_marginBottom="@dimen/default_padding" android:textAlignment="center" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/big_margin">
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btnOK" android:layout_width="wrap_content" android:layout_height="30.0dip" android:text="@string/ok_i_got_it_assistance" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </LinearLayout>
+</LinearLayout>

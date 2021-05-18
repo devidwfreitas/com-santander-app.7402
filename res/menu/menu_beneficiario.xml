@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:icon="@drawable/abs__action_mode_close_button" android:id="@id/done_beneficiario" android:right="@dimen/carousel_contas" android:title="Done" />
+    <item android:icon="@android:drawable/ic_menu_delete" android:id="@id/delete_beneficiario" android:title="Delete" />
+    <item android:icon="@drawable/btn_iconedit" android:id="@id/edit_beneficiario" android:title="Edit" />
+</menu>

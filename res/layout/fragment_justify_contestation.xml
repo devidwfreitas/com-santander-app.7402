@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llTop" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="30.0dip" android:layout_height="40.0dip" android:layout_marginTop="@dimen/default_margin" android:src="@drawable/ic_list" android:scaleType="fitXY" />
+        <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/colorGray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/tell_us_the_justification_for_your_dispute_" android:textAlignment="center" />
+        <TextView android:textSize="@dimen/small_text_size" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/to_complete_this_step_continue_" android:textAlignment="center" />
+    </LinearLayout>
+    <com.santander.app.seguros.ui.widgets.EmojiExcludeEditText android:textSize="@dimen/small_text_size" android:textColor="@color/colorGrayLight" android:textColorHint="@color/colorGrayLight" android:gravity="top" android:id="@id/editMessage" android:background="@drawable/bg_retangle_all_border" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:hint="Digite sua mensagem" android:layout_above="@id/edtTextCount" android:layout_below="@id/llTop" android:layout_alignParentStart="true" />
+    <LinearLayout android:gravity="right" android:orientation="horizontal" android:id="@id/edtTextCount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/small_margin" android:layout_above="@id/btAttachDocument">
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGrayLight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="Restam" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGrayLight" android:id="@id/txtCharacters" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="3.0dip" android:text="210" />
+        <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGrayLight" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="caracteres" />
+    </LinearLayout>
+    <Button android:textSize="@dimen/default_text_size" android:textColor="@color/colorBlueDark" android:id="@id/btAttachDocument" android:background="?selectableItemBackground" android:layout_width="fill_parent" android:layout_height="30.0dip" android:foreground="?selectableItemBackground" android:text="@string/attach_document" android:layout_alignParentBottom="true" android:textAllCaps="false" />
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="AGENDAR" app:opensans_regular="opensans_regular.ttf" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="bottom" android:id="@id/dataValue" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="13/07/2013" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:id="@id/datepicker" android:background="@drawable/icon_calendar_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

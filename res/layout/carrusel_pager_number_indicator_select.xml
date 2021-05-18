@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:background="@drawable/paginator_background_select" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:textColor="@color/contaForegroundText" android:id="@id/divisionPaginacion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="1 / 50" android:layout_centerHorizontal="true" android:layout_centerVertical="true" app:opensans_regular="opensans_regular.ttf" />
+</RelativeLayout>

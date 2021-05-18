@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.NestedScrollView android:id="@id/scrollView" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" layout="@layout/layout_indicator_contract" />
+        </LinearLayout>
+        <br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content">
+            <FrameLayout android:id="@id/fragment_content" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </br.com.zup.multistatelayout.MultiStateLayout>
+    </LinearLayout>
+</android.support.v4.widget.NestedScrollView>

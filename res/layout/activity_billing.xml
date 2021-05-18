@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayoutBilling" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:id="@id/scrollView" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:gravity="center_vertical" android:background="@color/colorGrayBackgroundDetails" android:paddingLeft="@dimen/default_padding" android:paddingTop="@dimen/default_screen_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/default_screen_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/default_text_size" android:id="@id/textView" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/description" android:layout_weight="1.0" />
+                <ImageView android:visibility="gone" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_edit" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/llListBilling" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.seguros.ui.widgets.BillingItem android:id="@id/itemInstallments" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bi_DescText="@string/installments" app:bi_image="@drawable/ic_installments" />
+                <com.santander.app.seguros.ui.widgets.BillingItem android:id="@id/itemPaymentForm" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bi_DescText="@string/payment_form" app:bi_image="@drawable/ic_form" />
+                <com.santander.app.seguros.ui.widgets.BillingItem android:id="@id/itemAgencyAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bi_DescText="@string/current_account" app:bi_image="@drawable/ic_current_account" />
+                <com.santander.app.seguros.ui.widgets.BillingItemImage android:id="@id/itemCardNumber" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bItem_DescText="XXXX.XXXX.XXXX.XXXX" app:bItem_image="@drawable/ic_card" />
+                <com.santander.app.seguros.ui.widgets.BillingItem android:id="@id/itemValue" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bi_DescText="@string/value" app:bi_image="@drawable/ic_value" />
+                <com.santander.app.seguros.ui.widgets.BillingItem android:id="@id/itemEndDate" android:layout_width="fill_parent" android:layout_height="wrap_content" app:bi_DescText="@string/end_date" app:bi_image="@drawable/ic_end_date" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:id="@id/llPaymentExtract" android:background="@drawable/bg_button_gray" android:paddingLeft="@dimen/default_padding" android:paddingTop="@dimen/default_screen_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/default_screen_padding" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_title_size" android:id="@id/textPaymentExtract" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/payment_extract" android:layout_weight="1.0" />
+                <ImageView android:id="@id/ic_submenu_extract" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_subitem" />
+            </LinearLayout>
+            <com.santander.app.seguros.ui.widgets.ExpandableLayoutV2 android:id="@id/expandable_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="800" app:el_expanded="true" app:el_translate_children="true">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:id="@id/headerBilling" android:background="@color/colorGrayBackgroundDetails" android:paddingLeft="@dimen/default_padding" android:paddingTop="@dimen/default_screen_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/default_screen_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorPrimaryHoverLight" android:id="@id/textPaymentDate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/payment_date" android:layout_weight="1.0" />
+                        <TextView android:textColor="@color/colorPrimaryHoverLight" android:layout_width="wrap_content" android:layout_height="20.0dip" android:src="@drawable/ic_edit" android:text="@string/value" />
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/headerBilling" android:paddingLeft="@dimen/small_padding" android:paddingTop="@dimen/default_screen_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/default_screen_padding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <View android:id="@id/lineStatus" android:background="@color/colorGreenLight" android:layout_width="7.0dip" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:layout_below="@id/ivImageCoverage" />
+                        <TextView android:textSize="@dimen/small_text_size" android:id="@id/textPaymentDate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/paid_installments" android:layout_weight="1.0" />
+                        <View android:id="@id/lineStatus" android:background="@color/colorRedLight" android:layout_width="7.0dip" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:layout_below="@id/ivImageCoverage" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/small_text_size" android:id="@id/textPaymentDate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/in_arrears" android:layout_weight="1.0" />
+                        <View android:id="@id/lineStatus" android:background="@color/colorGray" android:layout_width="7.0dip" android:layout_height="fill_parent" android:layout_marginRight="3.0dip" android:layout_below="@id/ivImageCoverage" android:layout_centerHorizontal="true" />
+                        <TextView android:textSize="@dimen/small_text_size" android:id="@id/textPaymentDate" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/payable" android:layout_weight="1.0" />
+                    </LinearLayout>
+                    <android.support.v7.widget.RecyclerView android:id="@id/rvBillingExtractItem" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+            </com.santander.app.seguros.ui.widgets.ExpandableLayoutV2>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</br.com.zup.multistatelayout.MultiStateLayout>

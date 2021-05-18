@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="30.0dip" android:width="30.0dip" android:stackViewStyle="30.0" android:numberPickerStyle="30.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:timePickerStyle="#ff269800" android:activityChooserViewStyle="M15,28.846C7.353,28.846 1.154,22.647 1.154,15C1.154,7.353 7.353,1.154 15,1.154C22.647,1.154 28.846,7.353 28.846,15C28.846,22.647 22.647,28.846 15,28.846L15,30C23.284,30 30,23.284 30,15C30,6.716 23.284,0 15,0C6.716,0 0,6.716 0,15C0,23.284 6.716,30 15,30L15,28.846Z" android:actionModeShareDrawable="#00000000" android:actionModeFindDrawable="1.0" android:fillType="0" />
+    <path android:timePickerStyle="#ff269800" android:activityChooserViewStyle="M11.656,14.647C11.364,14.309 10.866,14.309 10.575,14.647C10.321,14.941 10.321,15.378 10.575,15.672L13.028,18.515C13.253,18.847 13.656,19.038 14.097,19.038C14.537,19.038 14.941,18.847 15.2,18.471L20.579,12.24C20.833,11.947 20.833,11.509 20.579,11.215C20.287,10.877 19.79,10.877 19.498,11.215L14.097,17.476L11.656,14.647Z" android:actionModeShareDrawable="#00000000" android:actionModeFindDrawable="1.0" android:fillType="0" />
+</vector>

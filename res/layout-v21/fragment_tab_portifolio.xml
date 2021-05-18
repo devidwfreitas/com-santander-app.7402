@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v4.widget.NestedScrollView android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="90.0dip" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutPrincipal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <include layout="@layout/layout_header_pequeno" />
+            <include android:id="@id/portifolio_carrinho_abandonado" android:visibility="gone" layout="@layout/layout_toast_abandonar_carrinho" />
+            <include android:id="@id/inv2_portifolio_layout_vazio" android:visibility="gone" layout="@layout/layout_error_yellow" />
+            <LinearLayout android:orientation="vertical" android:id="@id/inv2_portifolio_layout_cards" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="17.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="17.0dip" android:layout_marginBottom="0.0dip" android:weightSum="1.0">
+                <android.support.v7.widget.CardView android:layout_gravity="center" android:id="@id/Card_View" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="3.0dip" android:layout_marginBottom="20.0dip" android:layout_marginStart="3.0dip" android:layout_marginEnd="3.0dip" android:majorWeightMax="2.0dip" app:cardCornerRadius="4.0dip">
+                    <RelativeLayout android:orientation="horizontal" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <TextView android:textSize="14.0sp" android:textColor="@color/inv_black_two" android:id="@id/textViewConsolidado" android:layout_width="wrap_content" android:layout_height="16.0dip" android:layout_marginTop="7.0dip" android:text="@string/inv_home_lbl_consolidado" android:fontFamily="sans-serif-medium" android:layout_marginStart="10.0dip" />
+                        <com.github.mikephil.charting.charts.PieChart android:id="@id/portifolio_chart1" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="55.0dip" android:layout_marginStart="24.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff787878" android:layout_width="wrap_content" android:layout_height="18.0dip" android:layout_marginTop="65.0dip" android:text="@string/inv_home_lbl_valor_investido" android:layout_marginStart="110.0dip" />
+                        <TextView android:textSize="12.0sp" android:textColor="#ff191919" android:layout_width="15.0dip" android:layout_height="15.0dip" android:layout_marginTop="89.0dip" android:text="@string/app_monetary_simbol" android:layout_marginStart="110.0dip" android:layout_marginEnd="216.0dip" />
+                        <TextView android:textSize="24.0sp" android:textColor="#ff191919" android:id="@id/portifolio_valor_total_investido" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_centerVertical="true" android:layout_marginStart="130.0dip" android:layout_marginEnd="11.0dip" />
+                        <View android:id="@id/view" android:background="#fff0f0f0" android:visibility="gone" android:layout_width="280.0dip" android:layout_height="1.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="148.5dip" android:layout_marginRight="20.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff656565" android:id="@id/textViewValorDisponivel" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="145.0dip" android:text="@string/inv_home_lbl_valor_disponivel" android:layout_marginStart="20.0dip" />
+                        <TextView android:textSize="14.0sp" android:textColor="#ff191919" android:id="@id/portifolio_valor_disponivel_resgate" android:layout_width="wrap_content" android:layout_height="22.0dip" android:layout_below="@id/textViewValorDisponivel" android:layout_marginStart="20.0dip" android:layout_marginEnd="129.0dip" />
+                    </RelativeLayout>
+                </android.support.v7.widget.CardView>
+                <android.support.v7.widget.RecyclerView android:id="@id/portifolio_lista_de_produtos" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="9.0dip" app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <RelativeLayout android:id="@id/inv2_portifolio_layout_loadinig" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include android:visibility="visible" layout="@layout/layout_loading_state" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="horizontal" android:id="@id/inv2_portifolio_layout_botao" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="18.0sp" android:textColor="@color/inv_white_two" android:id="@id/portifolio_botao_resgatar" android:background="@drawable/app_button_red_grey_pill" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/inv_home_btn_resgatar" android:layout_weight="1.0" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" style="?android:attr/borderlessButtonStyle" />
+        <Button android:textSize="18.0sp" android:textColor="@color/inv_white_two" android:id="@id/portifolio_botao_aplicar" android:background="@drawable/app_button_red_white_pill" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/inv_home_btn_aplicar" android:layout_weight="1.0" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+    <include android:visibility="gone" layout="@layout/handler_error" />
+    <include android:id="@id/empty" android:visibility="gone" layout="@layout/layout_empty_state" />
+</RelativeLayout>

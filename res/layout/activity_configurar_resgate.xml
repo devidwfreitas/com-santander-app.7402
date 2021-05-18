@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/resgate_apl_loading" android:visibility="visible" layout="@layout/layout_loading_state" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/resgate_main_view" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_header_pequeno" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0" android:layout_marginEnd="10.0dip">
+                    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resgate_lbl_origem" android:fontFamily="sans-serif" />
+                    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:ellipsize="marquee" android:id="@id/resgate_lbl_nome_produto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0" android:layout_marginStart="10.0dip">
+                    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resgate_lbl_vlr_disponivel_resgate" android:fontFamily="sans-serif" />
+                    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:id="@id/resgate_lbl_valor_disp_resgate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:background="@color/inv_pinkish_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="10.0dip" />
+            <LinearLayout android:id="@id/resgate_seletor_container" android:background="@drawable/shape_selector_bg" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="32.0dip" android:layout_marginTop="20.0dip" android:baselineAligned="false" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resgate_valor_parcial" android:layout_centerInParent="true" android:fontFamily="sans-serif" />
+                    <Button android:textStyle="bold" android:textColor="@color/inv_white_three" android:id="@id/resgate_btn_parcial" android:background="@drawable/shape_selector_fg" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/resgate_valor_parcial" android:textAllCaps="false" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+                    <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black_four" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resgate_valor_total" android:layout_centerInParent="true" android:fontFamily="sans-serif" />
+                    <Button android:textStyle="bold" android:textColor="@color/inv_transparent" android:id="@id/resgate_btn_total" android:background="@drawable/shape_selector_fg_unselected" android:layout_width="fill_parent" android:layout_height="28.0dip" android:text="@string/resgate_valor_total" android:textAllCaps="false" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="@string/resgate_quanto_gostaria_de_resgatar" android:lineSpacingExtra="8.0sp" android:fontFamily="sans-serif" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                    <LinearLayout android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:layout_gravity="end" android:paddingTop="8.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/app_monetary_simbol" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif" />
+                        <RelativeLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <br.com.santander.investimentoV2.shared.commons.TextWatcherValorBR android:textSize="36.0sp" android:id="@id/resgate_edt_valor" android:background="@color/inv_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:text="@string/ph_zero_decimal" android:maxLines="1" android:selectAllOnFocus="true" android:digits="\ 0123456789" android:inputType="numberDecimal" android:imeOptions="actionNext" />
+                            <TextView android:textSize="36.0sp" android:textColor="@color/inv_black" android:id="@id/resgate_txt_valor" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:maxLines="1" android:textAlignment="textStart" />
+                        </RelativeLayout>
+                    </LinearLayout>
+                    <View android:id="@id/resgate_linha_valor" android:background="@color/inv_pinkish_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_brownish_grey" android:layout_gravity="center_horizontal" android:id="@id/resgate_txt_validacao_valor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif" />
+                        <ImageButton android:id="@id/resgate_btn_info" android:background="@color/inv_transparent" android:padding="2.0dip" android:visibility="invisible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="2.0dip" android:src="@drawable/ic_info_inv" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip">
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0" android:layout_marginEnd="10.0dip">
+                    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:id="@id/lbl_conta_corrente" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_conta_corrente" android:fontFamily="sans-serif" />
+                    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:id="@id/resgate_lbl_conta_corrente" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_weight="1.0" android:layout_marginStart="10.0dip">
+                    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/config_txt_saldo" android:fontFamily="sans-serif" />
+                    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/inv_black_two" android:id="@id/resgate_lbl_saldo_disponivel" android:layout_width="wrap_content" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/resgate_container_prazo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip">
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/resgate_data_de_resgate" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif" />
+                <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="16.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:id="@id/resgate_txt_data" android:background="@color/inv_transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxLines="1" android:layout_centerVertical="true" android:lineSpacingExtra="16.0sp" android:fontFamily="sans-serif" android:layout_toStartOf="@id/resgate_btn_data" android:layout_alignParentStart="true" />
+                    <View android:id="@id/resgate_ln_data" android:background="@color/inv_pinkish_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_alignParentBottom="true" />
+                    <ImageButton android:id="@id/resgate_btn_data" android:background="@color/inv_transparent" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_drop" android:layout_centerVertical="true" android:layout_alignParentEnd="true" />
+                </RelativeLayout>
+                <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_brownish_grey" android:id="@id/resgate_txt_validacao_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="8.0dip" android:text="@string/resgate_txt_validacao" android:lineSpacingExtra="4.0sp" android:fontFamily="sans-serif" android:textAlignment="textEnd" />
+            </LinearLayout>
+            <Button android:enabled="false" android:textColor="@color/inv_warm_grey" android:id="@id/resgate_btn_continuar" android:background="@drawable/app_button_red_grey_pill" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="20.0dip" android:text="@string/app_continuar" style="?android:attr/borderlessButtonStyle" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</RelativeLayout>

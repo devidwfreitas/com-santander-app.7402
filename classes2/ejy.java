@@ -1,0 +1,11 @@
+import java.lang.reflect.Type;
+
+public interface ejy<T> {
+  T b(ejz paramejz, Type paramType, ejx paramejx);
+}
+
+
+/* Location:              C:\Users\devid\Downloads\SAST\Santander\dex2jar-2.0\classes2-dex2jar.jar!\ejy.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

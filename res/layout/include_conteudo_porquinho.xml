@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:animateLayoutChanges="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:id="@id/container_mensagem" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true">
+        <TextView android:textColor="#ffffffff" android:layout_gravity="center" android:id="@id/textview_titulo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_mensagem_porquinho" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/container_mensagem">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:id="@id/linear_ico_porquinho" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imageView3" android:background="@drawable/ico_classic_investimentos" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="@color/segmentoPorquinhoClassic" android:gravity="center" android:layout_gravity="center" android:id="@id/textView_texto_negrito" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/investimentos_porquinho_titulo_label" />
+        <TextView android:textSize="17.0dip" android:textStyle="bold" android:textColor="@color/segmentoPorquinhoClassic" android:gravity="center" android:layout_gravity="center" android:id="@id/textView_texto" android:visibility="gone" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" />
+        <TextView android:textSize="17.0dip" android:textStyle="bold" android:gravity="center" android:layout_gravity="center" android:id="@id/textView_texto_negrito" android:layout_width="210.0dip" android:layout_height="wrap_content" android:layout_marginTop="30.0dip" android:text="@string/investimentos_porquinho_label" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:id="@id/linear_invista" android:background="@color/transparent" android:layout_width="250.0dip" android:layout_height="40.0dip" android:layout_marginTop="60.0dip">
+        <TextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="#ffffffff" android:gravity="center" android:id="@id/textView" android:layout_width="fill_parent" android:layout_height="fill_parent" android:text="INVISTA AGORA" />
+    </LinearLayout>
+</LinearLayout>

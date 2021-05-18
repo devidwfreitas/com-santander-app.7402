@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin">
+                <ImageView android:layout_gravity="center" android:id="@id/imgCard" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_family_life" android:majorWeightMax="5.0dip" />
+                <LinearLayout android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textSize="@dimen/text_primary_size" android:textStyle="bold" android:id="@id/textTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:text="@string/life_protection" />
+                    <TextView android:textSize="@dimen/small_text_size" android:layout_gravity="bottom" android:id="@id/textDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/small_margin" android:layout_marginRight="@dimen/small_margin" android:text="@string/family_safe" />
+                </LinearLayout>
+            </LinearLayout>
+            <View android:id="@id/viewBottomItem" android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginRight="@dimen/small_margin">
+                <android.support.v7.widget.RecyclerView android:id="@id/rvPlanOfferDetails" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <ImageView android:layout_width="fill_parent" android:layout_height="12.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="-18.5dip" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/image_bottom_cardview" android:majorWeightMax="3.0dip" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin">
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:id="@id/monthlyInstallments" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:text="@string/monthly_installments" />
+        <LinearLayout android:gravity="right|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textColor="@color/colorPrimaryDark2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="R$" app:textStyle="semiBold" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/ab_title_size" android:textColor="@color/colorPrimaryDark2" android:id="@id/prizeValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="120,00" app:textStyle="semiBold" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

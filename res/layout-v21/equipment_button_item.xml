@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/btEquipment" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <Button android:textColor="@color/colorGray" android:id="@id/btnEquipment" android:background="@drawable/bg_button_gray_very_light" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginTop="@dimen/small_margin" android:layout_marginRight="10.0dip" android:text="lavadora de roupas adfad" android:borderlessButtonStyle="@null" android:textAllCaps="false" android:majorWeightMax="1.0dip" />
+    <ImageView android:layout_gravity="right" android:id="@id/imgCheckEquipment" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ic_check_equipment" android:alpha="0.0" android:majorWeightMax="5.0dip" />
+</FrameLayout>

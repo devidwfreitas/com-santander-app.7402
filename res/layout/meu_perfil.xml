@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/mainLayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentLineView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" />
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding">
+            <com.santander.app.components.view.SegmentImageView android:id="@id/imgTrocarSenha" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goSaldo" santander:src_classic="@drawable/trocarsenhaacesso_pf_selector" santander:src_select="@drawable/trocarsenhaacesso_se_selector" santander:src_universitario="@drawable/trocarsenhaacesso_un_selector" />
+            <com.santander.app.components.view.SegmentImageView android:id="@id/imgAtivarCartao" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goAgendamentos" santander:src_classic="@drawable/ativarcso_pf_selector" santander:src_select="@drawable/ativarcso_se_selector" santander:src_universitario="@drawable/ativarcso_un_selector" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding">
+            <com.santander.app.components.view.SegmentImageView android:id="@id/imgSolicitarCartao" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goMovement" santander:src_classic="@drawable/solicitarcso_pf_selector" santander:src_select="@drawable/solicitarcso_se_selector" santander:src_universitario="@drawable/solicitarcso_un_selector" />
+            <LinearLayout android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/boletoVR_text" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/tituCliente" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/boletoVR_cliente" app:opensans_regular="opensans_regular.ttf" />
+            <RadioGroup android:id="@id/rgTipoPessoaCliente" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/rdbPF1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/boletoVR_pessoaF" />
+                <RadioButton android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/rdbPJ1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/boletoVR_pessoaJ" />
+            </RadioGroup>
+            <com.santander.app.components.view.SantanderEditText android:id="@id/documento_cliente" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin" android:hint="@string/boletoVR_cpfcnpj" android:inputType="number" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding">
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/tituFavorecido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/boletoVR_favorecido" app:opensans_regular="opensans_regular.ttf" />
+            <RadioGroup android:id="@id/rgTipoPessoaFavorecido" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RadioButton android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/rdbPF2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/boletoVR_pessoaF" />
+                <RadioButton android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/rdbPJ2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:text="@string/boletoVR_pessoaJ" />
+            </RadioGroup>
+            <com.santander.app.components.view.SantanderEditText android:id="@id/documento_favorecido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin" android:hint="@string/boletoVR_cpfcnpj" android:inputType="number" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+        </LinearLayout>
+        <com.santander.app.components.view.SantanderButtonView android:layout_gravity="center" android:id="@id/confirmar" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/button_confirmar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+</ScrollView>

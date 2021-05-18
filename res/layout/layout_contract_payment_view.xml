@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/layout_payment_methods" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/payment_date_" app:textStyle="semiBold" />
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textColor="@color/colorGray" android:id="@id/tvDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" />
+    <RelativeLayout android:orientation="horizontal" android:id="@id/layoutSelectPaymentForm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+        <FrameLayout android:id="@id/flSelectAC" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin">
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGrayText3" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:text="@string/account_current__" android:textAllCaps="true" app:textStyle="regular" />
+            <android.support.v7.widget.AppCompatRadioButton android:layout_gravity="center_vertical" android:id="@id/rbSelectAC" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:buttonTint="@color/colorGrayText3" />
+        </FrameLayout>
+        <FrameLayout android:id="@id/flSelectCC" android:paddingRight="3.0dip" android:clickable="true" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentRight="true">
+            <android.support.v7.widget.AppCompatRadioButton android:layout_gravity="center_vertical" android:id="@id/rbSelectCC" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" app:buttonTint="@color/colorGrayText3" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGrayText3" android:layout_gravity="center_vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="33.0dip" android:text="@string/credit_card_" android:textAllCaps="true" app:textStyle="regular" />
+        </FrameLayout>
+    </RelativeLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/rvPaymentForm" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" />
+    <View android:background="@color/colorLineGray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="25.0dip" />
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/vantagem_seguro_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Conheça as vantagens do Seguro:" />
+    <LinearLayout android:orientation="vertical" android:id="@id/seguro_cp_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_cardview" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_gestao_saude" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_morte_title" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/santander_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_morte_cp" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_cardview" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_capitalizacao" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_premio_title" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/santander_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_premio_cp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/seguro_consig_1_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_cardview" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_gestao_saude" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_morte_title" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/santander_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_morte_consig_1" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/seguro_consig_2_card" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_cardview" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_despesas_perda_de_pontos" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_desemprego_title" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/santander_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_desemprego_consig_2" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/selector_cardview" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_gestao_saude" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="10.0dip" android:paddingEnd="10.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_morte_title" />
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/santander_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seguro_morte_consig_2" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/protegido_button" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" android:text="@string/seguro_com_protecao_button" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" style="@style/Santander.PillRed" />
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/sem_protecao_button" android:layout_width="fill_parent" android:layout_marginTop="20.0dip" android:text="@string/seguro_sem_protecao_button" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" style="@style/Santander.PillRedReverse" />
+</LinearLayout>

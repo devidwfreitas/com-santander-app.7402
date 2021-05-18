@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/emprestimo_main_view" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <ScrollView android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/contenedor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:id="@id/contrato_poupanca" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="contrato" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderButtonView android:id="@id/button_voltar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="@string/button_no_concordo" android:layout_weight="1.0" android:onClick="openContratar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+                <com.santander.app.components.view.SantanderButtonView android:id="@id/button_continuar" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="@string/button_concordo" android:layout_weight="1.0" android:onClick="openContratar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

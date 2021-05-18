@@ -1,0 +1,71 @@
+import java.io.Serializable;
+
+public class fur extends fvu implements Serializable {
+  private static final long a = 1L;
+  
+  private String b;
+  
+  private String c;
+  
+  private String d;
+  
+  private String e;
+  
+  private String f;
+  
+  private fus g;
+  
+  public String a() {
+    return this.b.trim();
+  }
+  
+  public void a(fus paramfus) {
+    this.g = paramfus;
+  }
+  
+  public void a(String paramString) {
+    this.b = paramString;
+  }
+  
+  public String b() {
+    return this.c.trim();
+  }
+  
+  public void b(String paramString) {
+    this.c = paramString;
+  }
+  
+  public String c() {
+    return this.d.trim();
+  }
+  
+  public void c(String paramString) {
+    this.d = paramString;
+  }
+  
+  public String d() {
+    return this.e;
+  }
+  
+  public void d(String paramString) {
+    this.e = paramString;
+  }
+  
+  public String e() {
+    return this.f;
+  }
+  
+  public void e(String paramString) {
+    this.f = paramString;
+  }
+  
+  public fus f() {
+    return this.g;
+  }
+}
+
+
+/* Location:              C:\Users\devid\Downloads\SAST\Santander\dex2jar-2.0\classes2-dex2jar.jar!\fur.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

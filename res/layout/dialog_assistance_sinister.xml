@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/llTop" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/imgDone" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="@dimen/default_margin" android:src="@drawable/ic_info_hour" />
+            <TextView android:textSize="@dimen/default_text_size" android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/hours_24" fontPath="fonts/OpenSans-Light.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView android:textSize="@dimen/small_text_size" android:gravity="center" android:id="@id/txtDocumentAnalysis" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin" android:text="@string/text_assistance_sinister" android:layout_below="@id/llTop" fontPath="fonts/OpenSans-Semibold.ttf" />
+    <android.support.v7.widget.RecyclerView android:id="@id/rvSinisterList" android:paddingLeft="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:clipToPadding="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/llButtons" android:layout_below="@id/txtDocumentAnalysis" />
+    <LinearLayout android:orientation="vertical" android:id="@id/llButtons" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <TextView android:textSize="@dimen/text_size_title" android:gravity="center" android:id="@id/txtContact" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Light.ttf" />
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btCall" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:text="@string/telephone_0800_770_5030" android:drawableLeft="@drawable/ic_contact_sinister_white" android:textAllCaps="false" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btMySinister" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="@dimen/default_margin" android:text="@string/my_sinister" android:textAllCaps="false" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </LinearLayout>
+</RelativeLayout>

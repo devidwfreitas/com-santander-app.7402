@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.components.view.SegmentImageView android:id="@id/imageview_faq_media_social" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="@dimen/commonpadding" />
+    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_faq_media_social" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+</LinearLayout>

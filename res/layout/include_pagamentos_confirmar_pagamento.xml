@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderButtonView android:enabled="true" android:id="@id/pagamentos_confirmar_continuar_buttonview" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="@string/btn_pagar_boleto_acordo" android:layout_alignParentBottom="true" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+    <ScrollView android:id="@id/scroll_view_main" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_above="@id/pagamentos_confirmar_continuar_buttonview">
+        <LinearLayout android:orientation="vertical" android:id="@id/pagamentos_confirmar_pagamento_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/red" android:gravity="center_vertical" android:id="@id/pagamentos_confirmar_tipo_pagamento_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:text="BLA BLA BLA" santander:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:orientation="horizontal" android:id="@id/pagamentos_confirmar_pagamento_informativo_cartao_credito" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding">
+                <ImageView android:layout_gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:src="@drawable/ico_atencao" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/pagamentos_confirmar_pagamento_informativo_cartao_credito_textview" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:text="@string/pagamento_titulos_confirmar_pagamento_informativo_cartao_credito" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/pagamentos_confirmar_pagamento_conteudo_linearlayout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" />
+            <ExpandableListView android:id="@id/expandable_list_view_pagamentos_demais_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:groupIndicator="@null" android:divider="@color/white" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/pagamentos_confirmar_informativo_textview" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:text="@string/pagamento_titulos_confirmar_pagamento_informativo" santander:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

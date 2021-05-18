@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header_main" layout="@layout/layout_action_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/activity_vertical_margin">
+            <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/product_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Limite da Conta (Cheque Especial)" />
+            <TextView android:textSize="14.0sp" android:id="@id/product_specifics_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+            <TextView android:textSize="14.0sp" android:id="@id/compartilhado_product_specifics_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="Limite atual" />
+            <TextView android:textSize="22.0sp" android:textColor="@color/santander_black" android:id="@id/contract_current_limit_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="R$ 5.000,00" />
+            <TextView android:textSize="14.0sp" android:id="@id/novo_limite_label_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="Novo limite" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="20.0sp" android:textColor="@color/santander_black" android:id="@id/money_sign_adjust" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$" android:layout_centerVertical="true" />
+                <EditText android:textSize="22.0sp" android:textColor="@color/santander_black" android:id="@id/ajuste_limite_edittext" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:hint="0,00" android:maxLength="13" android:layout_toRightOf="@id/money_sign_adjust" android:inputType="number" />
+            </RelativeLayout>
+            <ImageView android:id="@id/edit_line_novo_limite" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@android:color/darker_gray" />
+            <TextView android:textSize="14.0sp" android:id="@id/limite_maximo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/limite_maximo_de" />
+            <TextView android:textSize="14.0sp" android:id="@id/limite_minimo_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/limite_minimo_de" />
+            <TextView android:id="@id/help_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:text="A partir de R$ 6.000,00 será necessário diminuir o limite de outro produto." />
+        </LinearLayout>
+        <Button android:textColor="@color/santander_white" android:id="@id/continuar_button" android:background="@drawable/red_button" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/activity_vertical_margin" android:text="@string/continuar" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" android:textAllCaps="false" />
+    </RelativeLayout>
+</LinearLayout>

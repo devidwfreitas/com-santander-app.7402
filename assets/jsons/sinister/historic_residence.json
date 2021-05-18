@@ -1,0 +1,18 @@
+[
+  {
+    "nameCoverage" : "Danos elétricos",
+    "dateCoverage": "07/02/2015",
+    "valueCoverage" : "R$2.000"
+  },
+  {
+    "nameCoverage" : "Desastres da natureza",
+    "dateCoverage": "05/09/2016",
+    "valueCoverage" : "R$9.000"
+  },
+  {
+    "nameCoverage" : "Incêndio",
+    "dateCoverage": "12/10/2016",
+    "valueCoverage" : "30.000"
+  }
+
+]

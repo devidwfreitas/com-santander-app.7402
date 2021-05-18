@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/scrollView1" android:layout_width="fill_parent" android:layout_height="wrap_content"
+      xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SegmentTextView android:textStyle="bold" android:textColor="@color/red" android:id="@id/seleccioneEmailCadastramento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="SELECIONE O EMAIL" />
+            </RelativeLayout>
+            <ImageView android:id="@id/separador" android:background="@drawable/carruel_divider_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" />
+            <RelativeLayout android:gravity="center_horizontal" android:id="@id/CadastramentoCartoesFactura" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <android.support.v4.view.ViewPager android:id="@id/pagerCadastramentoCartoesFactura" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_centerHorizontal="true" />
+                <ImageView android:id="@id/imgLeftCadastramentoCartoes" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:id="@id/imgRigthCadastramentoCartoes" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="64.0dip" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:background="@drawable/carruel_divider_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" />
+            <com.santander.app.widget.Indicator android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/indicadorCadastramentoCartoes1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" app:selected="@drawable/bullet_select_red" app:unSelected="@drawable/bullet_standby_grey" />
+            <RelativeLayout android:paddingLeft="@dimen/commonpaddingx2" android:paddingTop="@dimen/commonpadding" android:paddingRight="@dimen/commonpaddingx2" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:id="@id/mensajeImportante" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Importante :" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fatura_email_importante" android:layout_below="@id/mensajeImportante" app:opensans_regular="opensans_regular.ttf" />
+            </RelativeLayout>
+            <com.santander.app.components.view.SantanderButtonView android:id="@id/btnEnviarCadastramento" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="Confirmar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+        </LinearLayout>
+    </ScrollView>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

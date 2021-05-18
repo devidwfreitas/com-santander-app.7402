@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:id="@id/remuneracao_prazo_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="31/3/2014 a 27/9/2014" android:layout_centerVertical="true" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/remuneracao_taxa_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="50.000000%" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:opensans_regular="opensans_regular.ttf" />
+    </RelativeLayout>
+    <com.santander.app.components.view.SantanderTextView android:id="@id/remuneracao_observacao_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sobre o valor aplicado" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SegmentLineView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="@dimen/commonpaddingmin" />
+</LinearLayout>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/default_screen_padding" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:layout_width="wrap_content" android:layout_height="100.0dip" android:src="@drawable/ic_family_unsafe" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/text_title_size" android:textColor="@color/colorOrange" android:gravity="center_horizontal" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cancellation_insurance" fontPath="fonts/OpenSans-Semibold.ttf" />
+    <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/tvTitle" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/choose_option_cancellation" />
+    <RadioGroup android:orientation="vertical" android:id="@id/radio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/big_margin" android:layout_marginRight="@dimen/big_margin">
+        <FrameLayout android:gravity="center_vertical" android:id="@id/flClickFinancialDifficulty" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+            <android.support.v7.widget.AppCompatRadioButton android:id="@id/rbFinancialDifficulty" android:background="@color/colorTransparent" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:buttonTint="@color/colorGrayText3" />
+            <TextView android:textSize="@dimen/default_text_size" android:layout_gravity="center_vertical" android:id="@id/tvFinancialDifficulty" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="Dificuldade Financeira" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center_vertical" android:id="@id/flClickDontLikeProduct" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+            <android.support.v7.widget.AppCompatRadioButton android:id="@id/rbDontLikeProduct" android:background="@color/colorTransparent" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:buttonTint="@color/colorGrayText3" />
+            <TextView android:textSize="@dimen/default_text_size" android:layout_gravity="center_vertical" android:id="@id/tvDontLikeProduct" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="Não gosto do produto" />
+        </FrameLayout>
+        <FrameLayout android:gravity="center_vertical" android:id="@id/flClickNoOpinion" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?selectableItemBackground">
+            <android.support.v7.widget.AppCompatRadioButton android:id="@id/rbNoOpinion" android:background="@color/colorTransparent" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:buttonTint="@color/colorGrayText3" />
+            <TextView android:textSize="@dimen/default_text_size" android:layout_gravity="center_vertical" android:id="@id/tvNoOpinion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="40.0dip" android:text="Prefiro não opinar" />
+        </FrameLayout>
+    </RadioGroup>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin">
+        <Button android:textSize="@dimen/small_text_size" android:id="@id/btnBack" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginRight="@dimen/small_margin" android:text="@string/voltar" android:layout_weight="1.0" style="@style/AppTheme.ButtonTransparentStrokeBlue" fontPath="fonts/OpenSans-Light.ttf" />
+        <Button android:textSize="@dimen/small_text_size" android:id="@id/btnConfirm" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_marginLeft="@dimen/small_margin" android:text="@string/confirm" android:layout_weight="1.0" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </LinearLayout>
+</LinearLayout>

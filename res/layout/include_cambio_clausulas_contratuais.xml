@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/cambio_conteudo_linear_layout" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:background="@drawable/background_card" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_weight="0.0">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray_dark" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="15.0dip" android:text="@string/cambio_texto_clausulas_contratuais" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip" android:layout_weight="0.0">
+            <com.santander.app.components.view.SantanderCheckBox android:id="@id/cambio_aceite_clausulas_contratuais_check_box" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" app:opensans_regular="opensans_regular.ttf" style="@style/CheckHoloDark" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cambio_aceite_clausulas_contratuais" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderButtonView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/cambio_clausulas_contratuais_confirmar_button" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:text="@string/button_confirmar" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center" android:background="@color/white" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:id="@id/tvTitulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tituloAlertaAcessoCanal" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray_dark" android:id="@id/tvMensagem" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_below="@id/tvTitulo" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/btnDialogOk" android:layout_width="@dimen/button_width2" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/commonpaddingx2" android:text="Ok" android:layout_below="@id/tvMensagem" android:layout_centerHorizontal="true" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+</RelativeLayout>

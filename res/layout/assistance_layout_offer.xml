@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorGrayBackground3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:id="@id/textDayToDayFacilities" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/dayToDayFacilities" android:textAlignment="center" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/llAssistance1" android:paddingTop="@dimen/small_padding" android:paddingBottom="@dimen/commonpadding15" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imgAssistance1" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/textAssistance1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/text_trip" android:textAlignment="center" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llAssistance2" android:paddingTop="@dimen/small_padding" android:paddingBottom="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imgAssistance2" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/textAssistance2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/text_medic" android:textAlignment="center" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/llAssistance3" android:paddingTop="@dimen/small_padding" android:paddingBottom="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <ImageView android:layout_gravity="center" android:id="@id/imgAssistance3" android:layout_width="50.0dip" android:layout_height="50.0dip" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/textAssistance3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="@string/text_helper" android:textAlignment="center" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/textFacilities" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/big_margin" android:layout_marginRight="@dimen/big_margin" android:layout_marginBottom="@dimen/small_margin" android:textAlignment="center" />
+    <View android:background="@color/colorLineGray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

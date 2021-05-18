@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container_csg" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+        <LinearLayout android:orientation="vertical" android:id="@id/box_valor_solicitado" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor do empréstimo" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/valor_solicitado" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$100,00" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/box_valor_devedor" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo devedor" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/valor_devedor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$100,00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+        <LinearLayout android:orientation="vertical" android:id="@id/box_total_parcelas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total de parcelas" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/total_parcelas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10x" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/box_vencimento" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Dia de débito" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/vencimento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+        <LinearLayout android:orientation="vertical" android:id="@id/box_parcela" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Parcela" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/parcela" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$10,00" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/box_valor_iof" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor do IOF" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/valor_iof" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$10,00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+        <LinearLayout android:orientation="vertical" android:id="@id/box_valor_seguro" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor do Seguro" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/valor_seguro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$11,00" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/box_produto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Produto" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/produto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Produto" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+        <LinearLayout android:orientation="vertical" android:id="@id/box_cet" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Custo efetivo total (CET)" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/taxa_cet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/box_taxa_juros" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Taxa de juros" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/taxa_juros" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="..." />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

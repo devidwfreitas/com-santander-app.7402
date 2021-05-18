@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Application</key>
+	<array>
+		<dict>
+			<key>profileURL</key>
+			<string>https://coletoraxa.santanderbr.pre.corp/api/1/urn:ca:tenantId:B5E091F3-1DF3-046D-8113-4082458D6C31/urn:ca:appId:Santander%20Brasil/profile</string>
+			<key>baseURL</key>
+			<string>https://coletoraxa.santanderbr.pre.corp</string>
+			<key>collectorUploadURL</key>
+			<string>https://coletoraxa.santanderbr.pre.corp/api/1/urn:ca:tenantId:B5E091F3-1DF3-046D-8113-4082458D6C31/urn:ca:appId:Santander%20Brasil/mobileMetrics</string>
+			<key>keySize</key>
+			<string>2048</string>
+			<key>appId</key>
+			<string>Santander Brasil</string>
+			<key>tenantID</key>
+			<string>B5E091F3-1DF3-046D-8113-4082458D6C31</string>
+			<key>appKey</key>
+			<string>2980a900-3f2f-11e7-95da-6198685798aa</string>
+			<key>cryptoURL</key>
+			<string>https://coletoraxa.santanderbr.pre.corp/api/1/urn:ca:tenantId:B5E091F3-1DF3-046D-8113-4082458D6C31/urn:ca:appId:Santander%20Brasil/key</string>
+			<key>encryptionKey</key>
+			<string>MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAn3FPn2pRva4wX+3pPo6o6iOs1mqwUpGlpKR/wOZAUTX5C6P+TniTNfyA/gZ79W6uANjtVdagVce15AfxJrO2SoZDyWfobPsppBhyCjlsrPaak0ZOof6taPk1sJSXdFBmbOnfEVJrXP1FVNnjeErtDJVaHns/Xy7sIzuycP4R4gnoT9BnF+20vFFdd1TdHs+6az5Q2JVuuR2sGvXQPto+WVAeM/8xDEODtZiUyA8BuRyz0yxvWAYd3qJy0Ycw6hRkiA2f9oqBaoTZchkjalFMlhVhIJLQ6u1aP5mw2h2DfKD9tWZfPjL0YgwixflHPCQ8dtGf+KmLEk0303sRKxqJDQIDAQAB</string>
+			<key>encryptionKeyVersion</key>
+			<string>1495485745403</string>
+			<key>algorithm</key>
+			<string>RSA</string>
+		</dict>
+	</array>
+</dict>
+</plist>

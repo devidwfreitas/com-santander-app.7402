@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:id="@id/cdb_progressivo_lista_data" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="17.0dip" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif" android:layout_toStartOf="@id/cdb_progressivo_lista_percentagem" android:layout_alignParentStart="true" />
+    <TextView android:textSize="12.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:gravity="end" android:id="@id/cdb_progressivo_lista_percentagem" android:layout_width="wrap_content" android:layout_height="20.0dip" android:layout_marginTop="17.0dip" android:fontFamily="sans-serif" android:layout_alignParentEnd="true" />
+    <View android:background="@color/inv_pinkish_grey" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="50.0dip" />
+</RelativeLayout>

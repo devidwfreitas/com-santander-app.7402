@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_marginLeft="15.0dip" android:layout_marginTop="5.0dip" android:layout_marginRight="15.0dip" android:layout_marginBottom="5.0dip" card_view:cardCornerRadius="5.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.15">
+            <RadioButton android:layout_gravity="center" android:id="@id/radio_button_item_selected" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.45">
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:ellipsize="end" android:id="@id/text_view_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" />
+            <TextView android:textSize="12.0sp" android:id="@id/text_view_due_date" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right|center" android:orientation="horizontal" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="0.25">
+            <TextView android:textSize="10.0sp" android:textStyle="bold" android:id="@id/text_view_rs" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="-3.0dip" android:text="@string/currency_format" />
+            <br.com.santander.modulo.ddav1.components.CurrencyFormattedTextView android:textStyle="bold" android:id="@id/text_view_value" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="15.0dip" android:layout_marginRight="13.0dip">
+            <ImageView android:layout_gravity="center" android:id="@id/image_view_details" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_arrow_right" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

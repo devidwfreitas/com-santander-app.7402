@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="8.0">
+            <TextView android:id="@id/banco_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Banco do Brasil" style="@style/TransferGolder.InfoTextAppearance" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip">
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                    <TextView android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfgolden_hint_ag" style="@style/TransferGolder.InfoTextAppearance" />
+                    <TextView android:id="@id/agencia_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="2947" android:layout_marginStart="5.0dip" style="@style/TransferGolder.InfoTextAppearance" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="10.0dip">
+                    <TextView android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfgolden_hint_cc" style="@style/TransferGolder.InfoTextAppearance" />
+                    <TextView android:id="@id/conta_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="12.345678.9" android:layout_marginStart="5.0dip" style="@style/TransferGolder.InfoTextAppearance" />
+                </LinearLayout>
+            </LinearLayout>
+            <TextView android:id="@id/nome_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="Jorge Brito Santos" style="@style/TransferGolder.InfoTextAppearance" />
+            <TextView android:id="@id/documento_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="333.444.555-00" style="@style/TransferGolder.InfoTextAppearance" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="10.0">
+            <LinearLayout android:layout_gravity="end|bottom|center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$" style="@style/TransferGolder.InfoTextAppearance" />
+                <TextView android:textSize="20.0sp" android:textStyle="bold" android:id="@id/valor_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="170,00" style="@style/TransferGolder.InfoTextAppearance" />
+            </LinearLayout>
+        </FrameLayout>
+    </LinearLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="30.0dip">
+        <Button android:id="@id/edit_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfgolden_button_editar_info" android:layout_marginEnd="20.0dip" android:layout_toStartOf="@id/transferir_button" style="@style/TransferGolder.Button.Transparent" />
+        <Button android:id="@id/transferir_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/transfgolden_button_transferir" android:layout_alignParentEnd="true" style="@style/TransferGolder.Button" />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/container_cp" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/commonpadding"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+        <LinearLayout android:orientation="vertical" android:id="@id/box_valor_solicitado_cp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor do empréstimo" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/valor_solicitado_cp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$100,00" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+        <LinearLayout android:orientation="vertical" android:id="@id/box_total_parcelas_cp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Total de parcelas" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/total_parcelas_cp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="10x" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/box_produto_cp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+            <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Produto" />
+            <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:id="@id/produto_cp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Produto" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

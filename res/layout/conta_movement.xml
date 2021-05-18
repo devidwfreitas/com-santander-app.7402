@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <TabHost android:id="@android:id/tabhost" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TabWidget android:id="@android:id/tabs" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <FrameLayout android:id="@android:id/tabcontent" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@id/tab1" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding">
+                            <com.santander.app.components.view.cardLayout.CardLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cardlayout_crm1" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" />
+                            <LinearLayout android:orientation="vertical" android:id="@id/itemlistcontainer1" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="left" android:id="@id/textoNoLanzamientos" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" android:text="@string/dialog_alert_no_extratos" app:opensans_regular="opensans_regular.ttf" />
+                            <ImageView android:background="@color/gray" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+                        </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+                    <android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@id/tab2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding">
+                            <com.santander.app.components.view.cardLayout.CardLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cardlayout_crm2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" />
+                            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+                            <LinearLayout android:orientation="vertical" android:id="@id/itemlistcontainer2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" />
+                        </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+                    <android.support.v4.widget.NestedScrollView android:orientation="vertical" android:id="@id/tab3" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding">
+                            <com.santander.app.components.view.cardLayout.CardLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/cardlayout_crm3" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" />
+                            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+                            <LinearLayout android:orientation="vertical" android:id="@id/itemlistcontainer3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" />
+                        </LinearLayout>
+                    </android.support.v4.widget.NestedScrollView>
+                </FrameLayout>
+            </LinearLayout>
+        </TabHost>
+    </LinearLayout>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

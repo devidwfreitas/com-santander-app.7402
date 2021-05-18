@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:id="@id/carruselcontainer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <android.support.v4.view.ViewPager android:id="@id/pager" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_centerHorizontal="true" />
+        <ImageView android:id="@id/rowleft" android:paddingLeft="@dimen/commonpaddingx2" android:paddingTop="@dimen/commonpadding" android:paddingRight="@dimen/commonpaddingx2" android:paddingBottom="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_left_grey" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+        <ImageView android:id="@id/rowright" android:paddingLeft="@dimen/commonpaddingx2" android:paddingTop="@dimen/commonpadding" android:paddingRight="@dimen/commonpaddingx2" android:paddingBottom="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/arrow_right" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ImageView android:background="@drawable/carruel_divider_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" />
+    <com.santander.app.widget.Indicator android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" santander:selected="@drawable/bullet_select_red" santander:unSelected="@drawable/bullet_standby_grey" />
+</LinearLayout>

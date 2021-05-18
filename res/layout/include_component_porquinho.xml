@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="-2.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/relative_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/container" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="60.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true">
+            <include android:id="@id/container_main" android:layout_width="fill_parent" android:layout_height="wrap_content" layout="@layout/include_conteudo_porquinho" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/container">
+            <View android:id="@id/linear_line" android:background="@color/transparent" android:layout_width="fill_parent" android:layout_height="2.0dip" />
+            <Button android:layout_gravity="center" android:id="@id/button" android:background="@color/transparent" android:layout_width="150.0dip" android:layout_height="19.0dip" />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:id="@id/notifications_view_ll" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="vertical" android:background="@color/background_search_gray" android:layout_width="fill_parent" android:layout_height="60.0dip">
+            <LinearLayout android:gravity="start|center" android:layout_gravity="center" android:orientation="horizontal" android:background="@drawable/search_bar_canvas" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="10.0dip">
+                <ImageView android:layout_gravity="start|center" android:background="@drawable/ic_busca" android:layout_width="wrap_content" android:layout_height="wrap_content" android:tint="@android:color/black" android:layout_marginStart="18.0dip" android:layout_marginEnd="12.0dip" />
+                <br.com.santander.uisdk.edittext.SantanderEditText android:textSize="17.0sp" android:textColor="@color/santander_view_search_gray_title" android:textColorHint="@color/santander_gray_1" android:gravity="start|center" android:id="@id/edittext_search" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="fill_parent" android:hint="@string/santander_input_search" android:maxLines="1" android:inputType="textNoSuggestions" />
+            </LinearLayout>
+            <View android:background="@color/santander_view_search_separator" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/recycler_view_search" android:visibility="visible" android:scrollbars="vertical" android:clickable="false" android:layout_width="fill_parent" android:layout_height="fill_parent" android:stackFromBottom="false" />
+        <include android:id="@id/view_search_empty" android:visibility="gone" layout="@layout/santander_view_search_empty" />
+    </LinearLayout>
+</LinearLayout>

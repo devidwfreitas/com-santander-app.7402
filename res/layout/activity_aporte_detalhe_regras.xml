@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SantanderTextView android:textColor="@color/red" android:id="@id/textview_detalhe_regras_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="20.0dip" android:text="titulo" />
+        <ScrollView android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/button_confirmar" android:layout_below="@id/textview_detalhe_regras_titulo">
+            <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:id="@id/textview_detalhe_regras_descricao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="4.0dip" android:layout_marginBottom="6.0dip" android:text="Descricao" />
+        </ScrollView>
+        <Button android:textColor="@color/white" android:id="@id/button_confirmar" android:background="@drawable/btn_default_holo_red_new" android:layout_width="260.0dip" android:layout_height="40.0dip" android:layout_marginTop="10.0dip" android:text="@string/button_aceitar" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,17 @@
+.class public interface abstract Lmns;
+.super Ljava/lang/Object;
+.source "SourceFile"
+
+
+# virtual methods
+.method public abstract a()V
+.end method
+
+.method public abstract a(Lgvb;)V
+.end method
+
+.method public abstract b()Lmlo;
+.end method
+
+.method public abstract finish()V
+.end method

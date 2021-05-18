@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/mainLayout" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/black" android:gravity="bottom|center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="@string/textoContaPrefTitulo" />
+        <com.santander.app.components.view.SegmentImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="5.0dip" android:layout_marginRight="5.0dip" android:text="@string/text_conta_pref" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:orientation="vertical" android:background="@drawable/custom_border_comprovante" android:paddingLeft="@dimen/commonpaddingtbl2" android:paddingTop="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpaddingtbl2" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2">
+            <ListView android:id="@id/lvContaPrefs" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </LinearLayout>
+        <com.santander.app.components.view.SantanderButtonView android:layout_gravity="center" android:id="@id/btContinuar" android:layout_width="@dimen/button_width2" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/commonpadding" android:text="@string/button_continuar" android:onClick="selecionarConta" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+</LinearLayout>

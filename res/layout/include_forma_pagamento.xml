@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <ScrollView android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_below="@id/pagamentos_selector_cartoes" android:layout_alignParentStart="true">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/red" android:id="@id/textview_tipo_convenio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="tipo convenio" />
+            <LinearLayout android:orientation="vertical" android:id="@id/linear_box_dados_consulta_titulos" android:background="@color/white" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin" />
+            <LinearLayout android:gravity="center" android:id="@id/linear_mais_informacoes_pagamentos" android:background="@drawable/border_top_bottom" android:padding="@dimen/commonpadding15" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0dip" android:textColor="@color/blue_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mais informações" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_box_dt_vencimento" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/label_dt_vencimento" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textview_dt_vencimento" android:background="@drawable/border_bottom" android:layout_width="@dimen/commonpaddingx120" android:layout_height="wrap_content" android:text="" />
+                <ImageButton android:id="@id/imagebutton_calendario_dt_vencimento" android:background="@android:color/transparent" android:layout_width="30.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:src="@drawable/icon_calendar_red" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_box_valor_pagamento" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/textview_valor_pagamento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor R$: " />
+                <com.santander.app.components.view.SantanderEditText android:textAppearance="?android:textAppearanceSmall" android:id="@id/edittext_value_valor_pagamento" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="0,00" android:ems="10" android:maxLength="12" android:inputType="numberDecimal" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin" android:layout_marginTop="@dimen/commonpadding" android:weightSum="1.0">
+                <com.santander.app.components.view.DateCircleButton android:textColor="@color/white" android:id="@id/date_circle_button_pagar_hoje" android:background="@drawable/background_rectangle_left_border_button_gray_dark" android:focusable="true" android:layout_width="155.0dip" android:layout_height="50.0dip" android:text="hoje" android:layout_weight="0.5" />
+                <com.santander.app.components.view.DateCircleButton android:textColor="@color/gray" android:id="@id/date_circle_button_agendar" android:layout_width="155.0dip" android:layout_height="50.0dip" android:layout_weight="0.5" />
+            </LinearLayout>
+            <com.santander.app.components.view.SantanderButtonView android:enabled="true" android:id="@id/button_continuar_pagamentos" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/app_continuar" android:layout_alignParentBottom="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+        </LinearLayout>
+    </ScrollView>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

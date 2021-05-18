@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llContent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin">
+            <View android:id="@id/lineImageBilling1" android:background="#ff14b2bb" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_above="@id/ivImageBilling" android:layout_centerHorizontal="true" />
+            <View android:id="@id/lineImageBilling2" android:background="#ff14b2bb" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_below="@id/ivImageBilling" android:layout_centerHorizontal="true" />
+            <com.santander.app.seguros.ui.widgets.CircleImageView android:id="@id/ivImageBilling" android:layout_width="55.0dip" android:layout_height="55.0dip" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.GridLayout android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rowCount="1" app:columnCount="2">
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" app:layout_row="0" app:layout_column="0" app:layout_columnWeight="1.0" app:layout_gravity="center_vertical">
+                    <TextView android:textSize="@dimen/text_primary_size" android:textColor="@color/colorGray" android:layout_gravity="center_vertical" android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_row="0" app:layout_column="1" app:layout_columnWeight="1.2" app:layout_gravity="center_vertical">
+                    <TextView android:textSize="@dimen/text_primary_size" android:textColor="@android:color/black" android:id="@id/tvValue" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/small_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" fontPath="fonts/OpenSans-Semibold.ttf" />
+                </RelativeLayout>
+            </android.support.v7.widget.GridLayout>
+            <View android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/white" android:padding="@dimen/commonpadding" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <LinearLayout android:id="@id/linearlayout_box_buscar_bancos" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderEditText android:id="@id/edittext_nome_banco_busca" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="Buscar" android:ems="10" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_listagem_todos_bancos" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_below="@id/linearlayout_box_buscar_bancos" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

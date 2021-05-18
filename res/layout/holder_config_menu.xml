@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="top|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="top|center" android:orientation="vertical" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:gravity="top|center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="16.0sp" android:textColor="@color/config_panel_menu_title" android:gravity="start|center" android:id="@id/text_menu_tv" android:layout_width="fill_parent" android:layout_height="wrap_content" android:fontFamily="sans-serif-medium" android:layout_toStartOf="@id/switch_category_button" />
+            <br.com.santander.uisdk.SantanderSwitch android:gravity="center" android:layout_gravity="center" android:id="@id/switch_category_button" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginStart="5.0dip" android:layout_alignParentEnd="true" />
+        </RelativeLayout>
+        <TextView android:textSize="12.0sp" android:textColor="@color/config_panel_menu_title" android:gravity="start|center" android:id="@id/subtext_menu_tv" android:layout_width="fill_parent" android:layout_height="46.0dip" android:lines="3" android:fontFamily="sans-serif" android:paddingStart="0.0dip" android:paddingEnd="70.0dip" />
+    </LinearLayout>
+    <View android:background="@color/notifications_separator" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+</LinearLayout>

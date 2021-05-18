@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_white_rounded" android:paddingLeft="@dimen/small_padding" android:paddingRight="@dimen/small_padding" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_title_size" android:textColor="@color/colorOrange" android:gravity="center_horizontal" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin" android:text="@string/attach_documents" fontPath="fonts/OpenSans-Semibold.ttf" />
+    <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:gravity="center" android:id="@id/txtDescriptionSendDocuments" android:paddingLeft="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/description_dialog_send_documents" fontPath="fonts/OpenSans-bold.ttf" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ImageView android:id="@id/icPDF" android:layout_width="60.0dip" android:layout_height="60.0dip" android:src="@drawable/ic_pdf_gray" />
+        <TextView android:layout_gravity="bottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginRight="@dimen/default_margin" android:text="@string/or" fontPath="fonts/OpenSans-Semibold.ttf" />
+        <ImageView android:layout_gravity="bottom" android:id="@id/icPhoto" android:layout_width="60.0dip" android:layout_height="45.0dip" android:src="@drawable/ic_photo_gray" />
+    </LinearLayout>
+    <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:id="@id/txtDescriptionDocumentDialog" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Light.ttf" />
+    <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin">
+        <Button android:textSize="@dimen/small_text_size" android:layout_gravity="center" android:id="@id/buttonOK" android:layout_width="150.0dip" android:layout_height="30.0dip" android:text="@string/ok_i_got_it" style="@style/AppTheme.ButtonRedDark2" />
+    </LinearLayout>
+</LinearLayout>

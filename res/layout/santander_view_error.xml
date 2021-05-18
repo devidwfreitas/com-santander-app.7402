@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:layout_weight="1.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:descendantFocusability="blocksDescendants" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/view_error_container_title" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/views_error_image" android:layout_width="74.0dip" android:layout_height="74.0dip" android:layout_marginTop="90.0dip" />
+            <TextView android:textSize="19.0sp" android:textColor="#ff787878" android:gravity="center" android:layout_gravity="center" android:id="@id/views_error_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="13.0dip" android:fontFamily="sans-serif" />
+            <TextView android:textSize="15.0sp" android:textColor="#ff999999" android:gravity="center" android:layout_gravity="center" android:id="@id/views_error_sub_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="43.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="43.0dip" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:id="@id/view_error_container_button" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="60.0dip" android:layout_below="@id/view_error_container_title">
+            <Button android:textColor="@android:color/white" android:gravity="center" android:id="@id/view_error_button_event" android:layout_width="200.0dip" android:layout_height="48.0dip" android:fontFamily="sans-serif" style="@style/Santander.PillRed" />
+        </LinearLayout>
+        <LinearLayout android:gravity="bottom" android:orientation="vertical" android:id="@id/view_error_container_options" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="70.0dip" android:layout_marginBottom="25.0dip" android:layout_below="@id/view_error_container_button" android:layout_alignParentBottom="true">
+            <TextView android:textSize="16.0sp" android:id="@id/view_error_options_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="13.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="13.0dip" android:layout_marginBottom="30.0dip" android:text="@string/santander_view_error_title_options" android:fontFamily="sans-serif" />
+            <android.support.v7.widget.RecyclerView android:id="@id/view_error_recycler_view" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </RelativeLayout>
+</merge>

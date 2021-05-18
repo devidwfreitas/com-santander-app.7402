@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include android:id="@id/recomendacao_loading_state" android:visibility="visible" layout="@layout/layout_loading_state" />
+        <include android:id="@id/recomendacao_content" android:visibility="gone" layout="@layout/content_recomendacao" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

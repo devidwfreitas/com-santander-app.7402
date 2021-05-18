@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/habilitacao_confirmar_titulo" app:opensans_regular="opensans_regular.ttf" />
+    <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/textmarginx2">
+        <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/habilitacao_confirmar_cartao" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_gravity="right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView_final_cartao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Small Text" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <ListView android:id="@id/listView_viagens" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0" />
+    <com.santander.app.components.view.SantanderButtonView android:layout_gravity="bottom|center" android:id="@id/btn_continuar" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:text="@string/habilitacao_confirmar_validacao_confirmar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+</LinearLayout>

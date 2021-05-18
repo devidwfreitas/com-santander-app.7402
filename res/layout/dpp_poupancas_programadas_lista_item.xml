@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/txt_dpp_agencia_conta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/green" android:gravity="right" android:id="@id/txt_dpp_valor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Medium Text" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</LinearLayout>

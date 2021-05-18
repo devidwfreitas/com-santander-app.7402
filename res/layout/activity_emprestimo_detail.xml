@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:background="@color/white" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:id="@id/container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <include layout="@layout/card_topo_proposta" />
+                <include layout="@layout/detalhe_produto" />
+                <include layout="@layout/detalhe_produto_cp" />
+                <include layout="@layout/termos_contrato" />
+                <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+                    <View android:background="@color/gray_3" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                    <Button android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_cancelar_emprestimo_detalhe" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="20.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="@string/btn_cancelar_emprestimo" style="@style/Santander.PillRedReverse" />
+                </LinearLayout>
+                <LinearLayout android:id="@id/box_message_footer" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+                    <TextView android:textSize="16.0sp" android:textColor="@color/gray_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_footer_cancelamento_cp" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+        <RelativeLayout android:orientation="vertical" android:id="@id/container_confirma_cancelamento" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/commonpadding">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:id="@id/box_message_footer" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textColor="@color/gray_3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/message_header_confir_cancelamento" />
+                </LinearLayout>
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx3">
+                    <EditText android:textSize="16.0sp" android:textColor="@color/black" android:id="@id/codigo_averbacao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/codigo_averbacao" android:layout_weight="1.0" android:inputType="textVisiblePassword|textNoSuggestions" />
+                    <ImageView android:layout_gravity="center" android:id="@id/help_image_view" android:background="@android:color/transparent" android:layout_width="45.0dip" android:layout_height="wrap_content" android:src="@drawable/ic_consignado_ajuda" android:layout_weight="1.0" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:background="@color/colorOrangeCancelamento" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginTop="@dimen/commonpaddingx4">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                        <ImageView android:layout_gravity="top|center" android:id="@id/help_image_view" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginTop="6.0dip" app:srcCompat="@drawable/ic_emprestimo_exclamacao_averbacao" />
+                        <TextView android:textSize="16.0sp" android:textColor="@color/white" android:gravity="left|center" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/commonpadding" android:text="@string/message_prazo_cancelamento_emprestimo" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+                <Button android:enabled="false" android:textAppearance="?android:textAppearanceMedium" android:id="@id/btn_cancelar_emprestimo" android:layout_width="fill_parent" android:layout_marginLeft="40.0dip" android:layout_marginRight="40.0dip" android:layout_marginBottom="10.0dip" android:text="@string/btn_cancelar_emprestimo" style="@style/Santander.PillRed" />
+            </LinearLayout>
+        </RelativeLayout>
+        <FrameLayout android:id="@id/cso_validacao_container" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </RelativeLayout>
+</LinearLayout>

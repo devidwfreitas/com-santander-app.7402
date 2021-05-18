@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView android:id="@id/card_view" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:card_view="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding">
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:ellipsize="end" android:id="@id/textview_nome_favorecido" android:layout_width="230.0dip" android:layout_height="wrap_content" android:text="R$ 10000.00" android:maxLines="1" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:textColor="@color/gray_bold" android:ellipsize="end" android:id="@id/textview_tipo_transferencia_banco" android:layout_width="230.0dip" android:layout_height="wrap_content" android:text="R$ 10000.00" android:maxLines="1" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:gravity="right" android:layout_gravity="right|center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding">
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor_transferencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 10000.00" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.santander.app.components.view.SegmentLineView android:layout_gravity="bottom" android:id="@id/lineview_separator" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingmin" />
+</android.support.v7.widget.CardView>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:gravity="center" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:id="@id/conta_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_aplicacao_nova_conta_poupanca" app:opensans_regular="opensans_regular.ttf" />
+    </RelativeLayout>
+</LinearLayout>

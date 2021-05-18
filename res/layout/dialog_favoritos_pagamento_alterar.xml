@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Alterar Beneficiário:" android:maxLines="1" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Apelido:" android:maxLines="1" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderEditText android:enabled="false" android:id="@id/editTextDialogAlterarApelido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:inputType="text" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Beneficiário:" android:maxLines="1" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderEditText android:id="@id/editTextDialogAlterarApelidoBeneficiario" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:inputType="text" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Cliente:" android:maxLines="1" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderEditText android:id="@id/editTextDialogAlterarApelidoCliente" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:inputType="text" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:gravity="center_horizontal" android:layout_gravity="bottom|center" android:orientation="horizontal" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderButtonView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/buttonDialogAlterarApelidoContinuar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Continuar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+        <com.santander.app.components.view.SantanderButtonView android:gravity="center" android:layout_gravity="bottom|center" android:id="@id/buttonDialogAlterarApelidoCancelar" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancelar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+</LinearLayout>

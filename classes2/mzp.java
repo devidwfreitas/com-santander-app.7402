@@ -1,0 +1,18 @@
+public enum mzp {
+  RELOAD_CARTOES, RELOAD_CARTOES_DESBLOQUEIO, RELOAD_CONTA, RELOAD_EMPRESTIMOS, RELOAD_INVESTIMENTO, RELOAD_POUPANCA;
+  
+  static {
+    RELOAD_CARTOES = new mzp("RELOAD_CARTOES", 1);
+    RELOAD_CARTOES_DESBLOQUEIO = new mzp("RELOAD_CARTOES_DESBLOQUEIO", 2);
+    RELOAD_INVESTIMENTO = new mzp("RELOAD_INVESTIMENTO", 3);
+    RELOAD_POUPANCA = new mzp("RELOAD_POUPANCA", 4);
+    RELOAD_EMPRESTIMOS = new mzp("RELOAD_EMPRESTIMOS", 5);
+    $VALUES = new mzp[] { RELOAD_CONTA, RELOAD_CARTOES, RELOAD_CARTOES_DESBLOQUEIO, RELOAD_INVESTIMENTO, RELOAD_POUPANCA, RELOAD_EMPRESTIMOS };
+  }
+}
+
+
+/* Location:              C:\Users\devid\Downloads\SAST\Santander\dex2jar-2.0\classes2-dex2jar.jar!\mzp.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

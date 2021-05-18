@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.msgsdk.customView.SwipeLayout android:orientation="vertical" android:id="@id/swipe_view" android:layout_width="wrap_content" android:layout_height="wrap_content" app:msgDragEdge="swipe_right" app:msgSwipeMode="msg_same_level"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/options_fl" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include layout="@layout/options_holder_notification" />
+        <View android:layout_gravity="bottom" android:background="@color/notifications_separator" android:layout_width="200.0dip" android:layout_height="0.5dip" />
+    </FrameLayout>
+    <FrameLayout android:id="@id/swipe_holder_fl" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/holder_notification" />
+            <View android:background="@color/notifications_separator" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+        </LinearLayout>
+    </FrameLayout>
+</br.com.santander.msgsdk.customView.SwipeLayout>

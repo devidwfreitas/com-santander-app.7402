@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog_white_rounded" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/text_title_size" android:textColor="@color/colorOrange" android:gravity="center_horizontal" android:id="@id/tvAssistance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" fontPath="fonts/OpenSans-Semibold.ttf" />
+    <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:id="@id/txtDescriptionSinisterDialog" android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <LinearLayout android:gravity="center_horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Button android:textSize="@dimen/default_text_size" android:gravity="center" android:id="@id/btClose" android:layout_width="wrap_content" android:layout_height="35.0dip" android:layout_marginTop="@dimen/small_margin" android:text="OK, Entendi" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/linear_com_dados" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SegmentLineView android:id="@id/lineview_separator_1" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_margin="@dimen/commonpaddingx2" android:layout_above="@id/transacao_comprovante" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:gravity="center_horizontal" android:id="@id/textview_titulo_transacao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Títutlo Transação" app:opensans_regular="opensans_regular.ttf" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/transacao_comprovante" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" />
+    <com.santander.app.components.view.SegmentLineView android:id="@id/lineview_separator_2" android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_margin="@dimen/commonpaddingx2" android:layout_below="@id/transacao_comprovante" />
+</LinearLayout>

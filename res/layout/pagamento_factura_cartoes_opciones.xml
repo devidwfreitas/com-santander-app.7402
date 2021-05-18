@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pagamentoCartoesTotalContainer" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textStyle="bold" android:id="@id/tituloPagamentoTotal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAGAR VALOR TOTAL" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textSize="20.0sp" android:id="@id/tituloPagamentoTotalValor" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$-5554.678,99" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pagamentoCartoesParcialContainer" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textStyle="bold" android:id="@id/tituloPagamentoCartoesParcial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAGAR OUTRO VALOR" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderEditText android:id="@id/tituloPagamentoCartoesParcialValor" android:layout_width="250.0dip" android:layout_height="wrap_content" android:ems="10" android:inputType="numberDecimal" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDarkUnfocused" />
+    </LinearLayout>
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/pagamentoCartoesValorAtualizadoContainer" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textSize="14.0sp" android:textStyle="bold" android:id="@id/valorFaturaAtualizado_pagamento_factura_cartoes_opciones" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="PAGAR VALOR ATUALIZADO" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textSize="20.0sp" android:id="@id/pagamentoValorAtualizado" android:paddingTop="3.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$-5554.678,99" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</LinearLayout>

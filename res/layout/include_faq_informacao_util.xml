@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/relative_faq_informacao_util_container" android:background="@color/faq_informacao_util_backgkround_color" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@android:color/black" android:id="@id/textview_faq_informacao_util_pergunta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/faq_informacao_util" android:layout_centerVertical="true" />
+    <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_alignParentEnd="true">
+        <Button android:textSize="14.0sp" android:textColor="@color/faq_informacao_util_botoes_color" android:gravity="end|center" android:id="@id/button_faq_informacao_util_positivo" android:background="@android:color/transparent" android:layout_width="46.0dip" android:layout_height="36.0dip" android:text="@string/faq_informacao_util_positivo" />
+        <Button android:textSize="14.0sp" android:textColor="@color/faq_informacao_util_botoes_color" android:gravity="end|center" android:id="@id/button_faq_informacao_util_negativo" android:background="@android:color/transparent" android:layout_width="46.0dip" android:layout_height="36.0dip" android:text="@string/faq_informacao_util_negativo" />
+        <Button android:textSize="14.0sp" android:textColor="@color/faq_informacao_util_botoes_color" android:gravity="end|center" android:id="@id/button_faq_informacao_util_fale_conosco" android:background="@android:color/transparent" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:text="Fale Conosco" />
+        <ImageView android:layout_gravity="center_vertical" android:id="@id/imageview_faq_informacao_util_positivo" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="36.0dip" android:src="@drawable/ico_check" />
+    </LinearLayout>
+</RelativeLayout>

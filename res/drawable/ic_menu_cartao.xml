@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector android:height="@dimen/icon_menu_height" android:width="@dimen/icon_menu_width" android:stackViewStyle="27.0" android:numberPickerStyle="27.0"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <path android:timePickerStyle="#ffffffff" android:activityChooserViewStyle="M5.277,7.231L21.939,7.231C22.519,7.231 22.994,7.707 22.994,8.286L22.994,18.307C22.994,18.885 22.519,19.362 21.939,19.362L5.277,19.362C4.698,19.362 4.222,18.885 4.222,18.307L4.222,8.286C4.222,7.707 4.698,7.231 5.277,7.231ZM3,18.307C3,19.566 4.024,20.592 5.277,20.592L21.939,20.592C23.193,20.592 24.216,19.566 24.216,18.307L24.216,8.286C24.216,7.027 23.193,6 21.939,6L5.277,6C4.024,6 3,7.027 3,8.286L3,18.307Z" android:actionModeShareDrawable="#00000000" android:actionModeFindDrawable="1.0" />
+    <path android:timePickerStyle="#ffffffff" android:activityChooserViewStyle="M23.167,10.538L23.167,9.308L3.611,9.308L3.611,10.538L23.167,10.538ZM3.611,10.538L23.167,10.538C23.981,10.538 23.981,9.308 23.167,9.308L3.611,9.308C2.796,9.308 2.796,10.538 3.611,10.538Z" android:actionModeShareDrawable="#00000000" android:actionModeFindDrawable="1.0" />
+    <path android:timePickerStyle="#ffffffff" android:activityChooserViewStyle="M23.161,14.231C23.498,14.231 23.772,13.955 23.772,13.615C23.772,13.276 23.498,13 23.161,13L3.611,13C3.274,13 3,13.276 3,13.615C3,13.955 3.274,14.231 3.611,14.231L23.161,14.231Z" android:actionModeShareDrawable="#00000000" android:actionModeFindDrawable="1.0" />
+</vector>

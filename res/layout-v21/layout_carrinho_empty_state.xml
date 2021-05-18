@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="116.0dip" android:layout_marginStart="58.0dip" android:layout_marginEnd="58.0dip">
+        <ImageView android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_margin="16.0dip" android:src="@drawable/ic_empty_state_warning" />
+        <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/inv_warm_grey" android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="9.0dip" android:text="@string/car_empty_state" android:lineSpacingExtra="5.0sp" android:fontFamily="sans-serif-medium" />
+        <Button android:textColor="@color/inv_white_two" android:id="@id/empty_btn_voltar" android:background="@drawable/shape_lead_round_button" android:layout_width="220.0dip" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_marginTop="35.0dip" android:text="@string/app_voltar_inicio" android:textAllCaps="true" android:majorWeightMax="0.0dip" style="?android:attr/borderlessButtonStyle" />
+    </LinearLayout>
+</RelativeLayout>

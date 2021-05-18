@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_layout_conta_corrente_em_credito" android:paddingLeft="@dimen/commonpaddingx2" android:paddingTop="@dimen/commonpaddingx2" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="@dimen/text_size_16" android:textColor="#ff000000" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Conta corrente de crédito:" />
+                <TextView android:textSize="@dimen/text_size_16" android:id="@id/linear_layout_conta_corrente_em_credito_numero" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0001/01/084533.0" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:background="@drawable/rounded_corner_shadow" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip">
+                <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding">
+                    <TextView android:textSize="17.0dip" android:textColor="#ff000000" android:id="@id/textview_aplicacao_nome" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_layout_aplicacao_detalhes" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/textview_aplicacao_minima_adicional" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_aplicacao_minima_valor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_layout_risco" android:paddingLeft="@dimen/commonpadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/textview_aplicacao_risco" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Risco" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_aplicacao_risco_valor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/textview_aplicacao_rentabilidade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rentabilidade" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_aplicacao_rentabilidade_valor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/textview_aplicacao_horario_limite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Horário limite para aplicar" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_aplicacao_horario_limite_valor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/textview_aplicacao_conta_fundo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Conta fundo" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_aplicacao_conta_fundo_valor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_layout_resgate_detalhes" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo líquido:" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_resgate_saldo_liquido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 1.050,00" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Horário limite:" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_resgate_horario_limite" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="19:00" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor minímo de resgate:" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_resgate_valor_minimo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 200,00" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo minímo de permanência:" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_resgate_saldo_minimo_permanencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 100,00" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="5.0dip">
+                        <TextView android:textSize="15.0dip" android:textColor="#ff999999" android:id="@id/textView10" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Conta fundo:" />
+                        <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <TextView android:textSize="15.0dip" android:textColor="#ff000000" android:id="@id/textview_resgate_conta_fundo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000001" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:id="@id/linear_layout_escolher_outra_conta" android:paddingLeft="10.0dip" android:paddingBottom="20.0dip" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderTextView android:textSize="14.0dip" android:textColor="@color/blue_button" android:paddingLeft="10.0dip" android:paddingTop="2.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Escolher outra conta fundo" />
+                <ImageView android:paddingLeft="5.0dip" android:layout_width="25.0dip" android:layout_height="25.0dip" android:src="@drawable/ico_seta_azul_direita" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip">
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/linear_box_seleciona_valor" android:padding="@dimen/commonpaddingmin" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:weightSum="1.0">
+                    <com.santander.app.components.view.ValorResgateButton android:textColor="@color/gray_dark2" android:id="@id/button_valor_parcial" android:background="@drawable/background_rectangle_left_border_button_blue" android:focusable="true" android:layout_width="155.0dip" android:layout_height="50.0dip" android:text="hoje" android:layout_weight="0.5" />
+                    <com.santander.app.components.view.ValorResgateButton android:textColor="@color/gray_dark2" android:id="@id/button_valor_total" android:layout_width="155.0dip" android:layout_height="50.0dip" android:layout_weight="0.5" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:gravity="center_vertical" android:id="@id/label_deseja_aplicar" android:paddingLeft="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="5.0dip" android:layout_marginRight="@dimen/commonpadding" android:text="Quanto você deseja aplicar?" />
+                    <LinearLayout android:orientation="horizontal" android:id="@id/linear_layout_valor_operacao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip">
+                        <android.support.design.widget.TextInputLayout android:orientation="horizontal" android:id="@id/textinpu" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="20.0dip" android:textColor="#ff000000" android:id="@id/textView9" android:paddingTop="20.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$" android:maxLength="12" />
+                        </android.support.design.widget.TextInputLayout>
+                        <android.support.design.widget.TextInputLayout android:orientation="horizontal" android:id="@id/textinputlayout_valor" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.santander.app.components.view.SantanderEditText android:textSize="20.0dip" android:textColor="#ff000000" android:id="@id/edittext_valor_aplicacao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="0,00" android:singleLine="true" android:maxLength="12" android:layout_below="@id/textview_label_valor" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+                        </android.support.design.widget.TextInputLayout>
+                    </LinearLayout>
+                    <LinearLayout android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_marginTop="20.0dip" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:layout_gravity="center" android:orientation="horizontal" android:id="@id/linear_box_seleciona_tipo_transferencia" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:weightSum="1.0">
+                    <com.santander.app.components.view.DateCircleButton android:textColor="@color/gray_dark2" android:id="@id/button_data_aplicar_hoje" android:background="@drawable/background_rectangle_left_border_button_blue" android:focusable="true" android:layout_width="155.0dip" android:layout_height="50.0dip" android:text="hoje" android:layout_weight="0.5" />
+                    <com.santander.app.components.view.DateCircleButton android:textColor="@color/gray_dark2" android:id="@id/button_data_agenda_aplicar_agendado" android:layout_width="155.0dip" android:layout_height="50.0dip" android:layout_weight="0.5" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:padding="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:majorWeightMax="100.0dip">
+                <com.santander.app.components.view.SantanderButtonView android:enabled="true" android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_aplicacao_continuar" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/label_button_continuar" android:layout_alignParentBottom="true" android:layout_centerInParent="true" style="@style/Santander.PillRed" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</br.com.santander.uisdk.dropdown.SantanderDropDownView>

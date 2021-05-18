@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:id="@id/tvName" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginRight="@dimen/small_margin" android:layout_toLeftOf="@id/tvPercentage" android:layout_toRightOf="@id/ivCheck" android:layout_centerVertical="true" />
+    <ImageView android:id="@id/ivCheck" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_simple_check_green2" android:layout_centerVertical="true" />
+    <TextView android:textStyle="bold" android:id="@id/tvPercentage" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+</RelativeLayout>

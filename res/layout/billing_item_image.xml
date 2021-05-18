@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llContent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin">
+            <View android:id="@id/lineImageBilling1" android:background="#ff14b2bb" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_above="@id/ivImageBilling" android:layout_centerHorizontal="true" />
+            <View android:id="@id/lineImageBilling2" android:background="#ff14b2bb" android:layout_width="2.0dip" android:layout_height="fill_parent" android:layout_marginLeft="@dimen/small_margin" android:layout_below="@id/ivImageBilling" android:layout_centerHorizontal="true" />
+            <com.santander.app.seguros.ui.widgets.CircleImageView android:id="@id/ivImageBilling" android:layout_width="55.0dip" android:layout_height="55.0dip" android:src="@drawable/ic_launcher" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="14.0sp" android:textColor="@color/colorGray" android:id="@id/tvDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="XXXX.XXXX.XXXX.1234" android:layout_toLeftOf="@id/imgBillingItem" android:layout_alignParentLeft="true" android:layout_centerVertical="true" />
+                <ImageView android:textSize="@dimen/text_primary_size" android:textColor="@android:color/black" android:id="@id/imgBillingItem" android:layout_width="70.0dip" android:layout_height="46.0dip" android:scaleType="centerCrop" android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <View android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

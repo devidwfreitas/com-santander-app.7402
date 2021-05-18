@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@android:color/white" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ImageView android:id="@id/img_error" android:layout_width="fill_parent" android:layout_height="100.0dip" android:layout_marginLeft="20.0dip" android:layout_marginTop="40.0dip" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:layout_alignParentTop="true" android:layout_centerHorizontal="true" />
+        <br.com.santander.uisdk.textview.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:gravity="center_horizontal" android:id="@id/textview_error_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/img_error" />
+        <br.com.santander.uisdk.textview.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_horizontal" android:id="@id/textview_error_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/textview_error_title" />
+        <br.com.santander.uisdk.textview.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="center_horizontal" android:id="@id/textview_error_code" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true" android:textAlignment="center" />
+        <Button android:textColor="#ffffffff" android:id="@id/button_error" android:background="@drawable/style_gray_button" android:layout_width="200.0dip" android:layout_height="wrap_content" android:text="@string/app_finalizar" android:layout_above="@id/textview_error_code" android:layout_centerHorizontal="true" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

@@ -1,0 +1,127 @@
+[
+  {
+    "insurance":"VIDA_SELECT",
+    "items":[
+      {
+        "image":"MEDIC",
+        "title":"2ª Opinião Médica",
+        "description":"Parecer a respeito do diagnóstico, conduta ou prognostico relativo a um caso clínico, emitido por um Centro Hospitalar de referência nos Estados Unidos."
+      },
+      {
+        "image":"HELPER",
+        "title":"Seu Ajudante",
+        "description":"Serviços preventivos e de manutenção para pequenos reparos, revisões ou instalações."
+      },
+      {
+        "image":"TRIP",
+        "title":"Super Viagem",
+        "description":"Reembolso das despesas com lavanderia e guarda de animais de estimação durante a viagem."
+      }
+    ]
+  },
+  {
+    "insurance":"VAN_GOGH",
+    "items":[
+      {
+        "image":"TRIP",
+        "title":"Super Viagem",
+        "description":"Reembolso das despesas com lavanderia e guarda de animais de estimação durante a viagem."
+      },
+      {
+        "image":"FUNERAL",
+        "title":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental)."
+      },
+      {
+        "image":"HELPER",
+        "title":"Seu Ajudante",
+        "description":"Serviços preventivos e de manutenção para pequenos reparos, revisões ou instalações."
+      }
+    ]
+  },
+  {
+    "insurance":"VIDA_HOMEM",
+    "items":[
+      {
+        "image":"FUNERAL",
+        "title":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza(natural ou acidental)."
+      },
+      {
+        "image":"HELP_DESK",
+        "title":"Help Desk",
+        "description":"Em casos de problemas que impeçam o funcionamento de hardware, software, sistemas ou internet."
+      }
+    ]
+  },
+  {
+    "insurance":"VIDA_MULHER",
+    "items":[
+      {
+        "image":"FUNERAL",
+        "title":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental)."
+      },
+      {
+        "image":"HELPER",
+        "title":"Seu ajudante",
+        "description":"Serviços preventivos e de manutenção para pequenos reparos, revisões ou instalações."
+      }
+    ]
+  },
+  {
+    "insurance":"VIDA",
+    "items":[
+      {
+        "image":"FUNERAL",
+        "title":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental)."
+      },
+      {
+        "image":"SORTEIOS_MENSAIS",
+        "title":"Sorteios Mensais",
+        "description":"Ocorre mensalmente a um sorteio do mesmo valor do Capital Segurado do produto."
+      }
+    ]
+  },
+  {
+    "insurance":"ACIDENTES_PESSOAIS",
+    "items":[
+      {
+        "image":"FUNERAL",
+        "title":"Auxílio Funeral",
+        "description":"Garante o reembolso dos gastos pela prestação de serviços de funeral por falecimento de qualquer natureza (natural ou acidental)."
+      },
+      {
+        "image":"SORTEIOS_MENSAIS",
+        "title":"Sorteios Mensais",
+        "description":"Ocorre mensalmente a um sorteio do mesmo valor do Capital Segurado do produto."
+      },
+      {
+        "image":"CESTA_BASICA",
+        "title":"Cesta Básica",
+        "description":"Garante a família o pagamento de cesta básica por 6 ou 12 meses."
+      }
+    ]
+  },
+  {
+    "insurance":"DEFAULT",
+    "items":[
+      {
+        "image":"DEFAULT",
+        "title":"Default",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper metus eget tortor luctus condimentum."
+      },
+      {
+        "image":"DEFAULT",
+        "title":"Default",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper metus eget tortor luctus condimentum."
+      },
+      {
+        "image":"DEFAULT",
+        "title":"Default",
+        "description":"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis ullamcorper metus eget tortor luctus condimentum."
+      }
+    ]
+  }
+]

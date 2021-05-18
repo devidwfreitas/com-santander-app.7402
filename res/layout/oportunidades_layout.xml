@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="32.0dip">
+        <TextView android:textSize="10.0sp" android:textColor="@color/oportunidades_gray" android:id="@id/oportunidades_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/oportunidades" android:layout_centerHorizontal="true" android:textAllCaps="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="8.0dip" android:src="@color/oportunidades_gray" android:layout_toLeftOf="@id/oportunidades_label" android:layout_centerVertical="true" />
+        <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginLeft="8.0dip" android:src="@color/oportunidades_gray" android:layout_toRightOf="@id/oportunidades_label" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/field_opportunities" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/field_oportunidade_cartoes" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin">
+            <ImageView android:id="@id/oportunidade_cartoes_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_cartoes_promo" android:layout_alignParentLeft="true" />
+            <RelativeLayout android:id="@id/oportunidade_field_cartoes_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_toRightOf="@id/oportunidade_cartoes_icon" android:layout_centerVertical="true">
+                <TextView android:id="@id/oportunidade_cartoes_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/tipo_cartoes_de_credito" style="@style/Base.TextAppearance.AppCompat.Small" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/oportunidades_purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/peca_seu_cartao_santander" android:layout_below="@id/oportunidade_cartoes_label" android:textAllCaps="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/img_seta" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/field_oportunidade_emprestimo" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin">
+            <ImageView android:id="@id/oportunidade_emprestimo_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_emprestimo_promo" android:layout_alignParentLeft="true" />
+            <RelativeLayout android:id="@id/oportunidade_field_emprestimo_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_toRightOf="@id/oportunidade_emprestimo_icon" android:layout_centerVertical="true">
+                <TextView android:id="@id/oportunidade_emprestimo_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/tipo_emprestimo" style="@style/Base.TextAppearance.AppCompat.Small" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/oportunidades_purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/simular_e_contratar" android:layout_below="@id/oportunidade_emprestimo_label" android:textAllCaps="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/img_seta" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/field_oportunidade_financiamentos" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="16.0dip">
+            <ImageView android:id="@id/oportunidade_financiamentos_icon" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:src="@drawable/ic_financiamentos_promo" android:layout_alignParentLeft="true" />
+            <RelativeLayout android:id="@id/oportunidade_field_financiamentos_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_toRightOf="@id/oportunidade_financiamentos_icon" android:layout_centerVertical="true">
+                <TextView android:id="@id/oportunidade_financiamentos_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="8.0dip" android:text="@string/tipo_financiamentos" style="@style/Base.TextAppearance.AppCompat.Small" />
+                <TextView android:textSize="10.0sp" android:textColor="@color/oportunidades_purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/consulte_seu_limite" android:layout_below="@id/oportunidade_financiamentos_label" android:textAllCaps="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:src="@drawable/img_seta" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

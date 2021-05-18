@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="77.0dip" android:paddingStart="10.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/car_divider_termos" android:background="@color/inv_white" android:layout_width="wrap_content" android:layout_height="1.0dip" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+    <android.support.v7.widget.AppCompatCheckBox android:id="@id/car_check_recusa" android:layout_width="wrap_content" android:layout_height="wrap_content" android:checked="false" android:layout_centerVertical="true" android:layout_marginEnd="7.0dip" app:buttonTint="@color/inv_black_four" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerVertical="true" android:layout_marginEnd="19.0dip" android:layout_toEndOf="@id/car_check_recusa">
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black_four" android:id="@id/car_recusa_link" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" />
+        <TextView android:textSize="14.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:id="@id/car_recusa_texto" android:background="@color/inv_white_three" android:layout_width="wrap_content" android:layout_height="wrap_content" android:lineSpacingExtra="6.0sp" android:fontFamily="sans-serif-medium" />
+    </RelativeLayout>
+</RelativeLayout>

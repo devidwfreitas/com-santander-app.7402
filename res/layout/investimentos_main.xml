@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/label_cdb_lci" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx8" android:layout_marginBottom="@dimen/commonpaddingx2">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/optiontable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding">
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/optiontablerow0" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding">
+                <com.santander.app.components.view.SegmentImageView android:id="@id/button1" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goConsolidada" app:src_classic="@drawable/btn_posicao_consolidada_selector" app:src_select="@drawable/btn_posicao_consolidada_se_selector" app:src_universitario="@drawable/btn_posicao_consolidada_un_selector" />
+                <com.santander.app.components.view.SegmentImageView android:id="@id/button2" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" android:onClick="goAplicacao" app:src_classic="@drawable/btn_aplicacao_selector" app:src_select="@drawable/btn_aplicacao_se_selector" app:src_universitario="@drawable/btn_aplicacao_un_selector" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:id="@id/optiontablerow1" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SegmentImageView android:id="@id/button3" android:layout_width="140.0dip" android:layout_height="110.0dip" android:layout_marginRight="140.0dip" android:scaleType="centerInside" android:onClick="goRegaste" android:layout_marginEnd="140.0dip" app:src_classic="@drawable/btn_resgate_selector" app:src_select="@drawable/btn_resgate_se_selector" app:src_universitario="@drawable/btn_resgate_un_selector" />
+            </LinearLayout>
+            <RelativeLayout android:id="@id/rl_abrir_discador_clicktocall" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <RelativeLayout android:background="@drawable/custom_border_comprovante" android:paddingTop="16.0dip" android:paddingRight="16.0dip" android:paddingBottom="16.0dip" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip">
+                    <LinearLayout android:orientation="vertical" android:id="@id/ll_imagebutton_click_to_call" android:padding="10.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageButton android:id="@id/imagebutton_click_to_call" android:background="@android:color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_call_android" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ll_imagebutton_click_to_call">
+                        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimento_title_click_to_call" android:layout_weight="0.5" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:opensans_regular="opensans_regular.ttf" />
+                        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textSize="12.0sp" android:id="@id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimento_subtitle_title_click_to_call" android:layout_weight="0.5" android:layout_below="@id/TextView01" android:layout_alignParentLeft="true" app:opensans_regular="opensans_regular.ttf" />
+                    </LinearLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

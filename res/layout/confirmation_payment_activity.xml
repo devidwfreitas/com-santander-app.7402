@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:focusable="true" android:focusableInTouchMode="true" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="70.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_money" />
+            <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:text="@string/hold_the_data_to_pay_for_your_insurance_" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/big_margin" android:text="@string/bank_" fontPath="fonts/OpenSans-Regular.ttf" />
+            <AutoCompleteTextView android:textSize="@dimen/default_text_size" android:id="@id/autoCompleteBank" android:focusable="false" android:nextFocusDown="@id/edtAgency" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:imeOptions="actionNext" />
+            <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/small_margin" android:text="@string/agency_" />
+            <EditText android:id="@id/edtAgency" android:nextFocusDown="@id/edtCurrentAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:singleLine="true" android:maxLength="4" android:inputType="number" android:imeOptions="actionNext" />
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center_vertical" android:orientation="vertical" android:id="@id/llAccountNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/left" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="vertical" android:id="@id/left" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/small_margin" android:text="@string/current_account_" />
+                        <EditText android:id="@id/edtCurrentAccount" android:nextFocusDown="@id/edtCurrentAccountDigit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:singleLine="true" android:maxLength="18" android:inputType="number" android:imeOptions="actionNext" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:id="@id/left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true">
+                    <LinearLayout android:orientation="vertical" android:id="@id/llAccountDigit" android:layout_width="80.0dip" android:layout_height="wrap_content" android:layout_toRightOf="@id/left" android:layout_centerVertical="true">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/small_margin" android:text="@string/digit_" />
+                        <EditText android:id="@id/edtCurrentAccountDigit" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:singleLine="true" android:maxLength="2" android:inputType="number" android:imeOptions="actionDone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <android.support.v7.widget.SwitchCompat android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:id="@id/swConfirmData" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/big_margin" android:text="@string/confirms_the_data_for_payment" android:singleLine="true" app:switchPadding="10.0dip" />
+        </LinearLayout>
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btConfirm" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="@dimen/default_margin" android:text="@string/confirm" android:layout_below="@id/btAddDocument" android:layout_alignParentBottom="true" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </RelativeLayout>
+</br.com.zup.multistatelayout.MultiStateLayout>

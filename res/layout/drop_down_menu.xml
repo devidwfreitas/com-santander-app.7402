@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/menuBackground" android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:id="@id/main_container_menu" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:id="@id/box_foto" android:paddingTop="@dimen/commonpaddingmin2" android:paddingBottom="@dimen/commonpaddingmin2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.RoundedImageView android:gravity="center" android:id="@id/circular_image_view" android:layout_width="80.0dip" android:layout_height="80.0dip" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/photo" android:scaleType="centerCrop" app:riv_corner_radius="30.0dip" app:riv_border_width="1.0dip" app:riv_border_color="@color/white" app:riv_oval="true" />
+            <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/circular_image_view">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/menuTextAppearanceLarge" android:textColor="@color/menuForeground" android:id="@id/txtNomeUsuarioMenu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:text="Olá Talles" android:fontFamily="sans-serif-bold" santander:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/menuTextAppearanceLarge" android:textColor="@color/menuForeground" android:id="@id/txtCpfMenu" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:text="123.***.***-23" android:fontFamily="sans-serif-light" santander:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/box_info" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/box_foto">
+            <ImageView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:alpha="0.3" />
+            <RelativeLayout android:orientation="horizontal" android:id="@id/item11" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <View android:id="@id/centerLine" android:background="@color/white" android:layout_width="1.0dip" android:layout_height="40.0dip" android:layout_centerInParent="true" android:alpha="0.3" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textSize="15.0dip" android:textColor="@color/menuForeground" android:gravity="top" android:id="@id/txtHoraUltimaConexao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpaddingmin" android:text="Última conexão: 15/06/2015 - 13:44" android:layout_toLeftOf="@id/centerLine" android:fontFamily="sans-serif-bold" santander:opensans_regular="opensans_regular.ttf" />
+                <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/item10" android:background="@color/transparent" android:paddingTop="@dimen/commonpaddingmin2" android:paddingBottom="@dimen/commonpaddingmin2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/centerLine">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="fill_parent" app:srcCompat="@drawable/ic_menu_sair" />
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textSize="@dimen/menuTextAppearanceLarge" android:textColor="@color/menuForeground" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/item10" android:fontFamily="sans-serif-light" santander:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+            </RelativeLayout>
+            <ImageView android:background="@color/white" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_below="@id/item11" android:alpha="0.3" />
+        </RelativeLayout>
+        <ExpandableListView android:id="@id/lvExp" android:layout_width="fill_parent" android:layout_height="fill_parent" android:groupIndicator="@color/transparent" android:childDivider="@color/child_divider_expandable_list" android:divider="@color/divider_expandable_list" android:dividerHeight="1.0dip" android:layout_below="@id/box_info" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+</android.support.design.widget.CoordinatorLayout>

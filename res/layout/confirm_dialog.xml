@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:paddingBottom="@dimen/commonpaddingx4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:minWidth="250.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceLarge" android:textStyle="bold" android:textColor="@color/red" android:layout_gravity="left" android:id="@id/dialogtitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="@string/dialog_title_atencion" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SegmentLineView android:background="@color/red" android:layout_width="fill_parent" android:layout_height="3.0dip" android:layout_marginBottom="@dimen/commonpaddingmin" />
+    <ScrollView android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/dialog_text" android:layout_width="200.0dip" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/dialog_excluir_dpp" android:lineSpacingMultiplier="1.2" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <com.santander.app.components.view.SantanderButtonView android:id="@id/button_cancel" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:text="@string/button_cancelar" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+                <com.santander.app.components.view.SantanderButtonView android:id="@id/button_confirm" android:layout_width="0.0dip" android:layout_height="50.0dip" android:layout_margin="5.0dip" android:text="@string/button_excluir" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

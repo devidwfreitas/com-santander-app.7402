@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+            <TextView android:textSize="@dimen/ab_title_size" android:gravity="center" android:id="@id/tvDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/reschedule_your_survey" />
+            <FrameLayout android:id="@id/flClick" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground">
+                <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin">
+                    <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_calendar" />
+                    <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:text="@string/best_date_survey" />
+                    <TextView android:textSize="@dimen/text_size_title" android:textColor="@android:color/tertiary_text_dark" android:gravity="center" android:id="@id/tvCalendar" android:paddingLeft="@dimen/small_margin" android:paddingTop="@dimen/small_margin" android:paddingRight="@dimen/small_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" />
+                    <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                </LinearLayout>
+            </FrameLayout>
+            <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/default_margin" android:src="@drawable/ic_period" />
+                <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:id="@id/tvTitlePeriod" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:text="@string/period_survey" />
+                <RadioGroup android:orientation="vertical" android:id="@id/radios" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin">
+                    <RelativeLayout android:id="@id/rlMorning" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <TextView android:textSize="@dimen/default_text_size" android:id="@id/textView" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morning" />
+                            <TextView android:textSize="@dimen/small_text_size" android:id="@id/tvPeriod" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:text="@string/period_morning" fontPath="fonts/OpenSans-Light.ttf" />
+                        </LinearLayout>
+                        <android.support.v7.widget.AppCompatRadioButton android:id="@id/rbMorning" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:buttonTint="@color/colorPrimary" />
+                        <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/rbMorning" />
+                    </RelativeLayout>
+                    <RelativeLayout android:id="@id/rlAfternoon" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin">
+                        <LinearLayout android:gravity="bottom" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_centerVertical="true">
+                            <TextView android:textSize="@dimen/default_text_size" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/afternoon" />
+                            <TextView android:textSize="@dimen/small_text_size" android:id="@id/tvPeriod2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:text="@string/period_afternoon" fontPath="fonts/OpenSans-Light.ttf" />
+                        </LinearLayout>
+                        <android.support.v7.widget.AppCompatRadioButton android:id="@id/rbAfternoon" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="true" app:buttonTint="@color/colorPrimary" />
+                        <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_below="@id/rbAfternoon" />
+                    </RelativeLayout>
+                </RadioGroup>
+            </LinearLayout>
+            <Button android:textSize="@dimen/default_text_size" android:id="@id/btScheduleInspection" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="@dimen/default_margin" android:text="@string/reschedule_survey" android:textAllCaps="true" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+        </LinearLayout>
+    </ScrollView>
+</br.com.zup.multistatelayout.MultiStateLayout>

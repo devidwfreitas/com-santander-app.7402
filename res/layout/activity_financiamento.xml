@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/santander_white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:card_view="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header_main" layout="@layout/layout_action_bar" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="32.0dip" android:src="@drawable/ic_sem_financiamentos" />
+            <TextView android:textSize="20.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/voce_nao_possui_financiamentos" />
+            <TextView android:textSize="16.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="@string/escolha_o_tipo_de_financiamento_desejado" android:lines="2" />
+        </LinearLayout>
+        <RelativeLayout android:id="@id/financiamento_auto" android:background="@color/santander_white" android:padding="@dimen/activity_vertical_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_financiamento_automoveis_promo" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin">
+                        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/financiamento_de_autom_veis" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/oportunidades_purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fazer_uma_simula_o" android:textAllCaps="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:src="@drawable/img_seta" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout android:id="@id/financiamento_imovel" android:background="@color/santander_white" android:padding="@dimen/activity_horizontal_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="48.0dip" android:layout_above="@id/financiamento_auto">
+            <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_financiamento_imoveis_promo" />
+                    <LinearLayout android:layout_gravity="center_vertical" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin">
+                        <TextView android:textSize="14.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/financiamento_de_im_veis" />
+                        <TextView android:textSize="10.0sp" android:textColor="@color/oportunidades_purple" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/fazer_uma_simula_o" android:textAllCaps="true" />
+                    </LinearLayout>
+                </LinearLayout>
+                <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/activity_horizontal_margin" android:src="@drawable/img_seta" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</LinearLayout>

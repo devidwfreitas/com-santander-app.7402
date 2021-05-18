@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:background="@color/colorWhite2" android:paddingLeft="@dimen/default_padding" android:paddingTop="@dimen/small_padding" android:paddingRight="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="14.0sp" android:textColor="@color/colorDarkGray" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/to_continue_we_need_more_information" android:textAlignment="center" />
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="24.0sp" android:textColor="@color/colorDarkGray" android:id="@id/textView13" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" android:text="@string/where_the_problem_occured" android:textAlignment="center" />
+        <android.support.v7.widget.RecyclerView android:layout_gravity="center" android:id="@id/rvProblemsOccured" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="22.0dip" android:overScrollMode="never" />
+    </LinearLayout>
+</br.com.zup.multistatelayout.MultiStateLayout>

@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:background="@android:color/white" android:paddingLeft="15.0dip" android:paddingRight="15.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <ScrollView android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_weight="0.9">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:paddingTop="15.0dip" android:paddingBottom="15.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/title_identify" />
+                <LinearLayout android:orientation="vertical" android:background="#fff5f5f5" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nome_beneficiario_original" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_nome_beneficiario_original" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_valor_titulo_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor_titulo" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_valor_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/codigo_instituicao_financeira_destinataria" />
+                <TextView android:textSize="18.0sp" android:id="@id/text_view_codigo_instituicao_beneficiaria_destinataria" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cnpj" />
+                <TextView android:textSize="18.0sp" android:id="@id/text_view_cnpj" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                <View android:background="#ffbebebe" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/text_view_dados_endereco" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dados_endereco" android:drawableEnd="@drawable/ic_arrow_down" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_address_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/endereco" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_endereco" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cep" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_cep" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cidade" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_cidade" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/estado" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_estado" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#ffbebebe" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/text_view_dados_pagador_original" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dados_pagador_original" android:drawableEnd="@drawable/ic_arrow_down" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_payer_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nome" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_nome_pagador" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cpf_label" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_cpf_pagador" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/endereco" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_endereco_pagador" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cep" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_cep_pagador" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/cidade" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_cidade_pagador" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/estado" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_estado_pagador" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#ffbebebe" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/text_view_dados_registro_titulo" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dados_registro_titulo" android:drawableEnd="@drawable/ic_arrow_down" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_register_title_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/data_vencimento" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_data_vencimento" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/data_processamento" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_data_processamento" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_valor_documento_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor_documento" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_valor_documento" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_desconto_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desconto" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_desconto" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_juros_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/juros" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_juros" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_multa_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multa" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_multa" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_abatimento_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/abatimento" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_abatimento" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/origem" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_origem" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/situacao_titulo" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_situacao_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/data_documento" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_data_documento" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/autoriza_pagamento_valor_divergente" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_autoriza_pagamento_valor_divergente" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/nosso_numero" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_nosso_numero" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/especie" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_especie" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/seu_numero" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_seu_numero" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#ffbebebe" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+                <TextView android:textSize="18.0sp" android:textStyle="bold" android:id="@id/text_view_dados_pagamento_titulo" android:paddingBottom="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/dados_pagamento_titulo" android:drawableEnd="@drawable/ic_arrow_down" />
+                <LinearLayout android:orientation="vertical" android:id="@id/layout_payment_data" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_desconto_calculado_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/desconto_calculado" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_desconto_calculado" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_valor_calculado_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/valor_calculado" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_valor_calculado" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_juros_calculados_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/juros_calculados" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_juros_calculados" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_multa_calculada_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/multa_calculada" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_multa_calculada" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                    <TextView android:textStyle="bold" android:textColor="#ffbebebe" android:id="@id/text_view_abatimento_calculado_desc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/abatimento_calculado" />
+                    <TextView android:textSize="18.0sp" android:id="@id/text_view_abatimento_calculado" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+                </LinearLayout>
+                <View android:background="#ffbebebe" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="5.0dip" android:layout_marginBottom="5.0dip" />
+            </LinearLayout>
+        </ScrollView>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="0.0dip" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:layout_weight="0.1">
+            <Button android:layout_gravity="center" android:id="@id/button_buy" android:layout_width="280.0dip" android:text="@string/_continue" android:textAllCaps="true" style="@style/Santander.PillRed" />
+        </FrameLayout>
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

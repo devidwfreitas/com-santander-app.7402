@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/colorTransparent" android:layout_width="1000.0dip" android:layout_height="0.5dip" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/nestedScrollView" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/select_account" android:textAlignment="center" />
+            <View android:background="@color/colorGrayDividerRep" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/default_margin" />
+            <android.support.v7.widget.RecyclerView android:layout_gravity="center_horizontal" android:id="@id/rvCheckingAccount" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            <View android:background="@color/colorGrayDividerRep" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <View android:background="@color/colorGrayDividerRep" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <Button android:textSize="@dimen/default_text_size" android:id="@id/btCancel" android:layout_width="wrap_content" android:layout_height="30.0dip" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/cancel" style="@style/AppTheme.ButtonTransparentStrokeBlue" fontPath="fonts/OpenSans-Light.ttf" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

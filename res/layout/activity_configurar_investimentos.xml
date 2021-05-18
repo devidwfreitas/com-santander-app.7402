@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/configurar_inv_loading" android:visibility="gone" layout="@layout/layout_loading_state" />
+    <LinearLayout android:orientation="vertical" android:id="@id/configurar_inv_main" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <include layout="@layout/layout_header_pequeno" />
+        <include layout="@layout/content_configurar_investimentos" />
+    </LinearLayout>
+</android.support.design.widget.CoordinatorLayout>

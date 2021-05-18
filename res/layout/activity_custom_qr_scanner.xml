@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <com.journeyapps.barcodescanner.DecoratedBarcodeView android:id="@id/zxing_barcode_scanner" android:layout_width="fill_parent" android:layout_height="fill_parent" app:zxing_scanner_layout="@layout/custom_qr_scanner" />
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textColor="@color/black" android:gravity="center" android:layout_gravity="top" android:id="@id/zxing_status_view" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:gravity="center" android:id="@id/zxing_button" android:background="@drawable/background_id_santander_capsula" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx6" android:layout_marginRight="@dimen/commonpaddingx6" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/knowMore" />
+    </LinearLayout>
+    <RelativeLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <ImageView android:id="@id/button_close" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpaddingx4" android:src="@drawable/ico_qr_fechar" />
+    </RelativeLayout>
+</RelativeLayout>

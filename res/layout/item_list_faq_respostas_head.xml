@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="@dimen/commonpaddingx2"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/red" android:gravity="center_horizontal" android:id="@id/textview_numero_pergunta_faq_respostas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpaddingmin" android:text="1." santander:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:gravity="center_vertical" android:id="@id/textview_texto_pergunta_faq_respostas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Pergunta" santander:opensans_regular="opensans_regular.ttf" />
+</LinearLayout>

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:id="@id/rlBackgroundTransparent" android:background="@color/colorTransparent" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <FrameLayout android:background="@drawable/bg_rectangle_gray_very_roudend" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_above="@id/btCancel">
+        <android.support.v7.widget.RecyclerView android:id="@id/rv" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    </FrameLayout>
+    <Button android:textColor="@color/colorDefaultRed" android:id="@id/btCancel" android:layout_width="fill_parent" android:layout_height="50.0dip" android:layout_marginTop="@dimen/default_margin" android:text="@string/cancel" android:layout_alignParentBottom="true" android:textAllCaps="false" style="@style/AppTheme.ButtonWhiteRounded" />
+</RelativeLayout>

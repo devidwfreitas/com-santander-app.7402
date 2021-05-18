@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/commonpaddingmin" android:paddingTop="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:gravity="left" android:id="@id/tv_item_label" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="LOREM IPSUM" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/tv_item_value" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="R$ 200,00" android:layout_weight="0.4" app:opensans_regular="opensans_regular.ttf" />
+</LinearLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin">
+        <com.santander.app.components.view.SantanderTextView android:id="@id/text_cpf" android:layout_width="wrap_content" android:layout_height="wrap_content" app:opensans_regular="opensans_regular.ttf" />
+        <ImageView android:id="@id/image_seta" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_seta" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/container_token" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="@style/Base.TextAppearance.AppCompat.Large" android:textColor="@color/background_id_santander_capsula_light" android:id="@id/token" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:text="" app:opensans_regular="opensans_regular.ttf" />
+        <ProgressBar android:id="@id/progress_bar" android:paddingLeft="@dimen/commonpaddingx6" android:paddingRight="@dimen/commonpaddingx6" android:layout_width="fill_parent" android:layout_height="5.0dip" android:layout_marginLeft="@dimen/activity_vertical_margin" android:layout_marginRight="@dimen/activity_vertical_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:max="29" android:indeterminate="false" android:pointerIconSpotHover="@color/red" android:pointerIconSpotAnchor="@color/background_id_santander_capsula_light" style="@android:style/Widget.ProgressBar.Horizontal" />
+    </LinearLayout>
+    <View android:background="@color/background_id_santander_capsula_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

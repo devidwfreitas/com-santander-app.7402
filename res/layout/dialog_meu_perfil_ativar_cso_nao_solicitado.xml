@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:paddingLeft="@dimen/commonpadding" android:paddingTop="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="275.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tituloAtencaoAcessoCanal" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray_dark" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/textoAtivarCartaoNaoSolicitado" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/btnDialogOk" android:layout_width="@dimen/button_width2" android:layout_height="@dimen/button_height" android:layout_marginTop="@dimen/commonpaddingx2" android:text="Ok" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+</LinearLayout>

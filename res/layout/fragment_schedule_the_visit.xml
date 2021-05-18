@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:padding="@dimen/default_padding" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/layoutBottom">
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <ImageView android:layout_gravity="center" android:layout_width="42.0dip" android:layout_height="42.0dip" android:src="@drawable/ic_assistant_calendar" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/we_will_schedule_your_visit" android:textAlignment="center" app:textStyle="light" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/text_size_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/what_is_the_best_date_for_you" android:textAlignment="center" app:textStyle="light" />
+            <EditText android:id="@id/etDate" android:focusable="false" android:focusableInTouchMode="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="22.0dip" android:textAlignment="center" />
+            <LinearLayout android:orientation="vertical" android:id="@id/layoutPeriod" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="40.0dip">
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="@dimen/text_size_title" android:id="@id/segurosTextView2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/and_what_period" android:textAlignment="center" app:textStyle="light" />
+                <RelativeLayout android:id="@id/layoutMorning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin">
+                    <LinearLayout android:orientation="vertical" android:id="@id/layoutMorning" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="4.0dip">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/morning" app:textStyle="light" />
+                            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:text="09:00 até 12:00" app:textStyle="light" />
+                        </LinearLayout>
+                        <View android:background="@color/colorGrayLine2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" />
+                    </LinearLayout>
+                    <RadioButton android:id="@id/rbMorning" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/AppTheme.RadioButton" />
+                </RelativeLayout>
+                <RelativeLayout android:id="@id/layoutEvening" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_below="@id/layoutMorning">
+                        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/evening" app:textStyle="light" />
+                            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="12.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:text="13:00 até 17:00" app:textStyle="light" />
+                        </LinearLayout>
+                        <View android:background="@color/colorGrayLine2" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="6.0dip" />
+                    </LinearLayout>
+                    <RadioButton android:id="@id/rbEvening" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" style="@style/AppTheme.RadioButton" />
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout android:id="@id/layoutBottom" android:background="@color/gray_light_2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:id="@id/btAdvance" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/default_margin" android:text="@string/advance" style="@style/AppTheme.ButtonRedFilled" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:id="@id/relativelayout_content_plano_previdencia" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textColor="@color/red" android:id="@id/textview_label_plano_previdencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VGBL" android:layout_alignParentLeft="true" android:layout_alignParentStart="true" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textColor="@color/red" android:id="@id/textview_valor_plano_previdencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_alignParentRight="true" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textColor="@color/red" android:id="@id/textview_saldo_bruto_plano_previdencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/textmarginx2" android:text="@string/label_saldo_bruto" android:layout_toLeftOf="@id/textview_valor_plano_previdencia" android:layout_alignParentTop="true" android:layout_toStartOf="@id/textview_valor_plano_previdencia" app:opensans_regular="opensans_regular.ttf" />
+    </RelativeLayout>
+</RelativeLayout>

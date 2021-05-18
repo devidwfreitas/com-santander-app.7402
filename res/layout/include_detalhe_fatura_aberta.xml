@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/scrollView2" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/vencimientoFacturaAberto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data de vencimento:" android:layout_alignParentLeft="true" android:layout_centerVertical="false" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/lblDataVencimentoFatura" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="false" app:opensans_regular="opensans_regular.ttf" />
+        </RelativeLayout>
+        <ImageView android:id="@id/separador8" android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/relFacturaAberto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/totalFacturaAberto" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo parcial desta fatura:" android:layout_alignParentLeft="true" android:layout_centerVertical="false" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/totalFacturaAbertoValor" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true" android:layout_centerVertical="false" app:opensans_regular="opensans_regular.ttf" />
+        </RelativeLayout>
+        <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <RelativeLayout android:id="@id/cabeceraLista" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+            <com.santander.app.components.view.SegmentTextView android:textStyle="bold" android:textColor="@color/red" android:id="@id/tituloHistorico" android:paddingLeft="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="HISTÓRICO" android:layout_alignParentLeft="true" />
+            <com.santander.app.components.view.SegmentTextView android:textStyle="bold" android:textColor="@color/red" android:id="@id/tituloValor" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VALOR" android:layout_alignParentRight="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/listaHistoricoFacturaAnterior" android:paddingLeft="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        <LinearLayout android:orientation="vertical" android:id="@id/layout_info_fatura_fechada" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingtbl1">
+            <com.santander.app.components.view.SegmentTextView android:textSize="15.0dip" android:textStyle="bold" android:textColor="@color/red" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/informacoes_importantes" />
+            <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginTop="@dimen/commonpaddingtbl1" />
+            <com.santander.app.components.view.SantanderTextView android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/label_info_detalhe_fatura_aberta" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

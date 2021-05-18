@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content_listagem_propostas" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:id="@id/linear_layout_title" android:background="@color/gray4" android:layout_width="fill_parent" android:layout_height="53.329987dip" android:layout_alignParentTop="true">
+        <com.santander.app.components.view.SantanderTextView android:textColor="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/formalizacao_digital_info_notificacoes" android:textAlignment="center" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/recycle_view_contratos" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linear_layout_title" />
+</RelativeLayout>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/commonpadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="DOC" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textview_limite_doc_dialog_ajuda" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Limite de até R$ 4.999,99 \nEnviado no dia útil seguinte à solicitação." style="@style/TextViewHoloDark" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+        <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:textColor="@color/black" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TED" />
+        <com.santander.app.components.view.SantanderTextView android:id="@id/textview_limite_ted_dialog_ajuda" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="A partir de R$ 0,01 \nEnviado no  mesmo dia útil da solicitação, se realizado até as 17hrs." style="@style/TextViewHoloDark" />
+    </LinearLayout>
+    <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center" android:id="@id/button_fechar_dialog_forma_transf" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:text="FECHAR" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+</LinearLayout>

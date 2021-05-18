@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/img_check" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/radion_buttom" />
+    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_motivo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="motivo 1 teste" />
+</LinearLayout>

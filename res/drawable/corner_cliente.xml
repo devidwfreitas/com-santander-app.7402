@@ -1,0 +1,3 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap android:gravity="bottom|right|center" android:src="@drawable/corner_content_client_new" android:dither="true"
+  xmlns:android="http://schemas.android.com/apk/res/android" />

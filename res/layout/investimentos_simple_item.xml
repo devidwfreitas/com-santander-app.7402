@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/text1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rienda fixa" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/text2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/posicao_consolidada" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.FontFitTextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center_horizontal" android:id="@id/text3" android:background="@color/gray" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx6" android:layout_marginTop="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingx6" android:text="R$ 120,000.00" app:opensans_regular="opensans_regular.ttf" />
+</LinearLayout>

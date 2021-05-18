@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:id="@id/cdb_progressivo_body" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include layout="@layout/layout_header_printable" />
+            <TextView android:textSize="20.0sp" android:textStyle="normal" android:textColor="@color/inv_black" android:id="@id/cdb_progressivo_titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:text="Termos e Condições" android:fontFamily="sans-serif-medium" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <TextView android:textSize="13.0sp" android:textStyle="normal" android:textColor="@color/inv_black_four" android:id="@id/cdb_progressivo_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:layout_marginBottom="10.0dip" android:fontFamily="sans-serif" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+            <android.support.v7.widget.RecyclerView android:id="@id/cdb_progressivo_lista" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginStart="20.0dip" android:layout_marginEnd="20.0dip" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <RelativeLayout android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="48.0dip" android:layout_alignParentBottom="true">
+        <View android:background="@color/inv_white" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        <Button android:textColor="@color/inv_black_two" android:layout_gravity="bottom" android:id="@id/cdb_progressivo_btn_compartilhar" android:background="@color/inv_transparent" android:layout_width="wrap_content" android:layout_height="50.0dip" android:layout_marginTop="1.0dip" android:text="@string/app_compartilhar" android:layout_alignParentBottom="true" android:paddingStart="20.0dip" android:paddingEnd="20.0dip" android:layout_marginStart="0.5dip" android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+    <include android:id="@id/cdb_progressivo_loading" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true" layout="@layout/layout_loading_state" />
+</RelativeLayout>

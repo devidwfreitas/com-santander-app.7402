@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/labelrendafixa" android:paddingLeft="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Detalhe" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="@dimen/commonpadding" />
+        <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_conta_label" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/conta_corriente" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 24564567765637678" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_posicao_label" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/posicao_consolidada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06/09/2013" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/titulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="TOTAL FUNDO: SANTANDER" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="@dimen/commonpadding" />
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data da Cota:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/data_cota" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor da Cota" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/valor_cota" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo Bruto:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/saldo_bruto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo da Cotas:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/saldo_cotas" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IR:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/ir" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="IOF:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/iof" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Taxa de Saída:" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/taxa_saida" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_renda_fixa_saldo_liquido" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/saldo_liquido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/listadetalles" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

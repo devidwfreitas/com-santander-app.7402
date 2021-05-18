@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/red" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Buscar:" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderEditText android:id="@id/et_busca_paises" android:layout_width="0.0dip" android:layout_height="wrap_content" android:ems="10" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <ListView android:id="@id/listView_paises" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

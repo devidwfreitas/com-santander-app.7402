@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:id="@id/content" android:background="@color/colorWhite" android:paddingLeft="@dimen/default_padding" android:paddingTop="6.0dip" android:paddingBottom="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:id="@id/ivImage" android:background="@color/colorWhite" android:layout_width="52.0dip" android:layout_height="52.0dip" android:layout_marginTop="@dimen/small_margin" android:scaleType="fitCenter" />
+    <LinearLayout android:orientation="vertical" android:paddingLeft="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin">
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/default_margin">
+            <FrameLayout android:id="@id/btEdit" android:background="@drawable/bg_simple_ripple_red" android:clickable="true" android:layout_width="30.0dip" android:layout_height="30.0dip" android:layout_alignParentRight="true" android:foregroundGravity="center">
+                <ImageView android:layout_gravity="center" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/ic_edit_blue" android:scaleType="centerCrop" />
+            </FrameLayout>
+            <TextView android:textSize="@dimen/default_text_size" android:textStyle="bold" android:textColor="@color/colorGray" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:layout_toLeftOf="@id/btEdit" android:layout_centerVertical="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:layout_gravity="center_vertical" android:id="@id/tvDesc" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <ImageButton android:id="@id/btArrow" android:background="@color/colorTransparent" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginLeft="@dimen/default_margin" android:src="@drawable/ic_subitem_blue" android:scaleType="centerCrop" />
+        </LinearLayout>
+        <com.santander.app.seguros.ui.widgets.ExpandableLayoutV2 android:id="@id/equipamentExpandable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" app:el_duration="400" app:el_expanded="true" app:el_translate_children="false">
+            <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:id="@id/tvEquipamentExpandable" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" fontPath="fonts/OpenSans-Light.ttf" />
+        </com.santander.app.seguros.ui.widgets.ExpandableLayoutV2>
+    </LinearLayout>
+</LinearLayout>

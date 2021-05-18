@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_camera" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textSize="15.0sp" android:id="@id/txtCamera" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingx2" android:text="Tirar nova foto" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:id="@id/container_galeria" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textSize="15.0sp" android:id="@id/txtCameraRoll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:text="Escolher foto da biblioteca" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:textColor="#ffaeaeae" android:id="@id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="3.0dip" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="Pode demorar alguns segundos" app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</LinearLayout>

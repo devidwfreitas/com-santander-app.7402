@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:bancosantander="http://schemas.android.com/apk/res-auto">
+    <item android:icon="@drawable/cal_left_arrow_off" android:id="@id/action_back" bancosantander:showAsAction="always" />
+    <item android:icon="@drawable/cal_right_arrow_off" android:id="@id/action_go" bancosantander:showAsAction="always" />
+    <item android:icon="@drawable/ic_action_navigation_close_inverted" android:id="@id/action_close" bancosantander:showAsAction="always" />
+</menu>

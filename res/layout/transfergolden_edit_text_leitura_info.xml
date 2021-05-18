@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:id="@id/frame_oval" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_alignParentStart="true">
+        <ImageView android:id="@id/oval_image" android:background="@drawable/shape_transfergolden_oval_gray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:contentDescription="@null" />
+        <TextView android:textColor="@android:color/white" android:layout_gravity="center" android:id="@id/oval_hint" android:layout_width="wrap_content" android:layout_height="wrap_content" android:textAllCaps="true" />
+    </FrameLayout>
+    <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_centerInParent="true" android:layout_marginStart="15.0dip" android:layout_toEndOf="@id/frame_oval">
+        <TextView android:textSize="16.0sp" android:textColor="@color/colorBlueTransferGolden" android:layout_gravity="end" android:clickable="false" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="@string/transfgolden_button_editar" android:textAllCaps="false" android:layout_marginEnd="10.0dip" />
+        <android.support.design.widget.TextInputLayout android:id="@id/input_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:errorTextAppearance="@style/TransferGolder.InputLayoutErrorTextAppearance">
+            <android.support.design.widget.TextInputEditText android:id="@id/edit_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:maxLines="1" style="@style/TransferGolder.TextAppearance" />
+        </android.support.design.widget.TextInputLayout>
+        <android.support.v7.widget.AppCompatSpinner android:gravity="center" android:id="@id/spinner" android:background="@null" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" />
+    </FrameLayout>
+</RelativeLayout>

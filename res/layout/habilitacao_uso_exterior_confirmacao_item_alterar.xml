@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txt_periodo_anterior" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/habilitacao_confirmar_periodo_anterior" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txt_periodo_anterior_value" android:layout_width="wrap_content" android:layout_height="wrap_content" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txt_novo_periodo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/habilitacao_confirmar_novo_periodo" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:gravity="right" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txt_novo_periodo_value" android:layout_width="wrap_content" android:layout_height="wrap_content" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txt_nome_pais" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/habilitacao_confirmar_pais_viagem" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:gravity="right" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/txt_nome_pais_value" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/habilitacao_confirmar_pais_viagem" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

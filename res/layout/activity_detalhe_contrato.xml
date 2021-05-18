@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <include android:id="@id/header_main" layout="@layout/layout_action_bar" />
+    <android.support.v4.widget.NestedScrollView android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <include android:id="@id/topo_ativo_layout" android:visibility="gone" layout="@layout/detalhe_ativo_topo_layout" />
+            <include android:id="@id/topo_atraso_layout" android:visibility="gone" layout="@layout/detalhe_atraso_topo_layout" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:layout_marginBottom="@dimen/activity_vertical_margin" android:weightSum="2.0">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/field_valor_contratado" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valor_contratado" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/valor_contratado_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="R$5.000,00" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/field_taxa_de_juros" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/taxa_de_juros" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/taxa_de_juros_mes_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="2,2200% a.m." />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/taxa_de_juros_ano_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="4,93% a.a." />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/field_iof" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valor_iof" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/iof_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="R$ 142,00" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/field_valor_total_seguro" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/valor_total_do_seguro" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/seguro_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="R$ 420,00" />
+                    </LinearLayout>
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                    <LinearLayout android:orientation="vertical" android:id="@id/field_produto" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/produto" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/produto_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Crédito Imobiliário" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/field_numero_do_contrato" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/n_mero_do_contrato" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/numero_do_contrato_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="Final: 048765" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="vertical" android:id="@id/field_cet" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin">
+                        <TextView android:textSize="12.0sp" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/cet_custo_efetivo_total" />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/cet_mes_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="2,22% a.m." />
+                        <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/cet_ano_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="4,93% a.a." />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

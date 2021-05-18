@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v7.widget.RecyclerView android:id="@id/recyclerview_transferencias_programadas" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:gravity="center" android:id="@id/textview_msg_nao_existe_transf_programadas" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:text="@string/transferencias_msg_nao_existe_transf_programadas" />
+</LinearLayout>

@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/ivCheck" android:layout_width="18.0dip" android:layout_height="18.0dip" android:src="@drawable/ic_simple_check_green2" android:layout_centerVertical="true" />
+    <com.santander.app.seguros.ui.widgets.SegurosTextView android:textColor="@color/colorGray" android:id="@id/tvText" android:padding="@dimen/default_screen_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/ivCheck" android:layout_centerVertical="true" />
+    <View android:id="@id/vLine" android:background="@color/colorGrayLine" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginRight="@dimen/default_margin" android:layout_below="@id/tvText" />
+</RelativeLayout>

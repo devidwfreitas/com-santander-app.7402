@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:orientation="horizontal" android:paddingLeft="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:id="@id/ll_container_timeline" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:id="@id/tv_item_label_timeline_parcelas" android:paddingTop="5.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="5.0dip" android:text="LOREM IPSUM" android:maxLines="2" android:layout_alignParentLeft="true" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:orientation="vertical" android:id="@id/ll_bullet_timeline" android:layout_width="wrap_content" android:layout_height="81.0dip" android:layout_toRightOf="@id/tv_item_label_timeline_parcelas">
+                <ImageView android:layout_gravity="center" android:id="@id/iv_tracejado_up" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/tracejado_timeline" android:scaleType="fitXY" />
+                <ImageView android:id="@id/iv_bullet" android:visibility="visible" android:layout_width="20.0dip" android:layout_height="20.0dip" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:src="@drawable/bullet_time_line" android:scaleType="centerInside" android:adjustViewBounds="false" />
+                <ImageView android:layout_gravity="center" android:id="@id/iv_tracejado_down" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent" android:src="@drawable/tracejado_timeline" android:scaleType="fitXY" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_container_dados_parcelas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_toRightOf="@id/ll_container_timeline" />
+    </RelativeLayout>
+</RelativeLayout>

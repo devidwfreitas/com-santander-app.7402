@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SantanderCheckBox android:id="@id/checkBoxCartao" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Estou sem cartão" app:opensans_regular="opensans_regular.ttf" style="@style/CheckHoloDark" />
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/black" android:id="@id/textCampoQuiz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="TextView" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SantanderEditText android:id="@id/editCampoQuiz" android:layout_width="fill_parent" android:layout_height="wrap_content" android:ems="10" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+</LinearLayout>

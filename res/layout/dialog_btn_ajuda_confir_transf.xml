@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_margin="@dimen/commonpadding"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textview_limite_doc_dialog_ajuda" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Opcional, máximo de 9 caracteres. Essa identificação será exibida ao lado da transação no histórico do seu extrato." style="@style/TextViewHoloDark" />
+    </LinearLayout>
+    <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center" android:id="@id/button_fechar_dialog_confirm_transf" android:layout_width="fill_parent" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:text="FECHAR" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+</LinearLayout>

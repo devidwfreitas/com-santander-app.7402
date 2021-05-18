@@ -1,0 +1,16 @@
+import android.widget.ImageButton;
+import android.widget.TextView;
+
+class jid {
+  private TextView a;
+  
+  private ImageButton b;
+  
+  private jid() {}
+}
+
+
+/* Location:              C:\Users\devid\Downloads\SAST\Santander\dex2jar-2.0\classes2-dex2jar.jar!\jid.class
+ * Java compiler version: 6 (50.0)
+ * JD-Core Version:       1.1.3
+ */

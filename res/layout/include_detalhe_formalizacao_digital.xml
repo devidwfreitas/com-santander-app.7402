@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@id/content_detalhe_formalizacao_digital" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent" app:layout_behavior="@string/appbar_scrolling_view_behavior"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_container_detalhe_formalizacao" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:id="@id/linearlayout_form_digitaltitle" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textSize="25.0dip" android:textColor="@color/red" android:gravity="center" android:id="@id/textview_detalhe_formalizacao_digital_title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="CapSorte Universitario Santander" />
+        </LinearLayout>
+        <ScrollView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/linearlayout_form_digitaltitle">
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:orientation="vertical" android:id="@id/linear_container_detalhe" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" />
+                <ImageView android:background="@drawable/carruel_divider_line" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingmin" android:layout_marginBottom="@dimen/commonpaddingx2" />
+                <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginBottom="@dimen/commonpaddingx2">
+                    <ImageView android:id="@id/imageview_check_termo" android:layout_width="20.0dip" android:layout_height="20.0dip" android:src="@drawable/custom_check" android:scaleType="fitCenter" />
+                    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_aceite_termo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" />
+                </LinearLayout>
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderButtonView android:enabled="false" android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_confirmar_contratacao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/formalizacao_digital_detalhe_formalizacao_button_contratar" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+                    <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_desistir_contratacao" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/formalizacao_digital_detalhe_formalizacao_button_nao_contratar" android:layout_centerInParent="true" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloBorderGrayNew" />
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_alignParentTop="true" android:layout_alignParentStart="true">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/linear_container_detalhe_formalizacao_cso" android:background="@android:color/white" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    </LinearLayout>
+</RelativeLayout>

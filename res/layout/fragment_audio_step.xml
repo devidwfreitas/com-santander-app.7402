@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/colorWhite" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/rlButtonsAudio">
+        <LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/default_margin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="@dimen/default_text_size" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" />
+            <ImageButton android:layout_gravity="center" android:id="@id/btRecord" android:background="@drawable/bg_simple_ripple" android:layout_width="100.0dip" android:layout_height="100.0dip" android:layout_marginTop="@dimen/big_margin" android:src="@drawable/ic_audio_recorder" android:scaleType="centerCrop" />
+            <TextView android:gravity="center" android:id="@id/tvDesc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin" android:text="@string/click_the_icon_above_to_record_your_voice_message" />
+            <com.santander.app.seguros.ui.widgets.AudioPlayerView android:id="@id/audioPlayer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin" />
+            <TextView android:textSize="45.0dip" android:layout_gravity="center" android:id="@id/tvTimeCountDown" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin" android:text="03:00" />
+        </LinearLayout>
+    </ScrollView>
+    <RelativeLayout android:id="@id/rlButtonsAudio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <Button android:textSize="@dimen/default_text_size" android:layout_gravity="center" android:id="@id/btSkipStage" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:text="@string/skip_audio" style="@style/AppTheme.ButtonTransparentStrokeBlue" fontPath="fonts/OpenSans-Light.ttf" />
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btNext" android:layout_width="fill_parent" android:layout_height="40.0dip" android:layout_margin="@dimen/default_margin" android:text="@string/avancar" android:layout_below="@id/btSkipStage" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/busca_localizador_agencia_layout" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:background="@color/red" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderEditText android:id="@id/busca_localizador_agencia_santender_edit_text" android:background="@drawable/shape_edittext_rounded" android:padding="5.0dip" android:layout_width="fill_parent" android:layout_height="35.0dip" android:layout_margin="15.0dip" android:hint="Buscar pelo n° da agência" android:maxLines="1" android:lines="1" android:inputType="number" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView android:id="@id/busca_localizador_agencia_lista_enderecos" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

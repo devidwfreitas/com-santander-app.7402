@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:background="@drawable/shape_drop_down_item" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:baselineAligned="false" android:paddingStart="20.0dip" android:paddingEnd="20.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="45.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/santander_gray_text" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="2.0dip" android:text="Agência / Conta" />
+        <TextView android:textSize="12.0sp" android:textColor="@android:color/black" android:id="@id/agcc_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="0000 / 00.000000-0" android:fontFamily="sans-serif" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="65.0">
+        <TextView android:textSize="12.0sp" android:textColor="@color/santander_gray_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Saldo em conta" />
+        <LinearLayout android:orientation="horizontal" android:id="@id/balance_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/black" android:layout_gravity="top" android:id="@id/balance_label" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$" android:fontFamily="sans-serif" />
+            <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:layout_gravity="center" android:id="@id/balance_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="9.999.999.999" android:fontFamily="sans-serif" android:layout_marginStart="4.0dip" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/balance_total_container" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip">
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/black" android:id="@id/balance_total_label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Saldo disp. total: " android:alpha="0.6" android:fontFamily="sans-serif" />
+            <TextView android:textSize="10.0sp" android:textColor="@android:color/black" android:id="@id/balance_total_text_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:alpha="0.6" android:fontFamily="sans-serif" />
+        </LinearLayout>
+        <TextView android:textSize="16.0sp" android:textColor="@android:color/black" android:id="@id/hidden_text_view" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:text="Exibir" android:fontFamily="sans-serif" />
+    </LinearLayout>
+</LinearLayout>

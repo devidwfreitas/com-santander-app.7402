@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/default_margin">
+        <ImageView android:layout_gravity="center" android:layout_width="34.0dip" android:layout_height="34.0dip" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/ic_date_info" />
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvAssistanceType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Assistência de Danos Elétricos" />
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/assistance_number_colon" app:textStyle="bold" />
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvAssistanceNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="\ 3123123123" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/open_date_colon" app:textStyle="bold" />
+                <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvScheduledDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:text="22/07/2017" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin">
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Questionário de abertura" app:textStyle="bold" />
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="6.0dip" android:text="Serviço" app:textStyle="bold" />
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvAssistanceName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Danos Elétrico" />
+    </LinearLayout>
+    <View android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layoutProblem" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin">
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/textView12" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Problemas" app:textStyle="bold" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvProblemName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Bocal de Lâmpada" />
+        </LinearLayout>
+        <View android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin">
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Endereço de risco" app:textStyle="bold" />
+        <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvAddress" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Alameda dos jardins, 342,\nMoema - São Paulo - SP" />
+    </LinearLayout>
+</LinearLayout>

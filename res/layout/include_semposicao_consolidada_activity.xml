@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/linear_box_image_msg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx4">
+            <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_previ_circle" />
+            <com.santander.app.components.view.SantanderTextView android:gravity="center" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/msg_info_semprevidencia" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <RelativeLayout android:id="@id/btn_chamar_telefone_previdencia" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageview_icon_telefone_previdencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_call" android:layout_centerVertical="true" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_num_telefone_previdencia" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimento_ligue_agora_click_to_call" android:layout_toRightOf="@id/imageview_icon_telefone_previdencia" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textview_hr_telefone_previdencia" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimento_horario_click_to_call" android:layout_toRightOf="@id/imageview_icon_telefone_previdencia" android:layout_below="@id/textview_num_telefone_previdencia" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_arrow_right" />
+                </LinearLayout>
+            </RelativeLayout>
+            <com.santander.app.components.view.SegmentLineView android:layout_gravity="center_horizontal" android:background="@color/gray_light" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <RelativeLayout android:id="@id/btn_chamar_chat_previdencia" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <ImageView android:id="@id/imageview_icon_chat_previdencia" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_chat" android:layout_centerVertical="true" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/black" android:id="@id/textview_num_chat_previdencia" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimento_chat_click_to_call" android:layout_toRightOf="@id/imageview_icon_chat_previdencia" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textview_hr_chat_previdencia" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimento_horario_click_to_call" android:layout_toRightOf="@id/imageview_icon_chat_previdencia" android:layout_below="@id/textview_num_chat_previdencia" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+                <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_alignParentRight="true">
+                    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_arrow_right" />
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

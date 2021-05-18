@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/bg_dialog" android:padding="@dimen/small_margin" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ImageView android:layout_gravity="center_horizontal" android:layout_width="70.0dip" android:layout_height="70.0dip" android:layout_marginTop="@dimen/big_margin" android:src="@drawable/ic_info_coverage_assistance" />
+    <com.santander.app.components.view.SantanderTextView android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="@dimen/small_margin" android:layout_marginRight="@dimen/small_margin" android:text="@string/cancellation_success" />
+    <LinearLayout android:layout_gravity="center_horizontal" android:paddingLeft="@dimen/big_margin" android:paddingTop="20.0dip" android:paddingRight="@dimen/big_margin" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:id="@id/button_continue_cancellation" android:layout_width="fill_parent" android:layout_height="35.0dip" android:text="@string/continue_" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+    </LinearLayout>
+</LinearLayout>

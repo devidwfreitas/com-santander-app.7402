@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:background="@color/white" android:fitsSystemWindows="false" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <ScrollView android:id="@id/scroll_view_aviso_final_ano" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true">
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="@dimen/text_size_18" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aviso_final_ano_titulo" />
+                </LinearLayout>
+                <LinearLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <GridLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_pagamentos_transferencias_doc" />
+                    </GridLayout>
+                    <GridLayout android:orientation="vertical" android:paddingLeft="@dimen/commonpaddingx2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:textColor="#ff787878" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aviso_final_ano_label_pagto_tranf" />
+                        <com.santander.app.components.view.SantanderTextView android:textSize="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aviso_final_ano_sub_label_pagto_tranf" />
+                    </GridLayout>
+                </LinearLayout>
+                <LinearLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <GridLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_transferencias_ted" />
+                    </GridLayout>
+                    <GridLayout android:orientation="vertical" android:paddingLeft="@dimen/commonpaddingx2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aviso_final_ano_label_tranf" />
+                        <com.santander.app.components.view.SantanderTextView android:textSize="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aviso_final_ano_sub_label_tranf" />
+                    </GridLayout>
+                </LinearLayout>
+                <LinearLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <GridLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content" app:srcCompat="@drawable/ic_agencias" />
+                    </GridLayout>
+                    <GridLayout android:orientation="vertical" android:paddingLeft="@dimen/commonpaddingx2" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                        <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aviso_final_ano_label_agencias" />
+                        <com.santander.app.components.view.SantanderTextView android:textSize="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aviso_final_ano_sub_label_agencias" />
+                    </GridLayout>
+                </LinearLayout>
+                <LinearLayout android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderTextView android:textSize="11.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/aviso_final_ano_info" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:layout_gravity="bottom" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <LinearLayout android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/gray_dark" android:id="@id/button_aviso_mais_informacoes" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginTop="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2" android:text="@string/aviso_final_ano_botao_mais_info" app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <LinearLayout android:gravity="center" android:paddingBottom="@dimen/commonpaddingx3" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:id="@id/button_aviso_nao_ver_mais" android:paddingLeft="@dimen/commonpaddingx4" android:paddingRight="@dimen/commonpaddingx4" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx2" android:layout_marginRight="@dimen/commonpaddingx2" android:text="@string/aviso_final_ano_nao_ver_mais" app:opensans_regular="opensans_regular.ttf" style="@style/Santander.PillRed" />
+                </LinearLayout>
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+</android.support.design.widget.CoordinatorLayout>

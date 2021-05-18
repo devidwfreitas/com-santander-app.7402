@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.widget.Carrossel android:orientation="vertical" android:id="@id/carruselFormaPagamento" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/carrusel_pagamentos" />
+    </com.santander.app.widget.Carrossel>
+    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:layout_gravity="center_horizontal" android:id="@id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:text="@string/pagamentos_info_chave_unica" app:opensans_regular="opensans_regular.ttf" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpadding" android:text="Chave única:" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SegmentTextView android:id="@id/codigocartorio" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:ems="10" android:maxLength="23" android:inputType="number" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+    </LinearLayout>
+    <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="@string/texto2pagamentos" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.widget.Carrossel android:orientation="vertical" android:id="@id/carruselDataPagamento" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/carrusel_pagamentos_small" />
+    </com.santander.app.widget.Carrossel>
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/confirmar" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/button_confirmar" android:onClick="confirmarCartorio" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+</LinearLayout>

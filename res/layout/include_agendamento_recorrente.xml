@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/layout_agendamento_recorrente" android:paddingLeft="@dimen/dimen_20dp" android:paddingTop="@dimen/dimen_10dp" android:paddingRight="@dimen/dimen_20dp" android:paddingBottom="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <FrameLayout android:paddingBottom="@dimen/dimen_10dp" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <Switch android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/colorBlack" android:id="@id/switch_agendamento_recorrente" android:layout_width="fill_parent" android:layout_height="wrap_content" android:thumb="@drawable/switch_thumb_material" android:text="@string/agendamento_recorrente" />
+    </FrameLayout>
+    <View android:background="@color/child_divider_expandable_list" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+    <LinearLayout android:orientation="vertical" android:id="@id/layout_ar_init" android:paddingTop="@dimen/dimen_10dp" android:paddingBottom="@dimen/dimen_10dp" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="11.0sp" android:textStyle="bold" android:textColor="@color/colorBlack" android:paddingBottom="@dimen/dimen_5dp" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/agendamento_recorrente_text" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorTextInputDialog" android:id="@id/edittext_hint_numero_meses" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/numero_meses" android:imeOptions="actionNext">
+                <android.support.v7.widget.AppCompatEditText android:textSize="@dimen/default_text_size" android:id="@id/edittext_numero_meses" android:nextFocusDown="@id/edittext_hint_numero_meses" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:maxLength="3" android:inputType="number" android:imeOptions="actionNext" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/dimen_10dp">
+            <android.support.design.widget.TextInputLayout android:textColorHint="@color/colorTextInputDialog" android:id="@id/edittext_hint_valor_pagamento_recorrente" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/valor_pagamento_recorrente" android:imeOptions="actionNext">
+                <android.support.v7.widget.AppCompatEditText android:textSize="@dimen/default_text_size" android:id="@id/edittext_valor_pagamento_recorrente" android:nextFocusDown="@id/edittext_hint_valor_pagamento_recorrente" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="numberDecimal" android:imeOptions="actionDone" />
+            </android.support.design.widget.TextInputLayout>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

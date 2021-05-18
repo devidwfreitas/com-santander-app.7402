@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:paddingBottom="@dimen/big_margin" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:orientation="vertical" android:background="@color/colorGrayBackground" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:id="@id/tvName" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ibEdit" android:layout_centerVertical="true" />
+        <ImageButton android:id="@id/ibEdit" android:visibility="gone" android:layout_width="10.0dip" android:layout_height="10.0dip" android:src="@color/colorBlack" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <View android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.5dip" android:layout_marginBottom="@dimen/big_margin" />
+    <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center_horizontal" android:id="@id/tvValue" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" fontPath="fonts/OpenSans-Semibold.ttf" />
+    <RelativeLayout android:paddingLeft="@dimen/default_padding" android:paddingRight="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentRight="true">
+            <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_percentage" />
+            <TextView android:textColor="@color/colorGray" android:layout_gravity="center_horizontal" android:id="@id/tvCoverageShare" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/left">
+            <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_width="50.0dip" android:layout_height="50.0dip" android:src="@drawable/ic_family" />
+                <TextView android:textColor="@color/colorGray" android:layout_gravity="center_horizontal" android:id="@id/tvKinship" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            </LinearLayout>
+        </FrameLayout>
+        <FrameLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="50.0dip" android:layout_marginTop="15.0dip" android:layout_marginRight="50.0dip">
+            <View android:layout_gravity="center" android:background="@color/colorRedLight" android:layout_width="fill_parent" android:layout_height="2.0999756dip" />
+            <android.support.v7.widget.AppCompatSeekBar android:enabled="false" android:layout_gravity="center" android:id="@id/sbCoverageShare" android:paddingLeft="13.0dip" android:paddingRight="13.0dip" android:clickable="false" android:layout_width="fill_parent" android:layout_height="wrap_content" android:max="100" android:progressDrawable="@color/colorTransparent" android:thumb="@drawable/bg_seekbar_red_light_thumb" android:thumbOffset="14.0dip" />
+        </FrameLayout>
+    </RelativeLayout>
+</LinearLayout>

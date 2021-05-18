@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/linear_box_novas_acoes" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <LinearLayout android:orientation="horizontal" android:id="@id/linear_box_acoes" android:padding="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/button_resgate_poupanca" android:layout_width="fill_parent" android:layout_height="30.0dip" android:text="Resgatar" android:layout_weight="1.0" style="@style/Santander.PillRed" />
+                <Button android:textSize="14.0sp" android:textColor="@color/white" android:id="@id/button_aplicacao_poupanca" android:layout_width="fill_parent" android:layout_height="30.0dip" android:layout_marginLeft="@dimen/commonpadding" android:text="Aplicar" android:layout_weight="1.0" style="@style/Santander.PillRed" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/linear_dpp" android:background="@drawable/border_top_bottom" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+                <com.santander.app.components.view.SantanderTextView android:textSize="@dimen/text_size_16" android:textColor="@color/black" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:text="Depósito programado" />
+                <LinearLayout android:gravity="right" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <ImageView android:id="@id/ico_seta_dpp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ico_seta_right" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip">
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_conta_label" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/conta_corriente" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="\ 24564567765637678" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/commonpadding" android:paddingRight="@dimen/commonpadding" android:paddingBottom="20.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:paddingRight="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_posicao_label" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:id="@id/posicao_consolidada" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="06/09/2013" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <com.santander.app.components.view.SegmentTextView android:paddingLeft="10.0dip" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_poupanca_total_title" android:textAllCaps="true" app:opensans_regular="opensans_regular.ttf" style="@style/TitleGrayBg" />
+            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+            <LinearLayout android:orientation="vertical" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <LinearLayout android:orientation="horizontal" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_poupanca_saldo_disponivel_tot" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/saldo_disponivel_tot" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 16,453.00 " app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_poupanca_bloqueio_judicial" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/bloqueio_judicial" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 17,000.00 " app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_poupanca_bloqueado" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/bloqueado" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 0.00 " app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_poupanca_saldo_regra_nova" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/saldo_regra_nova" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 16,453.00 " app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_poupanca_saldo_anterior" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:gravity="right" android:id="@id/saldo_anterior" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 16,453.00 " app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+                <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpaddingmin" android:paddingBottom="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/textlogincolor" android:gravity="left" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_poupanca_saldo_total" app:opensans_regular="opensans_regular.ttf" />
+                    <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:gravity="right" android:id="@id/saldo_total" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="R$ 16,453.00 " app:opensans_regular="opensans_regular.ttf" />
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:id="@id/listaproductos" android:padding="2.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding">
+                <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+                <com.santander.app.components.view.SegmentTextView android:paddingLeft="10.0dip" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/investimentos_posicao_consolidada_poupanca_conta_poupanca" android:textAllCaps="true" app:opensans_regular="opensans_regular.ttf" style="@style/TitleGrayBg" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

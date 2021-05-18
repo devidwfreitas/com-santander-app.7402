@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/black" android:gravity="center" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/tituloAtencaoAcessoCanal" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray_dark" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/textoDialogCartaoCanceladoSolicitarNovo" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textColor="@color/gray_dark" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/subTextoSolicitarCartaoStatusSolicitado" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2">
+            <com.santander.app.components.view.SegmentImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/gray_dark" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/textoContatoMetropoleSolicitacaoCartao" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SegmentImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/gray_dark" android:gravity="center" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/textoContatoOutrasLocalidadesSolicitacaoCartao" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SegmentImageView android:background="@color/lightgray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpaddingx2">
+            <com.santander.app.components.view.SantanderButtonView android:id="@id/btnVoltar" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="Voltar" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+            <com.santander.app.components.view.SantanderButtonView android:id="@id/btContinuar" android:layout_width="fill_parent" android:layout_height="@dimen/button_height" android:text="Continuar" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

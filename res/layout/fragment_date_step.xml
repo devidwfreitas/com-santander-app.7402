@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/default_margin" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center" android:id="@id/tvTitleDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin" fontPath="fonts/OpenSans-Regular.ttf" />
+    <FrameLayout android:id="@id/flClick" android:clickable="true" android:layout_width="fill_parent" android:layout_height="wrap_content" android:foreground="?android:selectableItemBackground">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin">
+            <ImageView android:layout_width="45.0dip" android:layout_height="45.0dip" android:src="@drawable/ic_calendar" />
+            <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center" android:id="@id/tvDescDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" fontPath="fonts/OpenSans-Regular.ttf" />
+            <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center" android:id="@id/tvCalendar" android:paddingLeft="@dimen/small_margin" android:paddingTop="@dimen/small_margin" android:paddingRight="@dimen/small_margin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" fontPath="fonts/OpenSans-Regular.ttf" />
+            <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </FrameLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/default_margin">
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btNext" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/avancar" android:layout_alignParentBottom="true" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </RelativeLayout>
+</LinearLayout>

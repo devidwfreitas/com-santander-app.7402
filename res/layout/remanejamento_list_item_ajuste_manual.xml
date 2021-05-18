@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/santander_white" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:layout_marginBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="18.0sp" android:textColor="@color/santander_black" android:id="@id/product_name_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Limite da Conta (Cheque Especial)" />
+    <TextView android:textSize="14.0sp" android:id="@id/product_specifics_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" />
+    <TextView android:textSize="14.0sp" android:id="@id/compartilhado_product_specifics_text" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="4.0dip" />
+    <TextView android:textSize="14.0sp" android:id="@id/novo_limite_label_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/activity_vertical_margin" android:text="Limite" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <TextView android:textSize="20.0sp" android:textColor="@color/santander_black" android:id="@id/money_sign_adjust" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$" android:layout_centerVertical="true" />
+        <EditText android:textSize="22.0sp" android:textColor="@color/santander_black" android:id="@id/ajuste_limite_edittext" android:background="@android:color/transparent" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="4.0dip" android:hint="0,00" android:maxLength="13" android:layout_toRightOf="@id/money_sign_adjust" android:inputType="number" />
+    </RelativeLayout>
+    <ImageView android:id="@id/edit_line_novo_limite" android:layout_width="fill_parent" android:layout_height="1.0dip" android:src="@android:color/darker_gray" />
+    <TextView android:textSize="14.0sp" android:id="@id/limites_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8.0dip" android:text="@string/limite_min_e_max" />
+</LinearLayout>

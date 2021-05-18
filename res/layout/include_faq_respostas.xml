@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:gravity="center_horizontal" android:id="@id/relative_faq_respostas_titulo" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentImageView android:id="@id/imageview_image_titulo_faq_respostas" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="@dimen/commonpaddingmin" android:src="@android:drawable/btn_star" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/red" android:gravity="center_horizontal" android:id="@id/textview_titulo_faq_respostas" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="titulo" android:layout_toRightOf="@id/imageview_image_titulo_faq_respostas" santander:opensans_regular="opensans_regular.ttf" />
+    </RelativeLayout>
+    <ListView android:id="@id/listview_faq_respostas" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:divider="@android:color/transparent" android:dividerHeight="10.0dip" android:layout_above="@id/relative_faq_respostas_footer" android:layout_below="@id/relative_faq_respostas_titulo" android:headerDividersEnabled="false" android:footerDividersEnabled="true" />
+    <FrameLayout android:id="@id/relative_faq_respostas_footer" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:layout_alignParentBottom="true">
+        <include layout="@layout/include_faq_informacao_util" />
+    </FrameLayout>
+</RelativeLayout>

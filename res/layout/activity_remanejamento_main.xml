@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <include android:id="@id/header_main" layout="@layout/layout_action_bar" />
+    <include android:id="@id/remanejamento_servico_indisponivel" android:visibility="gone" layout="@layout/layout_remanejamento_sistema_indisponivel" />
+    <include android:id="@id/remanejamento_sem_produto" android:visibility="gone" layout="@layout/layout_remanejamento_sem_produtos" />
+    <android.support.v4.widget.NestedScrollView android:id="@id/layout_remanejamento_main" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <TextView android:textSize="16.0sp" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:text="@string/altere_os_limites_da_forma_que_preferir_tire_de_um_produto_e_aumente_no_outro" android:maxLines="3" />
+            <TextView android:textSize="12.0sp" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_vertical_margin" android:text="@string/limite_total_de_conta_e_cartao" android:lines="2" android:lineSpacingMultiplier="1.5" android:textAllCaps="true" />
+            <TextView android:textSize="20.0sp" android:textStyle="bold" android:textColor="@android:color/black" android:gravity="center_horizontal" android:layout_gravity="center_horizontal" android:id="@id/total_limit_value_text" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <RelativeLayout android:id="@id/suggestion_layout" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/activity_horizontal_margin">
+                <ImageView android:id="@id/icon_suggestion" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/remanejamento_ic_valor_liberado" />
+                <TextView android:id="@id/suggestion_text" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" android:text="@string/voce_tem_x_liberado" android:layout_toRightOf="@id/icon_suggestion" android:layout_centerVertical="true" />
+            </RelativeLayout>
+            <ImageView android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/activity_horizontal_margin" android:src="@color/santander_gray" />
+            <android.support.v7.widget.RecyclerView android:id="@id/main_contracts_list" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/activity_horizontal_margin" android:layout_marginRight="@dimen/activity_horizontal_margin" />
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</LinearLayout>

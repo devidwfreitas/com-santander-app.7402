@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:id="@id/txtCorreoCadastramento" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="ana.sousa@gmail.com" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderTextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingx4" android:layout_marginTop="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingx4" android:text="Para cadastrar novo endereço ou alterar algum já existente, acesse o Santander Internet Banking." app:opensans_regular="opensans_regular.ttf" />
+    </LinearLayout>
+</LinearLayout>

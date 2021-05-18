@@ -1,0 +1,62 @@
+{
+  "canvasser":{
+    "branchCode":"Mip1pIx0DrBiHLDR7BWXgg==",
+    "channelCode":"8hm+1It2zRMVTCi0Dj2wmA==",
+    "employeeId":"vEISk9B8sxy05BSFlFQngQ=="
+  },
+  "customer":{
+    "email":"",
+    "gender":"M",
+    "maritalStatus":"9",
+    "numberDependents":"0",
+    "personType":"F",
+    "valueIncome":"e4UgVSw6TbX14i5dzjSWWw==",
+    "document":{
+      "number":"OtQVgcylhAOjQ2il6mYK\/w==",
+      "type":"13"
+    },
+    "telephone":{
+
+    }
+  },
+  "idealPlans":[
+    {
+      "code":"0000000003",
+      "description":"SEM CONJUGE",
+      "insuredAmountValue":""
+    },
+    {
+      "code":"0000000003",
+      "description":"SEM CONJUGE",
+      "insuredAmountValue":""
+    }
+  ],
+  "plans":[
+    {
+      "code":"0000000003",
+      "description":"SEM CONJUGE",
+      "insuredAmountValue":""
+    },
+    {
+      "code":"0000000003",
+      "description":"SEM CONJUGE",
+      "insuredAmountValue":""
+    },
+    {
+      "code":"0000000003",
+      "description":"SEM CONJUGE",
+      "insuredAmountValue":""
+    },
+    {
+      "code":"0000000003",
+      "description":"SEM CONJUGE",
+      "insuredAmountValue":""
+    }
+  ],
+  "product":{
+    "code":"57",
+    "description":"PROTECAO VIDA MULHER",
+    "subproductCode":"1815",
+    "insurerCode":"0110"
+  }
+}

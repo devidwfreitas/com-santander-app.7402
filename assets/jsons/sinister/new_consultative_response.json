@@ -1,0 +1,106 @@
+{
+  "positions": [
+    {
+      "position": {
+        "certificate": {
+          "id": "1",
+          "description": "VIGENTE",
+          "key": "0100820000000000000000",
+          "status": "1"
+        },
+        "endorsement": {
+          "number": ""
+        },
+        "insurance": {
+          "beginningValidityDate": "2017-03-02",
+          "cancellationDate": "",
+          "endValidityDate": "2018-03-02",
+          "hiringDate": "",
+          "nextRenovationDate": "2018-03-02",
+          "reasonCancelation": "",
+          "statusDate": "",
+          "payment": {
+            "description": ""
+          }
+        },
+        "operation": {
+          "code": "E1",
+          "description": "EMISSÃO P\/COTAÇÃO"
+        },
+        "product": {
+          "code": "8122",
+          "description": "SEGURO PROTEÇÃO FUNERAL",
+          "groupingName": "ACIDENTES PESSOAIS"
+        }
+      }
+    },
+    {
+      "position": {
+        "certificate": {
+          "id": "0",
+          "description": "VIGENTE",
+          "key": "0500140002008000281798",
+          "status": "1"
+        },
+        "endorsement": {
+          "number": "1"
+        },
+        "insurance": {
+          "beginningValidityDate": "2017-08-09",
+          "cancellationDate": "",
+          "endValidityDate": "2018-08-09",
+          "hiringDate": "2016-08-09",
+          "nextRenovationDate": "2018-08-09",
+          "reasonCancelation": "",
+          "statusDate": "2017-08-07",
+          "payment": {
+            "description": "DÉBITO EM CONTA"
+          }
+        },
+        "operation": {
+          "code": "R1",
+          "description": "RENOVAÇÃO SEGURADORA"
+        },
+        "product": {
+          "code": "8099",
+          "description": "PROTECAO RESIDENCIAL SOB MEDIDA",
+          "groupingName": "RESIDENCIAL"
+        }
+      }
+    },
+    {
+      "position": {
+        "certificate": {
+          "id": "2",
+          "description": "",
+          "key": "",
+          "status": ""
+        },
+        "endorsement": {
+          "number": ""
+        },
+        "insurance": {
+          "beginningValidityDate": "",
+          "cancellationDate": "",
+          "endValidityDate": "",
+          "hiringDate": "",
+          "nextRenovationDate": "",
+          "reasonCancelation": "",
+          "statusDate": "",
+          "payment": {
+            "description": ""
+          }
+        },
+        "operation": {
+          "code": "",
+          "description": ""
+        },
+        "product": {
+          "code": "",
+          "description": "",
+          "groupingName": ""
+        }
+      }
+    }
+  ]
+}

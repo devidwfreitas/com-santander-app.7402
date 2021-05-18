@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="array_kinship">
+        <item>Cônjuge</item>
+        <item>Enteado(a)</item>
+        <item>Filho(a)</item>
+        <item>Irmã(o)</item>
+        <item>Mãe</item>
+        <item>Pai</item>
+        <item>Outro</item>
+    </string-array>
+    <string-array name="canais">
+        <item>Central de Atendimento</item>
+        <item>Internet Banking</item>
+    </string-array>
+    <string-array name="content_provider_apps">
+        <item>com.santander.app</item>
+        <item>br.com.santander.modulo.idsantander</item>
+        <item>br.com.santander.way</item>
+        <item>br.com.santander.wayhml</item>
+    </string-array>
+    <string-array name="emprestimosDias">
+        <item>Dia 01</item>
+        <item>Dia 02</item>
+        <item>Dia 03</item>
+        <item>Dia 04</item>
+        <item>Dia 05</item>
+        <item>Dia 06</item>
+        <item>Dia 07</item>
+        <item>Dia 08</item>
+        <item>Dia 09</item>
+        <item>Dia 10</item>
+        <item>Dia 11</item>
+        <item>Dia 12</item>
+        <item>Dia 13</item>
+        <item>Dia 14</item>
+        <item>Dia 15</item>
+        <item>Dia 16</item>
+        <item>Dia 17</item>
+        <item>Dia 18</item>
+        <item>Dia 19</item>
+        <item>Dia 20</item>
+        <item>Dia 21</item>
+        <item>Dia 22</item>
+        <item>Dia 23</item>
+        <item>Dia 24</item>
+        <item>Dia 25</item>
+        <item>Dia 26</item>
+        <item>Dia 27</item>
+        <item>Dia 28</item>
+    </string-array>
+    <string-array name="emprestimosMeses">
+        <item>02 meses</item>
+        <item>03 meses</item>
+        <item>04 meses</item>
+        <item>05 meses</item>
+        <item>06 meses</item>
+        <item>07 meses</item>
+        <item>08 meses</item>
+        <item>09 meses</item>
+        <item>10 meses</item>
+        <item>11 meses</item>
+        <item>12 meses</item>
+        <item>13 meses</item>
+        <item>14 meses</item>
+        <item>15 meses</item>
+        <item>16 meses</item>
+        <item>17 meses</item>
+        <item>18 meses</item>
+        <item>19 meses</item>
+        <item>20 meses</item>
+        <item>21 meses</item>
+        <item>22 meses</item>
+        <item>23 meses</item>
+        <item>24 meses</item>
+        <item>25 meses</item>
+        <item>26 meses</item>
+        <item>27 meses</item>
+        <item>28 meses</item>
+        <item>29 meses</item>
+        <item>30 meses</item>
+        <item>31 meses</item>
+        <item>32 meses</item>
+        <item>33 meses</item>
+        <item>34 meses</item>
+        <item>35 meses</item>
+        <item>36 meses</item>
+        <item>37 meses</item>
+        <item>38 meses</item>
+        <item>39 meses</item>
+        <item>40 meses</item>
+        <item>41 meses</item>
+        <item>42 meses</item>
+        <item>43 meses</item>
+        <item>44 meses</item>
+        <item>45 meses</item>
+        <item>46 meses</item>
+        <item>47 meses</item>
+        <item>48 meses</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_ca_phones_descricao">
+        <item>Capitais e regiões metropolitanas</item>
+        <item>Demais localidades</item>
+        <item>Pessoas com deficiência auditiva e de fala</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_ca_phones_number">
+        <item>4004 3535</item>
+        <item>0800 702 3535</item>
+        <item>0800 723 5007</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_correspondencia_descricao">
+        <item>Banco Santander (Brasil) S.A.&lt;small>" 
+CNPJ: 90.400.888/0001-42"&lt;/small>" 
+"&lt;small>Av. Juscelino Kubitscheck, 2041/2235 - Bloco A&lt;/small>"
+"&lt;small>Vila Olímpia, São Paulo/SP&lt;/small>"
+"&lt;small>CEP : 04543-011&lt;/small>" "</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_cr_phones_descricao">
+        <item>Regiões Metropolitanas</item>
+        <item>Demais Localidades</item>
+        <item>Se preferir, escreva para negociacao@santander.com.br (Favor, informar seu CPF na mensagem)</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_cr_phones_number">
+        <item>4004 2262</item>
+        <item>0800 704 3722</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_financeira_phones_descricao">
+        <item>Regiões Metropolitanas</item>
+        <item>Demais Localidades</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_financeira_phones_number">
+        <item>4004 9090</item>
+        <item>0800 722 9090</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_ouvidoria_phones_descricao">
+        <item>No Brasil</item>
+        <item>Atende também pessoas com deficiência auditiva e de fala</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_ouvidoria_phones_number">
+        <item>0800 726 0322</item>
+        <item>0800 771 0301</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_sac_phones_descricao">
+        <item>No Brasil</item>
+        <item>Atende também pessoas com deficiência auditiva e de fala</item>
+        <item>Exterior (Ligue a cobrar)</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_sac_phones_number">
+        <item>0800 762 7777</item>
+        <item>0800 771 0401</item>
+        <item>55 11 3012 3336</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_seguro_phones_descricao">
+        <item>No Brasil</item>
+        <item>Exterior (Ligue a cobrar)</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_seguro_phones_number">
+        <item>0800 770 5030</item>
+        <item>55 11 3027 9603</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_susep_phones_descricao">
+        <item>No Brasil</item>
+    </string-array>
+    <string-array name="faq_telefones_setor_susep_phones_number">
+        <item>0800 021 8484</item>
+    </string-array>
+    <string-array name="finalidadeDoc">
+        <item>Selecione</item>
+        <item>01 - Crédito em Conta Corrente</item>
+        <item>02 - Pagto. de Aluguel/Condomínio</item>
+        <item>03 - Pagto. de Duplicatas/Títulos</item>
+        <item>04 - Pagto. de Dividendos</item>
+        <item>05 - Pagto. de Mensalidade Escolar</item>
+        <item>06 - Pagto. de Salário</item>
+        <item>07 - Pagto. de Fornecedores/Honorários</item>
+        <item>08 - Câmbio/Fundos/Bolsa de Valores</item>
+        <item>09 - Repasse de Arrecadações/Tributos</item>
+        <item>10 - Transf.Internacional em R$</item>
+        <item>11 - DOC para a Poupança</item>
+        <item>12 - DOC para Depósito Judicial</item>
+        <item>13 - Pensão Alimentícia</item>
+        <item>20 - Doação - Lei Rouanet</item>
+        <item>21 - Patrocínio - Lei Rouanet</item>
+        <item>99 - Outras</item>
+    </string-array>
+    <string-array name="finalidadeTed">
+        <item>Selecione</item>
+        <item>10 - Crédito em Conta Corrente</item>
+        <item>01 - Pagamento de Impostos, Tributos e Taxas</item>
+        <item>02 - Pagamento a Concessionárias de Serviço Público</item>
+        <item>03 - Pagamento de Dividendos</item>
+        <item>04 - Pagamento de Salários</item>
+        <item>05 - Pagamento de Fornecedores</item>
+        <item>06 - Pagamento de Honorários</item>
+        <item>07 - Pagamento de Aluguéis e Taxas de Condomínio</item>
+        <item>08 - Pagamento de Duplicatas e Títulos</item>
+        <item>09 - Pagamento de Mensalidade Escolar</item>
+        <item>11 - Crédito em Conta Poupança</item>
+        <item>16 - Crédito em Conta Investimento</item>
+        <item>32 - Retirada de Recursos da Conta Investimento</item>
+        <item>101 - Pensão Alimentícia</item>
+        <item>201 - Ajuste Posição Mercado Futuro</item>
+        <item>204 - Operações Compra e Venda de Ações - BV/BMF</item>
+        <item>205 - Contratos Referenciados Ações/Indices Ações - BV/BMF</item>
+        <item>300 - Restituição de Imposto de Renda</item>
+        <item>99999 - OUTRAS</item>
+        <item>110 - Transf. C/C mesma titularidade</item>
+    </string-array>
+    <string-array name="finalidadeTedMesma">
+        <item>Selecione</item>
+        <item>110 - Transf. C/C mesma titularidade</item>
+    </string-array>
+    <string-array name="finalidadeTedOutra">
+        <item>Selecione</item>
+        <item>10 - Crédito em Conta Corrente</item>
+        <item>01 - Pagamento de Impostos, Tributos e Taxas</item>
+        <item>02 - Pagamento à Concessionárias de Serviço Público</item>
+        <item>03 - Pagamento de Dividendos</item>
+        <item>04 - Pagamento de Salários</item>
+        <item>05 - Pagamento de Fornecedores</item>
+        <item>06 - Pagamento de Honorários</item>
+        <item>07 - Pagamento de Aluguéis e Taxas de Condomínio</item>
+        <item>08 - Pagamento de Duplicatas e Títulos</item>
+        <item>09 - Pagamento de Mensalidade Escolar</item>
+        <item>11 - Crédito em Conta Poupança</item>
+        <item>16 - Crédito em Conta Investimento</item>
+        <item>32 - Retirada de Recursos da Conta Investimento</item>
+        <item>101 - Pensão Alimentícia</item>
+        <item>201 - Ajuste Posição Mercado Futuro</item>
+        <item>204 - Operações Compra e Venda de Ações - BV/BMB</item>
+        <item>205 - Contratos Referenciados Ações/Indices Ações - BV/BMF</item>
+        <item>300 - Restituição de Imposto de Renda</item>
+        <item>99999 - OUTRAS</item>
+    </string-array>
+    <string-array name="spinner_mes_validade_desbloqueio_cartoes">
+        <item>Selecione</item>
+        <item>01</item>
+        <item>02</item>
+        <item>03</item>
+        <item>04</item>
+        <item>05</item>
+        <item>06</item>
+        <item>07</item>
+        <item>08</item>
+        <item>09</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="spinner_periodicidade">
+        <item>Selecione</item>
+        <item>Semanal</item>
+        <item>Quinzenal</item>
+        <item>Mensal</item>
+    </string-array>
+    <string-array name="spinner_periodicidade_mes">
+        <item>Número de meses</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>11</item>
+        <item>12</item>
+    </string-array>
+    <string-array name="spinner_periodo">
+        <item>Últimos 7 dias</item>
+        <item>Últimos 15 dias</item>
+        <item>Últimos 30 dias</item>
+        <item>Outro Período</item>
+    </string-array>
+    <string-array name="spinner_tipo_conta">
+        <item>Selecione</item>
+        <item>Semanal</item>
+        <item>Quinzenal</item>
+    </string-array>
+    <string-array name="tiposConta">
+        <item>Selecione</item>
+        <item>Conta corrente individual</item>
+        <item>Conta corrente conjunta</item>
+        <item>Conta poupança individual</item>
+        <item>Conta poupança conjunta</item>
+    </string-array>
+    <string-array name="tiposContaSantander">
+        <item>Selecione</item>
+        <item>Conta Corrente</item>
+        <item>Conta Poupança</item>
+    </string-array>
+    <string-array name="tiposContaSantanderTransfProgParaSantanter">
+        <item>Conta Corrente</item>
+    </string-array>
+</resources>

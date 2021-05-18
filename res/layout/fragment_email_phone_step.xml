@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorWhite" android:padding="@dimen/default_padding" android:focusable="true" android:focusableInTouchMode="true" android:clickable="true" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/ivIcon" android:layout_width="45.0dip" android:layout_height="50.0dip" android:layout_marginTop="@dimen/small_margin" android:src="@drawable/ic_phone_with_border_blue" />
+    <TextView android:textSize="@dimen/default_text_size" android:textColor="@color/colorGray" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" />
+    <android.support.design.widget.TextInputLayout android:id="@id/editEmailHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:hint="@string/email">
+        <android.support.design.widget.TextInputEditText android:id="@id/editEmail" android:nextFocusDown="@id/editPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:singleLine="true" android:inputType="textEmailAddress" android:imeOptions="actionNext" />
+    </android.support.design.widget.TextInputLayout>
+    <android.support.design.widget.TextInputLayout android:id="@id/editPhoneHint" android:layout_width="fill_parent" android:layout_height="wrap_content" android:hint="@string/telephone">
+        <android.support.design.widget.TextInputEditText android:id="@id/editPhone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:singleLine="true" android:inputType="phone" android:imeOptions="actionDone" />
+    </android.support.design.widget.TextInputLayout>
+    <TextView android:id="@id/messageValue" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/big_margin" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <Button android:textSize="@dimen/default_text_size" android:id="@id/btNext" android:layout_width="fill_parent" android:layout_height="40.0dip" android:text="@string/avancar" android:layout_alignParentBottom="true" style="@style/AppTheme.ButtonRedDark2" fontPath="fonts/OpenSans-Light.ttf" />
+    </RelativeLayout>
+</LinearLayout>

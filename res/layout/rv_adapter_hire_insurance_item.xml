@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <android.support.v7.widget.CardView android:orientation="vertical" android:id="@id/cvClick" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="1.0dip">
+        <RelativeLayout android:padding="@dimen/default_screen_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:id="@id/ivIcon" android:layout_width="50.0dip" android:layout_height="50.0dip" android:layout_marginRight="@dimen/default_margin" android:scaleType="centerCrop" android:layout_centerVertical="true" />
+            <ImageView android:id="@id/ivArrow" android:layout_width="15.0dip" android:layout_height="15.0dip" android:src="@drawable/ic_subitem" android:scaleType="centerCrop" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="15.0sp" android:textColor="@color/colorGray" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivArrow" android:layout_toRightOf="@id/ivIcon" app:textStyle="bold" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textColor="@color/colorGray" android:id="@id/tvDescription" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toLeftOf="@id/ivArrow" android:layout_toRightOf="@id/ivIcon" android:layout_below="@id/tvTitle" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+    <com.santander.app.seguros.ui.widgets.ExpandableLayoutV2 android:orientation="vertical" android:id="@id/expandLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="400" app:el_expanded="true" app:el_translate_children="true">
+        <LinearLayout android:orientation="vertical" android:id="@id/llAddView" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_screen_padding" android:layout_marginTop="@dimen/default_margin" />
+        <Button android:layout_gravity="center_horizontal" android:id="@id/btToHire" android:layout_width="200.0dip" android:layout_height="45.0dip" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" android:text="@string/contratar" android:textAllCaps="true" style="@style/AppTheme.ButtonBlueVeryLight" />
+        <View android:background="@drawable/fadebottom" android:layout_width="fill_parent" android:layout_height="10.0dip" android:layout_alignParentTop="true" />
+    </com.santander.app.seguros.ui.widgets.ExpandableLayoutV2>
+</LinearLayout>

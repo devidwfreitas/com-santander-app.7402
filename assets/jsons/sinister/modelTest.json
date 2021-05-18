@@ -1,0 +1,42 @@
+[
+  {
+    "name" : "Cobertura 1",
+    "value": "100000",
+    "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lobortis metus, sit amet mollis mauris."
+  },
+  {
+    "name" : "Cobertura 2",
+    "value": "200000",
+    "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lobortis metus, sit amet mollis mauris."
+  },
+  {
+    "name" : "Cobertura 3",
+    "value": "300000",
+    "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lobortis metus, sit amet mollis mauris."
+  },
+  {
+    "name" : "Cobertura 4",
+    "value": "400000",
+    "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lobortis metus, sit amet mollis mauris."
+  },
+  {
+    "name" : "Cobertura 6",
+    "value": "600000",
+    "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lobortis metus, sit amet mollis mauris."
+  },
+  {
+    "name" : "Cobertura 7",
+    "value": "700000",
+    "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lobortis metus, sit amet mollis mauris."
+  },
+  {
+    "name" : "Cobertura 8",
+    "value": "800000",
+    "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lobortis metus, sit amet mollis mauris."
+  },
+  {
+    "name" : "Cobertura 9",
+    "value": "900000",
+    "info" : "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sed lobortis metus, sit amet mollis mauris."
+  }
+]

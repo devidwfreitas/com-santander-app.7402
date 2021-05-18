@@ -1,0 +1,32 @@
+[
+  {
+    "question" : "Encontra-se atualmente em boas condições de saúde e em plena atividade de trabalho?",
+    "subQuestion": "Por que?",
+    "answerDefault": "NÃO"
+  },
+  {
+    "question" : "É portador de alguma deficiência de órgãos, membros ou sentidos?",
+    "subQuestion": "Qual deficiência e grau?",
+    "answerDefault": "SIM"
+  },
+  {
+    "question" : "Fez ou faz uso de medicamentos em geral de uso contínuo?",
+    "subQuestion": "Quais e qual motivo?",
+    "answerDefault": "SIM"
+  },
+  {
+    "question": "Fez ou faz algum tratamento, decorrente de acidente ou doença, que necessite de acompanhamento médico ou realização de exames de diagnose?",
+    "subQuestion": "Qual tratamento e motivo?",
+    "answerDefault": "SIM"
+  },
+  {
+    "question" : "Necessitou nos últimos 5 anos de internação hospitalar, clínica ou cirúrgica (inclusive biospia), ou afastar-se de suas atividades normais de trabalho, por conta de alguma doença ou acidente?",
+    "subQuestion": "Qual periodo de internação e motivo?",
+    "answerDefault": "SIM"
+  },
+  {
+    "question" : "Pratica esporte profissional ou amador considerado de risco ou perigoso, tais como esportes aéreos, subaquátcos, de montanha, competições automobilísticas, motociclísticas ou trabalha em alguma atividade considerada insalubre ou periculosa?",
+    "subQuestion": "Qual?",
+    "answerDefault": "SIM"
+  }
+]

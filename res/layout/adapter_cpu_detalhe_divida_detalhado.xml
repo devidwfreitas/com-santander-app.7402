@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:paddingTop="10.0dip" android:paddingBottom="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:background="@color/gray_11" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_marginBottom="30.0dip" />
+    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/gray_12" android:gravity="start" android:id="@id/description" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Limite em conta" />
+    <com.santander.app.components.view.SantanderTextView android:textSize="12.0sp" android:textColor="@color/black" android:gravity="start" android:id="@id/contract" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="CONTRATO: 123456789012345678901234" />
+    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="start" android:id="@id/value" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:text="Valor: R$ 1.583,05" />
+    <com.santander.app.components.view.SantanderTextView android:textSize="14.0sp" android:textColor="@color/black" android:gravity="start" android:id="@id/ag_cc" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="15.0dip" android:layout_marginBottom="15.0dip" android:text="Agência e Conta Vinculada: 2050 / 6600004444610" />
+</LinearLayout>

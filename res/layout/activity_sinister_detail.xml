@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayout" android:layout_width="fill_parent" android:layout_height="fill_parent" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.CoordinatorLayout android:id="@id/main_content" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_above="@id/llBottomContainer"
+          xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+            <android.support.design.widget.AppBarLayout android:layout_width="fill_parent" android:layout_height="wrap_content" app:elevation="0.0dip">
+                <LinearLayout android:orientation="vertical" android:id="@id/pager" android:background="@color/colorGrayBackground" android:layout_width="fill_parent" android:layout_height="wrap_content" app:layout_scrollFlags="scroll">
+                    <TextView android:textSize="16.0sp" android:textStyle="bold" android:textColor="@color/colorBlueVeryLight" android:gravity="center" android:id="@id/tvTitle" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginTop="@dimen/small_margin" android:layout_marginRight="@dimen/default_margin" />
+                    <FrameLayout android:layout_width="fill_parent" android:layout_height="110.0dip" android:layout_marginTop="@dimen/small_margin">
+                        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                            <View android:id="@id/leftBarata" android:background="@color/colorBlueVeryLight" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="0.5" />
+                            <View android:id="@id/rightBarata" android:background="@color/colorBlueVeryLight" android:layout_width="0.0dip" android:layout_height="1.0dip" android:layout_weight="0.5" />
+                        </LinearLayout>
+                        <com.santander.app.seguros.ui.widgets.MultiViewPager android:layout_gravity="center" android:id="@id/vpStatus" android:layout_width="fill_parent" android:layout_height="wrap_content" app:matchChildWidth="@id/sinisterItemContent" />
+                    </FrameLayout>
+                    <me.relex.circleindicator.CircleIndicator android:id="@id/indicator" android:layout_width="fill_parent" android:layout_height="28.0dip" app:ci_drawable="@drawable/bg_circle_blue" app:ci_drawable_unselected="@drawable/bg_circle_gray" />
+                    <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" />
+                </LinearLayout>
+            </android.support.design.widget.AppBarLayout>
+            <br.com.zup.multistatelayout.MultiStateLayout android:id="@id/multiStateLayoutFragment" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_below="@id/pager" app:layout_behavior="@string/appbar_scrolling_view_behavior" app:msl_loadingLayout="@layout/loading_layout" app:msl_emptyLayout="@layout/empty_layout" app:msl_errorLayout="@layout/error_layout" app:msl_state="content">
+                <FrameLayout android:id="@id/fragment_content" android:background="@color/colorWhite" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+            </br.com.zup.multistatelayout.MultiStateLayout>
+        </android.support.design.widget.CoordinatorLayout>
+        <View android:id="@id/bgDim" android:background="@color/colorBlackAlpha" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        <Button android:textSize="@dimen/small_text_size" android:id="@id/btRedialSurvey" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="28.0dip" android:layout_marginBottom="@dimen/small_margin" android:text="@string/reschedule_survey" android:layout_above="@id/botHelp" android:layout_centerHorizontal="true" android:textAllCaps="true" style="@style/AppTheme.ButtonRedDark2" />
+        <FrameLayout android:id="@id/botHelp" android:background="@drawable/bg_rectangle_border" android:layout_width="60.0dip" android:layout_height="12.0dip" android:layout_above="@id/llBottomContainer" android:layout_centerHorizontal="true">
+            <ImageView android:id="@id/ivArrowBottom" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_subitem" android:rotation="180.0" />
+        </FrameLayout>
+        <RelativeLayout android:orientation="vertical" android:id="@id/llBottomContainer" android:background="@color/colorGrayBackground" android:paddingTop="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+            <ImageView android:id="@id/imgCoverageSinister" android:layout_width="40.0dip" android:layout_height="40.0dip" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin" android:src="@drawable/ic_coverage_sinister" />
+            <TextView android:textStyle="bold" android:textColor="@color/colorGray" android:ellipsize="end" android:gravity="center_horizontal" android:id="@id/tvTitleBottom" android:paddingLeft="58.0dip" android:paddingRight="58.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_padding" android:maxLines="2" android:layout_centerHorizontal="true" />
+            <com.santander.app.seguros.ui.widgets.ExpandableLayoutV2 android:orientation="vertical" android:id="@id/llBottomExpandable" android:paddingLeft="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:layout_below="@id/tvTitleBottom" app:el_duration="400" app:el_expanded="true" app:el_translate_children="false">
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                    <LinearLayout android:gravity="center_vertical" android:orientation="horizontal" android:id="@id/layoutHeaderBottom" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin" android:layout_marginRight="@dimen/default_margin">
+                        <ImageView android:id="@id/imgCoverageSinister2" android:layout_width="40.0dip" android:layout_height="40.0dip" android:src="@drawable/ic_coverage_sinister" />
+                        <LinearLayout android:orientation="vertical" android:id="@id/topInfoExpandable" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                            <TextView android:textSize="14.0sp" android:textStyle="bold" android:textColor="@color/colorGray" android:id="@id/tvTitleBottom2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/small_margin" fontPath="fonts/OpenSans-Bold.ttf" />
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:textColor="@color/colorGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="@string/sinisterNumber_" fontPath="fonts/OpenSans-Bold.ttf" />
+                                <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/tvSinisterNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:textColor="@color/colorGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="@string/occurancyDate_" fontPath="fonts/OpenSans-Bold.ttf" />
+                                <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/tvOccurancyDate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="01/01/2017" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:textColor="@color/colorGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="@string/openDate_" fontPath="fonts/OpenSans-Bold.ttf" />
+                                <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/tvStartDate" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:textColor="@color/colorGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="@string/policy_" fontPath="fonts/OpenSans-Bold.ttf" />
+                                <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/tvPolicy" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                            <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                                <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:textColor="@color/colorGray" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" android:text="@string/certificate_" fontPath="fonts/OpenSans-Bold.ttf" />
+                                <TextView android:textSize="@dimen/small_text_size" android:textColor="@color/colorGray" android:id="@id/tvCertificateNumber" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+                            </LinearLayout>
+                        </LinearLayout>
+                    </LinearLayout>
+                    <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/default_margin" android:layout_marginBottom="@dimen/default_margin" />
+                    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/opening_questionnaire" />
+                    <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="@string/when_happened_" />
+                    <TextView android:textSize="@dimen/small_text_size" android:id="@id/tvDateWhenHappened1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                    <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin" />
+                    <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/what_was_the_value_of_the_loss_" />
+                    <TextView android:textSize="@dimen/small_text_size" android:id="@id/tvLossAmount2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                    <View android:background="@color/colorGrayDivider" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin" />
+                    <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/risk_address_" />
+                    <TextView android:textSize="@dimen/small_text_size" android:id="@id/tvRiskAddress3" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                    <View android:background="@color/colorGrayDivider" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="0.5dip" android:layout_marginTop="@dimen/small_margin" android:layout_marginBottom="@dimen/small_margin" />
+                    <TextView android:textSize="@dimen/small_text_size" android:textStyle="bold" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/date_survey_" />
+                    <TextView android:textSize="@dimen/small_text_size" android:id="@id/tvDateSurvey4" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" />
+                </LinearLayout>
+            </com.santander.app.seguros.ui.widgets.ExpandableLayoutV2>
+        </RelativeLayout>
+    </RelativeLayout>
+</br.com.zup.multistatelayout.MultiStateLayout>

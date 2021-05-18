@@ -1,0 +1,170 @@
+/*insurances
+  Danos elétricos -> eletrico
+  Roubo -> roubo
+  Incêndio -> incendio
+  Desastre da Natureza -> natureza
+  Quebra de Vidros -> vidro
+  Desmoronamento -> desmoronamento
+*/
+[
+  {
+    "branch":"residencial",
+    "insurance":"roubo",
+    "name": "Chaveiro lar",
+    "info": "Abertura de portas e portões em caso de quebra de chaves na fechadura,  perda das chaves, arrombamento, roubo ou furto. Confecção de 1 chave simples. "
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"eletrico",
+    "name": "Conserto de linha branca",
+    "info": "Serviço de Mão de Obra para conserto de eletrodomésticos.\n\nCOZINHA\nFogão a Gás, Microondas, Refrigerador (Geladeira), Freezer e Lavadora de Louças.\n\nLAVANDERIA\n Lavadora de Roupas e Secadora de Roupas, Tanquinho."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"eletrico",
+    "name": "Eletricista",
+    "info": "Eliminação de Queda Geral de Energia, troca de tomadas queimadas, bocal de lâmpadas,  interruptores defeituosos, disjuntores e fusíveis danificados,  e troca de resistências de chuveiros e torneiras (não blindados)."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"eletrico",
+    "name": "Inspeção domiciliar",
+    "info": "A prestadora garante a mão de obra profissional especializada para realizar uma inspeção domiciliar preventiva e manutenção em alguns itens da residência cadastrada, podendo realizar, se tecnicamente possível, pequenos reparos, revisões ou instalações para alguns serviços."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"incendio",
+    "name": "Limpeza do imóvel",
+    "info": "Envio de profissional para execução de limpeza emergencial para dar condições de habitação à residência sem descaracterizar o evento previsto."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"eletrico",
+    "name": "Manutenção geral",
+    "info": "Serviço de mão de obra para realizar alguns serviços  preventivos e de manutenção."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"incendio",
+    "name": "Manutenção geral",
+    "info": "Serviço de mão de obra para realizar alguns serviços  preventivos e de manutenção."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"natureza",
+    "name": "Conserto de linha branca",
+    "info": "Serviço de Mão de Obra para conserto de eletrodomésticos.\n\nCOZINHA\nFogão a Gás, Microondas, Refrigerador (Geladeira), Freezer e Lavadora de Louças.\n\nLAVANDERIA\nLavadora de Roupas e Secadora de Roupas, Tanquinho."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vendaval",
+    "name": "Eletricista",
+    "info": "Eliminação de Queda Geral de Energia, troca de tomadas queimadas, bocal de lâmpadas,  interruptores defeituosos, disjuntores e fusíveis danificados,  e troca de resistências de chuveiros e torneiras (não blindados)."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vendaval",
+    "name": "Encanador",
+    "info": "Desentupimento para o escoamento normal dos dispositivos e tubulações dos ambientes internos ou externo.\n\nEliminação de Vazamentos em:\ntorneiras, pias e vasos sanitários, caixa d´água, tubulações, registros."
+  },
+
+  {
+    "branch": "residencial",
+    "insurance": "vendaval",
+    "name": "Fixação de antena",
+    "info": "Somente fixação de antena de VHF ou UHF. O serviço não se estende a antenas coletivas, TV por assinatura ou parabólica e não se responsabiliza pela sintonia de canais ou imagem, tão pouco pelo cabeamento. Serviço exclusivo para casas."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vendaval",
+    "name": "Inspeção domiciliar",
+    "info": "A prestadora garante a mão de obra profissional especializada para realizar uma inspeção domiciliar preventiva e manutenção em alguns itens da residência cadastrada, podendo realizar, se tecnicamente possível, pequenos reparos, revisões ou instalações para alguns serviços."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vendaval",
+    "name": "Limpeza do imóvel",
+    "info": "Envio de profissional para execução de limpeza emergencial para dar condições de habitação à residência sem descaracterizar o evento previsto."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vendaval",
+    "name": "Manutenção geral",
+    "info": "Serviço de mão de obra para realizar alguns serviços  preventivos e de manutenção."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vendaval",
+    "name": "Reparo de telhados",
+    "info": "Envio de profissional que colocará lona ou plástico no telhado, caso as telhas estejam danificadas em consequência de um evento previsto, deixando a residência exposta a estragos."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vidro",
+    "name": "Serviço de vigilancia",
+    "info": "Envio de vigilante em caso de vulnerabilidade da residência assistida, após tentativa de contenção emergencial aos locais de risco."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vidro",
+    "name": "Troca de vidros",
+    "info": "Troca de vidros em portas, janelas e/ou venezianas."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"roubo",
+    "name": "Serviço de vigilancia",
+    "info": "Envio de vigilante em caso de vulnerabilidade da residência assistida, após tentativa de contenção emergencial aos locais de risco."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vendaval",
+    "name": "Transporte e guarda-moveis",
+    "info": "Retirada, guarda de móveis e posteriores devoluções à residência em caso de evento previsto que exijam reformas ou reparos à residência."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"vendaval",
+    "name": "Serviço de vigilancia",
+    "info": "Envio de vigilante em caso de vulnerabilidade da residência assistida, após tentativa de contenção emergencial aos locais de risco."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"incendio",
+    "name": "Transporte e guarda-moveis",
+    "info": "Retirada, guarda de móveis e posteriores devoluções à residência em caso de evento previsto que exijam reformas ou reparos à residência."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"desmoronamento",
+    "name": "Limpeza do imóvel",
+    "info": "Envio de profissional para execução de limpeza emergencial para dar condições de habitação à residência sem descaracterizar o evento previsto."
+  },
+
+  {
+    "branch":"residencial",
+    "insurance":"eletrico",
+    "name": "Atendimento remoto / Helpdesk",
+    "info": "Na hipótese de problema emergencial que impeça o funcionamento de hardware, software, sistemas ou internet, o segurado poderá acionar a Central de Atendimento operada pela prestadora que o auxiliará a solucionar o problema por telefone."
+  }
+]

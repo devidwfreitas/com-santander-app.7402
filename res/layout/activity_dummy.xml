@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <Button android:id="@id/btnProposta" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:text="TELA PROPOSTA" />
+    <Button android:id="@id/btnCotacao" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:text="TELA COTAÇÃO" />
+    <Button android:id="@id/btnResumo" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:text="TELA RESUMO" />
+    <Button android:id="@id/btnTermsOfUse" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:text="TERMOS DE USO" />
+    <com.santander.app.seguros.ui.widgets.ButtonWithDialog android:id="@id/buttondialog" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="50.0dip" />
+    <Button android:id="@id/btnPerguntas" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/default_margin" android:text="PERGUNTAS" />
+    <com.santander.app.seguros.ui.widgets.cancellation.CancelSeekBar android:id="@id/slider" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" app:csb_left_text="@string/run_risk_" app:csb_right_text="@string/protect_the_family_" app:csb_left_background="@drawable/bg_slider_rounded_red" app:csb_right_background="@drawable/bg_slider_rounded_green" app:csb_center_background="@drawable/bg_slider_rounded_gray" />
+    <Button android:id="@id/btSliderCenter" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/default_margin" android:text="Voltar ao Centro" />
+    <com.santander.app.seguros.ui.widgets.ContractPaymentView android:id="@id/gambis" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+</LinearLayout>

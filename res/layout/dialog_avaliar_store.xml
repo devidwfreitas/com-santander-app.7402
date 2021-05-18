@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/dialog_shape" android:paddingBottom="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="fill_parent" android:minWidth="330.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:id="@id/ll_top_message_avaliarstore_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/black" android:gravity="center" android:padding="@dimen/commonpaddingx2" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/titulo_avaliacao_app" app:opensans_regular="opensans_regular.ttf" style="@style/TextViewHoloDark" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_subtop_message_avaliarstore_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_centerVertical="true">
+            <ImageView android:id="@id/imageview_icon_star1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avalie_star" />
+            <ImageView android:id="@id/imageview_icon_star2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avalie_star" />
+            <ImageView android:id="@id/imageview_icon_star3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avalie_star" />
+            <ImageView android:id="@id/imageview_icon_star4" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avalie_star" />
+            <ImageView android:id="@id/imageview_icon_star5" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/avalie_star" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_buttons_avaliarstore_dialog" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2">
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/white" android:layout_gravity="center_horizontal" android:id="@id/btn_avalieagora_dialog_avaliacaostore" android:background="@drawable/btn_border_circle" android:layout_width="300.0dip" android:layout_height="wrap_content" android:text="@string/btn_avalie_agora_avaliacaostore" app:opensans_regular="opensans_regular.ttf" />
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/btn_lembrar_mais_tarde_dialog_avaliacaostore" android:background="@drawable/btn_border_circle_gray" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="@string/btn_avalie_mais_tarde_avaliacaostore" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloLigthGray" />
+        <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:layout_gravity="center_horizontal" android:id="@id/btn_nao_lembrar_dialog_avaliacaostore" android:background="@drawable/btn_border_circle_gray" android:layout_width="300.0dip" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="@string/btn_nao_obrigado_avaliacaostore" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloLigthGray" />
+    </LinearLayout>
+</LinearLayout>

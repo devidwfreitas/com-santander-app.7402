@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/llContent" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:paddingLeft="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <RelativeLayout android:paddingTop="0.5dip" android:paddingBottom="0.5dip" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <View android:id="@id/lineStatus" android:background="@color/colorGreenLight" android:layout_width="7.0dip" android:layout_height="fill_parent" android:layout_below="@id/ivImageCoverage" android:layout_centerHorizontal="true" />
+        </RelativeLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <android.support.v7.widget.GridLayout android:padding="@dimen/small_padding" android:layout_width="fill_parent" android:layout_height="wrap_content" app:rowCount="1" app:columnCount="2">
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginRight="@dimen/small_margin" app:layout_row="0" app:layout_column="0" app:layout_columnWeight="1.0" app:layout_gravity="center_vertical">
+                    <TextView android:textSize="@dimen/text_primary_size" android:layout_gravity="center_vertical" android:id="@id/textDateBilling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="00/00/0000" android:layout_centerVertical="true" />
+                </RelativeLayout>
+                <RelativeLayout android:layout_width="0.0dip" android:layout_height="wrap_content" app:layout_row="0" app:layout_column="1" app:layout_columnWeight="1.2" app:layout_gravity="center_vertical">
+                    <TextView android:textSize="@dimen/text_primary_size" android:textColor="@color/colorBlack" android:id="@id/textValueBilling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:layout_marginTop="20.0dip" android:layout_marginRight="@dimen/small_margin" android:layout_alignParentRight="true" android:layout_centerVertical="true" />
+                </RelativeLayout>
+            </android.support.v7.widget.GridLayout>
+            <View android:background="@color/colorGrayBackgroundDetails" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

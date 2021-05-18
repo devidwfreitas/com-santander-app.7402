@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/container_frame" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <ProgressBar android:layout_gravity="center_horizontal" android:id="@id/loadingview" android:visibility="gone" android:layout_width="45.0dip" android:layout_height="45.0dip" android:layout_margin="@dimen/commonpadding" android:indeterminate="true" />
+    </LinearLayout>
+</ScrollView>

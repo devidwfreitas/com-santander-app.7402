@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:id="@id/label" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="FORMA DO PAGAMENTO:" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.widget.Carrossel android:orientation="vertical" android:id="@id/carruselFormaPagamento" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/carrusel_pagamentos" />
+    </com.santander.app.widget.Carrossel>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="0.0dip" android:layout_margin="@dimen/commonpadding" android:text="@string/texto1pagamentos" android:layout_weight="3.0" app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:orientation="horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:onClick="captureBarCode" style="@style/ButtonHoloDark">
+            <ImageView android:gravity="center" android:id="@id/imageButton1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/commonpadding" android:src="@drawable/button_barras" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/contaForegroundText" android:gravity="center" android:id="@id/capturarText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Capturar código" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_margin="@dimen/commonpaddingmin">
+        <com.santander.app.components.view.SantanderEditText android:id="@id/seccioncuenta1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="" android:lines="2" android:minLines="2" android:maxLength="60" android:numeric="integer" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content" android:weightSum="1.0">
+            <LinearLayout android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.8">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/lblBeneficiario" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Beneficiário:" android:maxLines="1" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderEditText android:gravity="left" android:id="@id/favorecido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:ems="10" android:inputType="text" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+                <requestFocus />
+            </LinearLayout>
+            <LinearLayout android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="0.2">
+                <ImageButton android:id="@id/btnIconFavorecido" android:background="@drawable/bg_dialog" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/icon_user" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderCheckBox android:textSize="13.0sp" android:gravity="start|end|fill_horizontal|center" android:id="@id/checkBoxAdicionarApelido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:button="@null" android:text="Adicionar Apelido" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linearApelido" android:paddingTop="@dimen/commonpadding" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:id="@id/lblApelido" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Apelido:" android:maxLines="1" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderEditText android:id="@id/apelido" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:inputType="text" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Valor do título:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderEditText android:id="@id/valortitulo" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:hint="@string/zero_amount" android:inputType="numberDecimal" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:id="@id/linearFechaVencimiento" android:paddingTop="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Data de Vencto:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderEditText android:id="@id/valorvencto" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpaddingmin" android:maxLines="1" android:maxLength="10" android:inputType="date" app:opensans_regular="opensans_regular.ttf" style="@style/EditTextHoloDark" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:id="@id/linearClientePagador" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="Cliente/Pagador: " app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/clientes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:text="LOACTEC" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpadding" android:text="@string/texto2pagamentos" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.widget.Carrossel android:orientation="vertical" android:id="@id/carruselDataPagamento" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <include layout="@layout/carrusel_pagamentos_small" />
+    </com.santander.app.widget.Carrossel>
+    <com.santander.app.components.view.SantanderButtonView android:id="@id/confirmar" android:layout_width="@dimen/button_width" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/button_confirmar" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+</LinearLayout>

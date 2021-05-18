@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:id="@id/rootView" android:background="@color/colorGrayBackground3" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout android:orientation="horizontal" android:padding="@dimen/default_padding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="center" android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:layout_width="22.0dip" android:layout_height="22.0dip" android:src="@drawable/ic_date_info" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:textSize="11.0sp" android:id="@id/tvDateTime" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="22/07\n15:30" />
+        </LinearLayout>
+        <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/default_margin">
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/residential_insurance" app:textStyle="bold" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvAssistanceType" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/assistance_type" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvProtocolNumber" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/protocol_colon" />
+            <com.santander.app.seguros.ui.widgets.SegurosTextView android:id="@id/tvOccurrenceDate" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="@string/occurrence_date_colon" />
+        </LinearLayout>
+    </LinearLayout>
+    <View android:background="#ffe7e6e6" android:layout_width="fill_parent" android:layout_height="1.0dip" />
+</LinearLayout>

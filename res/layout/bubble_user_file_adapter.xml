@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="end" android:orientation="horizontal" android:background="@android:color/transparent" android:padding="12.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="end|center" android:id="@id/client_file_error_imv" android:padding="16.0dip" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_aviso_falha" />
+    <FrameLayout android:layout_gravity="end" android:id="@id/client_file_frame_layout" android:background="@drawable/corner_cliente" android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="end" android:orientation="vertical" android:background="@drawable/box_client" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="8.0dip" android:minWidth="90.0dip" android:layout_marginEnd="8.0dip">
+            <LinearLayout android:orientation="horizontal" android:background="@drawable/box_file_client" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="4.0dip">
+                <ImageView android:gravity="center" android:layout_gravity="center" android:id="@id/client_file_imv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="8.0dip" android:layout_marginTop="12.0dip" android:layout_marginRight="8.0dip" android:layout_marginBottom="12.0dip" android:src="@drawable/ico_img_squadchat" android:contentDescription="@string/client_file_img_text" android:layout_marginStart="8.0dip" android:layout_marginEnd="8.0dip" />
+                <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Medium" android:textColor="@color/colorAgentChat" android:ellipsize="end" android:gravity="start|center" android:id="@id/client_file_name_tv" android:paddingTop="12.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:maxHeight="35.0dip" android:lines="1" android:paddingEnd="4.0dip" />
+                        <ImageView android:layout_gravity="bottom" android:id="@id/stop_upload_imv" android:background="@drawable/ico_cancel_squadchat" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginLeft="24.0dip" android:layout_marginRight="16.0dip" android:contentDescription="@string/stop_send" android:layout_marginStart="24.0dip" android:layout_marginEnd="16.0dip" />
+                    </LinearLayout>
+                    <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+                        <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textColor="@color/colorUserChatOpacity" android:gravity="start" android:id="@id/client_file_size_tv" android:layout_width="wrap_content" android:layout_height="wrap_content" android:maxWidth="150.0dip" android:maxHeight="30.0dip" />
+                        <LinearLayout android:gravity="end" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                            <ProgressBar android:theme="@style/LinearProgress" android:layout_gravity="center" android:id="@id/client_file_pb" android:layout_width="32.0dip" android:layout_height="2.0dip" android:layout_marginRight="8.0dip" android:layout_marginEnd="8.0dip" style="@style/Widget.AppCompat.ProgressBar.Horizontal" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <LinearLayout android:gravity="end" android:orientation="horizontal" android:paddingLeft="0.0dip" android:paddingRight="12.0dip" android:paddingBottom="8.0dip" android:layout_width="fill_parent" android:layout_height="fill_parent" android:paddingStart="0.0dip" android:paddingEnd="12.0dip">
+                <TextView android:textAppearance="@style/TextAppearance.AppCompat.Small" android:textColor="@color/colorUserChatOpacity" android:layout_gravity="end" android:id="@id/client_time_tv" android:paddingLeft="0.0dip" android:paddingRight="4.0dip" android:layout_width="wrap_content" android:layout_height="fill_parent" android:paddingStart="0.0dip" android:paddingEnd="4.0dip" />
+                <ImageView android:id="@id/status_file_imv" android:visibility="visible" android:layout_width="12.0dip" android:layout_height="fill_parent" />
+            </LinearLayout>
+        </LinearLayout>
+    </FrameLayout>
+</LinearLayout>

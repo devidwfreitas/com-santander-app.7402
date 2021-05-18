@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@color/white" android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <RelativeLayout android:gravity="center_horizontal" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SegmentImageView android:id="@id/imageview_image_titulo_formulario_fale_conosco" android:layout_width="25.0dip" android:layout_height="25.0dip" android:layout_marginRight="@dimen/commonpaddingmin" android:src="@android:drawable/btn_star" />
+        <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceLarge" android:textColor="@color/red" android:gravity="center_horizontal" android:id="@id/textview_titulo_formulario_fale_conosco" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="titulo" android:layout_toRightOf="@id/imageview_image_titulo_formulario_fale_conosco" santander:opensans_regular="opensans_regular.ttf" />
+    </RelativeLayout>
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderTextView android:id="@id/textview_label_informacao_formulario" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:text="@string/label_formulario_fale_conosco" />
+        <br.com.santander.uisdk.dropdown.SantanderDropDownView android:id="@id/drop_down_view" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding" android:layout_below="@id/textview_label_informacao_formulario" />
+    </RelativeLayout>
+</LinearLayout>

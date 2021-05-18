@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <android.support.v4.widget.NestedScrollView android:background="@color/inv_white_three" android:layout_width="fill_parent" android:layout_height="fill_parent" android:overScrollMode="ifContentScrolls">
+        <LinearLayout android:orientation="vertical" android:id="@id/layoutPrincipal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+            <include layout="@layout/layout_header_pequeno" />
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+                <TextView android:textSize="12.0sp" android:textColor="@color/inv_black_two" android:layout_gravity="center" android:id="@id/txt_total_investimentos" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginTop="10.0dip" android:layout_marginRight="10.0dip" android:text="Existem 4 investimentos disponíveis para resgate" android:textAlignment="center" />
+                <android.support.v7.widget.RecyclerView android:id="@id/resgate_recycler_view" android:scrollbars="none" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:overScrollMode="never" />
+            </LinearLayout>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+    <RelativeLayout android:id="@id/inv2_portifolio_layout_loadinig" android:visibility="visible" android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <include android:visibility="gone" layout="@layout/layout_loading_state" />
+    </RelativeLayout>
+</RelativeLayout>

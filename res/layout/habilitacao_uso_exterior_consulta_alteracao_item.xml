@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:layout_gravity="right" android:orientation="vertical" android:layout_width="0.0dip" android:layout_height="fill_parent" android:layout_weight="1.0">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:id="@id/textView_pais_viagem" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="São Paulo" android:singleLine="true" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+            <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView_data_inicial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="20/11/2010" app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" - " app:opensans_regular="opensans_regular.ttf" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView_data_final" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="11/12/2015" app:opensans_regular="opensans_regular.ttf" />
+            </LinearLayout>
+        </LinearLayout>
+        <com.santander.app.components.view.SantanderButtonView android:id="@id/btn_alterar_periodo" android:background="@color/red" android:paddingTop="@dimen/commonpadding" android:paddingBottom="@dimen/commonpadding" android:layout_width="@dimen/button_width_130" android:layout_height="wrap_content" android:layout_marginTop="2.0dip" android:layout_marginBottom="2.0dip" android:text="@string/button_altetar_periodo" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/ll_holder_calendars" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:id="@id/ll_alterar_data" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/textmarginx2">
+            <ImageView android:background="@color/gray" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView2" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/habilitacao_cadastrar_data_inicio" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+            <ImageView android:id="@id/img_caledar_inicio" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/textmarginx2" android:src="@drawable/icon_calendar_red" android:layout_weight="0.3" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView_data_inicio" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="1.1" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="8.0dip">
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/TextView01" android:layout_width="0.0dip" android:layout_height="wrap_content" android:text="@string/habilitacao_cadastrar_data_fim" android:layout_weight="1.0" app:opensans_regular="opensans_regular.ttf" />
+            <ImageView android:id="@id/img_caledar_fim" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="@dimen/textmarginx2" android:src="@drawable/icon_calendar_red" android:layout_weight="0.3" />
+            <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:id="@id/textView_data_fim" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_marginLeft="2.0dip" android:layout_marginRight="2.0dip" android:layout_weight="1.1" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

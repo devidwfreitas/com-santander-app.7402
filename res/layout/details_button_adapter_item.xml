@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:id="@id/llClick" android:layout_width="fill_parent" android:layout_height="120.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <com.santander.app.seguros.ui.widgets.TopImageTextButton android:id="@id/btDefault" android:background="@drawable/bg_button_white" android:layout_width="fill_parent" android:layout_height="fill_parent" app:titb_text="@string/cancellation" app:titb_text_size="12.0sp" app:titb_text_color="@color/colorBlack" app:titb_image_width="16.5dip" app:titb_image_height="16.5dip" app:titb_textAllCaps="true"
+      xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" />
+</LinearLayout>

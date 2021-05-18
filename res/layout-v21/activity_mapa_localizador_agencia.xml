@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout android:fitsSystemWindows="true" android:layout_width="fill_parent" android:layout_height="fill_parent" android:fillViewport="true" android:maxItems="true"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app" xmlns:app2="http://schemas.android.com/apk/res-auto">
+    <include layout="@layout/include_mapa_localizador_agencia" />
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <android.support.design.widget.FloatingActionButton android:id="@id/mapa_localizador_agencia_buscar_local_buttom" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_margin="10.0dip" android:src="@android:drawable/ic_menu_search" android:layout_alignParentLeft="true" android:layout_alignParentTop="true" app:fabSize="normal" app2:backgroundTint="@color/white" />
+        <android.support.design.widget.FloatingActionButton android:id="@id/mapa_localizador_agencia_meu_local_buttom" android:background="@color/white" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="10.0dip" android:layout_marginRight="10.0dip" android:layout_marginBottom="49.0dip" android:src="@android:drawable/ic_menu_mylocation" android:layout_alignParentBottom="true" android:layout_alignParentEnd="true" app:fabSize="normal" app2:backgroundTint="@color/white" />
+        <LinearLayout android:gravity="center" android:id="@id/mapa_localizador_agencia_buscar_regiao_layout" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="100.0dip" android:layout_alignParentTop="true">
+            <com.santander.app.components.view.SantanderButtonView android:id="@id/mapa_localizador_agencia_buscar_regiao_button" android:paddingLeft="20.0dip" android:paddingRight="20.0dip" android:layout_width="wrap_content" android:text="@string/localizador_agencias_buscar_regiao" style="@style/Santander.PillRed" />
+        </LinearLayout>
+    </RelativeLayout>
+    <com.santander.app.components.view.dropuplist.ListDropUp android:id="@id/list_drop_up" android:layout_width="fill_parent" android:layout_height="wrap_content" />
+    <android.support.v7.widget.CardView android:layout_gravity="bottom" android:id="@id/mapa_localizador_pop_up_agencia_selecionada" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="200.0dip" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginRight="@dimen/commonpadding" android:foreground="?android:selectableItemBackground">
+        <RelativeLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <LinearLayout android:id="@id/relative_img" android:padding="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content">
+                <ImageView android:layout_gravity="center_horizontal" android:id="@id/imageview_carro_image" android:layout_width="58.0dip" android:layout_height="58.0dip" android:layout_marginTop="10.0dip" android:src="@drawable/bullet_santander" />
+            </LinearLayout>
+            <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_toRightOf="@id/relative_img">
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textStyle="bold" android:gravity="left" android:id="@id/mapa_localizador_bairro_agencia_selecionada" android:paddingTop="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="SP - Vila Olímpia" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:id="@id/mapa_localizador_logradouro_agencia_selecionada" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Av. Presidente Juscelino kubitschek, 1729" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceSmall" android:gravity="left" android:id="@id/mapa_localizador_distancia_agencia_selecionada" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="10Km" />
+                <com.santander.app.components.view.SantanderTextView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/blue_button" android:gravity="left" android:id="@id/mapa_localizador_telefone_agencia_selecionada" android:paddingTop="5.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="11 3333-4567" />
+            </LinearLayout>
+            <com.santander.app.components.view.SantanderButtonView android:textAppearance="?android:textAppearanceMedium" android:textColor="@color/blue_button" android:id="@id/mapa_localizador_rota_agencia_selecionad" android:background="@color/transparent" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginRight="20.0dip" android:layout_marginBottom="10.0dip" android:text="TRAÇAR ROTA" android:layout_alignParentRight="true" android:layout_alignParentBottom="true" style="@style/ButtonComprovanteHoloDark" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+</android.support.design.widget.CoordinatorLayout>

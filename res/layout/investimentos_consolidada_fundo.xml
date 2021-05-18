@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:background="@android:color/white" android:paddingBottom="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <LinearLayout android:gravity="center_horizontal" android:orientation="vertical" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingmin" android:layout_marginRight="@dimen/commonpadding" android:text="Consultar data anterior: " app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SegmentImageView android:layout_gravity="center" android:orientation="horizontal" android:id="@id/datepicker" android:background="@drawable/icon_calendar_red" android:layout_width="wrap_content" android:layout_height="wrap_content" app:src_classic="@drawable/icon_calendar_red" app:src_select="@drawable/icon_calendar_select" app:src_universitario="@drawable/icon_calendar_red" />
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:id="@id/actualdate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpaddingmin" android:text="22/5/2013" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:id="@id/error_msg" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpadding" android:text="Não existem fundos disponíveis." app:opensans_regular="opensans_regular.ttf" />
+        <LinearLayout android:orientation="vertical" android:id="@id/contenedor_fundos" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginTop="@dimen/commonpaddingx2" android:layout_marginBottom="@dimen/commonpadding" />
+        <com.santander.app.components.view.SegmentTextView android:textAppearance="?android:textAppearanceSmall" android:textStyle="bold" android:textColor="@color/red" android:paddingLeft="@dimen/commonpaddingmin" android:paddingRight="@dimen/commonpaddingmin" android:layout_width="fill_parent" android:layout_height="wrap_content" android:text="Família de fundos" />
+        <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="2.0dip" android:layout_marginBottom="@dimen/commonpadding" />
+        <LinearLayout android:orientation="vertical" android:id="@id/contenedor_familias" android:layout_width="fill_parent" android:layout_height="fill_parent" android:layout_marginBottom="@dimen/commonpadding" />
+    </LinearLayout>
+</ScrollView>

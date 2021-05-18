@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:background="@android:color/white" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:santander="http://schemas.android.com/apk/res/com.santander.app">
+    <TextView android:textSize="18.0dip" android:textColor="@color/black" android:gravity="center" android:visibility="visible" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="20.0dip" android:layout_marginBottom="20.0dip" android:text="@string/label_previdencia" />
+    <LinearLayout android:gravity="center" android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginTop="@dimen/commonpaddingx8">
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_marginBottom="@dimen/commonpadding">
+            <com.santander.app.components.view.SegmentImageView android:id="@id/btn_posicao_consolidada" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" santander:src_classic="@drawable/btn_posicao_consolidada" santander:src_select="@drawable/opcion9_select" santander:src_universitario="@drawable/btn_posicao_consolidada_un" />
+            <com.santander.app.components.view.SegmentImageView android:id="@id/btn_aporte" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" santander:src_classic="@drawable/btn_aporte" santander:src_select="@drawable/btn_aporte_se" santander:src_universitario="@drawable/btn_aporte_un" />
+        </LinearLayout>
+        <LinearLayout android:gravity="center_horizontal" android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SegmentImageView android:id="@id/btn_cancelamento_aporte" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" santander:src_classic="@drawable/btn_resgate_previdencia" santander:src_select="@drawable/btn_resgate_se_previdencia" santander:src_universitario="@drawable/btn_cancelamento_previdencia_un" />
+            <com.santander.app.components.view.SegmentImageView android:id="@id/btn_nova_contratacao" android:layout_width="140.0dip" android:layout_height="110.0dip" android:scaleType="centerInside" santander:src_classic="@drawable/btn_nova_contratacao" santander:src_select="@drawable/btn_nova_contratacao_se" santander:src_universitario="@drawable/btn_nova_contratacao_un" />
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

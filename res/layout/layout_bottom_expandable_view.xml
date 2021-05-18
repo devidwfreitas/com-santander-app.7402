@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:layout_width="fill_parent" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto">
+    <View android:id="@id/backgroundView" android:background="@color/colorGrayAlpha" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+    <LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignParentBottom="true">
+        <FrameLayout android:layout_gravity="center" android:id="@id/layoutForArrow" android:background="@drawable/bg_rectangle_border_gray" android:layout_width="60.0dip" android:layout_height="12.0dip">
+            <ImageView android:id="@id/ivArrow" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/ic_subitem" android:rotation="180.0" />
+        </FrameLayout>
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/layoutTitleAndImage" android:background="@color/colorGrayDividerf1" android:paddingTop="16.0dip" android:paddingBottom="16.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <ImageView android:layout_gravity="center" android:id="@id/ivImage" android:layout_width="22.0dip" android:layout_height="22.0dip" />
+            <TextView android:ellipsize="end" android:layout_gravity="center" android:id="@id/tvTitle" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/small_margin" android:maxLines="2" />
+        </LinearLayout>
+        <com.santander.app.seguros.ui.widgets.ExpandableLayoutV2 android:orientation="vertical" android:id="@id/expandableLayout" android:layout_width="fill_parent" android:layout_height="wrap_content" app:el_duration="400" app:el_expanded="false" app:el_translate_children="false">
+            <FrameLayout android:id="@id/content" android:background="@color/colorGrayVeryLight" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+        </com.santander.app.seguros.ui.widgets.ExpandableLayoutV2>
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:app="http://schemas.android.com/apk/res/com.santander.app">
+    <com.santander.app.components.view.SegmentTextView android:textStyle="bold" android:textColor="@color/red" android:paddingLeft="@dimen/commonpadding" android:paddingTop="@dimen/commonpaddingx2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="CONFIRMAÇÃO" app:opensans_regular="opensans_regular.ttf" />
+    <com.santander.app.components.view.SegmentLineView android:background="@color/lightred" android:layout_width="fill_parent" android:layout_height="1.0dip" android:layout_margin="@dimen/commonpaddingmin" />
+    <LinearLayout android:orientation="vertical" android:padding="10.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Operadora:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_operadora" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="VIVO AC" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="N° de telefone:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_numero" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="(55) 737263123" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Valor desejado:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_valor" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="R$ 100.00" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout android:orientation="vertical" android:id="@id/linear_container_recarga_programada" android:padding="@dimen/commonpadding" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Programação:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_programacao" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Mensal" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data de Início:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_data_inicio" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="05/03/2014" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:layout_width="wrap_content" android:layout_height="fill_parent">
+            <com.santander.app.components.view.SantanderTextView android:textStyle="bold" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Data Final:" app:opensans_regular="opensans_regular.ttf" />
+            <com.santander.app.components.view.SantanderTextView android:id="@id/textview_data_final" android:paddingLeft="@dimen/commonpadding" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="05/03/2014" app:opensans_regular="opensans_regular.ttf" />
+        </LinearLayout>
+    </LinearLayout>
+    <com.santander.app.components.view.SantanderTextView android:id="@id/textview_mensagem_confirmacao" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginLeft="@dimen/commonpadding" android:layout_marginTop="@dimen/commonpaddingx2" android:text="@string/mensagem_recarga_exclusao" app:opensans_regular="opensans_regular.ttf" />
+    <RelativeLayout android:padding="8.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <com.santander.app.components.view.SantanderButtonView android:id="@id/button_confirmar" android:layout_width="@dimen/button_width2" android:layout_height="wrap_content" android:text="Confirmar" android:layout_alignParentBottom="true" android:layout_centerHorizontal="true" app:opensans_regular="opensans_regular.ttf" style="@style/ButtonHoloDark" />
+    </RelativeLayout>
+</LinearLayout>
